@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html   >
+
+<head>
+<meta charset="utf-8"></meta>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"></meta>
+<meta name="apple-mobile-web-app-capable" content="yes" ></meta>
+<title>Lichfield - Road Groups</title>
+<base href="RoadGroups">
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script  src="js/districtward.js"></script>
+<script  src="js/myjs.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+crossorigin=""/>
+<link rel="shortcut icon" href="css/icons/favicon.ico"/>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" crossorigin="anonymous"/>
+
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+crossorigin=""></script>
+<script src='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js'></script>
+<script src="https://unpkg.com/dom-to-image@2.6.0/dist/dom-to-image.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-plugins/3.3.2/layer/vector/KML.min.js" integrity="sha512-BkMHAeZ+A9vo6cdCwvFXXktbCkkuoUrPd6JIjWbR5h555Ev/5rUIwb3OcSphQqCk/HLu7KK1e2/2BuO9tMlYxg==" crossorigin="anonymous"></script>
+
+<script>
+window.start = true;
+window.District = new District("Lichfield District Council");
+console.log("Wards:"+window.District.name);
+window.Wards = new Wards("data/Wards.xml");
+console.log("Wards:"+Object.keys(window.Wards.wardlist).length);
+window.RoadGroups = new RoadGroups("data/RoadGroups_summary.xml");
+console.log("Groups:"+Object.keys(window.RoadGroups.grouplist).length);
+window.Streets = new Streets("data/Streets_detail.xml");
+console.log("Streets:"+window.Streets.streetlist.length);
+window.mymapwards = null;
+window.mymapward = null;
+window.mymapsubward = null;
+window.mymaproadgroup = null;
+window.wardid = "BLY";
+window.subwardid = "BLY_C";
+window.roadgroupid = "BLY_C1";
+window.colors= [];
+window.colors[0]="#FF000088";
+window.colors[1]="#00FF0088";
+window.colors[2]="#0000FF88";
+window.colors[3]="#FFFF0088";
+window.colors[4]="#FF00FF88";
+window.colors[5]="#00FFFF88";
+window.colors[6]="#FF000088";
+window.colors[7]="#00FF0088";
+window.colors[8]="#0000FF88";
+window.colors[9]="#FFFF0088";
+window.colors[10]="#FF00FF88";
+window.colors[11]="#00FFFF88";
+</script>
+<link rel="stylesheet" href="css/mycss.css" />
+</head>
+
+<body class="bstyle" >
+
+<!--  display all wards -->
+<div data-role="page" id="wards" >
+<div class="page-header" data-role="header" data-position="fixed" >
+<h1>Wards</h1>
+</div>
+<div id="searchpanel" data-role="content">
+<input type="text" name="selector" id="searchfield" value="" data-inline="true"  onchange="doSearch()" />
+<a href="#" data-role="button" data-icon="check" data-iconpos="notext" data-theme="e" data-inline="true" onclick="doSearch()" >Check</a>
+<a href="#" data-role="button" data-icon="delete" data-iconpos="notext" data-theme="e" data-inline="true" onclick="clearSearch()">Delete</a>
+<div style="clear: both;"></div>
+</div>
+<div id="wardspanel" class="scrollpanel" style="overflow-y: scroll; " ></div>
+<div class="map-content" data-role="content">
+<div id='mapdiv'  style='height:400px;' ></div>
+</div>
+
+<div  class="page-footer" data-role="footer" class="bstyle" data-theme="d" data-position="fixed" data-mini="true" >
+<p>
+<a href="#ward"  class="button" data-role="button" data-inline="true" data-mini="true">Ward</a>
+<a href="#subward"  class="button" data-role="button" data-inline="true" data-mini="true">Sub-Wards</a>
+<a href="#roadgroup"  class="button" data-role="button" data-inline="true" data-mini="true">Road Group</a>
+</p>
+</div>
+</div>
+
+<!--  display one ward -->
+<div data-role="page" id="ward" class="page" >
+<div class="page-header"  data-role="header" data-position="fixed" >
+<h1>Ward</h1>
+</div>
+
+<div  class="page-content" data-role="content">
+<div  id="wardpanel" ></div>
+
+<div class="map-content" data-role="content">
+<div id='wardmapdiv'  style='height:400px;' ></div>
+</div>
+</div>
+<div  class="page-footer bstyle" data-role="footer"  data-theme="d" data-position="fixed" data-mini="true" >
+<p>
+<a href="#wards"  class="button" data-role="button" data-inline="true" data-mini="true">Wards</a>
+<!--  <a href="#ward"  class="button" data-role="button" data-inline="true" data-mini="true">Ward</a>-->
+<a href="#subward"  class="button" data-role="button" data-inline="true" data-mini="true">Sub-Wards</a>
+<a href="#roadgroup"  class="button" data-role="button" data-inline="true" data-mini="true">Road Group</a>
+</p>
+</div>
+</div>
+
+<!--  display a subward -->
+<div data-role="page" class="bstyle"  id="subward">
+<div class="page-header" data-role="header" data-position="fixed">
+<h1>Sub Ward</h1>
+</div> <!-- /header -->
+<div  class="page-content" data-role="content">
+<div  id="subwardpanel">  </div>
+</div>
+<div class="map-content" data-role="content">
+<div id='subwardmapdiv'  style='height:400px;' ></div>
+</div>
+<div  class="page-footer" data-role="footer" class="bstyle" data-theme="d" data-position="fixed" data-mini="true" >
+<p>
+<a href="#wards"  class="button" data-role="button" data-inline="true" data-mini="true">Wards</a>
+<a href="#ward"  class="button" data-role="button" data-inline="true" data-mini="true">Ward</a>
+<!--  <a href="#subward"  class="button" data-role="button" data-inline="true" data-mini="true">Sub-Wards</a>-->
+<a href="#roadgroup"  class="button" data-role="button" data-inline="true" data-mini="true">Road Group</a>
+</p>
+</div>
+<!-- /footer -->
+</div>
+
+<!--  display one road group -->
+<div data-role="page" class="bstyle"  id="roadgroup">
+<div class="page-header"  data-role="header" data-position="fixed">
+<h1>Road Group</h1>
+</div><!-- /header -->
+<div id="roadgrouppage"  >
+<div id="roadgrouppanel" class="bstyle" ></div>
+<div class="map-content" data-role="content">
+<div id='roadgroupmapdiv'></div>
+</div>
+<div>
+<div class="page-footer" data-role="footer" class="bstyle" data-theme="d" data-position="fixed" data-mini="true" >
+<a href="#wards"  class="button" data-role="button" data-inline="true" data-mini="true">Wards</a>
+<a href="#ward"  class="button" data-role="button" data-inline="true" data-mini="true">Ward</a>
+<a href="#subward"  class="button" data-role="button" data-inline="true" data-mini="true">Sub-Wards</a>
+<button class="button  desktop" type="xxbutton" onclick="savePNG()">Print</button>
+<a href="http://www.bikehike.co.uk/mapview.php"  class="button desktop" data-role="button" data-inline="true" data-mini="true"  target="_blank" >make track</a>
+
+</div>
+<!-- /footer -->
+</div>
+
+
+<script >
+$(document).on("pageinit","#ward", function() {
+
+  //alert("ward is bound!");
+
+});
+
+$('#wards').on( "pageinit", function( event, data ){
+  // alert("wards is pageinit!");
+  if(window.start)
+  {
+    document.getElementById("wardspanel").innerHTML = showwards() ;
+    $.mobile.changePage("#wards", "slideup");
+    window.start = false;
+  }
+});
+
+$(document).on("pageshow","#wards", function() {
+
+  document.getElementById("wardspanel").innerHTML = showwards() ;
+  if(mymapwards == null)
+  {
+    mymapwards = L.map('mapdiv');
+  }
+  else
+  {
+    mymapwards.eachLayer((layer) => {
+      layer.remove();
+    });
+  }
+  if( CheckUrl("maps/LCC.kml"))
+  {
+    mymappera(mymapwards,52.6854, -1.8304,12);
+    //   mymap=mymapper(2.6854, -1.8304, 14);
+    addKML(mymapwards, "maps/LCC.kml");
+  }
+
+});
+
+
+$(document).on("pageshow","#ward",function() {
+  //alert(" at line 212");
+  document.getElementById("wardpanel").innerHTML = showward() ;
+  if( mymapward == null)
+  {
+    mymapward = L.map('wardmapdiv');
+  }
+  else
+  {
+    mymapward.eachLayer((layer) => {
+      layer.remove();
+    });
+  }
+
+
+  var wdid = window.wardid;
+  var thisward = window.Wards.wardlist[wdid];
+
+  if(thisward.kml !== undefined )
+  {
+
+    if(thisward.Shape.midlat !== undefined)
+    {
+      mymappera( mymapward,thisward.Shape.midlat, thisward.Shape.midlon, 12);
+    }
+    else
+    {
+      mymapper(mymapward,52.6854, -1.8304,12);
+    }
+    addKML(mymapward,thisward.kml);
+  }else
+  {
+    if( CheckUrl("maps/"+wdid+".kml"))
+    {
+      mymappera(mymapward, 52.6854, -1.8304, 12);
+      addKML(mymapward, "maps/"+wdid+".kml");
+    }else if( CheckUrl("maps/LCC.kml"))
+    {
+      mymappera(mymapward,52.6854, -1.8304,12);
+      //   mymap=mymapper(2.6854, -1.8304, 14);
+      addKML(mymapward, "maps/LCC.kml");
+    }
+  }
+  if( CheckUrl("maps/LCC.kml"))
+  {
+    mymappera(mymapward,52.6854, -1.8304,12);
+    //   mymap=mymapper(2.6854, -1.8304, 14);
+    addKML(mymapward, "maps/LCC.kml");
+  }
+});
+
+
+$(document).on("pageshow","#subward",function() {
+
+  document.getElementById("subwardpanel").innerHTML = showsubward() ;
+  if( mymapsubward == null)
+  {
+    mymapsubward = L.map('subwardmapdiv');
+  }
+  else
+  {
+    mymapsubward.eachLayer((layer) => {
+      layer.remove();
+    });
+  }
+  mymappera(mymapsubward, 52.6854, -1.8304, 14);
+
+
+  var mybounds = L.bounds([0,0],[0,0]);
+
+  var wdid = window.wardid;
+  var thisward = window.Wards.wardlist[wdid];
+  var subwardid =  window.subwardid;
+  var asubward = thisward['Subwards'][subwardid];
+  var grouplist = window.RoadGroups.grouplist;
+  var roadgroupid = window.roadgroupid;
+  var c=0;
+  for(var index in grouplist)
+  {
+    var agroup = grouplist[index];
+    if( agroup.GroupCode.startsWith(subwardid))
+    {
+      var thisroadgroup = window.RoadGroups.grouplist[index];
+      if( CheckUrl("maps/"+index +".kml"))
+      {
+        afg = addMyKML(mymapsubward ,"maps/"+index+".kml",window.colors[c]);
+        addBounds(mybounds,afg.getBounds());
+      }
+      c++;
+    }
+  }
+  mymapsubward.on("loaded", function(e)
+  {
+    alert(" at boundind")
+    mymapsubward.fitBounds(mybounds);
+  });
+
+
+});
+
+
+
+
+
+$(document).on("pageshow","#roadgroup",function() {
+  document.getElementById("roadgrouppanel").innerHTML = showroadgroup() ;
+  color="#4444FFDD";
+  if( mymaproadgroup == null)
+  {
+    mymaproadgroup = L.map('roadgroupmapdiv');
+  }  else
+  {
+    mymaproadgroup.eachLayer((layer) => {
+      layer.remove();
+    });
+  }
+
+  var wdid = window.wardid;
+  var thisward = window.Wards.wardlist[wdid];
+  var roadgroupid = window.roadgroupid;
+  var thisroadgroup = window.RoadGroups.grouplist[roadgroupid];
+  mymappera(mymaproadgroup, 52.6854, -1.8304, 14);
+  if(thisroadgroup.KML !== undefined )
+  {
+    alayer =  addMyKML(mymaproadgroup,thisroadgroup.KML,color);
+  }else
+  {
+    if( CheckUrl("maps/"+roadgroupid +".kml"))
+    {
+      addMyKML(mymaproadgroup,"maps/"+roadgroupid +".kml",color);
+
+    }else if( CheckUrl("maps/"+wdid+".kml"))
+    {
+      addMyKML(mymaproadgroup,"maps/"+wdid+".kml","#FF4444DD");;
+    }else{
+      addMyKML(mymaproadgroup, "maps/LCC.kml", "#FF4444DD");
+    }
+  }
+
+});
+
+
+
+function changeMypage(targetpage, selector )
+{
+  //alert(" change my page");
+  switch(targetpage) {
+    case "wards":
+      window.wardid = selector;;
+      //    document.getElementById("wardspanel").innerHTML = showwards() ;
+      $.mobile.changePage("#wards", "slideup");
+      break;
+    case "ward":
+      window.wardid = selector;
+      //    document.getElementById("wardpanel").innerHTML = showward() ;
+      $.mobile.changePage("#ward", "slideup");
+      break;
+    case "subward":
+      window.subwardid = selector;
+      //  document.getElementById("subwardpanel").innerHTML = showsubward() ;
+      $.mobile.changePage("#subward", "slideup");
+      break;
+    case "roadgroup":
+      window.roadgroupid = selector;
+      //   document.getElementById("roadgrouppanel").innerHTML = showroadgroup() ;
+      $.mobile.changePage("#roadgroup", "slideup");
+      break;
+  }
+}
+
+
+$(window).bind('orientationchange', function() {
+  setScrollHeight();
+});
+
+
+
+function savePNG(){
+  const node = document.getElementById("roadgrouppage");
+  domtoimage.toPng(node)
+  .then(function (dataUrl) {
+    var link = document.createElement('a');
+    var rgid = window.roadgroupid;
+    link.download = rgid+'.png';
+    link.href = dataUrl;
+    link.click();
+  });
+}
+
+setScrollHeight();
+</script>
+</body>
+</html>
