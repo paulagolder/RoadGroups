@@ -1,0 +1,736 @@
+
+body,ul,li {
+  padding:0;
+  margin:0;
+  border:0;
+}
+
+body {
+  font-family:sans-serif;
+  font-size:0.8em;
+}
+
+
+.leaflet-fade-anim .leaflet-tile,.leaflet-zoom-anim .leaflet-zoom-animated
+{
+  will-change:auto !important;
+}
+
+.leaflet-container .leaflet-control-attribution, .leaflet-container .leaflet-control-scale {
+  font-size: 8px;
+}
+
+header{
+  background-color:#deb500;
+  position:absolute;
+  z-index:2;
+  top:0; left:0;
+  width:100%;
+  height:45px;
+  padding:0;
+}
+
+footer {
+  background-color:#c27b00;
+  position:absolute;
+  z-index:2;
+  bottom:0; left:0;
+  width:100%;
+  height:48px;
+  padding:0;
+  border-top:1px solid #444;
+}
+
+header, footer{
+  font-size:2em;
+  text-align:center;
+  color:#f3f3f3;
+  font-weight:bold;
+  text-shadow:0 -1px 0 rgba(0,0,0,0.5);
+  line-height:45px;
+}
+
+
+
+div.heading
+{
+  display: flex;
+  background-color: yellow;
+  flex-wrap: wrap;
+  font-size:0.5em;
+}
+
+div.heading div
+{
+  font-size:2em;
+  margin-left:1em;
+}
+
+div.buttons
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: yellow;
+}
+
+
+
+a.button
+{
+  background-color: white;
+  font-size: 1em;
+  line-height: 0.3em;
+  font-family: sans-serif;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.625em;
+  border-radius: .3125em;
+  border: 1px solid silver;
+  padding: 0.5em;
+  font-style: plain;
+  color: black;
+  text-decoration: none;
+}
+
+button.button
+{
+  background-color: white;
+  font-size: 1em;
+  line-height: 0.3em;
+  font-family: sans-serif;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.625em;
+  border-radius: .3125em;
+  border: 1px solid silver;
+  padding: 0.5em;
+  font-style: plain;
+  color: black;
+  text-decoration: none;
+}
+
+div.list div.row
+{
+  display:flex;
+}
+
+
+div.scrollpanel
+{
+  height: calc(100% - 400px);
+  margin-top: 1em;
+  overflow-y: scroll;
+}
+
+div.page-header
+{
+  background: red;
+}
+
+div.page-footer
+{
+  background-color: #e9e9e9;
+  border-color: #ddd;
+}
+
+
+/* map panel styles======================================================= */
+
+
+div.map-content
+{
+  height: 100%;
+  max-width: 600px;
+  padding: 0px;
+  xmargin:0px;
+  z-index: -1;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.map-content div
+{
+  xborder: 4px solid #F5E89F;
+}
+
+div.leaflet-control-container
+{
+
+  border: 4px solid #F5E89F;
+}
+
+
+/* search  panel styles======================================================= */
+
+
+
+#searchpanel
+{
+  background-color:  #F5E89F;
+  border: 1px solid yellow;
+  display: flex;
+  padding: 0.1em;
+  padding-left: 20px;
+}
+
+#searchpanel a
+{
+  color:#F5E89F;
+  float: right;
+  display: block;
+}
+
+#searchpanel input
+{
+  color:green;
+  background-color: #F6F1BD;
+  float: left;
+  border: 1px solid yellow;
+  display: block;
+}
+
+
+
+#xsearchcontent div.iscroll-scroller div.iscroll-content
+{
+  padding: 15px 0px 1px;
+  border:2px none blue ;
+
+}
+
+#xsearchcontent div.iscroll-scroller div.iscroll-top-spacer
+{
+  height: 15px;
+}
+
+#searchcontent
+{
+  background-color: #FFF9D8;
+  padding: 1px;
+}
+
+/* #wards panel styles======================================================= */
+
+
+
+
+
+#wards
+{
+  background-color:  #F5E89F;
+}
+
+#wards div.ui-panel-content-wrap
+{
+  background-color:  #F5E89F;
+}
+
+div#wardspanel
+{
+  xheight:300px;
+  height: calc(100% - 400px);
+}
+
+
+
+
+div#wardspanel div.wards
+{
+  display: flex;
+  flex-wrap: wrap;
+  padding : 0.5em;
+}
+
+div#wardspanel div.wards div.row
+{
+
+  display : flex;
+  width : 12em;
+}
+
+
+div#wardspanel div.wards div.row  div:first-child
+{
+  xwidth: 4em;
+}
+/* #ward styles======================================================= */
+
+
+
+
+
+
+#ward
+{
+  background-color:  #F5E89F;
+}
+
+#ward div.heading
+{
+  display: flex;
+  background-color: yellow;
+}
+
+#ward div.heading div
+{
+  font-size:2em;
+  margin-left:1em;
+}
+
+
+
+div#ward div.list
+{
+  display: flex;
+  flex-wrap: wrap;
+  padding : 0.5em;
+}
+
+div#ward div.list div.row
+{
+  display : flex;
+  width : 14em;
+}
+
+
+
+/* #subward styles======================================================= */
+
+#subward
+{
+  background-color:  #F5E89F;
+}
+
+#xxsubwardpanel
+{
+  xbackground-color:  #F5E89F;
+  xbackground-color: #F5E89F;
+}
+
+#xxsubwardpanel div div.row
+{
+  display: flex;
+}
+
+
+
+#xxsubwardpanel  div#subwardsscroll.scrollpanel table tbody tr.row td.greenrow
+{
+
+  background: #b9e8b9;
+}
+
+#xxsubwardpanel  div.scrollpanel ul div
+{
+  margin-top: 1em;
+}
+
+#xxsubwardpanel  div.scrollpanel
+{
+  margin-top: 1em;
+  height: 300px;
+  overflow-y: scroll;
+}
+
+div#subward div.list
+{
+  display: flex;
+  flex-wrap: wrap;
+  padding : 0.5em;
+}
+
+div#subward div.list div.row
+{
+  display : flex;
+  width : 14em;
+}
+
+
+
+/* roadgrouppage styles=========================================*/
+
+div#roadgroup
+{
+  background :#FFF9D8;
+  //width : 105mm;
+}
+
+div#roadgroup div.heading
+{
+  font-size:0.5em;
+}
+
+
+div#roadgrouppage
+{
+  background :#FFF9D8;
+ // width : 105mm;
+  height: 148mm;
+}
+
+#roadgroup div div.streetlist
+{
+  display: flex;
+  flex-wrap: wrap;
+  padding : 0.5em;
+}
+
+#roadgroup div div.streetlist div
+{
+  xmargin-left: 10em;
+  xwidth:12em;
+  flex: 1 1 15em;
+}
+
+div#roadgroupmapdiv
+{
+  max-width : 105mm;
+  height: 74mm;
+}
+
+
+@media only screen and (min-width: 768px)
+{
+
+  div.map-content {
+    height: 100%;
+    max-width: 100%;
+    padding: 0px;
+    xmargin: 0px;
+    z-index: -1;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #wards div.page-header  h1
+  {
+    font-size: 1.5em;
+  }
+
+   div#wardspanel.scrollpanel div.wards
+   {
+     font-size:1.5em;
+   }
+
+
+   div#ward div.page-header h1
+   {
+     font-size:1.5em;
+  }
+
+  div#ward div.heading
+  {
+
+    font-size:1em;
+  }
+
+  div#ward div.list
+  {
+    font-size: 1.4em;
+  }
+
+  div#ward div.list div.row
+  {
+    width: 15em;
+  }
+
+  div#subward div.page-header h1
+  {
+    font-size:1.5em;
+  }
+
+  div#subward div.heading
+  {
+
+    font-size:1em;
+  }
+
+  div#subward div.list
+  {
+    font-size: 1.4em;
+  }
+
+  div#subward div.list div.row
+  {
+    width: 20em;
+  }
+
+  div#roadgroup div.heading
+  {
+
+    font-size:1em;
+  }
+
+
+  #roadgroup div div.streetlist div
+  {
+    font-size: 1.5em;
+    flex: 1 1 15em;
+  }
+
+  div#roadgroupmapdiv {
+    max-width: 100%;
+    height: 140mm;
+  }
+
+  div#roadgroupmapdiv div.map-content {
+    height: 100%;
+    max-width: 100%;
+    padding: 0px;
+    xmargin: 0px;
+    z-index: -1;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+   div.page-footer
+   {
+     background-color : pink;
+   }
+
+   div.page-footer a.button
+   {
+     font-size: 1.5em;
+   }
+
+   div.page-footer button.button
+   {
+     font-size : 1.5em ;
+   }
+
+
+
+   div#roadgroup
+   {
+    xbackground :#FFF9D8;
+     width : 100%;
+   }
+
+   div.mapcontent
+   {
+     max-width:780px;
+  }
+
+  div.heading
+  {
+    font-size:0.5em;
+  }
+
+  div.page-content.ui-content
+  {
+    padding: 0.5em;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 768px)
+{
+
+
+  div.page-footer a.button.desktop
+  {
+    display:none;
+  }
+
+
+
+  div.page-footer p a.button
+  {
+    fontsize:1em;
+  }
+
+  div#roadgroup
+  {
+    xbackground :#FFF9D8;
+    xwidth : 105mm;
+  }
+
+  div.mapcontent
+  {
+    xmax-width:780px;
+  }
+
+
+  div.heading
+  {
+    font-size:0.5em;
+  }
+
+  div.page-content.ui-content
+  {
+  padding: 0.2em;
+  }
+
+  @media screen and (orientation: landscape)
+  {
+    div.page-footer
+    {
+
+      background-color: #0000FF;
+    }
+
+    #roadgroupmapdiv
+    {
+      width : 800px;
+    }
+  }
+
+}
+
+
+
+
+.reset-this {
+  animation : none;
+  animation-delay : 0;
+  animation-direction : normal;
+  animation-duration : 0;
+  animation-fill-mode : none;
+  animation-iteration-count : 1;
+  animation-name : none;
+  animation-play-state : running;
+  animation-timing-function : ease;
+  backface-visibility : visible;
+  background : 0;
+  background-attachment : scroll;
+  background-clip : border-box;
+  background-color : transparent;
+  background-image : none;
+  background-origin : padding-box;
+  background-position : 0 0;
+  background-position-x : 0;
+  background-position-y : 0;
+  background-repeat : repeat;
+  background-size : auto auto;
+  border : 0;
+  border-style : none;
+  border-width : medium;
+  border-color : inherit;
+  border-bottom : 0;
+  border-bottom-color : inherit;
+  border-bottom-left-radius : 0;
+  border-bottom-right-radius : 0;
+  border-bottom-style : none;
+  border-bottom-width : medium;
+  border-collapse : separate;
+  border-image : none;
+  border-left : 0;
+  border-left-color : inherit;
+  border-left-style : none;
+  border-left-width : medium;
+  border-radius : 0;
+  border-right : 0;
+  border-right-color : inherit;
+  border-right-style : none;
+  border-right-width : medium;
+  border-spacing : 0;
+  border-top : 0;
+  border-top-color : inherit;
+  border-top-left-radius : 0;
+  border-top-right-radius : 0;
+  border-top-style : none;
+  border-top-width : medium;
+  bottom : auto;
+  box-shadow : none;
+  box-sizing : content-box;
+  caption-side : top;
+  clear : none;
+  clip : auto;
+  color : inherit;
+  columns : auto;
+  column-count : auto;
+  column-fill : balance;
+  column-gap : normal;
+  column-rule : medium none currentColor;
+  column-rule-color : currentColor;
+  column-rule-style : none;
+  column-rule-width : none;
+  column-span : 1;
+  column-width : auto;
+  content : normal;
+  counter-increment : none;
+  counter-reset : none;
+  cursor : auto;
+  direction : ltr;
+  display : inline;
+  empty-cells : show;
+  float : none;
+  font : normal;
+  font-family : inherit;
+  font-size : medium;
+  font-style : normal;
+  font-variant : normal;
+  font-weight : normal;
+  height : auto;
+  hyphens : none;
+  left : auto;
+  letter-spacing : normal;
+  line-height : normal;
+  list-style : none;
+  list-style-image : none;
+  list-style-position : outside;
+  list-style-type : disc;
+  margin : 0;
+  margin-bottom : 0;
+  margin-left : 0;
+  margin-right : 0;
+  margin-top : 0;
+  max-height : none;
+  max-width : none;
+  min-height : 0;
+  min-width : 0;
+  opacity : 1;
+  orphans : 0;
+  outline : 0;
+  outline-color : invert;
+  outline-style : none;
+  outline-width : medium;
+  overflow : visible;
+  overflow-x : visible;
+  overflow-y : visible;
+  padding : 0;
+  padding-bottom : 0;
+  padding-left : 0;
+  padding-right : 0;
+  padding-top : 0;
+  page-break-after : auto;
+  page-break-before : auto;
+  page-break-inside : auto;
+  perspective : none;
+  perspective-origin : 50% 50%;
+  position : static;
+  /* May need to alter quotes for different locales (e.g fr) */
+  quotes : '\201C' '\201D' '\2018' '\2019';
+  right : auto;
+  tab-size : 8;
+  table-layout : auto;
+  text-align : inherit;
+  text-align-last : auto;
+  text-decoration : none;
+  text-decoration-color : inherit;
+  text-decoration-line : none;
+  text-decoration-style : solid;
+  text-indent : 0;
+  text-shadow : none;
+  text-transform : none;
+  top : auto;
+  transform : none;
+  transform-style : flat;
+  transition : none;
+  transition-delay : 0s;
+  transition-duration : 0s;
+  transition-property : none;
+  transition-timing-function : ease;
+  unicode-bidi : normal;
+  vertical-align : baseline;
+  visibility : visible;
+  white-space : normal;
+  widows : 0;
+  width : auto;
+  word-spacing : normal;
+  z-index : auto;
+}
