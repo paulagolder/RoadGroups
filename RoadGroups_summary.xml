@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<?xml-stylesheet type='text/xsl' href='./stylesheets/summary.xsl' ?>
+<roadgroups>
+  <RoadGroup District_Ward="BLY" Sub_Group="BLY_C" Group_code="BLY_C1">
+    <Principal_Road>Abbotsford Rd</Principal_Road>
+    <Properties>219</Properties>
+    <Electors>365</Electors>
+    <Priority>M</Priority>
+    <Priority_Rank>80</Priority_Rank>
+    <County_Division>LRN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="BLY" Sub_Group="BLY_C" Group_code="BLY_C2">
+    <Principal_Road>Baskeyfield Cl</Principal_Road>
+    <Properties>130</Properties>
+    <Electors>249</Electors>
+    <Priority>H</Priority>
+    <Priority_Rank>56</Priority_Rank>
+    <County_Division>LRN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="BLY" Sub_Group="BLY_C" Group_code="BLY_C3">
+    <Principal_Road>Haymoor</Principal_Road>
+    <Properties>199</Properties>
+    <Electors>374</Electors>
+    <Priority>M</Priority>
+    <Priority_Rank>106</Priority_Rank>
+    <County_Division>LRN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="BLY" Sub_Group="BLY_E" Group_code="BLY_E1">
+    <Principal_Road>Birchwood Rd</Principal_Road>
+    <Properties>153</Properties>
+    <Electors>314</Electors>
+    <Priority>L</Priority>
+    <Priority_Rank>162</Priority_Rank>
+    <County_Division>LRN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="BLY" Sub_Group="BLY_E" Group_code="BLY_E2">
+    <Principal_Road>Curlew Cl</Principal_Road>
+    <Properties>117</Properties>
+    <Electors>224</Electors>
+    <Priority>M</Priority>
+    <Priority_Rank>119</Priority_Rank>
+    <County_Division>LRN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="BLY" Sub_Group="BLY_E" Group_code="BLY_E3">
+    <Principal_Road>Gable Croft</Principal_Road>
+    <Properties>164</Properties>
+    <Electors>337</Electors>
+    <Priority>L</Priority>
+    <Priority_Rank>182</Priority_Rank>
+    <County_Division>LRN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="BLY" Sub_Group="BLY_E" Group_code="BLY_E4">
+    <Principal_Road>Hartslade</Principal_Road>
+    <Properties>136</Properties>
+    <Electors>278</Electors>
+    <Priority>L</Priority>
+    <Priority_Rank>158</Priority_Rank>
+    <County_Division>LRN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="BLY" Sub_Group="BLY_E" Group_code="BLY_E5">
+    <Principal_Road>Bracken Cl</Principal_Road>
+    <Properties>88</Properties>
+    <Electors>174</Electors>
+    <Priority>L</Priority>
+    <Priority_Rank>179</Priority_Rank>
+    <County_Division>LRN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="BLY" Sub_Group="BLY_N" Group_code="BLY_N1">
+    <Principal_Road>Cornfield</Principal_Road>
+    <Properties>223</Properties>
+    <Electors>339</Electors>
+    <Priority>H</Priority>
+    <Priority_Rank>18</Priority_Rank>
+    <County_Division>LRN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="BLY" Sub_Group="BLY_N" Group_code="BLY_N2">
+    <Principal_Road>Yew Tree</Principal_Road>
+    <Properties>149</Properties>
+    <Electors>270</Electors>
+    <Priority>M</Priority>
+    <Priority_Rank>122</Priority_Rank>
+    <County_Division>LRN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="BLY" Sub_Group="BLY_W" Group_code="BLY_W1">
+    <Principal_Road>Broadlands</Principal_Road>
+    <Properties>237</Properties>
+    <Electors>484</Electors>
+    <Priority>L</Priority>
+    <Priority_Rank>185</Priority_Rank>
+    <County_Division>LCS</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="CHD" Sub_Group="CHD_C" Group_code="CHD_C1">
+    <Principal_Road>Oakenfield</Principal_Road>
+    <Properties>209</Properties>
+    <Electors>379</Electors>
+    <Priority>L</Priority>
+    <Priority_Rank>181</Priority_Rank>
+    <County_Division>LCN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="CHD" Sub_Group="CHD_C" Group_code="CHD_C2">
+    <Principal_Road>Swallow Croft</Principal_Road>
+    <Properties>166</Properties>
+    <Electors>273</Electors>
+    <Priority>M</Priority>
+    <Priority_Rank>102</Priority_Rank>
+    <County_Division>LCN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="CHD" Sub_Group="CHD_C" Group_code="CHD_C3">
+    <Principal_Road>Leasowe</Principal_Road>
+    <Properties>124</Properties>
+    <Electors>225</Electors>
+    <Priority>L</Priority>
+    <Priority_Rank>176</Priority_Rank>
+    <County_Division>LCN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="CHD" Sub_Group="CHD_C" Group_code="CHD_C4">
+    <Principal_Road>Dimbles Lane</Principal_Road>
+    <Properties>131</Properties>
+    <Electors>213</Electors>
+    <Priority>L</Priority>
+    <Priority_Rank>163</Priority_Rank>
+    <County_Division>LCN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="CHD" Sub_Group="CHD_N" Group_code="CHD_N1">
+    <Principal_Road>Garrick Road</Principal_Road>
+    <Properties>154</Properties>
+    <Electors>328</Electors>
+    <Priority>H</Priority>
+    <Priority_Rank>28.5</Priority_Rank>
+    <County_Division>LCS</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="CHD" Sub_Group="CHD_N" Group_code="CHD_N2">
+    <Principal_Road>Grange Lane</Principal_Road>
+    <Properties>162</Properties>
+    <Electors>295</Electors>
+    <Priority>H</Priority>
+    <Priority_Rank>35</Priority_Rank>
+    <County_Division>LCN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="CHD" Sub_Group="CHD_N" Group_code="CHD_N3">
+    <Principal_Road>Pauls Walk</Principal_Road>
+    <Properties>269</Properties>
+    <Electors>472</Electors>
+    <Priority>L</Priority>
+    <Priority_Rank>175</Priority_Rank>
+    <County_Division>LCN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="CHD" Sub_Group="CHD_N" Group_code="CHD_N4">
+    <Principal_Road>Windwill Lane</Principal_Road>
+    <Properties>201</Properties>
+    <Electors>377</Electors>
+    <Priority>L</Priority>
+    <Priority_Rank>173</Priority_Rank>
+    <County_Division>LCN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="CHD" Sub_Group="CHD_S" Group_code="CHD_S1">
+    <Principal_Road>Charters</Principal_Road>
+    <Properties>94</Properties>
+    <Electors>193</Electors>
+    <Priority>L</Priority>
+    <Priority_Rank>184</Priority_Rank>
+    <County_Division>LCN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="CHD" Sub_Group="CHD_S" Group_code="CHD_S2">
+    <Principal_Road>Gaia Lane</Principal_Road>
+    <Properties>107</Properties>
+    <Electors>206</Electors>
+    <Priority>M</Priority>
+    <Priority_Rank>136</Priority_Rank>
+    <County_Division>LCN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="CHD" Sub_Group="CHD_S" Group_code="CHD_S3">
+    <Principal_Road>Anson Ave</Principal_Road>
+    <Properties>119</Properties>
+    <Electors>202</Electors>
+    <Priority>M</Priority>
+    <Priority_Rank>133</Priority_Rank>
+    <County_Division>LCN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="CHD" Sub_Group="CHD_S" Group_code="CHD_S4">
+    <Principal_Road>Beacon St</Principal_Road>
+    <Properties>116</Properties>
+    <Electors>203</Electors>
+    <Priority>M</Priority>
+    <Priority_Rank>111</Priority_Rank>
+    <County_Division>LCN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="CUR" Sub_Group="CUR_C" Group_code="CUR_C1">
+    <Principal_Road>Curborough</Principal_Road>
+    <Properties>171</Properties>
+    <Electors>347</Electors>
+    <Priority>M</Priority>
+    <Priority_Rank>88</Priority_Rank>
+    <County_Division>LCN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="CUR" Sub_Group="CUR_C" Group_code="CUR_C2">
+    <Principal_Road>Meadowbrook</Principal_Road>
+    <Properties>194</Properties>
+    <Electors>353</Electors>
+    <Priority>H</Priority>
+    <Priority_Rank>67</Priority_Rank>
+    <County_Division>LCN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="CUR" Sub_Group="CUR_C" Group_code="CUR_C3">
+    <Principal_Road>Fallowfield</Principal_Road>
+    <Properties>118</Properties>
+    <Electors>176</Electors>
+    <Priority>L</Priority>
+    <Priority_Rank>160</Priority_Rank>
+    <County_Division>LCN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="CUR" Sub_Group="CUR_E" Group_code="CUR_E1">
+    <Principal_Road>Giles</Principal_Road>
+    <Properties>132</Properties>
+    <Electors>237</Electors>
+    <Priority>M</Priority>
+    <Priority_Rank>116</Priority_Rank>
+    <County_Division>LCN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="CUR" Sub_Group="CUR_E" Group_code="CUR_E2">
+    <Principal_Road>Field</Principal_Road>
+    <Properties>170</Properties>
+    <Electors>330</Electors>
+    <Priority>H</Priority>
+    <Priority_Rank>66</Priority_Rank>
+    <County_Division>LCN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="CUR" Sub_Group="CUR_E" Group_code="CUR_E3">
+    <Principal_Road>David Garrick Gardens</Principal_Road>
+    <Properties>153</Properties>
+    <Electors>226</Electors>
+    <Priority>M</Priority>
+    <Priority_Rank>134</Priority_Rank>
+    <County_Division>LCN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="CUR" Sub_Group="CUR_E" Group_code="CUR_E4">
+    <Principal_Road>Dimbles Lane</Principal_Road>
+    <Properties>158</Properties>
+    <Electors>281</Electors>
+    <Priority>M</Priority>
+    <Priority_Rank>128.5</Priority_Rank>
+    <County_Division>LCN</County_Division>
+    <Note>"+chadsmead?"</Note>
+  </RoadGroup>
+  <RoadGroup District_Ward="CUR" Sub_Group="CUR_N" Group_code="CUR_N1">
+    <Principal_Road>Norwich</Principal_Road>
+    <Properties>149</Properties>
+    <Electors>306</Electors>
+    <Priority>M</Priority>
+    <Priority_Rank>95</Priority_Rank>
+    <County_Division>LCN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="CUR" Sub_Group="CUR_N" Group_code="CUR_N2">
+    <Principal_Road>Lincoln</Principal_Road>
+    <Properties>181</Properties>
+    <Electors>322</Electors>
+    <Priority>H</Priority>
+    <Priority_Rank>21</Priority_Rank>
+    <County_Division>LCN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="CUR" Sub_Group="CUR_N" Group_code="CUR_N3">
+    <Principal_Road>Saxon Gate</Principal_Road>
+    <Properties>181</Properties>
+    <Electors>322</Electors>
+    <Priority>?</Priority>
+    <Priority_Rank>?</Priority_Rank>
+  </RoadGroup>
+  <RoadGroup District_Ward="CUR" Sub_Group="CUR_S" Group_code="CUR_S1">
+    <Principal_Road>Leyfields</Principal_Road>
+    <Properties>112</Properties>
+    <Electors>205</Electors>
+    <Priority>M</Priority>
+    <Priority_Rank>141</Priority_Rank>
+    <County_Division>LCN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="CUR" Sub_Group="CUR_S" Group_code="CUR_S2">
+    <Principal_Road>Ponesfield</Principal_Road>
+    <Properties>174</Properties>
+    <Electors>363</Electors>
+    <Priority>L</Priority>
+    <Priority_Rank>183</Priority_Rank>
+    <County_Division>LCN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="CUR" Sub_Group="CUR_S" Group_code="CUR_S3">
+    <Principal_Road>Oakley</Principal_Road>
+    <Properties>159</Properties>
+    <Electors>267</Electors>
+    <Priority>L</Priority>
+    <Priority_Rank>147</Priority_Rank>
+    <County_Division>LCN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="LEO" Sub_Group="LEO_C" Group_code="LEO_C1">
+    <Principal_Road>Walsall Rd</Principal_Road>
+    <Properties>226</Properties>
+    <Electors>444</Electors>
+    <Priority>M</Priority>
+    <Priority_Rank>98</Priority_Rank>
+    <County_Division>LCS</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="LEO" Sub_Group="LEO_C" Group_code="LEO_C2">
+    <Principal_Road>Christchurch Ln</Principal_Road>
+    <Properties>249</Properties>
+    <Electors>459</Electors>
+    <Priority>M</Priority>
+    <Priority_Rank>76</Priority_Rank>
+    <County_Division>LCS</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="LEO" Sub_Group="LEO_C" Group_code="LEO_C3">
+    <Principal_Road>Walnut Walk</Principal_Road>
+    <Properties>181</Properties>
+    <Electors>368</Electors>
+    <Priority>M</Priority>
+    <Priority_Rank>101</Priority_Rank>
+    <County_Division>LCS</County_Division>
+    <kml>maps/LEO_C3.kml</kml>
+    <bounds minlat="52.675390" minlon="-1.848800" maxlat="52.677910" maxlon="-1.842450" />
+  </RoadGroup>
+  <RoadGroup District_Ward="LEO" Sub_Group="LEO_C" Group_code="LEO_C4">
+    <Principal_Road>Whithouse Dr</Principal_Road>
+    <Properties>163</Properties>
+    <Electors>296</Electors>
+    <Priority>H</Priority>
+    <Priority_Rank>9</Priority_Rank>
+    <County_Division>LCS</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="LEO" Sub_Group="LEO_C" Group_code="LEO_C5">
+    <Principal_Road>Blakeman Way</Principal_Road>
+    <Properties>132</Properties>
+    <Electors>264</Electors>
+    <Priority>H</Priority>
+    <Priority_Rank>20</Priority_Rank>
+    <County_Division>LCS</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="LEO" Sub_Group="LEO_C" Group_code="LEO_C6">
+    <Principal_Road>St Foy Ave</Principal_Road>
+    <Properties>126</Properties>
+    <Electors>204</Electors>
+    <Priority>H</Priority>
+    <Priority_Rank>1</Priority_Rank>
+    <County_Division>LCS</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="LEO" Sub_Group="LEO_C" Group_code="LEO_C7">
+    <Principal_Road>Deykin Rd (part)</Principal_Road>
+    <Properties>176</Properties>
+    <Electors>311</Electors>
+    <Priority>H</Priority>
+    <Priority_Rank>3</Priority_Rank>
+    <County_Division>LCS</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="LEO" Sub_Group="LEO_C" Group_code="LEO_C8">
+    <Principal_Road>Sandfield Meadow</Principal_Road>
+    <Properties>188</Properties>
+    <Electors>342</Electors>
+    <Priority>H</Priority>
+    <Priority_Rank>8</Priority_Rank>
+    <County_Division>LCS</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="LEO" Sub_Group="LEO_C" Group_code="LEO_C9">
+    <Principal_Road>Lawrence Way</Principal_Road>
+    <Properties>103</Properties>
+    <Electors>231</Electors>
+    <Priority>M</Priority>
+    <Priority_Rank>91</Priority_Rank>
+    <County_Division>LCS</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="LEO" Sub_Group="LEO_N" Group_code="LEO_N1">
+    <Principal_Road>Beacon St</Principal_Road>
+    <Properties>168</Properties>
+    <Electors>287</Electors>
+    <Priority>M</Priority>
+    <Priority_Rank>82</Priority_Rank>
+    <County_Division>LCS</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="LEO" Sub_Group="LEO_N" Group_code="LEO_N2">
+    <Principal_Road>Harrington Walk</Principal_Road>
+    <Properties>212</Properties>
+    <Electors>393</Electors>
+    <Priority>M</Priority>
+    <Priority_Rank>93</Priority_Rank>
+    <County_Division>LCS</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="LEO" Sub_Group="LEO_N" Group_code="LEO_N3">
+    <Principal_Road>Parkside Ct</Principal_Road>
+    <Properties>106</Properties>
+    <Electors>159</Electors>
+    <Priority>M</Priority>
+    <Priority_Rank>84</Priority_Rank>
+    <County_Division>LCS</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="LEO" Sub_Group="LEO_N" Group_code="LEO_N4">
+    <Principal_Road>Mary Slater</Principal_Road>
+    <Properties>90</Properties>
+    <Electors>172</Electors>
+    <Priority>H</Priority>
+    <Priority_Rank>69</Priority_Rank>
+    <County_Division>LCS</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="LEO" Sub_Group="LEO_N" Group_code="LEO_N5">
+    <Principal_Road>Ferndale Rd</Principal_Road>
+    <Properties>201</Properties>
+    <Electors>380</Electors>
+    <Priority>M</Priority>
+    <Priority_Rank>110</Priority_Rank>
+    <County_Division>LCS</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="LEO" Sub_Group="LEO_W" Group_code="LEO_W1">
+    <Principal_Road>Bham Rd (part)</Principal_Road>
+    <Properties>197</Properties>
+    <Electors>315</Electors>
+    <Priority>M</Priority>
+    <Priority_Rank>74</Priority_Rank>
+    <County_Division>LCS</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="LEO" Sub_Group="LEO_W" Group_code="LEO_W2">
+    <Principal_Road>Swan Rd</Principal_Road>
+    <Properties>186</Properties>
+    <Electors>261</Electors>
+    <Priority>H</Priority>
+    <Priority_Rank>6</Priority_Rank>
+    <County_Division>LCS</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="LEO" Sub_Group="LEO_W" Group_code="LEO_W3">
+    <Principal_Road>Lower Sandford St</Principal_Road>
+    <Properties>237</Properties>
+    <Electors>310</Electors>
+    <Priority>M</Priority>
+    <Priority_Rank>105</Priority_Rank>
+    <County_Division>LCS</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="STJ" Sub_Group="STJ_C" Group_code="STJ_C1">
+    <Principal_Road>Scott Close</Principal_Road>
+    <Properties>155</Properties>
+    <Electors>274</Electors>
+    <Priority>M</Priority>
+    <Priority_Rank>124</Priority_Rank>
+    <County_Division>LCS</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="STJ" Sub_Group="STJ_C" Group_code="STJ_C2">
+    <Principal_Road>Chapel Lane</Principal_Road>
+    <Properties>126</Properties>
+    <Electors>226</Electors>
+    <Priority>M</Priority>
+    <Priority_Rank>114</Priority_Rank>
+    <County_Division>LCS</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="STJ" Sub_Group="STJ_C" Group_code="STJ_C3">
+    <Principal_Road>Dovehouse Fields</Principal_Road>
+    <Properties>102</Properties>
+    <Electors>196</Electors>
+    <Priority>M</Priority>
+    <Priority_Rank>100</Priority_Rank>
+    <County_Division>LCS</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="STJ" Sub_Group="STJ_C" Group_code="STJ_C4">
+    <Principal_Road>Trafalgar Way</Principal_Road>
+    <Properties>163</Properties>
+    <Electors>291</Electors>
+    <Priority>H</Priority>
+    <Priority_Rank>4</Priority_Rank>
+    <County_Division>LCS</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="STJ" Sub_Group="STJ_C" Group_code="STJ_C5">
+    <Principal_Road>Shortbutts Lane</Principal_Road>
+    <Properties>183</Properties>
+    <Electors>352</Electors>
+    <Priority>M</Priority>
+    <Priority_Rank>85</Priority_Rank>
+    <County_Division>LCS</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="STJ" Sub_Group="STJ_C" Group_code="STJ_C6">
+    <Principal_Road>Bham Rd</Principal_Road>
+    <Properties>121</Properties>
+    <Electors>213</Electors>
+    <Priority>H</Priority>
+    <Priority_Rank>7</Priority_Rank>
+    <County_Division>LCS</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="STJ" Sub_Group="STJ_E" Group_code="STJ_E1">
+    <Principal_Road>Upper St John St</Principal_Road>
+    <Properties>133</Properties>
+    <Electors>216</Electors>
+    <Priority>H</Priority>
+    <Priority_Rank>40</Priority_Rank>
+    <County_Division>LCS</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="STJ" Sub_Group="STJ_E" Group_code="STJ_E2">
+    <Principal_Road>Cherry Orchard</Principal_Road>
+    <Properties>210</Properties>
+    <Electors>395</Electors>
+    <Priority>H</Priority>
+    <Priority_Rank>5</Priority_Rank>
+    <County_Division>LCS</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="STJ" Sub_Group="STJ_E" Group_code="STJ_E3">
+    <Principal_Road>Beech Gds</Principal_Road>
+    <Properties>202</Properties>
+    <Electors>388</Electors>
+    <Priority>M</Priority>
+    <Priority_Rank>109</Priority_Rank>
+    <County_Division>LCS</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="STJ" Sub_Group="STJ_E" Group_code="STJ_E4">
+    <Principal_Road>Tamworth Road</Principal_Road>
+    <Properties>105</Properties>
+    <Electors>183</Electors>
+    <Priority>M</Priority>
+    <Priority_Rank>77</Priority_Rank>
+    <County_Division>LCS</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="STJ" Sub_Group="STJ_E" Group_code="STJ_E5">
+    <Principal_Road>Borrowcop</Principal_Road>
+    <Properties>161</Properties>
+    <Electors>349</Electors>
+    <Priority>L</Priority>
+    <Priority_Rank>167</Priority_Rank>
+    <County_Division>LCS</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="STJ" Sub_Group="STJ_E" Group_code="STJ_E6">
+    <Principal_Road>Wentworth Dr</Principal_Road>
+    <Properties>144</Properties>
+    <Electors>302</Electors>
+    <Priority>L</Priority>
+    <Priority_Rank>170</Priority_Rank>
+    <County_Division>LCS</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="STJ" Sub_Group="STJ_E" Group_code="STJ_E7">
+    <Principal_Road>Manor Rise</Principal_Road>
+    <Properties>107</Properties>
+    <Electors>228</Electors>
+    <Priority>L</Priority>
+    <Priority_Rank>146</Priority_Rank>
+    <County_Division>LCS</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="STJ" Sub_Group="STJ_E" Group_code="STJ_E8">
+    <Principal_Road>Longbridge</Principal_Road>
+    <Properties>148</Properties>
+    <Electors>305</Electors>
+    <Priority>L</Priority>
+    <Priority_Rank>166</Priority_Rank>
+    <County_Division>LCS</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="STJ" Sub_Group="STJ_W" Group_code="STJ_W1">
+    <Principal_Road>Chesterfield Rd</Principal_Road>
+    <Properties>164</Properties>
+    <Electors>323</Electors>
+    <Priority>H</Priority>
+    <Priority_Rank>68</Priority_Rank>
+    <County_Division>LCS</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="STJ" Sub_Group="STJ_W" Group_code="STJ_W2">
+    <Principal_Road>Agincourt</Principal_Road>
+    <Properties>207</Properties>
+    <Electors>389</Electors>
+    <Priority>H</Priority>
+    <Priority_Rank>11</Priority_Rank>
+    <County_Division>LCS</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="STW" Sub_Group="STW_C" Group_code="STW_C1">
+    <Principal_Road>Stowe St</Principal_Road>
+    <Properties>140</Properties>
+    <Electors>209</Electors>
+    <Priority>M</Priority>
+    <Priority_Rank>132</Priority_Rank>
+    <County_Division>LCN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="STW" Sub_Group="STW_C" Group_code="STW_C2">
+    <Principal_Road>St Michael Road</Principal_Road>
+    <Properties>149</Properties>
+    <Electors>263</Electors>
+    <Priority>M</Priority>
+    <Priority_Rank>94</Priority_Rank>
+    <County_Division>LCN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="STW" Sub_Group="STW_C" Group_code="STW_C3">
+    <Principal_Road>Wissage Rd (inc Beechfield and Darwin)</Principal_Road>
+    <Properties>100</Properties>
+    <Electors>292</Electors>
+    <Priority>H</Priority>
+    <Priority_Rank>64.5</Priority_Rank>
+    <County_Division>LRN</County_Division>
+    <Note>"+Lichfield City North"</Note>
+  </RoadGroup>
+  <RoadGroup District_Ward="STW" Sub_Group="STW_E" Group_code="STW_E1">
+    <Principal_Road>trent valley road</Principal_Road>
+    <Properties>189</Properties>
+    <Electors>352</Electors>
+    <Priority>H</Priority>
+    <Priority_Rank>30.5</Priority_Rank>
+    <County_Division>LCN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="STW" Sub_Group="STW_E" Group_code="STW_E2">
+    <Principal_Road>Rocklands Cres</Principal_Road>
+    <Properties>140</Properties>
+    <Electors>253</Electors>
+    <Priority>M</Priority>
+    <Priority_Rank>127</Priority_Rank>
+    <County_Division>LCN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="STW" Sub_Group="STW_E" Group_code="STW_E3">
+    <Principal_Road>Valley Lane</Principal_Road>
+    <Properties>145</Properties>
+    <Electors>257</Electors>
+    <Priority>M</Priority>
+    <Priority_Rank>103</Priority_Rank>
+    <County_Division>LCN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="STW" Sub_Group="STW_E" Group_code="STW_E4">
+    <Principal_Road>Hobs Road</Principal_Road>
+    <Properties>154</Properties>
+    <Electors>229</Electors>
+    <Priority>H</Priority>
+    <Priority_Rank>52</Priority_Rank>
+    <County_Division>LCN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="STW" Sub_Group="STW_E" Group_code="STW_E5">
+    <Principal_Road>Scotch Orchard</Principal_Road>
+    <Properties>138</Properties>
+    <Electors>271</Electors>
+    <Priority>M</Priority>
+    <Priority_Rank>104</Priority_Rank>
+    <County_Division>LCN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="STW" Sub_Group="STW_E" Group_code="STW_E6">
+    <Principal_Road>Eastern Ave</Principal_Road>
+    <Properties>110</Properties>
+    <Electors>211</Electors>
+    <Priority>H</Priority>
+    <Priority_Rank>59</Priority_Rank>
+    <County_Division>LCN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="STW" Sub_Group="STW_N" Group_code="STW_N1">
+    <Principal_Road>Gilbert Road</Principal_Road>
+    <Properties>205</Properties>
+    <Electors>352</Electors>
+    <Priority>L</Priority>
+    <Priority_Rank>145</Priority_Rank>
+    <County_Division>LCN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="STW" Sub_Group="STW_N" Group_code="STW_N2">
+    <Principal_Road>Chadswell Heights</Principal_Road>
+    <Properties>141</Properties>
+    <Electors>261</Electors>
+    <Priority>H</Priority>
+    <Priority_Rank>43</Priority_Rank>
+    <County_Division>LCN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="STW" Sub_Group="STW_N" Group_code="STW_N3">
+    <Principal_Road>York Close</Principal_Road>
+    <Properties>132</Properties>
+    <Electors>254</Electors>
+    <Priority>M</Priority>
+    <Priority_Rank>75</Priority_Rank>
+    <County_Division>LCN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="STW" Sub_Group="STW_N" Group_code="STW_N4">
+    <Principal_Road>Fecknam Way</Principal_Road>
+    <Properties>168</Properties>
+    <Electors>313</Electors>
+    <Priority>L</Priority>
+    <Priority_Rank>165</Priority_Rank>
+    <County_Division>LCN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="STW" Sub_Group="STW_S" Group_code="STW_S1">
+    <Principal_Road>Maxwell Close</Principal_Road>
+    <Properties>139</Properties>
+    <Electors>230</Electors>
+    <Priority>H</Priority>
+    <Priority_Rank>49.5</Priority_Rank>
+    <County_Division>LCN</County_Division>
+    <Note>"+Lichfield Rural North"</Note>
+  </RoadGroup>
+  <RoadGroup District_Ward="STW" Sub_Group="STW_S" Group_code="STW_S2">
+    <Principal_Road>Maryvale Court</Principal_Road>
+    <Properties>121</Properties>
+    <Electors>205</Electors>
+    <Priority>L</Priority>
+    <Priority_Rank>155</Priority_Rank>
+    <County_Division>LRN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="STW" Sub_Group="STW_S" Group_code="STW_S3">
+    <Principal_Road>BORW</Principal_Road>
+    <Properties>188</Properties>
+    <Electors>381</Electors>
+    <Priority>M</Priority>
+    <Priority_Rank>79</Priority_Rank>
+    <County_Division>LRN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="STW" Sub_Group="STW_W" Group_code="STW_W1">
+    <Principal_Road>Close</Principal_Road>
+    <Properties>114</Properties>
+    <Electors>177</Electors>
+    <Priority>H</Priority>
+    <Priority_Rank>32</Priority_Rank>
+    <County_Division>LCN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="STW" Sub_Group="STW_W" Group_code="STW_W2">
+    <Principal_Road>Bird St</Principal_Road>
+    <Properties>244</Properties>
+    <Electors>338</Electors>
+    <Priority>H</Priority>
+    <Priority_Rank>10</Priority_Rank>
+    <County_Division>LCN</County_Division>
+  </RoadGroup>
+  <RoadGroup District_Ward="STW" Sub_Group="STW_W" Group_code="STW_W3">
+    <Principal_Road>Wade Street</Principal_Road>
+    <Properties>130</Properties>
+    <Electors>166</Electors>
+    <Priority>H</Priority>
+    <Priority_Rank>12</Priority_Rank>
+    <County_Division>LCN</County_Division>
+  </RoadGroup>
+</roadgroups>
+
