@@ -1,4 +1,4 @@
 # RoadGroups
-Road Groups for deliverers of elctoral campaign litterature.
+Road Groups for deliverers of electoral campaign literature.
 
-A javascript application, with data in xml files andmaps in kml files  to produce flyers for leaflet delivers with list of streets and maps.
+A javascript application, with data in xml files and maps in kml files to produce instructions for leaflet deliverers with list of streets and maps.
