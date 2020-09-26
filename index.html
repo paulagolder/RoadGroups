@@ -25,7 +25,6 @@ crossorigin=""></script>
 <script src='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js'></script>
 <script src="https://unpkg.com/dom-to-image@2.6.0/dist/dom-to-image.min.js"></script>
 
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-plugins/3.3.2/layer/vector/KML.min.js" integrity="sha512-BkMHAeZ+A9vo6cdCwvFXXktbCkkuoUrPd6JIjWbR5h555Ev/5rUIwb3OcSphQqCk/HLu7KK1e2/2BuO9tMlYxg==" crossorigin="anonymous"></script>
 
 <script>
@@ -163,6 +162,22 @@ $(document).on("pageinit","#ward", function() {
   //alert("ward is bound!");
 
 });
+
+
+$("#wards").on("pageinit", function(e) {
+
+  var rgparam  = getUrlParameter('rg');
+  if(window.RoadGroups.grouplist[rgparam])
+  {
+    window.start = false;
+    window.roadgroupid=rgparam;
+    changeMypage("roadgroup", rgparam);
+  }
+  else
+     alert("not found="+rgparam);
+  //query is now an ID, do stuff with it...
+});
+
 
 $('#wards').on( "pageinit", function( event, data ){
   // alert("wards is pageinit!");
