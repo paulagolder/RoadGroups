@@ -116,6 +116,8 @@ div.list div.row
 }
 
 
+
+
 div.scrollpanel
 {
   height: calc(100% - 400px);
@@ -140,8 +142,8 @@ div.page-footer
 
 div.map-content
 {
-  height: 100%;
-  max-width: 600px;
+  xheight: 100%;
+  xwidth: 100%;
   padding: 0px;
   xmargin:0px;
   z-index: -1;
@@ -161,6 +163,7 @@ div.leaflet-control-container
 }
 
 
+
 /* search  panel styles======================================================= */
 
 
@@ -174,6 +177,15 @@ div.leaflet-control-container
   padding-left: 20px;
 }
 
+
+
+#searchpanel p.label
+{
+  font-size: 0.8em;
+  padding-top: 12px;
+  padding-bottom: 7px;
+}
+
 #searchpanel a
 {
   color:#F5E89F;
@@ -185,30 +197,13 @@ div.leaflet-control-container
 {
   color:green;
   background-color: #F6F1BD;
-  float: left;
+  xfloat: left;
   border: 1px solid yellow;
-  display: block;
+  xdisplay: block;
+  width: 8em;
+  height: 3em;
 }
 
-
-
-#xsearchcontent div.iscroll-scroller div.iscroll-content
-{
-  padding: 15px 0px 1px;
-  border:2px none blue ;
-
-}
-
-#xsearchcontent div.iscroll-scroller div.iscroll-top-spacer
-{
-  height: 15px;
-}
-
-#searchcontent
-{
-  background-color: #FFF9D8;
-  padding: 1px;
-}
 
 /* #wards panel styles======================================================= */
 
@@ -233,8 +228,6 @@ div#wardspanel
 }
 
 
-
-
 div#wardspanel div.wards
 {
   display: flex;
@@ -254,11 +247,15 @@ div#wardspanel div.wards div.row  div:first-child
 {
   xwidth: 4em;
 }
+
+div#mapdiv
+{
+  xmax-width : 105mm;
+  height: 400px;
+}
+
+
 /* #ward styles======================================================= */
-
-
-
-
 
 
 #ward
@@ -293,7 +290,11 @@ div#ward div.list div.row
   width : 14em;
 }
 
-
+div#wardmapdiv
+{
+  xmax-width : 105mm;
+  height: 400px;
+}
 
 /* #subward styles======================================================= */
 
@@ -302,36 +303,6 @@ div#ward div.list div.row
   background-color:  #F5E89F;
 }
 
-#xxsubwardpanel
-{
-  xbackground-color:  #F5E89F;
-  xbackground-color: #F5E89F;
-}
-
-#xxsubwardpanel div div.row
-{
-  display: flex;
-}
-
-
-
-#xxsubwardpanel  div#subwardsscroll.scrollpanel table tbody tr.row td.greenrow
-{
-
-  background: #b9e8b9;
-}
-
-#xxsubwardpanel  div.scrollpanel ul div
-{
-  margin-top: 1em;
-}
-
-#xxsubwardpanel  div.scrollpanel
-{
-  margin-top: 1em;
-  height: 300px;
-  overflow-y: scroll;
-}
 
 div#subward div.list
 {
@@ -346,7 +317,16 @@ div#subward div.list div.row
   width : 14em;
 }
 
+div#subward div  div.list div.row div
+{
+  white-space: nowrap;
+}
 
+div#subwardmapdiv
+{
+  xmax-width : 105mm;
+  height: 400px;
+}
 
 /* roadgrouppage styles=========================================*/
 
@@ -364,9 +344,9 @@ div#roadgroup div.heading
 
 div#roadgrouppage
 {
-  background :#FFF9D8;
+ // background :#FFF9D8;
  // width : 105mm;
-  height: 148mm;
+  //height: 148mm;
 }
 
 #roadgroup div div.streetlist
@@ -383,15 +363,32 @@ div#roadgrouppage
   flex: 1 1 15em;
 }
 
-div#roadgroupmapdiv
-{
-  max-width : 105mm;
+
+div#roadgroupmapdiv {
+  max-width: 100%;
   height: 74mm;
 }
 
 
 @media only screen and (min-width: 768px)
 {
+
+  div.page-header h1
+  {
+    font-size:1.5em;
+  }
+
+  div.heading
+  {
+    font-size:0.5em;
+  }
+
+  div.page-content.ui-content
+  {
+    padding: 0.5em;
+  }
+
+
 
   div.map-content {
     height: 100%;
@@ -403,20 +400,70 @@ div#roadgroupmapdiv
     margin-right: auto;
   }
 
+
+
+
+  div#searchpanel p.label
+  {
+    font-size: 1.5em;
+    xpadding-top: 2px;
+    xpadding-bottom: 4px;
+    xheight: 1em;
+    margin: 10px;
+
+    background-color: #F5E89F;
+    border: 0px solid #F6F1BD;
+  }
+
+  div#searchpanel div.ui-input-text
+  {
+    xfont-size: 1.5em;
+    xwidth: 23em;
+    xcolor: red;
+    background-color: #fff;
+    border: 1 none #ddd;
+    color: #333;
+    text-shadow: 0 1px 0 #f3f3f3;
+  }
+
+  #searchpanel input
+  {
+    font-size: 1.5em;
+    width: 15em;
+    height: 0em;
+    padding-left: 4px;
+    margin-top: 4px;
+    background-color: #F6F1BD;
+    border: 1px solid #F6F1BD;
+  }
+
+
+  /*====================== wardsstyles ===================*/
+
   #wards div.page-header  h1
   {
     font-size: 1.5em;
   }
 
+
+
    div#wardspanel.scrollpanel div.wards
    {
-     font-size:1.5em;
+     font-size: 1.5em;
+   }
+
+   div#mapdiv
+   {
+     max-width: 100%;
+     height: 140mm;;
    }
 
 
+   /*====================== wardstyles ===================*/
+
    div#ward div.page-header h1
    {
-     font-size:1.5em;
+     font-size: 1.5em;
   }
 
   div#ward div.heading
@@ -434,6 +481,15 @@ div#roadgroupmapdiv
   {
     width: 15em;
   }
+
+  div#wardmapdiv
+  {
+    max-width: 100%;
+    height: 140mm;
+  }
+
+  /*====================== subwardstyles ===================*/
+
 
   div#subward div.page-header h1
   {
@@ -456,6 +512,29 @@ div#roadgroupmapdiv
     width: 20em;
   }
 
+  div#subwardmapdiv
+  {
+    max-width: 100%;
+    height: 140mm;
+  }
+
+/*====================== roadgroupstyles ===================*/
+
+
+
+
+  div#roadgroup div.page-header h1
+  {
+    font-size:1.5em;
+  }
+
+  div#roadgroup
+  {
+    xbackground :#FFF9D8;
+    width : 100%;
+  }
+
+
   div#roadgroup div.heading
   {
 
@@ -469,20 +548,15 @@ div#roadgroupmapdiv
     flex: 1 1 15em;
   }
 
+
+
+
   div#roadgroupmapdiv {
     max-width: 100%;
     height: 140mm;
   }
 
-  div#roadgroupmapdiv div.map-content {
-    height: 100%;
-    max-width: 100%;
-    padding: 0px;
-    xmargin: 0px;
-    z-index: -1;
-    margin-left: auto;
-    margin-right: auto;
-  }
+
 
 
    div.page-footer
@@ -502,26 +576,6 @@ div#roadgroupmapdiv
 
 
 
-   div#roadgroup
-   {
-    xbackground :#FFF9D8;
-     width : 100%;
-   }
-
-   div.mapcontent
-   {
-     max-width:780px;
-  }
-
-  div.heading
-  {
-    font-size:0.5em;
-  }
-
-  div.page-content.ui-content
-  {
-    padding: 0.5em;
-  }
 
 
 }
@@ -531,39 +585,6 @@ div#roadgroupmapdiv
 {
 
 
-  div.page-footer a.button.desktop
-  {
-    display:none;
-  }
-
-
-
-  div.page-footer p a.button
-  {
-    fontsize:1em;
-  }
-
-  div#roadgroup
-  {
-    xbackground :#FFF9D8;
-    xwidth : 105mm;
-  }
-
-  div.mapcontent
-  {
-    xmax-width:780px;
-  }
-
-
-  div.heading
-  {
-    font-size:0.5em;
-  }
-
-  div.page-content.ui-content
-  {
-  padding: 0.2em;
-  }
 
   @media screen and (orientation: landscape)
   {

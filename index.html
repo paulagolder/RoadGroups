@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html   >
+<html>
 
 <head>
 <meta charset="utf-8"></meta>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"></meta>
 <meta name="apple-mobile-web-app-capable" content="yes" ></meta>
 <title>Lichfield - Road Groups</title>
-<base href="RoadGroups">
+<base href="RoadGroups"/>
 
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script  src="js/districtward.js"></script>
@@ -68,18 +68,18 @@ window.colors[11]="#00FFFF88";
 <div class="page-header" data-role="header" data-position="fixed" >
 <h1>Wards</h1>
 </div>
-<div id="searchpanel" data-role="content">
-<input type="text" name="selector" id="searchfield" value="" data-inline="true"  onchange="doSearch()" />
+<div id="searchpanel" xdata-role="content">
+<p class="label">Search for Street:</p>
+<input type="text" name="selector" id="searchfield" value="" data-inline="true"   />
 <a href="#" data-role="button" data-icon="check" data-iconpos="notext" data-theme="e" data-inline="true" onclick="doSearch()" >Check</a>
 <a href="#" data-role="button" data-icon="delete" data-iconpos="notext" data-theme="e" data-inline="true" onclick="clearSearch()">Delete</a>
-<div style="clear: both;"></div>
 </div>
 <div id="wardspanel" class="scrollpanel" style="overflow-y: scroll; " ></div>
 <div class="map-content" data-role="content">
-<div id='mapdiv'  style='height:400px;' ></div>
+<div id='mapdiv'  style='xheight:400px;' ></div>
 </div>
 
-<div  class="page-footer" data-role="footer" class="bstyle" data-theme="d" data-position="fixed" data-mini="true" >
+<div  class="page-footer bstyle" data-role="footer"  data-theme="d" data-position="fixed" data-mini="true" >
 <p>
 <a href="#ward"  class="button" data-role="button" data-inline="true" data-mini="true">Ward</a>
 <a href="#subward"  class="button" data-role="button" data-inline="true" data-mini="true">Sub-Wards</a>
@@ -98,7 +98,7 @@ window.colors[11]="#00FFFF88";
 <div  id="wardpanel" ></div>
 
 <div class="map-content" data-role="content">
-<div id='wardmapdiv'  style='height:400px;' ></div>
+<div id='wardmapdiv'  style='xheight:400px;' ></div>
 </div>
 </div>
 <div  class="page-footer bstyle" data-role="footer"  data-theme="d" data-position="fixed" data-mini="true" >
@@ -120,9 +120,9 @@ window.colors[11]="#00FFFF88";
 <div  id="subwardpanel">  </div>
 </div>
 <div class="map-content" data-role="content">
-<div id='subwardmapdiv'  style='height:400px;' ></div>
+<div id='subwardmapdiv'  style='height:x400px;' ></div>
 </div>
-<div  class="page-footer" data-role="footer" class="bstyle" data-theme="d" data-position="fixed" data-mini="true" >
+<div  class="page-footer bstyle" data-role="footer"  data-theme="d" data-position="fixed" data-mini="true" >
 <p>
 <a href="#wards"  class="button" data-role="button" data-inline="true" data-mini="true">Wards</a>
 <a href="#ward"  class="button" data-role="button" data-inline="true" data-mini="true">Ward</a>
@@ -143,13 +143,13 @@ window.colors[11]="#00FFFF88";
 <div class="map-content" data-role="content">
 <div id='roadgroupmapdiv'></div>
 </div>
-<div>
-<div class="page-footer" data-role="footer" class="bstyle" data-theme="d" data-position="fixed" data-mini="true" >
+</div>
+<div class="page-footer bstyle" data-role="footer"  data-theme="d" data-position="fixed" data-mini="true" >
 <a href="#wards"  class="button" data-role="button" data-inline="true" data-mini="true">Wards</a>
 <a href="#ward"  class="button" data-role="button" data-inline="true" data-mini="true">Ward</a>
 <a href="#subward"  class="button" data-role="button" data-inline="true" data-mini="true">Sub-Wards</a>
-<button class="button  desktop" type="xxbutton" onclick="savePNG()">Print</button>
-<a href="http://www.bikehike.co.uk/mapview.php"  class="button desktop" data-role="button" data-inline="true" data-mini="true"  target="_blank" >make track</a>
+<button class="button  desktop" type="xxbutton" onclick="savePNG()">Save Image</button>
+
 
 </div>
 <!-- /footer -->
@@ -173,9 +173,9 @@ $("#wards").on("pageinit", function(e) {
     window.roadgroupid=rgparam;
     changeMypage("roadgroup", rgparam);
   }
-  else
-     alert("not found="+rgparam);
-  //query is now an ID, do stuff with it...
+ // window.history.pushState({}, document.title, window.location.pathname);
+
+  //no param so nothing to do
 });
 
 
@@ -205,8 +205,19 @@ $(document).on("pageshow","#wards", function() {
   if( CheckUrl("maps/LCC.kml"))
   {
     mymappera(mymapwards,52.6854, -1.8304,12);
-    //   mymap=mymapper(2.6854, -1.8304, 14);
-    addKML(mymapwards, "maps/LCC.kml");
+    addMyKML(mymapwards, "maps/LCC.kml");
+    if (is_browser_gps_capable()) {
+      $('geo_location').innerHTML = 'Locating device...';
+      watchLocation(function(coords) {
+        var marker = new L.Marker([coords.latitude,  coords.longitude]);
+        marker.addTo(mymapwards);
+        $('geo_location').innerHTML = coords.latitude + ',' + coords.longitude;
+      }, function() {
+        $('geo_location').innerHTML = 'Not supported';
+      });
+    } else {
+      $('geo_location').innerHTML = 'Not supported';
+    }
   }
 
 });
@@ -244,23 +255,20 @@ $(document).on("pageshow","#ward",function() {
     addKML(mymapward,thisward.kml);
   }else
   {
+
     if( CheckUrl("maps/"+wdid+".kml"))
     {
       mymappera(mymapward, 52.6854, -1.8304, 12);
       addKML(mymapward, "maps/"+wdid+".kml");
-    }else if( CheckUrl("maps/LCC.kml"))
-    {
-      mymappera(mymapward,52.6854, -1.8304,12);
-      //   mymap=mymapper(2.6854, -1.8304, 14);
-      addKML(mymapward, "maps/LCC.kml");
-    }
+    }else{
+      if( CheckUrl("maps/LCC.kml"))
+      {
+        mymappera(mymapward,52.6854, -1.8304,12);
+        //   mymap=mymapper(2.6854, -1.8304, 14);
+        addKML(mymapward, "maps/LCC.kml");
+      }}
   }
-  if( CheckUrl("maps/LCC.kml"))
-  {
-    mymappera(mymapward,52.6854, -1.8304,12);
-    //   mymap=mymapper(2.6854, -1.8304, 14);
-    addKML(mymapward, "maps/LCC.kml");
-  }
+
 });
 
 
@@ -349,6 +357,18 @@ $(document).on("pageshow","#roadgroup",function() {
     }else{
       addMyKML(mymaproadgroup, "maps/LCC.kml", "#FF4444DD");
     }
+  }
+  if (is_browser_gps_capable()) {
+    $('geo_location').innerHTML = 'Locating device...';
+    watchLocation(function(coords) {
+      var marker = new L.Marker([coords.latitude,  coords.longitude]);
+      marker.addTo(mymaproadgroup);
+      $('geo_location').innerHTML = coords.latitude + ',' + coords.longitude;
+    }, function() {
+      $('geo_location').innerHTML = 'Not supported';
+    });
+  } else {
+    $('geo_location').innerHTML = 'Not supported';
   }
 
 });

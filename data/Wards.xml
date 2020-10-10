@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <?xml-stylesheet type='text/xsl' href='./stylesheets/summary.xsl' ?>
 <wards>
   <ward District="LDC" Name="Boley Park" WardId="BLY"  >
@@ -24,16 +24,18 @@
     <subward Subwardid = "LEO_C" Name="Central" />
     <subward Subwardid = "LEO_N" Name="North" />
     <subward Subwardid = "LEO_W" Name="West" />
+    <subward Subwardid = "LEO_A" Name="New" />
   </ward>
   <ward District="LDC" Name="St. John's" WardId="STJ"  >
     <subward Subwardid = "STJ_C" Name="Central" />
     <subward Subwardid = "STJ_E" Name="East" />
+    <subward Subwardid = "STJ_W" Name="West" />
     </ward>
   <ward District="LDC" Name="Stowe" WardId="STW"  >
     <subward Subwardid = "STW_C" Name="Central" />
     <subward Subwardid = "STW_E" Name="East" />
     <subward Subwardid = "STW_N" Name="North" />
     <subward Subwardid = "STW_S" Name="South" />
-    <subward Subwardid = "STW_E" Name="West" />
+    <subward Subwardid = "STW_W" Name="West" />
     </ward>
 </wards>

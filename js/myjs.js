@@ -94,8 +94,8 @@ function showroadgroup()
   var subwardid =  roadgroup.SubWard;
   var asubward = award['Subwards'][subwardid];
   var outstring = "<div class='heading' ><div>"+groupid+"</div><div >"+award.Name+"</div><div>"+asubward.Name+"</div></div>";
-   outstring += "<div class='heading' ><div> Households:"+roadgroup.Properties+"</div>";
-   outstring += "<div >Electors:"+roadgroup.Electors+"</div></div>";
+  outstring += "<div class='heading' ><div> Households:"+roadgroup.Properties+"</div>";
+  outstring += "<div >Electors:"+roadgroup.Electors+"</div></div>";
 
   outstring += "<div  class='streetlist' >";
   var streets = window.Streets.streetlist;
@@ -217,7 +217,7 @@ function addMyKML(mymap,kmlfile,color)
   return kmllayer
 }
 
-function getKML(kmlfilename,color="#9e9e9e", afg)
+function xxgetKML(kmlfilename,color="#9e9e9e", afg)
 {
 
   comune = omnivore.kml(kmlfilename,null,afg);
@@ -317,7 +317,8 @@ function doSearch()
   else if (foundlist.length < 1)
   {
     alert(" No Match found: try another street name ");
-  } else if (foundlist.length < 4)
+  }
+  else if (foundlist.length < 8)
   {
     var text = "Too many matches found "+"\n";
     for(var n =0; n<foundlist.length ; n++)
@@ -325,7 +326,8 @@ function doSearch()
       text += foundlist[n].Name +"\n";
     }
     alert(text);
-  }else
+  }
+  else
   {
     alert( "too many matches found" + '\n' +
     " give more detail" + '\n'
@@ -353,3 +355,47 @@ function getUrlParameter(sParam) {
     }
   }
 };
+
+
+function is_browser_gps_capable() {
+  var _locator_object;
+  try {
+    _locator_object = navigator.geolocation;
+  } catch (e) { return false; }
+  if (_locator_object)
+    return true;
+  else
+    return false;
+}
+
+
+
+function watchLocation(successCallback, errorCallback) {
+  successCallback = successCallback || function(){};
+  errorCallback = errorCallback || function(){};
+
+
+  // Try HTML5-spec geolocation.
+  var geolocation = navigator.geolocation;
+
+  if (geolocation) {
+    // We have a real geolocation service.
+    try {
+      function handleSuccess(position) {
+        successCallback(position.coords);
+      }
+
+      geolocation.watchPosition(handleSuccess, errorCallback, {
+        enableHighAccuracy: true,
+        maximumAge: 5000 // 5 sec.
+      });
+    } catch (err) {
+      errorCallback();
+    }
+  } else {
+    errorCallback();
+  }
+
+
+
+}
