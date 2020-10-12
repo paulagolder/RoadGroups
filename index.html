@@ -31,12 +31,13 @@ crossorigin=""></script>
 window.start = true;
 window.District = new District("Lichfield District Council");
 console.log("Wards:"+window.District.name);
-window.Wards = new Wards("data/Wards.xml");
-console.log("Wards:"+Object.keys(window.Wards.wardlist).length);
-window.RoadGroups = new RoadGroups("data/RoadGroups_summary.xml");
-console.log("Groups:"+Object.keys(window.RoadGroups.grouplist).length);
-window.Streets = new Streets("data/Streets_detail.xml");
-console.log("Streets:"+window.Streets.streetlist.length);
+window.Wards = new Wards("maps/lichfielddc.rgml");
+window.Ward = window.Wards[Object.keys(window.Wards)[0]];
+window.Subwards = window.Ward.Subwards;
+window.Subward = window.Subwards[Object.keys(window.Subwards)[0]];
+window.Roadgroups = window.Subward.Roadgroups;
+window.Roadgroup = window.Roadgroups[Object.keys(window.Roadgroups)[0]];
+
 window.mymapwards = null;
 window.mymapward = null;
 window.mymapsubward = null;
@@ -167,7 +168,7 @@ $(document).on("pageinit","#ward", function() {
 $("#wards").on("pageinit", function(e) {
 
   var rgparam  = getUrlParameter('rg');
-  if(window.RoadGroups.grouplist[rgparam])
+  if(window.Wards[rgparam])
   {
     window.start = false;
     window.roadgroupid=rgparam;
@@ -239,7 +240,7 @@ $(document).on("pageshow","#ward",function() {
 
 
   var wdid = window.wardid;
-  var thisward = window.Wards.wardlist[wdid];
+  var thisward = window.Wards[wdid];
 
   if(thisward.kml !== undefined )
   {
@@ -291,25 +292,20 @@ $(document).on("pageshow","#subward",function() {
   var mybounds = L.bounds([0,0],[0,0]);
 
   var wdid = window.wardid;
-  var thisward = window.Wards.wardlist[wdid];
+  var thisward = window.Wards[wdid];
   var subwardid =  window.subwardid;
-  var asubward = thisward['Subwards'][subwardid];
-  var grouplist = window.RoadGroups.grouplist;
+  var asubward = thisward.Subwards[subwardid];
+  var grouplist = asubward.Roadgroups;
   var roadgroupid = window.roadgroupid;
   var c=0;
   for(var index in grouplist)
   {
-    var agroup = grouplist[index];
-    if( agroup.GroupCode.startsWith(subwardid))
-    {
-      var thisroadgroup = window.RoadGroups.grouplist[index];
       if( CheckUrl("maps/"+index +".kml"))
       {
         afg = addMyKML(mymapsubward ,"maps/"+index+".kml",window.colors[c]);
         addBounds(mybounds,afg.getBounds());
       }
       c++;
-    }
   }
   mymapsubward.on("loaded", function(e)
   {
@@ -338,13 +334,13 @@ $(document).on("pageshow","#roadgroup",function() {
   }
 
   var wdid = window.wardid;
-  var thisward = window.Wards.wardlist[wdid];
+  var aroadgroup = window.roadgroup;
   var roadgroupid = window.roadgroupid;
-  var thisroadgroup = window.RoadGroups.grouplist[roadgroupid];
+
   mymappera(mymaproadgroup, 52.6854, -1.8304, 14);
-  if(thisroadgroup.KML !== undefined )
+  if(aroadgroup.KML !== undefined )
   {
-    alayer =  addMyKML(mymaproadgroup,thisroadgroup.KML,color);
+    alayer =  addMyKML(mymaproadgroup,window.roadgroup.KML,color);
   }else
   {
     if( CheckUrl("maps/"+roadgroupid +".kml"))

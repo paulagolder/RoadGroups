@@ -19,8 +19,6 @@
     <subward Subwardid = "CUR_S" Name="South" />
     </ward>
   <ward District="LDC" Name="Leomansley" WardId="LEO"  >
-    <kml>maps/LEO.kml</kml>
-    <bounds minlat="52.675390" minlon="-1.848800" maxlat="52.677910" maxlon="-1.842450" />
     <subward Subwardid = "LEO_C" Name="Central" />
     <subward Subwardid = "LEO_N" Name="North" />
     <subward Subwardid = "LEO_W" Name="West" />

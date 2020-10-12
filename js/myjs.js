@@ -1,7 +1,7 @@
 function showwards()
 {
-  var allwards = window.Wards.wardlist;
-  var allroadgroups = window.RoadGroups;
+  var allwards = window.Wards;
+
   var outstring = ""
   outstring = "<div  class=\"wards\" >";
   for(var wardid in allwards){
@@ -20,8 +20,7 @@ function showwards()
 function showward()
 {
   var wdid = window.wardid;
-  var award = window.Wards.wardlist[wdid];
-  var grouplist = window.RoadGroups.grouplist;
+  var award = window.Wards[wdid];
   var outstring = "<div class='heading' ><div>"+award.WardId+"</div><div >"+award.Name+"</div></div>";
   outstring += "<div class='list'> ";
   var subwards = award['Subwards'];
@@ -29,18 +28,13 @@ function showward()
   {
     var roadgroupcount=0;
     var asubward = subwards[asubwardid];
-    for(var groupid in grouplist)
+    for(var groupid in asubward.Roadgroups)
     {
-      var agroup = grouplist[groupid];
-      var subgroupgcount=0;
-      if( agroup.GroupCode.startsWith(asubwardid))
-      {
         roadgroupcount++;
-      }
     }
     outstring += "<div class='row'>";
     outstring += "<div><a class=\"button\" href=\"#\" data-role=\"button\"  data-mini=\"true\" data-iconpos=\"right\" ";
-    outstring +=  " onclick=\"changeMypage( 'subward',\'"+asubward.Subwardid+"\'); \" >"+asubward.Name+"</a></div>";
+    outstring +=  " onclick=\"changeMypage( 'subward',\'"+asubward.SubwardId+"\'); \" >"+asubward.Name+"</a></div>";
     outstring += "<div>"+roadgroupcount+" RoadGroups </div>";
     outstring += "</div>";
   }
@@ -51,11 +45,11 @@ function showward()
 function showsubward()
 {
   var wdid = window.wardid;
-  var award = window.Wards.wardlist[wdid];
+  var award = window.Wards[wdid];
   var subwardid =  window.subwardid;
   var asubward = award['Subwards'][subwardid];
-  var grouplist = window.RoadGroups.grouplist;
-  var outstring = "<div class='heading' ><div>"+asubward.Subwardid+"</div><div >"+award.Name+"</div><div>"+asubward.Name+"</div></div>";
+  var grouplist = asubward.Roadgroups;
+  var outstring = "<div class='heading' ><div>"+asubward.SubwardId+"</div><div >"+award.Name+"</div><div>"+asubward.Name+"</div></div>";
   outstring += "<div class='list'  style='overflow-y: scroll;' >";
 
   var c=0;
@@ -63,7 +57,7 @@ function showsubward()
   {
     var agroup = grouplist[index];
 
-    if( agroup.GroupCode.startsWith(subwardid))
+    if( agroup.RoadgroupId.startsWith(subwardid))
     {
       outstring += "<div class='row' >";
       if( CheckUrl("maps/"+index +".kml"))
@@ -73,8 +67,8 @@ function showsubward()
       else
         outstring += "<div>";
       outstring += " <a class=\"button\" href=\"#\" data-role=\"button\"  data-mini=\"true\" data-iconpos=\"right\" ";
-      outstring +=  " onclick=\"changeMypage( 'roadgroup',\'"+agroup.GroupCode+"\'); \" >"+agroup.GroupCode+"</a></div>";
-      outstring +=  "<div>"+ agroup.PrincipalRoad+"..etc</div>";
+      outstring +=  " onclick=\"changeMypage( 'roadgroup',\'"+agroup.RoadgroupId+"\'); \" >"+agroup.RoadgroupId+"</a></div>";
+      outstring +=  "<div>"+ agroup.Name+"..etc</div>";
       outstring +=  "</div>";
       c++;
     }
@@ -87,29 +81,26 @@ function showsubward()
 
 function showroadgroup()
 {
-  var groupid =  window.roadgroupid;
-  var roadgroup =  window.RoadGroups.grouplist[groupid];
-  var wdid = window.RoadGroups.grouplist[groupid].DistrictWard;
-  var award = window.Wards.wardlist[wdid];
-  var subwardid =  roadgroup.SubWard;
+  var wdid = window.wardid;
+  var award = window.Wards[wdid];
+  var subwardid =  window.subwardid;
   var asubward = award['Subwards'][subwardid];
-  var outstring = "<div class='heading' ><div>"+groupid+"</div><div >"+award.Name+"</div><div>"+asubward.Name+"</div></div>";
-  outstring += "<div class='heading' ><div> Households:"+roadgroup.Properties+"</div>";
-  outstring += "<div >Electors:"+roadgroup.Electors+"</div></div>";
+  var grouplist = asubward.Roadgroups;
+  var aroadgroup = grouplist[window.roadgroupid];
+  var outstring = "<div class='heading' ><div>"+aroadgroup.RoadgroupId+"</div><div >"+award.Name+"</div><div>"+asubward.Name+"</div></div>";
+  outstring += "<div class='heading' ><div> Households:"+aroadgroup.Households+"</div>";
+  outstring += "</div>";
 
   outstring += "<div  class='streetlist' >";
-  var streets = window.Streets.streetlist;
-  var nostreets =streets.length;
-  for (var i = 0; i < streets.length; i++)
+  var streets = aroadgroup.Streets;
+  for (const streetid in streets)
   {
-    var street = streets[i];
-    var attid =street.GroupCode;
-    var streetname =street.Name;
+    var street = streets[streetid];
+    var streetname =street.makeId();
     var households =street.Households;
-    if(attid == groupid)
-    {
+
       outstring +=  " <div>"+streetname+" ("+households+") </div>";
-    }
+
   }
   outstring += "</div>";
 
