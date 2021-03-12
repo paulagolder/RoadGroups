@@ -10,6 +10,13 @@ body {
   font-size:0.8em;
 }
 
+div.page
+{
+  background-color:  #F5E89F;
+  height: 597px;
+  width: 375px;
+}
+
 
 .leaflet-fade-anim .leaflet-tile,.leaflet-zoom-anim .leaflet-zoom-animated
 {
@@ -21,6 +28,16 @@ body {
 }
 
 header{
+  background-color:#deb500;
+  position:absolute;
+  z-index:2;
+  top:0; left:0;
+  width:100%;
+  height:45px;
+  padding:0;
+}
+
+.pageheader{
   background-color:#deb500;
   position:absolute;
   z-index:2;
@@ -57,13 +74,15 @@ div.heading
   display: flex;
   background-color: yellow;
   flex-wrap: wrap;
-  font-size:0.5em;
+  font-size: 0.6em;
+  padding: 10px  0px;
+  align-items: center;
 }
 
 div.heading div
 {
-  font-size:2em;
-  margin-left:1em;
+  font-size: 2em;
+  margin-left: 1em;
 }
 
 div.buttons
@@ -88,7 +107,7 @@ a.button
   border-radius: .3125em;
   border: 1px solid silver;
   padding: 0.5em;
-  font-style: plain;
+  font-style:normal;
   color: black;
   text-decoration: none;
 }
@@ -105,24 +124,38 @@ button.button
   border-radius: .3125em;
   border: 1px solid silver;
   padding: 0.5em;
-  font-style: plain;
+  font-style: normal;
   color: black;
   text-decoration: none;
 }
 
 div.list div.row
 {
-  display:flex;
+  display: flex;
+  padding-left: 2em;
 }
 
+ div.row
+{
+  display: flex;
+  padding-left: 2em;
+}
 
+div.list div.row div
+{
+  padding-left: 2em;
+}
 
+div.list div.row div.pbutton
+{
+  padding-left: 1em;
+  width: 4em;
+}
 
 div.scrollpanel
 {
-  height: calc(100% - 400px);
   margin-top: 1em;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 div.page-header
@@ -137,29 +170,35 @@ div.page-footer
 }
 
 
+
 /* map panel styles======================================================= */
 
+div.mapdiv
+{
+  max-width: 100%;
+  height:120mm;
+}
 
 div.map-content
 {
-  xheight: 100%;
-  xwidth: 100%;
-  padding: 0px;
-  xmargin:0px;
-  z-index: -1;
   margin-left: auto;
   margin-right: auto;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 0px;
 }
 
 div.map-content div
 {
-  xborder: 4px solid #F5E89F;
+  border: 1px solid #F5E89F;
 }
 
 div.leaflet-control-container
 {
 
-  border: 4px solid #F5E89F;
+  border: 2px solid #F5E89F;
 }
 
 
@@ -197,9 +236,7 @@ div.leaflet-control-container
 {
   color:green;
   background-color: #F6F1BD;
-  xfloat: left;
   border: 1px solid yellow;
-  xdisplay: block;
   width: 8em;
   height: 3em;
 }
@@ -209,22 +246,9 @@ div.leaflet-control-container
 
 
 
-
-
-#wards
-{
-  background-color:  #F5E89F;
-}
-
 #wards div.ui-panel-content-wrap
 {
   background-color:  #F5E89F;
-}
-
-div#wardspanel
-{
-  xheight:300px;
-  height: calc(100% - 400px);
 }
 
 
@@ -237,31 +261,17 @@ div#wardspanel div.wards
 
 div#wardspanel div.wards div.row
 {
-
-  display : flex;
   width : 12em;
 }
 
 
-div#wardspanel div.wards div.row  div:first-child
-{
-  xwidth: 4em;
-}
 
-div#mapdiv
-{
-  xmax-width : 105mm;
-  height: 400px;
-}
 
 
 /* #ward styles======================================================= */
 
 
-#ward
-{
-  background-color:  #F5E89F;
-}
+
 
 #ward div.heading
 {
@@ -287,21 +297,14 @@ div#ward div.list
 div#ward div.list div.row
 {
   display : flex;
-  width : 14em;
+  width : 18em;
 }
 
-div#wardmapdiv
-{
-  xmax-width : 105mm;
-  height: 400px;
-}
+
 
 /* #subward styles======================================================= */
 
-#subward
-{
-  background-color:  #F5E89F;
-}
+
 
 
 div#subward div.list
@@ -322,32 +325,11 @@ div#subward div  div.list div.row div
   white-space: nowrap;
 }
 
-div#subwardmapdiv
-{
-  xmax-width : 105mm;
-  height: 400px;
-}
+
 
 /* roadgrouppage styles=========================================*/
 
-div#roadgroup
-{
-  background :#FFF9D8;
-  //width : 105mm;
-}
 
-div#roadgroup div.heading
-{
-  font-size:0.5em;
-}
-
-
-div#roadgrouppage
-{
- // background :#FFF9D8;
- // width : 105mm;
-  //height: 148mm;
-}
 
 #roadgroup div div.streetlist
 {
@@ -358,20 +340,44 @@ div#roadgrouppage
 
 #roadgroup div div.streetlist div
 {
-  xmargin-left: 10em;
-  xwidth:12em;
-  flex: 1 1 15em;
+  flex: 1 1 10em;
+  font-size: 1.5em;
 }
 
 
-div#roadgroupmapdiv {
-  max-width: 100%;
-  height: 74mm;
-}
 
 
-@media only screen and (min-width: 768px)
+
+@media only screen and (min-width: 1768px)
 {
+  div.xmapdiv
+  {
+    width : 100%;
+    height :600px;
+  }
+
+  div.page-footer
+  {
+
+    background-color: #FF00FF;
+  }
+
+  div.map-content
+  {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    xposition: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 0px;
+  }
+
+  #roadgroup div div.streetlist div {
+  flex: 1 1 14em;
+  font-size: 2em;
+  }
 
   div.page-header h1
   {
@@ -380,7 +386,7 @@ div#roadgroupmapdiv {
 
   div.heading
   {
-    font-size:0.5em;
+    font-size:0.8em;
   }
 
   div.page-content.ui-content
@@ -394,7 +400,6 @@ div#roadgroupmapdiv {
     height: 100%;
     max-width: 100%;
     padding: 0px;
-    xmargin: 0px;
     z-index: -1;
     margin-left: auto;
     margin-right: auto;
@@ -406,22 +411,15 @@ div#roadgroupmapdiv {
   div#searchpanel p.label
   {
     font-size: 1.5em;
-    xpadding-top: 2px;
-    xpadding-bottom: 4px;
-    xheight: 1em;
     margin: 10px;
-
     background-color: #F5E89F;
-    border: 0px solid #F6F1BD;
+    border: 1px none #F6F1BD;
   }
 
   div#searchpanel div.ui-input-text
   {
-    xfont-size: 1.5em;
-    xwidth: 23em;
-    xcolor: red;
     background-color: #fff;
-    border: 1 none #ddd;
+    border: 1px none #ddd;
     color: #333;
     text-shadow: 0 1px 0 #f3f3f3;
   }
@@ -452,9 +450,10 @@ div#roadgroupmapdiv {
      font-size: 1.5em;
    }
 
-   div#mapdiv
+   #wards div.mapdiv
    {
      max-width: 100%;
+     width: 100%;
      height: 140mm;;
    }
 
@@ -479,14 +478,15 @@ div#roadgroupmapdiv {
 
   div#ward div.list div.row
   {
-    width: 15em;
+    width: 18em;
   }
 
-  div#wardmapdiv
+  div#ward div.list div.row div.pbutton
   {
-    max-width: 100%;
-    height: 140mm;
+    width: 6em;
   }
+
+
 
   /*====================== subwardstyles ===================*/
 
@@ -512,11 +512,7 @@ div#roadgroupmapdiv {
     width: 20em;
   }
 
-  div#subwardmapdiv
-  {
-    max-width: 100%;
-    height: 140mm;
-  }
+
 
 /*====================== roadgroupstyles ===================*/
 
@@ -525,21 +521,14 @@ div#roadgroupmapdiv {
 
   div#roadgroup div.page-header h1
   {
-    font-size:1.5em;
+    xfont-size:1.5em;
   }
 
   div#roadgroup
   {
-    xbackground :#FFF9D8;
-    width : 100%;
+    xwidth : 100%;
   }
 
-
-  div#roadgroup div.heading
-  {
-
-    font-size:1em;
-  }
 
 
   #roadgroup div div.streetlist div
@@ -547,16 +536,6 @@ div#roadgroupmapdiv {
     font-size: 1.5em;
     flex: 1 1 15em;
   }
-
-
-
-
-  div#roadgroupmapdiv {
-    max-width: 100%;
-    height: 140mm;
-  }
-
-
 
 
    div.page-footer
@@ -594,22 +573,21 @@ div#roadgroupmapdiv {
       background-color: #0000FF;
     }
 
-    #roadgroupmapdiv
-    {
-      width : 800px;
-    }
+
   }
 
 }
 
+@media only screen and (min-width: 768px)
+{
 
+
+}
 
 
 .reset-this {
   animation : none;
-  animation-delay : 0;
   animation-direction : normal;
-  animation-duration : 0;
   animation-fill-mode : none;
   animation-iteration-count : 1;
   animation-name : none;
@@ -669,8 +647,6 @@ div#roadgroupmapdiv {
   column-rule : medium none currentColor;
   column-rule-color : currentColor;
   column-rule-style : none;
-  column-rule-width : none;
-  column-span : 1;
   column-width : auto;
   content : normal;
   counter-increment : none;
@@ -705,7 +681,6 @@ div#roadgroupmapdiv {
   min-height : 0;
   min-width : 0;
   opacity : 1;
-  orphans : 0;
   outline : 0;
   outline-color : invert;
   outline-style : none;
@@ -750,7 +725,6 @@ div#roadgroupmapdiv {
   vertical-align : baseline;
   visibility : visible;
   white-space : normal;
-  widows : 0;
   width : auto;
   word-spacing : normal;
   z-index : auto;

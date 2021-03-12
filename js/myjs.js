@@ -1,77 +1,95 @@
+
+
+
+function makePageheader()
+{
+  var outstring = "";
+  outstring +='<div class="routbutton right"><a href="./#wards"  class="routebutton" data-role="button" data-inline="true" data-mini="true">';
+  outstring += window.District.name;
+  outstring += "</a></div>";
+  return outstring;
+}
+
+
+
+
+
+
 function showwards()
 {
   var allwards = window.Wards;
-
-  var outstring = ""
-  outstring = "<div  class=\"wards\" >";
-  for(var wardid in allwards){
-    ward = allwards[wardid];
-
-    outstring += "<div class='row' ><div><a class=\"button\" href=\"#\" data-role=\"button\" data-icon=\"check\" data-mini=\"true\" data-iconpos=\"right\" ";
-    outstring +=  " onclick=\"changeMypage( 'ward',\'"+wardid+"\'); \" >"+wardid+"</a></div>";
-    outstring += "<div>"+ward['Name']+"</div>";
-    outstring += "</div>";
-  }
-  outstring += "</div>";
-  return outstring;
-}
-
-
-function showward()
-{
-  var wdid = window.wardid;
-  var award = window.Wards[wdid];
-  var outstring = "<div class='heading' ><div>"+award.WardId+"</div><div >"+award.Name+"</div></div>";
+  var outstring = "";
   outstring += "<div class='list'> ";
-  var subwards = award['Subwards'];
-  for(var asubwardid in subwards)
-  {
-    var roadgroupcount=0;
-    var asubward = subwards[asubwardid];
-    for(var groupid in asubward.Roadgroups)
+  var c = 0;
+  for (var wardid in allwards) {
+    var ward = allwards[wardid];
+    var style ="";
+    if (CheckUrl("maps/roadgroups/" + ward.KML))
     {
-        roadgroupcount++;
-    }
-    outstring += "<div class='row'>";
-    outstring += "<div><a class=\"button\" href=\"#\" data-role=\"button\"  data-mini=\"true\" data-iconpos=\"right\" ";
-    outstring +=  " onclick=\"changeMypage( 'subward',\'"+asubward.SubwardId+"\'); \" >"+asubward.Name+"</a></div>";
-    outstring += "<div>"+roadgroupcount+" RoadGroups </div>";
-    outstring += "</div>";
-  }
-  outstring += "</div>";
-  return outstring;
-}
-
-function showsubward()
-{
-  var wdid = window.wardid;
-  var award = window.Wards[wdid];
-  var subwardid =  window.subwardid;
-  var asubward = award['Subwards'][subwardid];
-  var grouplist = asubward.Roadgroups;
-  var outstring = "<div class='heading' ><div>"+asubward.SubwardId+"</div><div >"+award.Name+"</div><div>"+asubward.Name+"</div></div>";
-  outstring += "<div class='list'  style='overflow-y: scroll;' >";
-
-  var c=0;
-  for(var index in grouplist)
-  {
-    var agroup = grouplist[index];
-
-    if( agroup.RoadgroupId.startsWith(subwardid))
-    {
-      outstring += "<div class='row' >";
-      if( CheckUrl("maps/"+index +".kml"))
-      {
-        outstring += "<div style='background-color:"+window.colors[c]+";' >";
-      }
-      else
-        outstring += "<div>";
-      outstring += " <a class=\"button\" href=\"#\" data-role=\"button\"  data-mini=\"true\" data-iconpos=\"right\" ";
-      outstring +=  " onclick=\"changeMypage( 'roadgroup',\'"+agroup.RoadgroupId+"\'); \" >"+agroup.RoadgroupId+"</a></div>";
-      outstring +=  "<div>"+ agroup.Name+"..etc</div>";
-      outstring +=  "</div>";
+      var style =" style =\"background-color: "+ window.colors[c] + ";\"";
       c++;
     }
+
+    outstring += "<div class='row' ><div class='pbutton' "+style+ " ><a class=\"button\" href=\"./#ward\" data-role=\"button\"  data-mini=\"true\"  ";
+    outstring += " onclick=\"changeMypage( 'ward',\'" + wardid + "\'); \" >" + wardid + "</a></div>";
+
+
+    outstring += "<div>" + ward.Name + "</div>";
+    outstring += "</div>";
+  }
+  outstring += "</div>";
+  return outstring;
+}
+
+
+function showward() {
+  var wdid = window.wardid;
+  var award = window.Wards[wdid];
+  var outstring = "<div class='heading' ><div>" + award.WardId + "</div><div >" + award.Name + "</div>";
+  outstring +="</div>";
+  outstring += "<div class='list'> ";
+  var subwards = award.Subwards;
+  for (var asubwardid in subwards) {
+    var roadgroupcount = 0;
+    var asubward = subwards[asubwardid];
+    for (var groupid in asubward.Roadgroups) {
+      roadgroupcount++;
+    }
+    outstring += "<div class='row'>";
+    outstring += "<div class='pbutton' ><a class=\"button\" href=\"#\" data-role=\"button\"  data-mini=\"true\" data-iconpos=\"right\" ";
+    outstring += " onclick=\"changeMypage( 'subward',\'" + asubward.SubwardId + "\'); \" >" + asubward.Name + "</a></div>";
+    outstring += "<div>" + roadgroupcount + " RoadGroups </div>";
+    outstring += "</div>";
+  }
+  outstring += "</div>";
+  return outstring;
+}
+
+function showsubward() {
+  var wdid = window.wardid;
+  var award = window.Wards[wdid];
+  var subwardid = window.subwardid;
+  var asubward = award.Subwards[subwardid];
+  var grouplist = asubward.Roadgroups;
+  var outstring = "<div class='heading' ><div>" + asubward.SubwardId + "</div>";
+  outstring += '<div class="routebutton" ><a href="#ward"  class="routebutton" data-role="button" data-inline="true" data-mini="true">'+award.Name +'</a></div>';
+  outstring += "<div>" + asubward.Name + "</div></div>";
+  outstring += "<div class='list'   >";
+  window.sliplist =[];
+  var c = 0;
+  for (var index in grouplist) {
+    window.sliplist.push(index);
+    var agroup = grouplist[index];
+    outstring += "<div class='row' >";
+    if (CheckUrl("maps/" + index + ".kml")) {
+      outstring += "<div style='background-color:" + window.colors[c] + ";' >";
+    } else
+      outstring += "<div>";
+    outstring += " <a class=\"button\" href=\"#\" data-role=\"button\"  data-mini=\"true\" data-iconpos=\"right\" ";
+    outstring += " onclick=\"changeMypage( 'roadgroup',\'" + agroup.RoadgroupId + "\'); \" >" + agroup.RoadgroupId + "</a></div>";
+    outstring += "<div>" + agroup.Name + "..etc</div>";
+    outstring += "</div>";
+    c++;
   }
 
   outstring += "  <div></div>";
@@ -79,180 +97,115 @@ function showsubward()
 }
 
 
-function showroadgroup()
-{
+function showroadgroup() {
   var wdid = window.wardid;
   var award = window.Wards[wdid];
-  var subwardid =  window.subwardid;
-  var asubward = award['Subwards'][subwardid];
+  var subwardid = window.subwardid;
+  var asubward = award.Subwards[subwardid];
   var grouplist = asubward.Roadgroups;
   var aroadgroup = grouplist[window.roadgroupid];
-  var outstring = "<div class='heading' ><div>"+aroadgroup.RoadgroupId+"</div><div >"+award.Name+"</div><div>"+asubward.Name+"</div></div>";
-  outstring += "<div class='heading' ><div> Households:"+aroadgroup.Households+"</div>";
+  var outstring = "<div class='heading' >";
+
+  outstring += '<div class="routebutton" ><a href="#ward"  class="routebutton" data-role="button" data-inline="true" data-mini="true">'+award.Name +'</a></div>';
+  outstring += '<div class="routebutton" ><a href="#subward"  class="routebutton" data-role="button" data-inline="true" data-mini="true">'+asubward.Name +'</a></div>';
+  outstring += "</div>";
+  outstring += "<div class='heading' ><div> RoadGroup:" + aroadgroup.RoadgroupId +":"+aroadgroup.Name+ "</div></div>";
+  outstring += "<div class='heading' ><div> Households:" + aroadgroup.Households + "</div>";
   outstring += "</div>";
 
   outstring += "<div  class='streetlist' >";
   var streets = aroadgroup.Streets;
-  for (const streetid in streets)
+  for (var streetid in streets)
   {
     var street = streets[streetid];
-    var streetname =street.makeId();
-    var households =street.Households;
-
-      outstring +=  " <div>"+streetname+" ("+households+") </div>";
-
+    var streetname = street.makeId();
+    var households = street.Households;
+    outstring += " <div>" + streetname + " (" + households + ") </div>";
   }
   outstring += "</div>";
-
   return outstring;
 }
 
 
 
-function CheckUrl(url)
-{
-  if (window.XMLHttpRequest)
-  {// code for IE7+, Firefox, Chrome, Opera, Safari
-    var http=new XMLHttpRequest();
+function CheckUrl(url) {
+  var http = null;
+  if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari
+    http = new XMLHttpRequest();
+  } else { // code for IE6, IE5
+    http = new ActiveXObject("Microsoft.XMLHTTP");
   }
-  else
-  {// code for IE6, IE5
-    var http=new ActiveXObject("Microsoft.XMLHTTP");
-  }
-  http.open('HEAD', url, false);
-  http.send();
-  return http.status!=404;
+  if (http !== null) {
+    http.open('HEAD', url, false);
+    http.send();
+    return http.status != 404;
+  } else
+    return false;
 }
 
-
-
-function mymappera(mymap,lat, long, zoom)
+function mymappera(mymap)
 {
 
-  if(zoom <1 ) zoom = 1;
-  // if (mymap != undefined) mymap.remove();
-  // var mymap = L.map(mapdiv).
-  mymap.setView([ lat , long], zoom);
-  mymap.setView([ lat , long], zoom);
-  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 20,
-    id: 'mapbox.streets',
-    accessToken: 'pk.eyJ1IjoicGF1bGFnb2xkZXIiLCJhIjoiY2pneXhhbWoyMmkxazMzcDZncHFhODlkdiJ9.edTBTkIMndOfkYHlYp4eAQ'
-  }).addTo(mymap);
-  //  var marker = L.marker([lat , long]).addTo(mymap);
-  setTimeout(function () { mymap.invalidateSize() }, 1200);
+//  var mymap = L.map('mapid').setView([ lat , long], zoom);
+  mapLink ='<a href="http://openstreetmap.org">OpenStreetMap</a>';
+  L.tileLayer(
+         'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; ' + mapLink + ' Contributors',
+           maxZoom: 18,
+          }).addTo(mymap);
+
+  setTimeout(function() { mymap.invalidateSize();}, 1200);
   return mymap;
 }
 
 
-function mymapper(lat, long, zoom)
+
+function addMyKML(mymap, kmlfile, style)
 {
 
-  if(zoom <1 ) zoom = 1;
-  // if (mymap != undefined) mymap.remove();
-  mymap = L.map('mapdiv').setView([ lat , long], zoom);
-  // amap.setView([ lat , long], zoom);
-  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 18,
-    id: 'mapbox.streets',
-    accessToken: 'pk.eyJ1IjoicGF1bGFnb2xkZXIiLCJhIjoiY2pneXhhbWoyMmkxazMzcDZncHFhODlkdiJ9.edTBTkIMndOfkYHlYp4eAQ'
-  }).addTo(mymap);
-  //  var marker = L.marker([lat , long]).addTo(mymap);
-  setTimeout(function () { mymap.invalidateSize() }, 1200);
-  return mymap;
-}
-
-function fileExists(url)
-{
-  var http = new XMLHttpRequest();
-  http.open('HEAD', url, false);
-  http.send();
-  return http.status!=404;
-}
-
-
-function addKML(mymap,kmlfilename,color="#9e9e9e")
-{
-  //var color = "#FF0000"
-  var kmllist = new Array();
-  comune = omnivore.kml(kmlfilename);
-  comune.on('ready', function() {
-    this.setStyle({color: color , weight: 10});
-  });
-  kmllist.push(comune);
-  var kmlLayer = L.layerGroup(kmllist);
-  //kmlLayer.on("loaded", function(e)
-  //{
-  //  kmlLayer.eachLayer(function(layer) {
-  //    layer.bindPopup(layer.toGeoJSON().feature.properties.name);
-  //   });
-  // });
-  kmlLayer.addTo(mymap);
-
-}
-
-
-function addMyKML(mymap,kmlfile,color)
-{
-
-  // mymappera(mymap, 52.6854, -1.8304, 14);
-  var kmllayer = new L.KML(kmlfile, {async: true});
+  var kmllayer = new L.KML(kmlfile, { async: true });
   kmllayer.on("loaded", function(e)
   {
-    kmllayer.setStyle({color: color , weight: 14});
-    mymap.fitBounds(e.target.getBounds(), {padding: [50,50]});
+    kmllayer.setStyle( style);
+    mymap.addLayer(kmllayer);
+    mymap.fitBounds(e.target.getBounds(), {
+      padding: [5, 5],
+    });
   });
-  mymap.addLayer(kmllayer);
-  return kmllayer
-}
 
-function xxgetKML(kmlfilename,color="#9e9e9e", afg)
-{
-
-  comune = omnivore.kml(kmlfilename,null,afg);
-  comune.on('ready', function() {
-    this.setStyle({color: color , weight: 10});
-  });
-  return comune;
-
+  return kmllayer;
 }
 
 
-function setScrollHeight()
-{
+
+function setScrollHeight() {
   var wo = window.orientation;
-  var   height = $(window).width();
+  var height = $(window).width();
 
-  if (wo === undefined)
-  {
-    height = $(window).height()
+  if (wo === undefined) {
+    height = $(window).height();
+  } else {
+    height = $(window).width();
+    if (wo === 0 || wo == 180) height = $(window).height();
   }
-  else
-  {
-    var   height = $(window).width();
-    if(wo ==0 || wo ==180) height = $(window).height();
-  }
-  height = height-200;
+  height = height - 200;
   // $('#wardsscroll').css('height', height);
 
 }
 
-$(document).on("pageshow","#wards",function()
-{
-  if( window.refreshcontactlist )
-  {
-    document.getElementById("wardspanel").innerHTML = showroadgroups("") ;
-    window.refreshcontactlist=false;
-  }
+$(document).on("pageshow", "#xwards", function() {
+
+
+  document.getElementById("wardspanel").innerHTML = showwards("");
+  window.refreshcontactlist = false;
+
 });
 
 
 
 var copyToClipboard = (function() {
   var _dataString = null;
-  document.addEventListener("copy", function(e){
+  document.addEventListener("copy", function(e) {
     if (_dataString !== null) {
       try {
         e.clipboardData.setData("text/plain", _dataString);
@@ -268,13 +221,10 @@ var copyToClipboard = (function() {
   };
 })();
 
-function addBounds(abounds,bbounds)
-{
-  if(abounds.contains(L.point(0,0,true)))
-  {
+function addBounds(abounds, bbounds) {
+  if (abounds.contains(L.point(0, 0, true))) {
     abounds = bbounds;
-  }else
-  {
+  } else {
     abounds.extends(bbounds.getBottomLeft());
     abounds.extends(bbounds.getBottomRight());
     abounds.extends(bbounds.getTopLeft());
@@ -283,53 +233,58 @@ function addBounds(abounds,bbounds)
 }
 
 
-function doSearch()
-{
+function doSearch() {
   var searchfield = document.getElementById('searchfield').value;
   searchfield = searchfield.toLowerCase();
   var foundlist = [];
-  var n =  window.Streets.streetlist.length;
-  for(var i =0; i<n ;i++)
-  {
-    var astreet =  window.Streets.streetlist[i];
-    if(astreet.Name.toLowerCase().includes(searchfield))
-    {
-      foundlist.push(astreet);
+  for (var wardid in window.Wards) {
+    var award = window.Wards[wardid];
+    var subwards = award.Subwards;
+    for (var asubwardid in subwards) {
+      var asubward = subwards[asubwardid];
+      var rgrouplist = asubward.Roadgroups;
+      for (var index in rgrouplist) {
+        var aroadgroup = rgrouplist[index];
+        var streets = aroadgroup.Streets;
+        for (var streetid in streets) {
+          var astreet = streets[streetid];
+          if (astreet.Name.toLowerCase().includes(searchfield))
+          {
+            astreet.roadgroupid = aroadgroup.RoadgroupId;
+            astreet.subwardid = asubwardid;
+            astreet.wardid = wardid;
+            foundlist.push(astreet);
+          }
+        }
+      }
     }
   }
-  if(foundlist.length==1)
-  {
-    var astreet =  foundlist[0];
-    var roadgroup = astreet.GroupCode;
-    window.roadgroup = roadgroup;
-    changeMypage("roadgroup", roadgroup)
+  if (foundlist.length == 1) {
+    var fstreet = foundlist[0];
+    var roadgroup = fstreet.roadgroupid;
+    window.wardid = fstreet.wardid;
+    window.subwardid = fstreet.subwardid;
+    window.roadgroupid = roadgroup;
+    changeMypage("roadgroup", roadgroup);
     clearSearch();
-  }
-  else if (foundlist.length < 1)
-  {
+  } else if (foundlist.length < 1) {
     alert(" No Match found: try another street name ");
-  }
-  else if (foundlist.length < 8)
-  {
-    var text = "Too many matches found "+"\n";
-    for(var n =0; n<foundlist.length ; n++)
-    {
-      text += foundlist[n].Name +"\n";
+  } else if (foundlist.length < 8) {
+    var text = "Too many matches found " + "\n";
+    for (var n = 0; n < foundlist.length; n++) {
+      text += foundlist[n].Name + "\n";
     }
     alert(text);
-  }
-  else
-  {
-    alert( "too many matches found" + '\n' +
+  } else {
+    alert("too many matches found" + '\n' +
     " give more detail" + '\n'
     );
   }
 }
 
-function clearSearch()
-{
-  var fd = document.getElementById("searchfield");
-  document.getElementById("searchfield").value = "" ;
+function clearSearch() {
+
+  document.getElementById("searchfield").value = "";
 }
 
 function getUrlParameter(sParam) {
@@ -345,36 +300,50 @@ function getUrlParameter(sParam) {
       return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
     }
   }
-};
-
-
-function is_browser_gps_capable() {
-  var _locator_object;
-  try {
-    _locator_object = navigator.geolocation;
-  } catch (e) { return false; }
-  if (_locator_object)
-    return true;
-  else
-    return false;
 }
 
+function is_browser_gps_capable()
+{
+  return false;
+}
+
+/*
+ function is_browser_gps_capable()
+ {
+ var _locator_object;
+ try
+ {
+ _locator_object = navigator.geolocation;
+ }
+ catch (e)
+ {
+ return false;
+
+ }
+ if (_locator_object)
+   return true;
+ else
+   return false;
+ }
+ */
 
 
 function watchLocation(successCallback, errorCallback) {
-  successCallback = successCallback || function(){};
-  errorCallback = errorCallback || function(){};
+  successCallback = successCallback || function() {};
+  errorCallback = errorCallback || function() {};
 
 
   // Try HTML5-spec geolocation.
   var geolocation = navigator.geolocation;
 
+  function handleSuccess(position) {
+    successCallback(position.coords);
+  }
   if (geolocation) {
     // We have a real geolocation service.
     try {
-      function handleSuccess(position) {
-        successCallback(position.coords);
-      }
+      handleSuccess(position);
+
 
       geolocation.watchPosition(handleSuccess, errorCallback, {
         enableHighAccuracy: true,
@@ -386,7 +355,73 @@ function watchLocation(successCallback, errorCallback) {
   } else {
     errorCallback();
   }
+}
+
+function pdfout()
+{
+  createPdf();
+  async function createPdf(rglist) {
+
+   // var rglist = ["CHD_C3","CHD_C2","CHD_C1","CHD_C4", "CHD_N1", "CHD_N2"];
+   // var rglist = window.sliplist;
+    var wdid = window.wardid;
+    var award = window.Wards[wdid];
+    var subwardid = window.subwardid;
+    var asubward = award.Subwards[subwardid];
+    var grouplist = asubward.Roadgroups;
+    for (var index in grouplist) {
+      rglist.push( index);
+    }
+    var margin = 10;
+    const pdfDoc = await PDFLib.PDFDocument.create();
+    var page = pdfDoc.addPage();
+    var row =0;
+    var col= 0;
+    var rmax=2;
+    var cmax=2;
+    var pwidth = page.getWidth();
+    var pheight = page.getHeight();
+    var iwidth = (pwidth - 3 * margin)/2;
+    var iheight = ( pheight - 3 * margin)/2;
+    for( rg of rglist)
+    {
+
+      var rgpngpath = 'images/'+rg+'.png';
+      if(CheckUrl(rgpngpath))
+      {
+      var rgpngbytes =  await fetch(rgpngpath).then((res) => res.arrayBuffer());
+      var rgpngimage = await pdfDoc.embedPng(rgpngbytes);
+      var rgpngdims1 = rgpngimage.scale(1);
+      var hscale = iheight / rgpngdims1.height ;
+      var wscale = iwidth / rgpngdims1.width;
+      var scale = hscale;
+      if( wscale < hscale ) scale = wscale;
+      var rgpngdims = rgpngimage.scale(scale);
+
+    page.drawImage(rgpngimage, {
+      x: col*pwidth/2+margin,
+      y: row*pheight/2 + margin,
+      width: rgpngdims.width,
+      height: rgpngdims.height,
+    })
 
 
+    col= col+1;
+    if( col == cmax)
+    {
+      col =0;
+      row= row+1;
+      if( row ==rmax)
+      {
+        row = 0;
+        page = pdfDoc.addPage();
+      }
+    }
+      }
 
+    }
+    const pdfBytes = await pdfDoc.save()
+   download(pdfBytes, subwardid+".pdf", "application/pdf");
+
+  }
 }

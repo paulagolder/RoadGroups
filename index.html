@@ -7,10 +7,12 @@
 <meta name="apple-mobile-web-app-capable" content="yes" ></meta>
 <title>Lichfield - Road Groups</title>
 <base href="RoadGroups"/>
-
+  <script src="https://unpkg.com/pdf-lib"></script>
+   <script src="https://unpkg.com/downloadjs@1.4.7"></script>
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script  src="js/districtward.js"></script>
 <script  src="js/myjs.js"></script>
+
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
 integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
 crossorigin=""/>
@@ -28,22 +30,23 @@ crossorigin=""></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-plugins/3.3.2/layer/vector/KML.min.js" integrity="sha512-BkMHAeZ+A9vo6cdCwvFXXktbCkkuoUrPd6JIjWbR5h555Ev/5rUIwb3OcSphQqCk/HLu7KK1e2/2BuO9tMlYxg==" crossorigin="anonymous"></script>
 
 <script>
+
 window.start = true;
-window.District = new District("Lichfield District Council");
-console.log("Wards:"+window.District.name);
-window.Wards = new Wards("maps/lichfielddc.rgml");
+window.District = new District("data/roadgroups.rgml");
+console.log("Electiondistrict:"+window.District.name);
+window.Wards = window.District.wards;
 window.Ward = window.Wards[Object.keys(window.Wards)[0]];
 window.Subwards = window.Ward.Subwards;
 window.Subward = window.Subwards[Object.keys(window.Subwards)[0]];
 window.Roadgroups = window.Subward.Roadgroups;
 window.Roadgroup = window.Roadgroups[Object.keys(window.Roadgroups)[0]];
 
-window.mymapwards = null;
+var mymapwards = null;
 window.mymapward = null;
 window.mymapsubward = null;
 window.mymaproadgroup = null;
-window.wardid = "BLY";
-window.subwardid = "BLY_C";
+window.wardid = "RG_BLY";
+window.subwardid = "RG_BLY_C";
 window.roadgroupid = "BLY_C1";
 window.colors= [];
 window.colors[0]="#FF000088";
@@ -58,6 +61,9 @@ window.colors[8]="#0000FF88";
 window.colors[9]="#FFFF0088";
 window.colors[10]="#FF00FF88";
 window.colors[11]="#00FFFF88";
+
+
+
 </script>
 <link rel="stylesheet" href="css/mycss.css" />
 </head>
@@ -65,92 +71,79 @@ window.colors[11]="#00FFFF88";
 <body class="bstyle" >
 
 <!--  display all wards -->
-<div data-role="page" id="wards" >
+<div data-role="page" id="wards" class="bstyle page"  >
 <div class="page-header" data-role="header" data-position="fixed" >
-<h1>Wards</h1>
+<h1 id="wardspageheader" ></h1>
 </div>
+<!-- /header -->
 <div id="searchpanel" xdata-role="content">
 <p class="label">Search for Street:</p>
 <input type="text" name="selector" id="searchfield" value="" data-inline="true"   />
 <a href="#" data-role="button" data-icon="check" data-iconpos="notext" data-theme="e" data-inline="true" onclick="doSearch()" >Check</a>
 <a href="#" data-role="button" data-icon="delete" data-iconpos="notext" data-theme="e" data-inline="true" onclick="clearSearch()">Delete</a>
 </div>
-<div id="wardspanel" class="scrollpanel" style="overflow-y: scroll; " ></div>
+<div id="wardspanel" class="scrollpanel" ></div>
 <div class="map-content" data-role="content">
-<div id='mapdiv'  style='xheight:400px;' ></div>
+<div id='wardsmapdiv' class="mapdiv" ></div>
 </div>
-
+</div>
 <div  class="page-footer bstyle" data-role="footer"  data-theme="d" data-position="fixed" data-mini="true" >
-<p>
-<a href="#ward"  class="button" data-role="button" data-inline="true" data-mini="true">Ward</a>
-<a href="#subward"  class="button" data-role="button" data-inline="true" data-mini="true">Sub-Wards</a>
-<a href="#roadgroup"  class="button" data-role="button" data-inline="true" data-mini="true">Road Group</a>
-</p>
+<div > Paul Golder 2020</div>
 </div>
 </div>
 
 <!--  display one ward -->
-<div data-role="page" id="ward" class="page" >
+<div data-role="page" id="ward" class="bstyle page" >
 <div class="page-header"  data-role="header" data-position="fixed" >
-<h1>Ward</h1>
+<h1 id="wardpageheader" ></h1>
 </div>
-
+<!-- /header -->
 <div  class="page-content" data-role="content">
 <div  id="wardpanel" ></div>
 
 <div class="map-content" data-role="content">
-<div id='wardmapdiv'  style='xheight:400px;' ></div>
+<div id='wardmapdiv'  class="mapdiv"  ></div>
 </div>
 </div>
 <div  class="page-footer bstyle" data-role="footer"  data-theme="d" data-position="fixed" data-mini="true" >
-<p>
-<a href="#wards"  class="button" data-role="button" data-inline="true" data-mini="true">Wards</a>
-<!--  <a href="#ward"  class="button" data-role="button" data-inline="true" data-mini="true">Ward</a>-->
-<a href="#subward"  class="button" data-role="button" data-inline="true" data-mini="true">Sub-Wards</a>
-<a href="#roadgroup"  class="button" data-role="button" data-inline="true" data-mini="true">Road Group</a>
-</p>
+<div > Paul Golder 2020</div>
 </div>
 </div>
 
 <!--  display a subward -->
-<div data-role="page" class="bstyle"  id="subward">
+<div data-role="page" class="bstyle page"  id="subward">
 <div class="page-header" data-role="header" data-position="fixed">
-<h1>Sub Ward</h1>
+<h1 id="subwardpageheader" ></h1>
 </div> <!-- /header -->
 <div  class="page-content" data-role="content">
 <div  id="subwardpanel">  </div>
 </div>
 <div class="map-content" data-role="content">
-<div id='subwardmapdiv'  style='height:x400px;' ></div>
+<div id='subwardmapdiv'  class="mapdiv"  ></div>
 </div>
 <div  class="page-footer bstyle" data-role="footer"  data-theme="d" data-position="fixed" data-mini="true" >
-<p>
-<a href="#wards"  class="button" data-role="button" data-inline="true" data-mini="true">Wards</a>
-<a href="#ward"  class="button" data-role="button" data-inline="true" data-mini="true">Ward</a>
-<!--  <a href="#subward"  class="button" data-role="button" data-inline="true" data-mini="true">Sub-Wards</a>-->
-<a href="#roadgroup"  class="button" data-role="button" data-inline="true" data-mini="true">Road Group</a>
-</p>
+<button class="button  desktop" type="xxbutton" onclick="pdfout(['CHD_C1','CHD_C2'])">Print Slips</button>
 </div>
 <!-- /footer -->
 </div>
 
 <!--  display one road group -->
-<div data-role="page" class="bstyle"  id="roadgroup">
+<div data-role="page" class="bstyle page"  id="roadgroup">
 <div class="page-header"  data-role="header" data-position="fixed">
-<h1>Road Group</h1>
+
+<h1 id="roadgrouppageheader" ></h1>
 </div><!-- /header -->
+
 <div id="roadgrouppage"  >
 <div id="roadgrouppanel" class="bstyle" ></div>
 <div class="map-content" data-role="content">
-<div id='roadgroupmapdiv'></div>
+<div id='roadgroupmapdiv'  class="mapdiv" ></div>
 </div>
 </div>
-<div class="page-footer bstyle" data-role="footer"  data-theme="d" data-position="fixed" data-mini="true" >
-<a href="#wards"  class="button" data-role="button" data-inline="true" data-mini="true">Wards</a>
-<a href="#ward"  class="button" data-role="button" data-inline="true" data-mini="true">Ward</a>
-<a href="#subward"  class="button" data-role="button" data-inline="true" data-mini="true">Sub-Wards</a>
-<button class="button  desktop" type="xxbutton" onclick="savePNG()">Save Image</button>
 
+<div class="page-footer bstyle" data-role="footer"  data-theme="d" data-position="fixed" data-mini="true" >
+<div > Paul Golder 2020</div>
+<button class="button  desktop" type="xxbutton" onclick="savePNG()">Save Image</button>
 
 </div>
 <!-- /footer -->
@@ -165,7 +158,7 @@ $(document).on("pageinit","#ward", function() {
 });
 
 
-$("#wards").on("pageinit", function(e) {
+$("#xwards").on("pageinit", function(e) {
 
   var rgparam  = getUrlParameter('rg');
   if(window.Wards[rgparam])
@@ -180,22 +173,22 @@ $("#wards").on("pageinit", function(e) {
 });
 
 
-$('#wards').on( "pageinit", function( event, data ){
-  // alert("wards is pageinit!");
-  if(window.start)
-  {
-    document.getElementById("wardspanel").innerHTML = showwards() ;
-    $.mobile.changePage("#wards", "slideup");
-    window.start = false;
-  }
-});
+
 
 $(document).on("pageshow","#wards", function() {
 
+  var wdid = window.wardid;
+  var wards = window.Wards;
+  var thisward = window.Wards[wdid];
+  var subwardid =  window.subwardid;
+  var asubward = thisward.Subwards[subwardid];
+  var grouplist = asubward.Roadgroups;
+  var roadgroupid = window.roadgroupid
+  document.getElementById("wardspageheader").innerHTML = makePageheader() ;
   document.getElementById("wardspanel").innerHTML = showwards() ;
   if(mymapwards == null)
   {
-    mymapwards = L.map('mapdiv');
+    mymapwards  = L.map('wardsmapdiv').setView([52.6854, -1.8304], 14);
   }
   else
   {
@@ -203,33 +196,50 @@ $(document).on("pageshow","#wards", function() {
       layer.remove();
     });
   }
-  if( CheckUrl("maps/LCC.kml"))
+  mymappera(mymapwards);
+
+  var wlayer = null;
+  var c=0;
+  var dname = window.District.name;
+  var dId = window.District.districtid;
+   var dKML = window.District.KML;
+   var kml = "maps/"+dKML;
+   if( dKML )
   {
-    mymappera(mymapwards,52.6854, -1.8304,12);
-    addMyKML(mymapwards, "maps/LCC.kml");
-    if (is_browser_gps_capable()) {
-      $('geo_location').innerHTML = 'Locating device...';
-      watchLocation(function(coords) {
-        var marker = new L.Marker([coords.latitude,  coords.longitude]);
-        marker.addTo(mymapwards);
-        $('geo_location').innerHTML = coords.latitude + ',' + coords.longitude;
-      }, function() {
-        $('geo_location').innerHTML = 'Not supported';
-      });
-    } else {
-      $('geo_location').innerHTML = 'Not supported';
-    }
+    var style = { color: '#FF0000',   weight: 6 };
+     wlayer = addMyKML(mymapwards, kml,style);
   }
+  var afg = new  L.featureGroup();
+  for(var index in wards)
+  {
+      var thisward = window.Wards[index];
+        if( !(thisward.KML === null) && !thisward.KML )
+      {
+         var style = { fillColor:  window.colors[c], weight: 2, opacity: 1,  color: 'black',  fillOpacity: 0.7 };
+        var alayer = addMyKML(mymapwards ,"maps/"+dId+"/"+thisward.KML,style);
+        afg.addLayer(alayer);
+        c++;
+      }
+  }
+    if(c>0)
+  {
+   //mymapwards.fitBounds(afg.getBounds().pad(0.5));
+  }
+  if(wlayer !== null)
+  {
+    //mymapwards.fitBounds(wlayer.getBounds());
+    }
 
 });
 
 
-$(document).on("pageshow","#ward",function() {
-  //alert(" at line 212");
+$(document).on("pageshow","#ward",function()
+{
+  document.getElementById("wardpageheader").innerHTML = makePageheader() ;
   document.getElementById("wardpanel").innerHTML = showward() ;
   if( mymapward == null)
   {
-    mymapward = L.map('wardmapdiv');
+    mymapward = L.map('wardmapdiv').setView([52.6854, -1.8304], 14);
   }
   else
   {
@@ -238,47 +248,39 @@ $(document).on("pageshow","#ward",function() {
     });
   }
 
-
   var wdid = window.wardid;
   var thisward = window.Wards[wdid];
-
-  if(thisward.kml !== undefined )
+   var dId = window.District.districtid;
+   var dKML = window.District.KML;
+   var kml = "maps/"+dId+"/"+dKML;
+   if( CheckUrl(kml))
   {
-
+    var style = { color: '#FF0000',   weight: 6 };
+     wlayer = addMyKML(mymapward, kml,style);
+  }
+  if(thisward.KML !== undefined )
+  {
     if(thisward.Shape.midlat !== undefined)
     {
-      mymappera( mymapward,thisward.Shape.midlat, thisward.Shape.midlon, 12);
+      mymappera( mymapward);
     }
     else
     {
-      mymapper(mymapward,52.6854, -1.8304,12);
+      mymappera(mymapward);
     }
-    addKML(mymapward,thisward.kml);
-  }else
-  {
-
-    if( CheckUrl("maps/"+wdid+".kml"))
-    {
-      mymappera(mymapward, 52.6854, -1.8304, 12);
-      addKML(mymapward, "maps/"+wdid+".kml");
-    }else{
-      if( CheckUrl("maps/LCC.kml"))
-      {
-        mymappera(mymapward,52.6854, -1.8304,12);
-        //   mymap=mymapper(2.6854, -1.8304, 14);
-        addKML(mymapward, "maps/LCC.kml");
-      }}
+    var style = { color:'#0000FF',   weight: 2 };
+    addMyKML(mymapward,"maps/"+thisward.KML,style);
   }
 
 });
 
 
 $(document).on("pageshow","#subward",function() {
-
+  document.getElementById("subwardpageheader").innerHTML = makePageheader() ;
   document.getElementById("subwardpanel").innerHTML = showsubward() ;
   if( mymapsubward == null)
   {
-    mymapsubward = L.map('subwardmapdiv');
+    mymapsubward = L.map('subwardmapdiv').setView([52.6854, -1.8304], 14);
   }
   else
   {
@@ -286,10 +288,10 @@ $(document).on("pageshow","#subward",function() {
       layer.remove();
     });
   }
-  mymappera(mymapsubward, 52.6854, -1.8304, 14);
+  mymappera(mymapsubward);
 
 
-  var mybounds = L.bounds([0,0],[0,0]);
+ // var mybounds = L.bounds([0,0],[0,0]);
 
   var wdid = window.wardid;
   var thisward = window.Wards[wdid];
@@ -297,35 +299,54 @@ $(document).on("pageshow","#subward",function() {
   var asubward = thisward.Subwards[subwardid];
   var grouplist = asubward.Roadgroups;
   var roadgroupid = window.roadgroupid;
+
+   if( CheckUrl("maps/"+wdid+".kml"))
+    {
+
+        var style = { fillColor: '#ffffff', weight: 6, opacity: 1,  color: '#aa0000',  fillOpacity: 0.1 };
+        var alayer = addMyKML(mymapsubward, "maps/"+wdid+".kml",style);
+      //  mymapsubward.fitBounds(alayer.getBounds());
+    }
   var c=0;
+  var afg = new  L.featureGroup();
   for(var index in grouplist)
   {
-      if( CheckUrl("maps/"+index +".kml"))
-      {
-        afg = addMyKML(mymapsubward ,"maps/"+index+".kml",window.colors[c]);
-        addBounds(mybounds,afg.getBounds());
-      }
-      c++;
-  }
-  mymapsubward.on("loaded", function(e)
+    var aroadgroup = grouplist[index];
+   if(aroadgroup.KML !== undefined )
   {
-    alert(" at boundind")
+    var targetkml = "maps/roadgroups/"+aroadgroup.KML;
+
+
+       var style = { fillColor: window.colors[c], weight: 6, opacity: 1,  color: window.colors[c],  fillOpacity: 1 };
+        var alayer = addMyKML(mymapsubward ,targetkml,style);
+        afg.addLayer(alayer);
+        c++;
+  }
+  }
+  if(c>0)
+  {
+  // mymapsubward.fitBounds(afg.getBounds().pad(0.5));
+  }
+
+
+ /* mymapsubward.on("loaded", function(e)
+  {
+    alert(" at boundind");
     mymapsubward.fitBounds(mybounds);
-  });
+  });*/
 
 
 });
 
 
-
-
-
 $(document).on("pageshow","#roadgroup",function() {
+  document.getElementById("roadgrouppageheader").innerHTML = makePageheader() ;
+
   document.getElementById("roadgrouppanel").innerHTML = showroadgroup() ;
   color="#4444FFDD";
   if( mymaproadgroup == null)
   {
-    mymaproadgroup = L.map('roadgroupmapdiv');
+    mymaproadgroup = L.map('roadgroupmapdiv').setView([52.6854, -1.8304], 14);
   }  else
   {
     mymaproadgroup.eachLayer((layer) => {
@@ -334,25 +355,19 @@ $(document).on("pageshow","#roadgroup",function() {
   }
 
   var wdid = window.wardid;
-  var aroadgroup = window.roadgroup;
+
+  var award = window.Wards[wdid];
+  var subwardid = window.subwardid;
+  var asubward = award.Subwards[subwardid];
+  var grouplist = asubward.Roadgroups;
+  var aroadgroup = grouplist[window.roadgroupid];
   var roadgroupid = window.roadgroupid;
 
-  mymappera(mymaproadgroup, 52.6854, -1.8304, 14);
+  mymappera(mymaproadgroup);
   if(aroadgroup.KML !== undefined )
   {
-    alayer =  addMyKML(mymaproadgroup,window.roadgroup.KML,color);
-  }else
-  {
-    if( CheckUrl("maps/"+roadgroupid +".kml"))
-    {
-      addMyKML(mymaproadgroup,"maps/"+roadgroupid +".kml",color);
-
-    }else if( CheckUrl("maps/"+wdid+".kml"))
-    {
-      addMyKML(mymaproadgroup,"maps/"+wdid+".kml","#FF4444DD");;
-    }else{
-      addMyKML(mymaproadgroup, "maps/LCC.kml", "#FF4444DD");
-    }
+    var targetkml = "maps/roadgroups/"+aroadgroup.KML;
+    alayer =  addMyKML(mymaproadgroup,targetkml,color);
   }
   if (is_browser_gps_capable()) {
     $('geo_location').innerHTML = 'Locating device...';
@@ -406,7 +421,7 @@ $(window).bind('orientationchange', function() {
 
 
 function savePNG(){
-  const node = document.getElementById("roadgrouppage");
+  const node = document.getElementById("roadgroup");
   domtoimage.toPng(node)
   .then(function (dataUrl) {
     var link = document.createElement('a');
