@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type='text/xsl' href='./Stylesheets/rgml.xsl' ?>
-<electiondistrict Name='Staffordshire County Council' DistrictId='SCC' KML='SCC_2020.kml' >
+<electiondistrict Name='Lichfield Labour Party' DistrictId='LCC' KML='LCC/RG_LCC.kml' >
   <rggroup RggroupId='RG_BLY' Name='Boley Park' Households='1815' KML='LCC/LCC_BLY.kml'>
       <rgsubgroup RgsubgroupId='RG_BLY_C' Name='Central' Households='' >
         <roadgroup RoadgroupId='BLY_C1' Name='Abbotsford Rd' KML='BLY_C1.kml' Households='219' >

@@ -24,7 +24,7 @@ function showwards()
   for (var wardid in allwards) {
     var ward = allwards[wardid];
     var style ="";
-    if (CheckUrl("maps/roadgroups/" + ward.KML))
+    if (ward.KML)
     {
       var style =" style =\"background-color: "+ window.colors[c] + ";\"";
       c++;
@@ -45,6 +45,7 @@ function showwards()
 function showward() {
   var wdid = window.wardid;
   var award = window.Wards[wdid];
+  var c = 0;
   var outstring = "<div class='heading' ><div>" + award.WardId + "</div><div >" + award.Name + "</div>";
   outstring +="</div>";
   outstring += "<div class='list'> ";
@@ -56,10 +57,12 @@ function showward() {
       roadgroupcount++;
     }
     outstring += "<div class='row'>";
-    outstring += "<div class='pbutton' ><a class=\"button\" href=\"#\" data-role=\"button\"  data-mini=\"true\" data-iconpos=\"right\" ";
+    outstring += "<div style='background-color:" + window.colors[c] + ";' >";
+    outstring += "<a class=\"button\" href=\"#\" data-role=\"button\"  data-mini=\"true\" data-iconpos=\"right\" ";
     outstring += " onclick=\"changeMypage( 'subward',\'" + asubward.SubwardId + "\'); \" >" + asubward.Name + "</a></div>";
     outstring += "<div>" + roadgroupcount + " RoadGroups </div>";
     outstring += "</div>";
+    c++;
   }
   outstring += "</div>";
   return outstring;
@@ -81,13 +84,11 @@ function showsubward() {
     window.sliplist.push(index);
     var agroup = grouplist[index];
     outstring += "<div class='row' >";
-    if (CheckUrl("maps/" + index + ".kml")) {
       outstring += "<div style='background-color:" + window.colors[c] + ";' >";
-    } else
-      outstring += "<div>";
     outstring += " <a class=\"button\" href=\"#\" data-role=\"button\"  data-mini=\"true\" data-iconpos=\"right\" ";
     outstring += " onclick=\"changeMypage( 'roadgroup',\'" + agroup.RoadgroupId + "\'); \" >" + agroup.RoadgroupId + "</a></div>";
-    outstring += "<div>" + agroup.Name + "..etc</div>";
+    outstring += "<div>" + agroup.Name + "</div>";
+    outstring += "<div>" + "<input class=\"printcheckbox\" type=\"checkbox\" id=\"printlist\" name=\"printlist\" value='" + agroup.RoadgroupId + "'></div>";
     outstring += "</div>";
     c++;
   }
@@ -104,13 +105,11 @@ function showroadgroup() {
   var asubward = award.Subwards[subwardid];
   var grouplist = asubward.Roadgroups;
   var aroadgroup = grouplist[window.roadgroupid];
-  var outstring = "<div class='heading' >";
-
+  var outstring = "";
+  outstring += "<div class='upperheading' ><div> RoadGroup:" + aroadgroup.RoadgroupId +":"+aroadgroup.Name+" (HH:" + aroadgroup.Households + ")</div></div>";
+  outstring += "<div class='lowerheading' >";
   outstring += '<div class="routebutton" ><a href="#ward"  class="routebutton" data-role="button" data-inline="true" data-mini="true">'+award.Name +'</a></div>';
   outstring += '<div class="routebutton" ><a href="#subward"  class="routebutton" data-role="button" data-inline="true" data-mini="true">'+asubward.Name +'</a></div>';
-  outstring += "</div>";
-  outstring += "<div class='heading' ><div> RoadGroup:" + aroadgroup.RoadgroupId +":"+aroadgroup.Name+ "</div></div>";
-  outstring += "<div class='heading' ><div> Households:" + aroadgroup.Households + "</div>";
   outstring += "</div>";
 
   outstring += "<div  class='streetlist' >";
@@ -119,8 +118,21 @@ function showroadgroup() {
   {
     var street = streets[streetid];
     var streetname = street.makeId();
+    var note = street.Qualifier;
     var households = street.Households;
-    outstring += " <div>" + streetname + " (" + households + ") </div>";
+    outstring += " <div>" + streetname +  "</div>";
+  }
+  outstring += "</div>";
+  outstring += "<div  class='partlist' >";
+  var streets = aroadgroup.Streets;
+  for (var streetid in streets)
+  {
+    var street = streets[streetid];
+    var streetname = street.makeId();
+    var note = street.Qualifier;
+    var households = street.Households;
+    if(note && note.length >2)
+      outstring += " <div>" + streetname +":"+note+"</div>";
   }
   outstring += "</div>";
   return outstring;
@@ -145,8 +157,6 @@ function CheckUrl(url) {
 
 function mymappera(mymap)
 {
-
-//  var mymap = L.map('mapid').setView([ lat , long], zoom);
   mapLink ='<a href="http://openstreetmap.org">OpenStreetMap</a>';
   L.tileLayer(
          'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -171,10 +181,52 @@ function addMyKML(mymap, kmlfile, style)
     mymap.fitBounds(e.target.getBounds(), {
       padding: [5, 5],
     });
+   // kmllayer.bindPopup(label);
   });
 
   return kmllayer;
 }
+
+function addMyKML2(mymap, kmlfile, style, label='')
+{
+
+  var runLayer = omnivore.kml(kmlfile)
+  .on('ready', function() {
+    mymap.fitBounds(runLayer.getBounds());
+    runLayer.eachLayer(function(layer) {
+      runLayer.bindPopup(layer.feature.properties.name);
+      runLayer.setStyle( style);
+      //runLayer.bindPopup(label);
+    });
+  })
+  .addTo(mymap);
+
+  return runLayer;
+}
+
+
+function makeKMLLayer(amap,kmlfilepath,style, fitbounds=false, label='')
+{
+  var track =null;
+  fetch(kmlfilepath).then(res => res.text()).then(kmltext =>
+  {
+    const parser = new DOMParser();
+    const kml = parser.parseFromString(kmltext, 'text/xml');
+    track = new L.KML(kml);
+    track.setStyle(style);
+    amap.addLayer(track);
+    if(fitbounds)
+    {
+      const bounds = track.getBounds();
+      amap.fitBounds(bounds);
+    }
+    track.bindPopup(label);
+  });
+  return track;
+}
+
+
+
 
 
 
@@ -360,18 +412,27 @@ function watchLocation(successCallback, errorCallback) {
 function pdfout()
 {
   createPdf();
-  async function createPdf(rglist) {
-
-   // var rglist = ["CHD_C3","CHD_C2","CHD_C1","CHD_C4", "CHD_N1", "CHD_N2"];
-   // var rglist = window.sliplist;
+  async function createPdf() {
+    var rglist = [];
     var wdid = window.wardid;
     var award = window.Wards[wdid];
     var subwardid = window.subwardid;
     var asubward = award.Subwards[subwardid];
     var grouplist = asubward.Roadgroups;
+    var inputElements = document.getElementsByClassName('printcheckbox');
+    for(var i=0; inputElements[i]; ++i){
+      if(inputElements[i].checked){
+        var checkedValue = inputElements[i].value;
+        rglist.push(checkedValue);
+      }
+    }
+   if(rglist.length ==0)
+   {
     for (var index in grouplist) {
+
       rglist.push( index);
     }
+   }
     var margin = 10;
     const pdfDoc = await PDFLib.PDFDocument.create();
     var page = pdfDoc.addPage();

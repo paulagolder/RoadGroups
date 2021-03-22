@@ -12,7 +12,7 @@ body {
 
 div.page
 {
-  background-color:  #F5E89F;
+  background-color:   #9FDDF552;
   height: 597px;
   width: 375px;
 }
@@ -69,13 +69,33 @@ header, footer{
 
 
 
+div.upperheading
+{
+  display: flex;
+  background-color: #00ff701f;
+  flex-wrap: wrap;
+  font-size: 1.2em;
+  padding: 10px  0px  5px;
+  align-items: center;
+}
+
+div.lowerheading
+{
+  display: flex;
+  background-color: #00ff701f;
+  flex-wrap: wrap;
+  font-size: 1em;
+  padding: 5px  0px  10px;
+  align-items: center;
+}
+
 div.heading
 {
   display: flex;
-  background-color: yellow;
+  background-color: #00ff701f;
   flex-wrap: wrap;
   font-size: 0.6em;
-  padding: 10px  0px;
+  padding: 10px  0px ;
   align-items: center;
 }
 
@@ -90,9 +110,14 @@ div.buttons
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: yellow;
+  background-color: "#00ff701f";
 }
 
+div.routebutton
+{
+  margin-left: 1em;
+  background-color: "#00ff701f";
+}
 
 
 a.button
@@ -131,25 +156,25 @@ button.button
 
 div.list div.row
 {
-  display: flex;
-  padding-left: 2em;
+  xdisplay: flex;
+  padding-left: 0.5em;
 }
 
  div.row
 {
   display: flex;
-  padding-left: 2em;
+  padding-left: 0em;
 }
 
 div.list div.row div
 {
-  padding-left: 2em;
+  padding-left: 0.5em;
 }
 
 div.list div.row div.pbutton
 {
   padding-left: 1em;
-  width: 4em;
+  width: 7em;
 }
 
 div.scrollpanel
@@ -210,7 +235,7 @@ div.leaflet-control-container
 #searchpanel
 {
   background-color:  #F5E89F;
-  border: 1px solid yellow;
+  border: 1px solid "#00ff701f";
   display: flex;
   padding: 0.1em;
   padding-left: 20px;
@@ -236,7 +261,7 @@ div.leaflet-control-container
 {
   color:green;
   background-color: #F6F1BD;
-  border: 1px solid yellow;
+  border: 1px solid "#00ff701f";
   width: 8em;
   height: 3em;
 }
@@ -276,7 +301,7 @@ div#wardspanel div.wards div.row
 #ward div.heading
 {
   display: flex;
-  background-color: yellow;
+  background-color: "#00ff701f";
 }
 
 #ward div.heading div
@@ -289,7 +314,7 @@ div#wardspanel div.wards div.row
 
 div#ward div.list
 {
-  display: flex;
+  xdisplay: flex;
   flex-wrap: wrap;
   padding : 0.5em;
 }
@@ -298,9 +323,13 @@ div#ward div.list div.row
 {
   display : flex;
   width : 18em;
+  padding-top:5px;
 }
 
-
+ div#wardpanel div.list div.row div
+ {
+   width:10em;
+}
 
 /* #subward styles======================================================= */
 
@@ -309,7 +338,7 @@ div#ward div.list div.row
 
 div#subward div.list
 {
-  display: flex;
+  xdisplay: flex;
   flex-wrap: wrap;
   padding : 0.5em;
 }
@@ -318,6 +347,7 @@ div#subward div.list div.row
 {
   display : flex;
   width : 14em;
+  padding-top:5px;
 }
 
 div#subward div  div.list div.row div
@@ -325,6 +355,10 @@ div#subward div  div.list div.row div
   white-space: nowrap;
 }
 
+div#subward div.list div.row div
+{
+  padding-top: 3px
+}
 
 
 /* roadgrouppage styles=========================================*/
@@ -341,7 +375,7 @@ div#subward div  div.list div.row div
 #roadgroup div div.streetlist div
 {
   flex: 1 1 10em;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 

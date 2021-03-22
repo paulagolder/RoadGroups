@@ -32,7 +32,7 @@ crossorigin=""></script>
 <script>
 
 window.start = true;
-window.District = new District("data/roadgroups.rgml");
+window.District = new District("rgml/roadgroups.rgml");
 console.log("Electiondistrict:"+window.District.name);
 window.Wards = window.District.wards;
 window.Ward = window.Wards[Object.keys(window.Wards)[0]];
@@ -122,7 +122,7 @@ window.colors[11]="#00FFFF88";
 <div id='subwardmapdiv'  class="mapdiv"  ></div>
 </div>
 <div  class="page-footer bstyle" data-role="footer"  data-theme="d" data-position="fixed" data-mini="true" >
-<button class="button  desktop" type="xxbutton" onclick="pdfout(['CHD_C1','CHD_C2'])">Print Slips</button>
+<button class="button  desktop" type="xxbutton" onclick="pdfout()">Print Slips</button>
 </div>
 <!-- /footer -->
 </div>
@@ -203,21 +203,25 @@ $(document).on("pageshow","#wards", function() {
   var dname = window.District.name;
   var dId = window.District.districtid;
    var dKML = window.District.KML;
-   var kml = "maps/"+dKML;
+   var kml = "maps/outlines/"+dKML;
    if( dKML )
   {
-    var style = { color: '#FF0000',   weight: 6 };
-     wlayer = addMyKML(mymapwards, kml,style);
+   // var style = { color: '#FF0000',   weight: 6 };
+   //  var style = { fillColor: '#000000', weight: 6, opacity: 1,  color: '#FF0000',  fillOpacity: 0.0 };
+    // wlayer = addMyKML(mymapwards, kml,style);
   }
   var afg = new  L.featureGroup();
   for(var index in wards)
   {
       var thisward = window.Wards[index];
-        if( !(thisward.KML === null) && !thisward.KML )
+      if(thisward.KML )
       {
          var style = { fillColor:  window.colors[c], weight: 2, opacity: 1,  color: 'black',  fillOpacity: 0.7 };
-        var alayer = addMyKML(mymapwards ,"maps/"+dId+"/"+thisward.KML,style);
-        afg.addLayer(alayer);
+         var alayer = addMyKML2(mymapwards ,"maps/roadgroups/"+thisward.KML,style,true,"freddy");
+         afg.addLayer(alayer);
+
+         //makeKMLLayer(mymapwards ,"maps/roadgroups/"+thisward.KML,style,false,"freddy");
+
         c++;
       }
   }
@@ -229,6 +233,13 @@ $(document).on("pageshow","#wards", function() {
   {
     //mymapwards.fitBounds(wlayer.getBounds());
     }
+
+     if( dKML )
+  {
+   // var style = { color: '#FF0000',   weight: 6 };
+     var style = { fillColor: '#000000', weight: 6, opacity: 0.0,  color: '#FF0000',  fillOpacity: 0.0 };
+     wlayer = addMyKML(mymapwards, kml,style);
+  }
 
 });
 
@@ -247,30 +258,44 @@ $(document).on("pageshow","#ward",function()
       layer.remove();
     });
   }
-
+  mymappera(mymapward);
   var wdid = window.wardid;
   var thisward = window.Wards[wdid];
+  var subwards = thisward.Subwards;
    var dId = window.District.districtid;
    var dKML = window.District.KML;
-   var kml = "maps/"+dId+"/"+dKML;
-   if( CheckUrl(kml))
+
+  var afg = new  L.featureGroup();
+   var c= 0;
+  for (var asubwardid in subwards)
   {
-    var style = { color: '#FF0000',   weight: 6 };
-     wlayer = addMyKML(mymapward, kml,style);
-  }
-  if(thisward.KML !== undefined )
-  {
-    if(thisward.Shape.midlat !== undefined)
+    var asubward = subwards[asubwardid];
+    for (var groupid in asubward.Roadgroups)
     {
-      mymappera( mymapward);
+     var aroadgroup = asubward.Roadgroups[groupid];
+       if(aroadgroup.KML !== undefined )
+       {
+         var targetkml = "maps/roadgroups/"+aroadgroup.KML;
+         var style = { fillColor: window.colors[c], weight: 6, opacity: 1,  color: window.colors[c],  fillOpacity: 1 };
+         var alayer = addMyKML(mymapward ,targetkml,style);
+         afg.addLayer(alayer);
+       }
+
     }
-    else
+     c++;
+}
+
+
+   if( thisward.KML)
     {
-      mymappera(mymapward);
+       var fullkml = "maps/outlines/"+thisward.KML;
+        var style = { fillColor: '#ffffff', weight: 6, opacity: 1,  color: '#aa0000',  fillOpacity: 0.1 };
+      // var alayer = addMyKML(mymapward, fullkml,style);
+        //mymapsubward.fitBounds(alayer.getBounds());
     }
-    var style = { color:'#0000FF',   weight: 2 };
-    addMyKML(mymapward,"maps/"+thisward.KML,style);
-  }
+
+
+
 
 });
 
@@ -299,14 +324,7 @@ $(document).on("pageshow","#subward",function() {
   var asubward = thisward.Subwards[subwardid];
   var grouplist = asubward.Roadgroups;
   var roadgroupid = window.roadgroupid;
-
-   if( CheckUrl("maps/"+wdid+".kml"))
-    {
-
-        var style = { fillColor: '#ffffff', weight: 6, opacity: 1,  color: '#aa0000',  fillOpacity: 0.1 };
-        var alayer = addMyKML(mymapsubward, "maps/"+wdid+".kml",style);
-      //  mymapsubward.fitBounds(alayer.getBounds());
-    }
+  var kml = thisward.KML;
   var c=0;
   var afg = new  L.featureGroup();
   for(var index in grouplist)
@@ -315,25 +333,26 @@ $(document).on("pageshow","#subward",function() {
    if(aroadgroup.KML !== undefined )
   {
     var targetkml = "maps/roadgroups/"+aroadgroup.KML;
-
-
        var style = { fillColor: window.colors[c], weight: 6, opacity: 1,  color: window.colors[c],  fillOpacity: 1 };
         var alayer = addMyKML(mymapsubward ,targetkml,style);
         afg.addLayer(alayer);
         c++;
   }
   }
+   if( kml)
+    {
+       var fullkml = "maps/roadgroups/"+kml;
+        var style = { fillColor: '#ffffff', weight: 6, opacity: 1,  color: '#aa0000',  fillOpacity: 0.1 };
+        var alayer = addMyKML(mymapsubward, fullkml,style);
+        //mymapsubward.fitBounds(alayer.getBounds());
+    }
   if(c>0)
   {
-  // mymapsubward.fitBounds(afg.getBounds().pad(0.5));
+  //  mymapsubward.fitBounds(afg.getBounds().pad(0.5));
   }
 
 
- /* mymapsubward.on("loaded", function(e)
-  {
-    alert(" at boundind");
-    mymapsubward.fitBounds(mybounds);
-  });*/
+
 
 
 });
@@ -366,8 +385,9 @@ $(document).on("pageshow","#roadgroup",function() {
   mymappera(mymaproadgroup);
   if(aroadgroup.KML !== undefined )
   {
+      var style = { fillColor: '#0000aa', weight: 6, opacity: 0.5,  color: '#0000aa',  fillOpacity: 0.1 };
     var targetkml = "maps/roadgroups/"+aroadgroup.KML;
-    alayer =  addMyKML(mymaproadgroup,targetkml,color);
+    alayer =  addMyKML2(mymaproadgroup,targetkml,style,aroadgroup.KML);
   }
   if (is_browser_gps_capable()) {
     $('geo_location').innerHTML = 'Locating device...';
@@ -432,7 +452,6 @@ function savePNG(){
   });
 }
 
-setScrollHeight();
 </script>
 </body>
 </html>
