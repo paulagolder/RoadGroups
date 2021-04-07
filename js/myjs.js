@@ -1,40 +1,33 @@
 
-
-
 function makePageheader()
 {
   var outstring = "";
-  outstring +='<div class="routbutton right"><a href="./#wards"  class="routebutton" data-role="button" data-inline="true" data-mini="true">';
-  outstring += window.District.name;
+  outstring +='<div class="routbutton right"><a href="./#rggroups"  class="routebutton" data-role="button" data-inline="true" data-mini="true">';
+  outstring += window.Delivery.name;
   outstring += "</a></div>";
   return outstring;
 }
 
-
-
-
-
-
-function showwards()
+function showrggroups()
 {
-  var allwards = window.Wards;
+  var allgroups = window.Rggroups;
   var outstring = "";
   outstring += "<div class='list'> ";
   var c = 0;
-  for (var wardid in allwards) {
-    var ward = allwards[wardid];
+  for (var rggroupid in allgroups) {
+    var rggroup = allgroups[rggroupid];
     var style ="";
-    if (ward.KML)
+    if (rggroup.KML)
     {
       var style =" style =\"background-color: "+ window.colors[c] + ";\"";
       c++;
     }
 
-    outstring += "<div class='row' ><div class='pbutton' "+style+ " ><a class=\"button\" href=\"./#ward\" data-role=\"button\"  data-mini=\"true\"  ";
-    outstring += " onclick=\"changeMypage( 'ward',\'" + wardid + "\'); \" >" + wardid + "</a></div>";
+    outstring += "<div class='row' ><div class='pbutton' "+style+ " ><a class=\"button\" href=\"./#rggroup\" data-role=\"button\"  data-mini=\"true\"  ";
+    outstring += " onclick=\"changeMypage( 'rggroup',\'" + rggroupid + "\'); \" >" + rggroupid + "</a></div>";
 
 
-    outstring += "<div>" + ward.Name + "</div>";
+    outstring += "<div>" + rggroup.Name + "</div>";
     outstring += "</div>";
   }
   outstring += "</div>";
@@ -42,25 +35,50 @@ function showwards()
 }
 
 
-function showward() {
-  var wdid = window.wardid;
-  var award = window.Wards[wdid];
+function showrggroup() {
+  var wdid = window.rggroupid;
+  var arggroup = window.Rggroups[wdid];
+  var rgsubgroups = arggroup.Rgsubgroups;
+  var roadgroupcount = 0;
+  var households = 0;
+  for (var argsubgroupid in rgsubgroups) {
+    var argsubgroup = rgsubgroups[argsubgroupid];
+    for (var groupid in argsubgroup.Roadgroups) {
+      roadgroupcount++;
+      var hh = parseInt(argsubgroup.Roadgroups[groupid].Households);
+      if(!isNaN(hh))
+      {
+        households = households + hh;
+      }
+    }
+  }
   var c = 0;
-  var outstring = "<div class='heading' ><div>" + award.WardId + "</div><div >" + award.Name + "</div>";
+  var outstring = "<div class='heading' ><div>" + arggroup.RggroupId + "</div><div >" + arggroup.Name + "</div>";
+  outstring += "<div class=\"hh\">" + households + " HH</div>";
+  outstring += "<div class=\"rg\">" + roadgroupcount + " RoadGroups </div>";
   outstring +="</div>";
   outstring += "<div class='list'> ";
-  var subwards = award.Subwards;
-  for (var asubwardid in subwards) {
+
+  for (var argsubgroupid in rgsubgroups)
+  {
     var roadgroupcount = 0;
-    var asubward = subwards[asubwardid];
-    for (var groupid in asubward.Roadgroups) {
+    var households = 0;
+    var argsubgroup = rgsubgroups[argsubgroupid];
+    for (var groupid in argsubgroup.Roadgroups)
+    {
       roadgroupcount++;
+      var hh = parseInt(argsubgroup.Roadgroups[groupid].Households);
+      if(!isNaN(hh))
+      {
+      households = households + hh;
+      }
     }
     outstring += "<div class='row'>";
-    outstring += "<div style='background-color:" + window.colors[c] + ";' >";
+    outstring += "<div class=\"button\" style='background-color:" + window.colors[c] + ";' >";
     outstring += "<a class=\"button\" href=\"#\" data-role=\"button\"  data-mini=\"true\" data-iconpos=\"right\" ";
-    outstring += " onclick=\"changeMypage( 'subward',\'" + asubward.SubwardId + "\'); \" >" + asubward.Name + "</a></div>";
-    outstring += "<div>" + roadgroupcount + " RoadGroups </div>";
+    outstring += " onclick=\"changeMypage('rgsubgroup',\'" + argsubgroup.RgsubgroupId + "\'); \" >" + argsubgroup.Name + "</a></div>";
+    outstring += "<div class=\"hh\">" + households + " HH</div>";
+    outstring += "<div class=\"rg\">" + roadgroupcount + " RoadGroups </div>";
     outstring += "</div>";
     c++;
   }
@@ -68,15 +86,30 @@ function showward() {
   return outstring;
 }
 
-function showsubward() {
-  var wdid = window.wardid;
-  var award = window.Wards[wdid];
-  var subwardid = window.subwardid;
-  var asubward = award.Subwards[subwardid];
-  var grouplist = asubward.Roadgroups;
-  var outstring = "<div class='heading' ><div>" + asubward.SubwardId + "</div>";
-  outstring += '<div class="routebutton" ><a href="#ward"  class="routebutton" data-role="button" data-inline="true" data-mini="true">'+award.Name +'</a></div>';
-  outstring += "<div>" + asubward.Name + "</div></div>";
+function showrgsubgroup() {
+  var wdid = window.rggroupid;
+  var arggroup = window.Rggroups[wdid];
+  var rgsubgroupid = window.rgsubgroupid;
+  var argsubgroup = arggroup.Rgsubgroups[rgsubgroupid];
+  var grouplist = argsubgroup.Roadgroups;
+  var roadgroupcount = 0;
+  var households = 0;
+
+    for (var groupid in argsubgroup.Roadgroups) {
+      roadgroupcount++;
+      var hh = parseInt(argsubgroup.Roadgroups[groupid].Households);
+      if(!isNaN(hh))
+      {
+        households = households + hh;
+      }
+    }
+
+  var outstring = "<div class='heading' ><div>" + argsubgroup.RgsubgroupId + "</div>";
+  outstring += '<div class="routebutton" ><a href="#rggroup"  class="routebutton" data-role="button" data-inline="true" data-mini="true">'+arggroup.Name +'</a></div>';
+  outstring += "<div>" + argsubgroup.Name + "</div>";
+  outstring += "<div class=\"hh\">" + households + " HH</div>";
+  outstring += "<div class=\"rg\">" + roadgroupcount + " RoadGroups </div>";
+  outstring += "</div>";
   outstring += "<div class='list'   >";
   window.sliplist =[];
   var c = 0;
@@ -87,29 +120,34 @@ function showsubward() {
       outstring += "<div style='background-color:" + window.colors[c] + ";' >";
     outstring += " <a class=\"button\" href=\"#\" data-role=\"button\"  data-mini=\"true\" data-iconpos=\"right\" ";
     outstring += " onclick=\"changeMypage( 'roadgroup',\'" + agroup.RoadgroupId + "\'); \" >" + agroup.RoadgroupId + "</a></div>";
-    outstring += "<div>" + agroup.Name + "</div>";
+    outstring += "<div class=\"name\">" + agroup.Name + "</div>";
+    outstring += "<div class=\"hh\">" + agroup.Households + " HH</div>";
     outstring += "<div>" + "<input class=\"printcheckbox\" type=\"checkbox\" id=\"printlist\" name=\"printlist\" value='" + agroup.RoadgroupId + "'></div>";
     outstring += "</div>";
     c++;
   }
-
   outstring += "  <div></div>";
   return outstring;
 }
 
 
 function showroadgroup() {
-  var wdid = window.wardid;
-  var award = window.Wards[wdid];
-  var subwardid = window.subwardid;
-  var asubward = award.Subwards[subwardid];
-  var grouplist = asubward.Roadgroups;
+  var wdid = window.rggroupid;
+  var arggroup = window.Rggroups[wdid];
+  var rgsubgroupid = window.rgsubgroupid;
+  var argsubgroup = arggroup.Rgsubgroups[rgsubgroupid];
+  var grouplist = argsubgroup.Roadgroups;
   var aroadgroup = grouplist[window.roadgroupid];
   var outstring = "";
+  if(!aroadgroup)
+  {
+    outstring += "<div class='upperheading' ><div> RoadGroup:" + window.roadgroupid+" not found </div></div>";
+    return outstring;
+  }
   outstring += "<div class='upperheading' ><div> RoadGroup:" + aroadgroup.RoadgroupId +":"+aroadgroup.Name+" (HH:" + aroadgroup.Households + ")</div></div>";
   outstring += "<div class='lowerheading' >";
-  outstring += '<div class="routebutton" ><a href="#ward"  class="routebutton" data-role="button" data-inline="true" data-mini="true">'+award.Name +'</a></div>';
-  outstring += '<div class="routebutton" ><a href="#subward"  class="routebutton" data-role="button" data-inline="true" data-mini="true">'+asubward.Name +'</a></div>';
+  outstring += '<div class="routebutton" ><a href="#rggroup"  class="routebutton" data-role="button" data-inline="true" data-mini="true">'+arggroup.Name +'</a></div>';
+  outstring += '<div class="routebutton" ><a href="#rgsubgroup"  class="routebutton" data-role="button" data-inline="true" data-mini="true">'+argsubgroup.Name +'</a></div>';
   outstring += "</div>";
 
   outstring += "<div  class='streetlist' >";
@@ -137,8 +175,6 @@ function showroadgroup() {
   outstring += "</div>";
   return outstring;
 }
-
-
 
 function CheckUrl(url) {
   var http = null;
@@ -168,8 +204,6 @@ function mymappera(mymap)
   return mymap;
 }
 
-
-
 function addMyKML(mymap, kmlfile, style)
 {
 
@@ -181,6 +215,7 @@ function addMyKML(mymap, kmlfile, style)
     mymap.fitBounds(e.target.getBounds(), {
       padding: [5, 5],
     });
+    kmllayer.addTo(mymap);
    // kmllayer.bindPopup(label);
   });
 
@@ -192,10 +227,11 @@ function addMyKML2(mymap, kmlfile, style, label='')
 
   var runLayer = omnivore.kml(kmlfile)
   .on('ready', function() {
-    mymap.fitBounds(runLayer.getBounds());
+
     runLayer.eachLayer(function(layer) {
       runLayer.bindPopup(layer.feature.properties.name);
       runLayer.setStyle( style);
+     // mymap.fitBounds(runLayer.getBounds());
       //runLayer.bindPopup(label);
     });
   })
@@ -225,11 +261,6 @@ function makeKMLLayer(amap,kmlfilepath,style, fitbounds=false, label='')
   return track;
 }
 
-
-
-
-
-
 function setScrollHeight() {
   var wo = window.orientation;
   var height = $(window).width();
@@ -241,17 +272,11 @@ function setScrollHeight() {
     if (wo === 0 || wo == 180) height = $(window).height();
   }
   height = height - 200;
-  // $('#wardsscroll').css('height', height);
+  // $('#rggroupsscroll').css('height', height);
 
 }
 
-$(document).on("pageshow", "#xwards", function() {
 
-
-  document.getElementById("wardspanel").innerHTML = showwards("");
-  window.refreshcontactlist = false;
-
-});
 
 
 
@@ -289,12 +314,12 @@ function doSearch() {
   var searchfield = document.getElementById('searchfield').value;
   searchfield = searchfield.toLowerCase();
   var foundlist = [];
-  for (var wardid in window.Wards) {
-    var award = window.Wards[wardid];
-    var subwards = award.Subwards;
-    for (var asubwardid in subwards) {
-      var asubward = subwards[asubwardid];
-      var rgrouplist = asubward.Roadgroups;
+  for (var rggroupid in window.Rggroups) {
+    var arggroup = window.Rggroups[rggroupid];
+    var rgsubgroups = arggroup.Rgsubgroups;
+    for (var argsubgroupid in rgsubgroups) {
+      var argsubgroup = rgsubgroups[argsubgroupid];
+      var rgrouplist = argsubgroup.Roadgroups;
       for (var index in rgrouplist) {
         var aroadgroup = rgrouplist[index];
         var streets = aroadgroup.Streets;
@@ -303,8 +328,8 @@ function doSearch() {
           if (astreet.Name.toLowerCase().includes(searchfield))
           {
             astreet.roadgroupid = aroadgroup.RoadgroupId;
-            astreet.subwardid = asubwardid;
-            astreet.wardid = wardid;
+            astreet.rgsubgroupid = argsubgroupid;
+            astreet.rggroupid = rggroupid;
             foundlist.push(astreet);
           }
         }
@@ -313,11 +338,11 @@ function doSearch() {
   }
   if (foundlist.length == 1) {
     var fstreet = foundlist[0];
-    var roadgroup = fstreet.roadgroupid;
-    window.wardid = fstreet.wardid;
-    window.subwardid = fstreet.subwardid;
+    var roadgroupid = fstreet.roadgroupid;
+    window.rggroupid = fstreet.rggroupid;
+    window.rgsubgroupid = fstreet.rgsubgroupid;
     window.roadgroupid = roadgroup;
-    changeMypage("roadgroup", roadgroup);
+    changeMypage("roadgroup", roadgroupid);
     clearSearch();
   } else if (foundlist.length < 1) {
     alert(" No Match found: try another street name ");
@@ -409,30 +434,45 @@ function watchLocation(successCallback, errorCallback) {
   }
 }
 
-function pdfout()
+function pdfout(mode)
 {
-  createPdf();
-  async function createPdf() {
-    var rglist = [];
-    var wdid = window.wardid;
-    var award = window.Wards[wdid];
-    var subwardid = window.subwardid;
-    var asubward = award.Subwards[subwardid];
-    var grouplist = asubward.Roadgroups;
-    var inputElements = document.getElementsByClassName('printcheckbox');
-    for(var i=0; inputElements[i]; ++i){
-      if(inputElements[i].checked){
-        var checkedValue = inputElements[i].value;
-        rglist.push(checkedValue);
+  var wdid = window.rggroupid;
+  var arggroup = window.Rggroups[wdid];
+  var argsubgroup = arggroup.Rgsubgroups[rgsubgroupid];
+  var mylist = [];
+  switch(mode) {
+    case "rggroups":
+      var grouplist = window.Rggroups;
+      break;
+    case "rggroup":
+      var grouplist = arggroup.Rgsubgroups;
+      break;
+    case "rgsubgroup":
+      var grouplist = argsubgroup.Roadgroups;
+      var inputElements = document.getElementsByClassName('printcheckbox');
+      for(var i=0; inputElements[i]; ++i)
+      {
+        if(inputElements[i].checked){
+          var checkedValue = inputElements[i].value;
+          mylist.push(checkedValue);
+        }
       }
-    }
-   if(rglist.length ==0)
-   {
+      break;
+  }
+
+  if(mylist.length ==0)
+  {
     for (var index in grouplist) {
 
-      rglist.push( index);
+      mylist.push( index);
     }
-   }
+  }
+
+
+  createPdf(mylist);
+  async function createPdf( mylist)
+  {
+
     var margin = 10;
     const pdfDoc = await PDFLib.PDFDocument.create();
     var page = pdfDoc.addPage();
@@ -444,10 +484,10 @@ function pdfout()
     var pheight = page.getHeight();
     var iwidth = (pwidth - 3 * margin)/2;
     var iheight = ( pheight - 3 * margin)/2;
-    for( rg of rglist)
+    for( rg of mylist)
     {
-
-      var rgpngpath = 'images/'+rg+'.png';
+      //var rgpngpath = 'images/'+rg+'.png';
+      var rgpngpath = window.imagepath+rg+'.png';
       if(CheckUrl(rgpngpath))
       {
       var rgpngbytes =  await fetch(rgpngpath).then((res) => res.arrayBuffer());
@@ -459,14 +499,12 @@ function pdfout()
       if( wscale < hscale ) scale = wscale;
       var rgpngdims = rgpngimage.scale(scale);
 
-    page.drawImage(rgpngimage, {
-      x: col*pwidth/2+margin,
-      y: row*pheight/2 + margin,
-      width: rgpngdims.width,
-      height: rgpngdims.height,
-    })
-
-
+      page.drawImage(rgpngimage, {
+         x: col*pwidth/2+margin,
+         y: row*pheight/2 + margin,
+         width: rgpngdims.width,
+         height: rgpngdims.height,
+      })
     col= col+1;
     if( col == cmax)
     {
@@ -482,7 +520,87 @@ function pdfout()
 
     }
     const pdfBytes = await pdfDoc.save()
-   download(pdfBytes, subwardid+".pdf", "application/pdf");
+   download(pdfBytes, rgsubgroupid+".pdf", "application/pdf");
 
   }
+}
+
+  function xpdfout()
+  {
+    createPdf();
+    async function createPdf()
+    {
+      var rglist = [];
+      var wdid = window.rggroupid;
+      var arggroup = window.Rggroups[wdid];
+      var rgsubgroupid = window.rgsubgroupid;
+      var argsubgroup = arggroup.Rgsubgroups[rgsubgroupid];
+      var grouplist = argsubgroup.Roadgroups;
+      var inputElements = document.getElementsByClassName('printcheckbox');
+      for(var i=0; inputElements[i]; ++i)
+      {
+        if(inputElements[i].checked){
+          var checkedValue = inputElements[i].value;
+          rglist.push(checkedValue);
+        }
+      }
+      if(rglist.length ==0)
+      {
+        for (var index in grouplist) {
+
+          rglist.push( index);
+        }
+      }
+      var margin = 10;
+      const pdfDoc = await PDFLib.PDFDocument.create();
+      var page = pdfDoc.addPage();
+      var row =0;
+      var col= 0;
+      var rmax=2;
+      var cmax=2;
+      var pwidth = page.getWidth();
+      var pheight = page.getHeight();
+      var iwidth = (pwidth - 3 * margin)/2;
+      var iheight = ( pheight - 3 * margin)/2;
+      for( rg of rglist)
+      {
+        var rgpngpath = 'images/'+rg+'.png';
+        if(CheckUrl(rgpngpath))
+        {
+          var rgpngbytes =  await fetch(rgpngpath).then((res) => res.arrayBuffer());
+          var rgpngimage = await pdfDoc.embedPng(rgpngbytes);
+          var rgpngdims1 = rgpngimage.scale(1);
+          var hscale = iheight / rgpngdims1.height ;
+          var wscale = iwidth / rgpngdims1.width;
+          var scale = hscale;
+          if( wscale < hscale ) scale = wscale;
+          var rgpngdims = rgpngimage.scale(scale);
+
+          page.drawImage(rgpngimage, {
+            x: col*pwidth/2+margin,
+            y: row*pheight/2 + margin,
+            width: rgpngdims.width,
+            height: rgpngdims.height,
+          })
+          col= col+1;
+          if( col == cmax)
+          {
+            col =0;
+            row= row+1;
+            if( row ==rmax)
+            {
+              row = 0;
+              page = pdfDoc.addPage();
+            }
+          }
+        }
+
+      }
+      const pdfBytes = await pdfDoc.save()
+      download(pdfBytes, rgsubgroupid+".pdf", "application/pdf");
+
+    }
+
+
+
 }

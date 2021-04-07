@@ -154,6 +154,8 @@ button.button
   text-decoration: none;
 }
 
+
+
 div.list div.row
 {
   xdisplay: flex;
@@ -267,24 +269,24 @@ div.leaflet-control-container
 }
 
 
-/* #wards panel styles======================================================= */
+/* #rggroups panel styles======================================================= */
 
 
 
-#wards div.ui-panel-content-wrap
+#rggroups div.ui-panel-content-wrap
 {
   background-color:  #F5E89F;
 }
 
 
-div#wardspanel div.wards
+div#rggroupspanel div.wards
 {
   display: flex;
   flex-wrap: wrap;
   padding : 0.5em;
 }
 
-div#wardspanel div.wards div.row
+div#rggroupspanel div.wards div.row
 {
   width : 12em;
 }
@@ -293,18 +295,17 @@ div#wardspanel div.wards div.row
 
 
 
-/* #ward styles======================================================= */
+/* #rggroup styles======================================================= */
 
 
 
-
-#ward div.heading
+#rggroup div.heading
 {
   display: flex;
   background-color: "#00ff701f";
 }
 
-#ward div.heading div
+#rggroup div.heading div
 {
   font-size:2em;
   margin-left:1em;
@@ -312,23 +313,36 @@ div#wardspanel div.wards div.row
 
 
 
-div#ward div.list
+div#rggroup div.list
 {
   xdisplay: flex;
   flex-wrap: wrap;
   padding : 0.5em;
+  padding-top: 1em;
 }
 
-div#ward div.list div.row
+div#rggroup div.list div.row
 {
   display : flex;
-  width : 18em;
+  xwidth : 18em;
   padding-top:5px;
 }
 
- div#wardpanel div.list div.row div
+ div#rggrouppanel div.list div.row div.button
  {
-   width:10em;
+   width:9em;
+}
+
+div#rggrouppanel div.list div.row div.hh
+{
+  width:6em;
+  text-align: right;
+}
+
+div#rggrouppanel div.list div.row div.rg
+{
+  width:9em;
+  text-align: right;
 }
 
 /* #subward styles======================================================= */
@@ -336,30 +350,47 @@ div#ward div.list div.row
 
 
 
-div#subward div.list
+div#rgsubgroup div.list
 {
   xdisplay: flex;
   flex-wrap: wrap;
   padding : 0.5em;
 }
 
-div#subward div.list div.row
+
+
+
+div#rgsubgroup div.list div.row
 {
   display : flex;
-  width : 14em;
+  xwidth : 14em;
   padding-top:5px;
 }
 
-div#subward div  div.list div.row div
+div#rgsubgroup div  div.list div.row div
 {
   white-space: nowrap;
+  padding-top: 3px;
 }
 
-div#subward div.list div.row div
+div#rgsubgroup div.list div.row div.button
 {
-  padding-top: 3px
+  width:9em;
 }
 
+div#rgsubgroup div.list div.row div.hh
+{
+  width:6em;
+  text-align: right;
+}
+
+div#rgsubgroup div.list div.row div.name
+{
+  width:9em;
+  text-align: lefrt;
+}
+html.ui-mobile body.bstyle.ui-mobile-viewport.ui-overlay-a div#rgsubgroup.bstyle.page.ui-page.ui-page-theme-a.ui-page-header-fixed.ui-page-footer-fixed.ui-page-active div.page-content.ui-content div#rgsubgroup div.list div.row;
+html.ui-mobile body.bstyle.ui-mobile-viewport.ui-overlay-a div#rgsubgroup.bstyle.page.ui-page.ui-page-theme-a.ui-page-header-fixed.ui-page-footer-fixed.ui-page-active div.page-content.ui-content div#rgsubgroup div.list div.row;
 
 /* roadgrouppage styles=========================================*/
 
@@ -472,7 +503,7 @@ div#subward div.list div.row div
 
   /*====================== wardsstyles ===================*/
 
-  #wards div.page-header  h1
+  #rggroups div.page-header  h1
   {
     font-size: 1.5em;
   }
@@ -484,7 +515,7 @@ div#subward div.list div.row div
      font-size: 1.5em;
    }
 
-   #wards div.mapdiv
+   #rggroups div.mapdiv
    {
      max-width: 100%;
      width: 100%;
@@ -494,28 +525,28 @@ div#subward div.list div.row div
 
    /*====================== wardstyles ===================*/
 
-   div#ward div.page-header h1
+   div#rggroup div.page-header h1
    {
      font-size: 1.5em;
   }
 
-  div#ward div.heading
+  div#rggroup div.heading
   {
 
     font-size:1em;
   }
 
-  div#ward div.list
+  div#rggroup div.list
   {
     font-size: 1.4em;
   }
 
-  div#ward div.list div.row
+  div#rggroup div.list div.row
   {
     width: 18em;
   }
 
-  div#ward div.list div.row div.pbutton
+  div#rggroup div.list div.row div.pbutton
   {
     width: 6em;
   }
@@ -525,23 +556,23 @@ div#subward div.list div.row div
   /*====================== subwardstyles ===================*/
 
 
-  div#subward div.page-header h1
+  div#rgsubgroup div.page-header h1
   {
     font-size:1.5em;
   }
 
-  div#subward div.heading
+  div#rgsubgroup div.heading
   {
 
     font-size:1em;
   }
 
-  div#subward div.list
+  div#rgsubgroup div.list
   {
     font-size: 1.4em;
   }
 
-  div#subward div.list div.row
+  div#rgsubgroup div.list div.row
   {
     width: 20em;
   }
