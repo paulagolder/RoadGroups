@@ -59,9 +59,11 @@ class Rggroup
     this.RggroupId = anid;
     this.Name = aname;
     this.KML = "";
-    this.Shape = {};
+    this.Bounds = {};
     this.Rgsubgroups = [];
   }
+
+
 
 
 }
@@ -81,7 +83,8 @@ class Rggroups
       let arggroup = new Rggroup(arggroupid, name);
       arggroup.Households = arggroupxml.getAttribute('Households');
       arggroup.KML =  arggroupxml.getAttribute('KML');
-    //  arggroup.Shape = this.makeShape(arggroupxml);
+      var bnds = arggroupxml.getAttribute('Bounds');
+      arggroup.Bounds = JSON.parse(bnds);
       arggroup.Rgsubgroups = new Rgsubgroups(arggroupxml);
       this[arggroup.RggroupId] = arggroup;
     }
@@ -98,20 +101,7 @@ class Rggroups
     return null;
   }
 
-  makeShape(arggroupxml) {
-    var bns = arggroupxml.getElementsByTagName("bounds")[0];
-    if (bns !== undefined) {
-      var ashape = {};
-      ashape.maxlon = parseFloat(bns.getAttribute("maxlon"));
-      ashape.minlon = parseFloat(bns.getAttribute("minlon"));
-      ashape.maxlat = parseFloat(bns.getAttribute("maxlat"));
-      ashape.minlat = parseFloat(bns.getAttribute("minlat"));
-      ashape.midlat = (ashape.maxlat + ashape.minlat) / 2;
-      ashape.midlon = (ashape.maxlon + ashape.minlon) / 2;
-      return ashape;
-    }
-    return null;
-  }
+
 }
 
 
@@ -136,6 +126,7 @@ class Rgsubgroup {
     this.Name = swdxml.getAttribute("Name");
     this.Households = swdxml.getAttribute("Households");
     this.Roadgroups = new RoadGroups(swdxml);
+    this.Bounds = JSON.parse(swdxml.getAttribute('Bounds'));
   }
 }
 

@@ -70,7 +70,7 @@ function showrggroup() {
       var hh = parseInt(argsubgroup.Roadgroups[groupid].Households);
       if(!isNaN(hh))
       {
-      households = households + hh;
+        households = households + hh;
       }
     }
     outstring += "<div class='row'>";
@@ -95,14 +95,14 @@ function showrgsubgroup() {
   var roadgroupcount = 0;
   var households = 0;
 
-    for (var groupid in argsubgroup.Roadgroups) {
-      roadgroupcount++;
-      var hh = parseInt(argsubgroup.Roadgroups[groupid].Households);
-      if(!isNaN(hh))
-      {
-        households = households + hh;
-      }
+  for (var groupid in argsubgroup.Roadgroups) {
+    roadgroupcount++;
+    var hh = parseInt(argsubgroup.Roadgroups[groupid].Households);
+    if(!isNaN(hh))
+    {
+      households = households + hh;
     }
+  }
 
   var outstring = "<div class='heading' ><div>" + argsubgroup.RgsubgroupId + "</div>";
   outstring += '<div class="routebutton" ><a href="#rggroup"  class="routebutton" data-role="button" data-inline="true" data-mini="true">'+arggroup.Name +'</a></div>';
@@ -117,7 +117,7 @@ function showrgsubgroup() {
     window.sliplist.push(index);
     var agroup = grouplist[index];
     outstring += "<div class='row' >";
-      outstring += "<div style='background-color:" + window.colors[c] + ";' >";
+    outstring += "<div style='background-color:" + window.colors[c] + ";' >";
     outstring += " <a class=\"button\" href=\"#\" data-role=\"button\"  data-mini=\"true\" data-iconpos=\"right\" ";
     outstring += " onclick=\"changeMypage( 'roadgroup',\'" + agroup.RoadgroupId + "\'); \" >" + agroup.RoadgroupId + "</a></div>";
     outstring += "<div class=\"name\">" + agroup.Name + "</div>";
@@ -195,13 +195,13 @@ function mymappera(mymap)
 {
   mapLink ='<a href="http://openstreetmap.org">OpenStreetMap</a>';
   L.tileLayer(
-         'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          attribution: '&copy; ' + mapLink + ' Contributors',
-           maxZoom: 18,
-          }).addTo(mymap);
+    'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; ' + mapLink + ' Contributors',
+      maxZoom: 20,
+    }).addTo(mymap);
 
-  setTimeout(function() { mymap.invalidateSize();}, 1200);
-  return mymap;
+    setTimeout(function() { mymap.invalidateSize();}, 1200);
+    return mymap;
 }
 
 function addMyKML(mymap, kmlfile, style)
@@ -216,7 +216,7 @@ function addMyKML(mymap, kmlfile, style)
       padding: [5, 5],
     });
     kmllayer.addTo(mymap);
-   // kmllayer.bindPopup(label);
+    // kmllayer.bindPopup(label);
   });
 
   return kmllayer;
@@ -231,8 +231,6 @@ function addMyKML2(mymap, kmlfile, style, label='')
     runLayer.eachLayer(function(layer) {
       runLayer.bindPopup(layer.feature.properties.name);
       runLayer.setStyle( style);
-     // mymap.fitBounds(runLayer.getBounds());
-      //runLayer.bindPopup(label);
     });
   })
   .addTo(mymap);
@@ -261,6 +259,28 @@ function makeKMLLayer(amap,kmlfilepath,style, fitbounds=false, label='')
   return track;
 }
 
+
+function setBounds(amap, mybounds)
+{
+  var bounds =[];
+  bounds.push([ mybounds.nw.lat, mybounds.nw.long]);
+  bounds.push([ mybounds.se.lat,mybounds.se.long]);
+  amap.fitBounds(bounds);
+}
+
+function setMarkers(amap,amybounds)
+{
+  var mybounds = amybounds;
+  var nwlat =  mybounds.nw.lat;
+  var nwlong =  mybounds.nw.long;
+  var marker = L.marker([nwlat, nwlong]).addTo(amap);
+  var selat =  mybounds.se.lat;
+  var selong =  mybounds.se.long;
+  marker = L.marker([selat, selong]).addTo(amap);
+  marker = L.marker([selat, nwlong]).addTo(amap);
+  marker = L.marker([nwlat, selong]).addTo(amap);
+}
+
 function setScrollHeight() {
   var wo = window.orientation;
   var height = $(window).width();
@@ -272,13 +292,7 @@ function setScrollHeight() {
     if (wo === 0 || wo == 180) height = $(window).height();
   }
   height = height - 200;
-  // $('#rggroupsscroll').css('height', height);
-
 }
-
-
-
-
 
 var copyToClipboard = (function() {
   var _dataString = null;
@@ -385,23 +399,23 @@ function is_browser_gps_capable()
 }
 
 /*
- function is_browser_gps_capable()
- {
- var _locator_object;
- try
- {
- _locator_object = navigator.geolocation;
- }
- catch (e)
- {
- return false;
-
- }
- if (_locator_object)
-   return true;
- else
-   return false;
- }
+ * function is_browser_gps_capable()
+ * {
+ * var _locator_object;
+ * try
+ * {
+ * _locator_object = navigator.geolocation;
+ * }
+ * catch (e)
+ * {
+ * return false;
+ *
+ * }
+ * if (_locator_object)
+ *  return true;
+ * else
+ *  return false;
+ * }
  */
 
 
@@ -436,19 +450,24 @@ function watchLocation(successCallback, errorCallback) {
 
 function pdfout(mode)
 {
-  var wdid = window.rggroupid;
-  var arggroup = window.Rggroups[wdid];
+  var rggid = window.rggroupid;
+  var arggroup = window.Rggroups[rggid];
   var argsubgroup = arggroup.Rgsubgroups[rgsubgroupid];
   var mylist = [];
   switch(mode) {
     case "rggroups":
       var grouplist = window.Rggroups;
+      var outfile = window.deliveryname+".pdf";
+      var shape ="a5l";
       break;
     case "rggroup":
       var grouplist = arggroup.Rgsubgroups;
+      var outfile = rggroupid+".pdf";
+      var shape ="a5l";
       break;
     case "rgsubgroup":
       var grouplist = argsubgroup.Roadgroups;
+      var outfile = rgsubgroupid+".pdf";
       var inputElements = document.getElementsByClassName('printcheckbox');
       for(var i=0; inputElements[i]; ++i)
       {
@@ -457,6 +476,7 @@ function pdfout(mode)
           mylist.push(checkedValue);
         }
       }
+      var shape ="a6p";
       break;
   }
 
@@ -468,18 +488,22 @@ function pdfout(mode)
     }
   }
 
+  if(shape=="a5p")
+     createPdfA5(mylist);
+  else
+     createPdfA6(mylist);
 
-  createPdf(mylist);
-  async function createPdf( mylist)
+
+  async function createPdfA6( mylist)
   {
-
     var margin = 10;
     const pdfDoc = await PDFLib.PDFDocument.create();
     var page = pdfDoc.addPage();
-    var row =0;
+
     var col= 0;
-    var rmax=2;
+    var rmax=1;
     var cmax=2;
+    var row =rmax;
     var pwidth = page.getWidth();
     var pheight = page.getHeight();
     var iwidth = (pwidth - 3 * margin)/2;
@@ -490,117 +514,110 @@ function pdfout(mode)
       var rgpngpath = window.imagepath+rg+'.png';
       if(CheckUrl(rgpngpath))
       {
-      var rgpngbytes =  await fetch(rgpngpath).then((res) => res.arrayBuffer());
-      var rgpngimage = await pdfDoc.embedPng(rgpngbytes);
-      var rgpngdims1 = rgpngimage.scale(1);
-      var hscale = iheight / rgpngdims1.height ;
-      var wscale = iwidth / rgpngdims1.width;
-      var scale = hscale;
-      if( wscale < hscale ) scale = wscale;
-      var rgpngdims = rgpngimage.scale(scale);
+        var rgpngbytes =  await fetch(rgpngpath).then((res) => res.arrayBuffer());
+        var rgpngimage = await pdfDoc.embedPng(rgpngbytes);
+        var rgpngdims1 = rgpngimage.scale(1);
+        var hscale = iheight / rgpngdims1.height ;
+        var wscale = iwidth / rgpngdims1.width;
+        var scale = hscale;
+        if( wscale < hscale ) scale = wscale;
+        var rgpngdims = rgpngimage.scale(scale);
 
-      page.drawImage(rgpngimage, {
-         x: col*pwidth/2+margin,
-         y: row*pheight/2 + margin,
-         width: rgpngdims.width,
-         height: rgpngdims.height,
-      })
-    col= col+1;
-    if( col == cmax)
-    {
-      col =0;
-      row= row+1;
-      if( row ==rmax)
-      {
-        row = 0;
-        page = pdfDoc.addPage();
-      }
-    }
+        page.drawImage(rgpngimage, {
+          x: col*pwidth/2+margin,
+          y: row*pheight/2 + margin,
+          width: rgpngdims.width,
+          height: rgpngdims.height,
+        })
+        col= col+1;
+        if( col == cmax)
+        {
+          col =0;
+          row= row-1;
+          if(row <0)
+          {
+            row = rmax;
+            page = pdfDoc.addPage();
+          }
+        }
       }
 
     }
     const pdfBytes = await pdfDoc.save()
-   download(pdfBytes, rgsubgroupid+".pdf", "application/pdf");
+    download(pdfBytes, outfile, "application/pdf");
+
+  }
+
+  async function createPdfA5( mylist)
+  {
+    var margin = 10;
+
+    const pdfDoc = await PDFLib.PDFDocument.create();
+    var page = pdfDoc.addPage([  842, 595]);
+
+    var col= 0;
+    var rmax=1;
+    var cmax=2;
+    var row =0;
+    var pwidth = page.getWidth();
+    var pheight = page.getHeight();
+    var iwidth = (pwidth - (cmax+1) * margin)/cmax;
+    var iheight = (pheight - (rmax+1) * margin)/rmax;
+
+    var colwidth = margin + iwidth;
+    var rowheight = margin +iheight;
+    for( rg of mylist)
+    {
+      //var rgpngpath = 'images/'+rg+'.png';
+      var rgpngpath = window.imagepath+rg+'.png';
+      if(CheckUrl(rgpngpath))
+      {
+        var rgpngbytes =  await fetch(rgpngpath).then((res) => res.arrayBuffer());
+        var rgpngimage = await pdfDoc.embedPng(rgpngbytes);
+        var rgpngdims1 = rgpngimage.scale(1);
+        var hscale = iheight / rgpngdims1.height ;
+        var wscale = iwidth / rgpngdims1.width;
+
+        var scale = hscale;
+        if( wscale < hscale ) scale = wscale;
+        var rgpngdims = rgpngimage.scale(scale);
+
+        page.drawImage(rgpngimage, {
+          x: colwidth*col+margin,
+          y: rowheight*row+margin,
+          width: rgpngdims.width,
+          height: rgpngdims.height,
+        })
+        col= col+1;
+        if( col == cmax)
+        {
+          col =0;
+          row= row+1;
+          if(row = rmax)
+          {
+            row = 0;
+            page = pdfDoc.addPage([  842, 595]);
+          }
+        }
+      }
+
+    }
+    const pdfBytes = await pdfDoc.save()
+    download(pdfBytes, outfile, "application/pdf");
 
   }
 }
 
-  function xpdfout()
-  {
-    createPdf();
-    async function createPdf()
-    {
-      var rglist = [];
-      var wdid = window.rggroupid;
-      var arggroup = window.Rggroups[wdid];
-      var rgsubgroupid = window.rgsubgroupid;
-      var argsubgroup = arggroup.Rgsubgroups[rgsubgroupid];
-      var grouplist = argsubgroup.Roadgroups;
-      var inputElements = document.getElementsByClassName('printcheckbox');
-      for(var i=0; inputElements[i]; ++i)
-      {
-        if(inputElements[i].checked){
-          var checkedValue = inputElements[i].value;
-          rglist.push(checkedValue);
-        }
-      }
-      if(rglist.length ==0)
-      {
-        for (var index in grouplist) {
-
-          rglist.push( index);
-        }
-      }
-      var margin = 10;
-      const pdfDoc = await PDFLib.PDFDocument.create();
-      var page = pdfDoc.addPage();
-      var row =0;
-      var col= 0;
-      var rmax=2;
-      var cmax=2;
-      var pwidth = page.getWidth();
-      var pheight = page.getHeight();
-      var iwidth = (pwidth - 3 * margin)/2;
-      var iheight = ( pheight - 3 * margin)/2;
-      for( rg of rglist)
-      {
-        var rgpngpath = 'images/'+rg+'.png';
-        if(CheckUrl(rgpngpath))
-        {
-          var rgpngbytes =  await fetch(rgpngpath).then((res) => res.arrayBuffer());
-          var rgpngimage = await pdfDoc.embedPng(rgpngbytes);
-          var rgpngdims1 = rgpngimage.scale(1);
-          var hscale = iheight / rgpngdims1.height ;
-          var wscale = iwidth / rgpngdims1.width;
-          var scale = hscale;
-          if( wscale < hscale ) scale = wscale;
-          var rgpngdims = rgpngimage.scale(scale);
-
-          page.drawImage(rgpngimage, {
-            x: col*pwidth/2+margin,
-            y: row*pheight/2 + margin,
-            width: rgpngdims.width,
-            height: rgpngdims.height,
-          })
-          col= col+1;
-          if( col == cmax)
-          {
-            col =0;
-            row= row+1;
-            if( row ==rmax)
-            {
-              row = 0;
-              page = pdfDoc.addPage();
-            }
-          }
-        }
-
-      }
-      const pdfBytes = await pdfDoc.save()
-      download(pdfBytes, rgsubgroupid+".pdf", "application/pdf");
-
-    }
 
 
-
+function redecode(mystr)
+{
+  var instr = mystr.replace(/&amp;/g  , '&');
+  instr = instr.replace(/&gt;/g  , '>');
+  instr = instr.replace(/&lt;/g   , '<');
+  instr = instr.replace(/&quot;/g  ,  '"');
+  instr = instr.replace(/&#39;/g   ,"'");
+  return instr;
 }
+
+
