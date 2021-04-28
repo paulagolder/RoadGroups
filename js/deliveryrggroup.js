@@ -12,7 +12,23 @@ class Delivery
     this.name = edxml.getAttribute('Name');
     this.deliveryid = edxml.getAttribute('DeliveryId');
     this.KML = edxml.getAttribute('KML');
-    this.rggroups = new Rggroups(edxml);
+    this.rggroups =[];
+    this.Bounds = new Bounds();
+    var arggroupsxml = edxml.getElementsByTagName("rggroup");
+    for (var i = 0; i < arggroupsxml.length; i++)
+    {
+      var arggroupxml = arggroupsxml[i];
+      var name = arggroupxml.getAttribute('Name');
+      var arggroupid = arggroupxml.getAttribute('RggroupId');
+      let arggroup = new Rggroup(arggroupid, name);
+      arggroup.Households = arggroupxml.getAttribute('Households');
+      arggroup.KML =  arggroupxml.getAttribute('KML');
+      var bnds = arggroupxml.getAttribute('Bounds');
+      arggroup.Bounds = JSON.parse(bnds,true);
+      this.Bounds.expandbounds(arggroup.Bounds);
+      arggroup.Rgsubgroups = new Rgsubgroups(arggroupxml);
+      this.rggroups[arggroup.RggroupId] = arggroup;
+    }
   }
 
   getName() {
@@ -48,6 +64,19 @@ class Delivery
     this.arggroups = somearggroups;
   }
 
+  makeKML(arggroupxml) {
+    var x = arggroupxml.getElementsByTagName("kml")[0];
+    if (x !== undefined) {
+      var y = x.childNodes[0];
+      var txt = y.nodeValue;
+      return txt;
+    }
+    return null;
+  }
+
+
+
+
 }
 
 
@@ -68,41 +97,6 @@ class Rggroup
 
 }
 
-class Rggroups
-{
-
-  constructor(edxml)
-  {
-
-    var arggroupsxml = edxml.getElementsByTagName("rggroup");
-    for (var i = 0; i < arggroupsxml.length; i++)
-    {
-      var arggroupxml = arggroupsxml[i];
-      var name = arggroupxml.getAttribute('Name');
-      var arggroupid = arggroupxml.getAttribute('RggroupId');
-      let arggroup = new Rggroup(arggroupid, name);
-      arggroup.Households = arggroupxml.getAttribute('Households');
-      arggroup.KML =  arggroupxml.getAttribute('KML');
-      var bnds = arggroupxml.getAttribute('Bounds');
-      arggroup.Bounds = JSON.parse(bnds);
-      arggroup.Rgsubgroups = new Rgsubgroups(arggroupxml);
-      this[arggroup.RggroupId] = arggroup;
-    }
-
-  }
-
-  makeKML(arggroupxml) {
-    var x = arggroupxml.getElementsByTagName("kml")[0];
-    if (x !== undefined) {
-      var y = x.childNodes[0];
-      var txt = y.nodeValue;
-      return txt;
-    }
-    return null;
-  }
-
-
-}
 
 
 class Rgsubgroups {
@@ -126,7 +120,8 @@ class Rgsubgroup {
     this.Name = swdxml.getAttribute("Name");
     this.Households = swdxml.getAttribute("Households");
     this.Roadgroups = new RoadGroups(swdxml);
-    this.Bounds = JSON.parse(swdxml.getAttribute('Bounds'));
+    var bnds = swdxml.getAttribute('Bounds');
+    this.Bounds = JSON.parse(bnds,true);
   }
 }
 
@@ -139,6 +134,9 @@ class RoadGroup {
     this.Name = rgxml.getAttribute("Name");
     this.Households = rgxml.getAttribute("Households");
     this.KML = rgxml.getAttribute("KML");
+
+    var bnds = rgxml.getAttribute('Bounds');
+    if(bnds) this.Bounds = JSON.parse(bnds,true);
     this.Streets = new Streets(rgxml);
   }
 }
@@ -189,4 +187,32 @@ class Street {
     }
 
   }
+}
+
+class Bounds{
+
+  constructor()
+  {
+    this.bounds = {};
+    this.bounds.dist = -1;
+    this.bounds.maxlat = null;
+    this.bounds.maxlong = null;
+    this.bounds.minlat = null;
+    this.bounds.minlong = null;
+  }
+
+
+  expandbounds(bounds)
+  {
+    if(this.bounds.minlat === null)  this.bounds.minlat =  bounds.minlat;
+    if(this.bounds.maxlong === null)  this.bounds.maxlong =  bounds.maxlong;
+    if((bounds.minlat !== null) && (this.bounds.minlat >  bounds.minlat)) this.bounds.minlat = bounds.minlat;
+    if((bounds.maxlong !== null) && (this.bounds.maxlong <  bounds.maxlong)) this.bounds.maxlong = bounds.maxlong;
+    if(this.bounds.maxlat === null)  this.bounds.maxlat =  bounds.maxlat;
+    if(this.bounds.minlong === null)  this.bounds.minlong =  bounds.minlong;
+    if((bounds.maxlat !== null) && ( this.bounds.maxlat < bounds.maxlat))  this.bounds.maxlat= bounds.maxlat;
+    if((bounds.minlong !== null) && ( this.bounds.minlong > bounds.minlong))  this.bounds.minlong = bounds.minlong;
+  }
+
+
 }

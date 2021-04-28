@@ -182,7 +182,7 @@ $("#xrggroups").on("pageinit", function(e) {
     window.roadgroupid=rgparam;
     changeMypage("roadgroup", rgparam);
   }
- // window.history.pushState({}, document.title, window.location.pathname);
+  // window.history.pushState({}, document.title, window.location.pathname);
 
   //no param so nothing to do
 });
@@ -215,27 +215,27 @@ $(document).on("pageshow","#rggroups", function() {
   var c=0;
   var dname = window.Delivery.name;
   var dId = window.Delivery.deliveryid;
-   var dKML = window.Delivery.KML;
-   var kml = "maps/outlines/"+dKML;
+  var dKML = window.Delivery.KML;
+  var kml = "maps/outlines/"+dKML;
 
   var afg = new  L.featureGroup();
   for(var index in rggroups)
   {
-      var thisrggroup = window.Rggroups[index];
-      if(thisrggroup.KML )
-      {
-         var style = { fillColor:  window.colors[c], weight: 2, opacity: 1,  color: 'black',  fillOpacity: 0.7 };
-         var alayer = addMyKML2(mymaprggroups ,"maps/roadgroups/"+thisrggroup.KML,style,true,"freddy");
-         afg.addLayer(alayer);
-        c++;
-      }
+    var thisrggroup = window.Rggroups[index];
+    if(thisrggroup.KML )
+    {
+      var style = { fillColor:  window.colors[c], weight: 2, opacity: 1,  color: 'black',  fillOpacity: 0.7 };
+      var alayer = addMyKML2(mymaprggroups ,"maps/roadgroups/"+thisrggroup.KML,style,true,"freddy");
+      afg.addLayer(alayer);
+      c++;
+    }
   }
 
 
-     if( dKML )
+  if( dKML )
   {
-     var style = { fillColor: '#000000', weight: 3, opacity: 0.0,  color: '#888888',  fillOpacity: 0.0 };
-     wlayer = addMyKML(mymaprggroups, kml,style);
+    var style = { fillColor: '#000000', weight: 3, opacity: 0.0,  color: '#888888',  fillOpacity: 0.0 };
+    wlayer = addMyKML(mymaprggroups, kml,style);
   }
 
 });
@@ -247,7 +247,8 @@ $(document).on("pageshow","#rggroup",function()
   document.getElementById("rggrouppanel").innerHTML = showrggroup() ;
   if( mymaprggroup == null)
   {
-    mymaprggroup = L.map('rggroupmapdiv').setView([52.6854, -1.8304], 14);
+    //mymaprggroup = L.map('rggroupmapdiv').setView([52.6854, -1.8304],20);
+    mymaprggroup = L.map('rggroupmapdiv');
   }
   else
   {
@@ -261,11 +262,11 @@ $(document).on("pageshow","#rggroup",function()
   var rgsubgroups = thisrggroup.Rgsubgroups;
   var dId = window.Delivery.deliveryid;
   var dKML = window.Delivery.KML;
-    if(thisrggroup.KML)
+  if(thisrggroup.KML)
   {
-       var fullkml = "maps/outlines/"+thisrggroup.KML;
-       var style = { fillColor: '#ffffff', weight: 3, opacity: 1,  color: '#888888',  fillOpacity: 0.1 };
-       var alayer = addMyKML(mymaprggroup, fullkml,style);
+    var fullkml = "maps/outlines/"+thisrggroup.KML;
+    var style = { fillColor: '#ffffff', weight: 3, opacity: 1,  color: '#888888',  fillOpacity: 0.1 };
+    var alayer = addMyKML(mymaprggroup, fullkml,style);
   }
   var afg = new  L.featureGroup();
   var c= 0;
@@ -274,21 +275,21 @@ $(document).on("pageshow","#rggroup",function()
     var argsubgroup = rgsubgroups[argsubgroupId];
     for (var groupId in argsubgroup.Roadgroups)
     {
-       var aroadgroup = argsubgroup.Roadgroups[groupId];
-       if(aroadgroup.KML !== undefined )
-       {
-         var targetkml = "maps/roadgroups/"+aroadgroup.KML;
-         var style = { fillColor: window.colors[c], weight: 6, opacity: 1,  color: window.colors[c],  fillOpacity: 1 };
-         var alayer = addMyKML(mymaprggroup ,targetkml,style);
-         afg.addLayer(alayer);
-       }
+      var aroadgroup = argsubgroup.Roadgroups[groupId];
+      if(aroadgroup.KML !== undefined )
+      {
+        var targetkml = "maps/roadgroups/"+aroadgroup.KML;
+        var style = { fillColor: window.colors[c], weight: 6, opacity: 1,  color: window.colors[c],  fillOpacity: 1 };
+        var alayer = addMyKML(mymaprggroup ,targetkml,style);
+        afg.addLayer(alayer);
+      }
     }
     c++;
   }
 
 
 
-  setMarkers(mymaprggroup,thisrggroup.Bounds );
+  //drawBox(mymaprggroup,thisrggroup.Bounds );
   setBounds(mymaprggroup,thisrggroup.Bounds);
 
 
@@ -300,7 +301,10 @@ $(document).on("pageshow","#rgsubgroup",function() {
   document.getElementById("rgsubgrouppanel").innerHTML = showrgsubgroup() ;
   if( mymaprgsubgroup == null)
   {
-    mymaprgsubgroup = L.map('rgsubgroupmapdiv').setView([52.6854, -1.8304], 14);
+    mymaprgsubgroup = L.map('rgsubgroupmapdiv');
+    //.setView([52.6854, -1.8304], 14);
+   // mymaprgsubgroup.options.minZoom = 12;
+   // mymaprgsubgroup.options.maxZoom = 18;
   }
   else
   {
@@ -316,30 +320,30 @@ $(document).on("pageshow","#rgsubgroup",function() {
   var grouplist = argsubgroup.Roadgroups;
   var roadgroupId = window.roadgroupid;
   var kml = thisrggroup.KML;
-   if( kml)
-    {
-       var fullkml = "maps/outlines/"+kml;
-        var style = { fillColor: '#ffffff', weight: 3, opacity: 1,  color: '#888888',  fillOpacity: 0.1 };
-        var alayer = addMyKML(mymaprgsubgroup, fullkml,style);
-        //mymaprgsubgroup.fitBounds(alayer.getBounds());
-    }
+  if( kml)
+  {
+    var fullkml = "maps/outlines/"+kml;
+    var style = { fillColor: '#ffffff', weight: 3, opacity: 1,  color: '#888888',  fillOpacity: 0.1 };
+    var alayer = addMyKML(mymaprgsubgroup, fullkml,style);
+    //mymaprgsubgroup.fitBounds(alayer.getBounds());
+  }
   var c=0;
   var afg = new  L.featureGroup();
   for(var index in grouplist)
   {
     var aroadgroup = grouplist[index];
-   if(aroadgroup.KML !== undefined )
-  {
-    var targetkml = "maps/roadgroups/"+aroadgroup.KML;
-       var style = { fillColor: window.colors[c], weight: 6, opacity: 1,  color: window.colors[c],  fillOpacity: 1 };
-        var alayer = addMyKML(mymaprgsubgroup ,targetkml,style);
-        afg.addLayer(alayer);
-        c++;
+    if(aroadgroup.KML !== undefined )
+    {
+      var targetkml = "maps/roadgroups/"+aroadgroup.KML;
+      var style = { fillColor: window.colors[c], weight: 6, opacity: 1,  color: window.colors[c],  fillOpacity: 1 };
+      var alayer = addMyKML(mymaprgsubgroup ,targetkml,style);
+      afg.addLayer(alayer);
+      c++;
+    }
   }
-  }
-
+ // drawBox(mymaprgsubgroup,argsubgroup.Bounds);
   setBounds(mymaprgsubgroup,argsubgroup.Bounds);
- // setMarkers(mymaprgsubgroup,argsubgroup.Bounds);
+  //
 });
 
 
@@ -357,7 +361,7 @@ $(document).on("pageshow","#roadgroup",function() {
       layer.remove();
     });
   }
-
+  mymappera( mymaproadgroup);
   var wdid = window.rggroupid;
 
   var arggroup = window.Rggroups[wdid];
@@ -366,18 +370,13 @@ $(document).on("pageshow","#roadgroup",function() {
   var grouplist = argsubgroup.Roadgroups;
   var aroadgroup = grouplist[window.roadgroupid];
   var roadgroupid = window.roadgroupid;
-  if(!aroadgroup)
-  {
 
-
-
-  }
-  mymappera(mymaproadgroup);
   if(aroadgroup.KML !== undefined )
   {
-      var style = { fillColor: '#0000aa', weight: 6, opacity: 0.5,  color: '#0000aa',  fillOpacity: 0.1 };
-      var targetkml = "maps/roadgroups/"+aroadgroup.KML;
-      alayer =  addMyKML(mymaproadgroup,targetkml,style);
+    var style = { fillColor: '#0000aa', weight: 10, opacity: 0.3,  color: '#0000aa',  fillOpacity: 0.1 };
+    var targetkml = "maps/roadgroups/"+aroadgroup.KML;
+    alayer =  addMyKML(mymaproadgroup,targetkml,style);
+   // alayer = addMyKML2(mymaproadgroup,targetkml,style, label='')
   }
   if (is_browser_gps_capable()) {
     $('geo_location').innerHTML = 'Locating device...';
@@ -392,13 +391,15 @@ $(document).on("pageshow","#roadgroup",function() {
   {
     $('geo_location').innerHTML = 'Not supported';
   }
+
+  setBounds(mymaproadgroup, aroadgroup.Bounds);
 });
 
 
 
 function changeMypage(targetpage, selector )
 {
- // alert(" change my page");
+  // alert(" change my page");
   switch(targetpage) {
     case "rggroups":
       window.rggroupid = selector;;
@@ -443,43 +444,43 @@ function savePNG(){
 
 function saveSgPNG(mode)
 {
-    switch(mode) {
+  switch(mode) {
     case "rggroups":
 
       break;
     case "rggroup":
       var node = document.getElementById("rggroup");
-  domtoimage.toPng(node)
-  .then(function (dataUrl) {
-    var link = document.createElement('a');
-    var rggid = window.rggroupid;
-    link.download = rggid+'.png';
-    link.href = dataUrl;
-    link.click();
-  });
+      domtoimage.toPng(node)
+      .then(function (dataUrl) {
+        var link = document.createElement('a');
+        var rggid = window.rggroupid;
+        link.download = rggid+'.png';
+        link.href = dataUrl;
+        link.click();
+      });
       break;
     case "rgsubgroup":
       var node = document.getElementById("rgsubgroup");
-  domtoimage.toPng(node)
-  .then(function (dataUrl) {
-    var link = document.createElement('a');
-    var rgsgid = window.rgsubgroupid;
-    link.path = window.imagepath;
-    link.download = rgsgid+'.png';
-    link.href = dataUrl;
-    link.click();
-  });
+      domtoimage.toPng(node)
+      .then(function (dataUrl) {
+        var link = document.createElement('a');
+        var rgsgid = window.rgsubgroupid;
+        link.path = window.imagepath;
+        link.download = rgsgid+'.png';
+        link.href = dataUrl;
+        link.click();
+      });
       break;
     case "roadgroup":
-    var node = document.getElementById("roadgroup");
-  domtoimage.toPng(node)
-  .then(function (dataUrl) {
-    var link = document.createElement('a');
-    var rdgid = window.rgsubgroupid;
-    link.download = rdgid+'.png';
-    link.href = dataUrl;
-    link.click();
-  });
+      var node = document.getElementById("roadgroup");
+      domtoimage.toPng(node)
+      .then(function (dataUrl) {
+        var link = document.createElement('a');
+        var rdgid = window.rgsubgroupid;
+        link.download = rdgid+'.png';
+        link.href = dataUrl;
+        link.click();
+      });
       break;
   }
 

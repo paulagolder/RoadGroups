@@ -409,9 +409,46 @@ html.ui-mobile body.bstyle.ui-mobile-viewport.ui-overlay-a div#rgsubgroup.bstyle
   font-size: 1.3em;
 }
 
+ div#roadgrouppanel.bstyle div.streetlist div.streetrow
+ {
+   display: flex;
+   font-size: 1em;
+}
 
+div#roadgrouppanel.bstyle div.streetlist div.streetrow0
+{
+  display: flex;
+  font-size: 1.1em;
+}
 
+div#roadgrouppanel.bstyle div.streetlist div.streetrow1
+{
+  display: flex;
+  font-size: 1.1em
+}
+div#roadgrouppanel.bstyle div.streetlist div.streetrow2
+{
+  display: flex;
+  font-size:1.1em
+}
 
+div#roadgrouppanel.bstyle div.streetlist div.streetrow3
+{
+  display: flex;
+  font-size:0.8em
+}
+
+div#roadgrouppanel.bstyle div.streetlist div.streetrow4
+{
+  display: flex;
+  font-size:0.5em
+}
+
+div#roadgrouppanel.bstyle div.streetlist div.streetrow5
+{
+  display: flex;
+  font-size:0.5em
+}
 
 @media only screen and (min-width: 1768px)
 {

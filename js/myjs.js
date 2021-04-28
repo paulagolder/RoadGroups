@@ -152,13 +152,25 @@ function showroadgroup() {
 
   outstring += "<div  class='streetlist' >";
   var streets = aroadgroup.Streets;
+  var streetcount = Object.keys(streets).length
+  var lc=Math.ceil(streetcount/7);
+
+  var nl=0;
   for (var streetid in streets)
   {
     var street = streets[streetid];
     var streetname = street.makeId();
     var note = street.Qualifier;
     var households = street.Households;
+    if(nl ==0) outstring += " <div  class='streetrow"+lc+"' >" ;
     outstring += " <div>" + streetname +  "</div>";
+    nl++;
+    if(nl ==lc)
+    {
+      outstring += " </div>" ;
+      nl=0;
+    }
+
   }
   outstring += "</div>";
   outstring += "<div  class='partlist' >";
@@ -197,7 +209,7 @@ function mymappera(mymap)
   L.tileLayer(
     'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; ' + mapLink + ' Contributors',
-      maxZoom: 20,
+      maxZoom: 20, minZoom: 10,
     }).addTo(mymap);
 
     setTimeout(function() { mymap.invalidateSize();}, 1200);
@@ -212,9 +224,9 @@ function addMyKML(mymap, kmlfile, style)
   {
     kmllayer.setStyle( style);
     mymap.addLayer(kmllayer);
-    mymap.fitBounds(e.target.getBounds(), {
-      padding: [5, 5],
-    });
+   // mymap.fitBounds(e.target.getBounds(), {
+   //   padding: [5, 5],
+   // });
     kmllayer.addTo(mymap);
     // kmllayer.bindPopup(label);
   });
@@ -232,6 +244,7 @@ function addMyKML2(mymap, kmlfile, style, label='')
       runLayer.bindPopup(layer.feature.properties.name);
       runLayer.setStyle( style);
     });
+
   })
   .addTo(mymap);
 
@@ -251,8 +264,8 @@ function makeKMLLayer(amap,kmlfilepath,style, fitbounds=false, label='')
     amap.addLayer(track);
     if(fitbounds)
     {
-      const bounds = track.getBounds();
-      amap.fitBounds(bounds);
+   //   const bounds = track.getBounds();
+  //    amap.fitBounds(bounds);
     }
     track.bindPopup(label);
   });
@@ -262,20 +275,38 @@ function makeKMLLayer(amap,kmlfilepath,style, fitbounds=false, label='')
 
 function setBounds(amap, mybounds)
 {
+  if(!mybounds) return;
+  if(!mybounds.maxlat) return;
   var bounds =[];
-  bounds.push([ mybounds.nw.lat, mybounds.nw.long]);
-  bounds.push([ mybounds.se.lat,mybounds.se.long]);
-  amap.fitBounds(bounds);
+
+  bounds.push([ mybounds.maxlat, mybounds.minlong]);
+  bounds.push([ mybounds.maxlat,mybounds.maxlong]);
+  bounds.push([ mybounds.minlat,mybounds.maxlong]);
+  bounds.push([ mybounds.minlat,mybounds.minlong]);
+  bounds.push([ mybounds.maxlat, mybounds.minlong]);
+  amap.fitBounds(bounds, { padding: [20, 20] });
 }
+
+function drawBox(amap,mybounds)
+{
+var bounds =[];
+bounds.push([ mybounds.maxlat, mybounds.minlong]);
+bounds.push([ mybounds.maxlat,mybounds.maxlong]);
+bounds.push([ mybounds.minlat,mybounds.maxlong]);
+bounds.push([ mybounds.minlat,mybounds.minlong]);
+bounds.push([ mybounds.maxlat, mybounds.minlong]);
+var polyline = L.polyline(bounds).addTo(amap);
+}
+
 
 function setMarkers(amap,amybounds)
 {
   var mybounds = amybounds;
-  var nwlat =  mybounds.nw.lat;
-  var nwlong =  mybounds.nw.long;
+  var nwlat =  mybounds.maxlat;
+  var nwlong =  mybounds.minlong;
   var marker = L.marker([nwlat, nwlong]).addTo(amap);
-  var selat =  mybounds.se.lat;
-  var selong =  mybounds.se.long;
+  var selat =  mybounds.minlat;
+  var selong =  mybounds.maxlong;
   marker = L.marker([selat, selong]).addTo(amap);
   marker = L.marker([selat, nwlong]).addTo(amap);
   marker = L.marker([nwlat, selong]).addTo(amap);
@@ -488,7 +519,7 @@ function pdfout(mode)
     }
   }
 
-  if(shape=="a5p")
+  if(shape=="a5l")
      createPdfA5(mylist);
   else
      createPdfA6(mylist);
