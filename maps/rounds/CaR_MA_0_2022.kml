@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>CaR_MA_0_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Blithbury Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8532133102417,52.771424220783
+-1.851282119751,52.771528075157
+-1.8496942520142,52.771943490177
+-1.8480205535889,52.771605965775
+-1.8451881408691,52.77015198459
+-1.8440294265747,52.769632693827
+-1.8418836593628,52.768230577828
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Green Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8328285217285,52.768490232346
+-1.8310260772705,52.768801815723
+-1.8291807174683,52.768905676353
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Hunger Hill Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.852912902832,52.77108149947
+-1.8513572216034,52.769322414521
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Lichfield Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8418622016907,52.768251350128
+-1.841926574707,52.767933271385
+-1.8409717082977,52.766784273713
+-1.840832233429,52.766232484394
+-1.8405103683472,52.765485934773
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Nethertown</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8403816223145,52.757921042432
+-1.8397378921509,52.757167857288
+-1.83922290802,52.756518549297
+-1.8391799926758,52.75605104155
+-1.83922290802,52.755219904277
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Rough Park</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8179798126221,52.782119919963
+-1.8228721618652,52.780432666308
+-1.8340301513672,52.769601536659
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Rowley Park</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8245351314545,52.783724048041
+-1.8242561817169,52.782971309163
+-1.8236231803894,52.782562488627
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Yoxall Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8418514728546,52.76830328113
+-1.8400382995605,52.768549952547
+-1.8392765522003,52.768900483208
+-1.8380963802338,52.7691276775
+-1.8364119529724,52.769209467195
+-1.8352961540222,52.76935227416
+-1.8347811698914,52.769235432132
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

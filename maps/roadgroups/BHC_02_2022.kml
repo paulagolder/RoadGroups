@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>BHC_02_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Boney Hay Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9156873226166,52.679345689173
+-1.9167709350586,52.682032017245
+-1.9172859191895,52.683092193265
+-1.9181442260742,52.683931210033
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Highfield Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9165563583374,52.680396824182
+-1.9170498847961,52.68040983312
+-1.9173502922058,52.680513904482
+-1.9175434112549,52.680930187451
+-1.9175434112549,52.681307440464
+-1.9177150726318,52.68185380112
+-1.9179725646973,52.682283079698
+-1.9181442260742,52.68259527965
+-1.9184017181396,52.683154632317
+-1.9187879562378,52.683284713306
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Highfield Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9181227684021,52.682511376073
+-1.9184499979019,52.682397553214
+-1.9186002016068,52.682273973773
+-1.9187182188034,52.682091856066
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

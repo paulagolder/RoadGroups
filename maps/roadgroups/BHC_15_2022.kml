@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>BHC_15_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Bells Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9294792413712,52.691414656525
+-1.9285029172897,52.689431248644
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Bells Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9280469417572,52.688466174314
+-1.9285136461258,52.689407512223
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Byron Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9270411133766,52.690524410154
+-1.9272717833519,52.690535790336
+-1.9279289245605,52.690675603749
+-1.9281998276711,52.690660972133
+-1.9284492731094,52.690938971985
+-1.9286611676216,52.691116175645
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Byron Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.928183734417,52.690660972133
+-1.9279369711876,52.690339075357
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Longfellow Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9286638498306,52.68994824397
+-1.9271939992905,52.690218119601
+-1.9270813465118,52.690266892128
+-1.9269955158234,52.690335173573
+-1.9270062446594,52.690510753943
+-1.9266495108604,52.690539041815
+-1.9264537096024,52.690517907192
+-1.926204264164,52.690469134946
+-1.9259870052338,52.690381344766
+-1.9257992506027,52.690265916668
+-1.9256570935249,52.690101715608
+-1.9255685806274,52.689896869855
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>May Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9288569688797,52.689984010715
+-1.9295597076416,52.689873458861
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

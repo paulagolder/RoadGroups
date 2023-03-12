@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>BGT_02_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Admaston</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9248175621033,52.807374179666
+-1.9264698028564,52.806829390486
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Bag Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9454531371593,52.826563102806
+-1.9456905126572,52.826818357665
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Blithfield Hall</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.928014755249,52.806453222544
+-1.928379535675,52.80693316038
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Blithfield Hall</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9342535734177,52.812990947159
+-1.9347792863846,52.812841798642
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Booth Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9367265701294,52.840295304597
+-1.9371128082275,52.840852635459
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Coach House Mews</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9338029623032,52.813388782101
+-1.9340229034424,52.813537928741
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Dapple Heath</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9343876838684,52.832453030649
+-1.9322633743286,52.831817809283
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Lea Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9472461938858,52.825096209162
+-1.9468063116074,52.824885514369
+-1.9464361667633,52.824729923713
+-1.9463503360748,52.824645645208
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Lea Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9493865966797,52.826450466133
+-1.9477987289429,52.825529913133
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Manor Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9414687156677,52.827811811579
+-1.9424557685852,52.82674866926
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Newton</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9474339485168,52.825672535297
+-1.9468975067139,52.826061502456
+-1.9463396072388,52.82639860451
+-1.9455456733704,52.826644946665
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Newton Hurst</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9344305992126,52.831519640949
+-1.9331216812134,52.831428893659
+-1.9322204589844,52.831415929745
+-1.9314479827881,52.831402965827
+-1.9305038452148,52.831247398509
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Newton Hurst Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9342857599258,52.832401824314
+-1.9317644834518,52.831578626527
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>School Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.927118897438,52.806243085873
+-1.9272208213806,52.806278757283
+-1.9273442029953,52.806369557103
+-1.9274568557739,52.807001907739
+-1.9275051355362,52.80769910419
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Smithy Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9268023967743,52.80648954229
+-1.9266521930695,52.807485082283
+-1.9266146421432,52.807575879584
+-1.9264322519302,52.807621278164
+-1.9256007671356,52.80759857888
+-1.9250804185867,52.807566151311
+-1.9243991374969,52.80765046294
+-1.9243079423904,52.807656948443
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Stansley Wood Cottages</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9233530759811,52.823763952585
+-1.9229882955551,52.822976248825
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Stansley Wood Court</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9233584403992,52.823792478274
+-1.9214701652527,52.820693448118
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Steenwood Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9266629219055,52.806223628728
+-1.9265502691269,52.806149042924
+-1.9259977340698,52.806016085305
+-1.9253379106522,52.805802055113
+-1.9242811203003,52.805477764936
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

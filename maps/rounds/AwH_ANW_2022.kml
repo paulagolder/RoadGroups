@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>AwH_ANW_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Chapel Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8861722946167,52.742706774731
+-1.885861158371,52.74283018311
+-1.8855929374695,52.742869154104
+-1.8846487998962,52.742674298784
+-1.8843591213226,52.742557385174
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Church Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8871808052063,52.745077453503
+-1.8871057033539,52.745460647004
+-1.8866229057312,52.745532089488
+-1.8863117694855,52.745584047584
+-1.886043548584,52.745538584253
+-1.8857109546661,52.745512605186
+-1.8855500221252,52.745213844796
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Church Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8861508369446,52.745543780035
+-1.886220574379,52.745149221326
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Hawkesyard</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9041001796722,52.744116207518
+-1.9016969203949,52.743992802782
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Lower Lodge Mobile Home Park</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8935322761536,52.744746215727
+-1.8941009044647,52.743862902681
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Rugeley Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8812799453735,52.741940335926
+-1.8821060657501,52.741946831227
+-1.8831145763397,52.741790943742
+-1.8838226795197,52.741803934387
+-1.8844127655029,52.741810429708
+-1.8849921226501,52.741888373485
+-1.8859469890594,52.742232623501
+-1.8863224983215,52.742505423469
+-1.8866014480591,52.742895134747
+-1.8869662284851,52.743265357233
+-1.8871593475342,52.743538150737
+-1.8874597549438,52.743856407666
+-1.8879318237305,52.744135692445
+-1.8888008594513,52.744434460226
+-1.8912470340729,52.744941061782
+-1.8917834758759,52.74496704119
+-1.8933284282684,52.744980030889
+-1.8946480751038,52.74501899996
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Simpson Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8835517764091,52.741809130614
+-1.8835839629173,52.74216799561
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Simpson Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8841847777367,52.742042961535
+-1.8836081027985,52.74204945682
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Simpson Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8835598230362,52.742054328284
+-1.8831011652946,52.742083557053
+-1.882988512516,52.742216710087
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

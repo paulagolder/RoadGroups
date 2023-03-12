@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>NWD_BG_9_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Bar Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7315912246704,52.759302713652
+-1.7354106903076,52.758056094863
+-1.737277507782,52.757952208354
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Captains Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7295098304749,52.76000392104
+-1.7258405685425,52.758627466237
+-1.7236304283142,52.757900265006
+-1.7222571372986,52.757510687924
+-1.7188453674316,52.756991246394
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Dogshead Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7317199707031,52.759224801023
+-1.7313981056213,52.757783392247
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Efflinch Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7189526557922,52.760129877428
+-1.7186951637268,52.759662408442
+-1.7185235023499,52.759130007097
+-1.7182660102844,52.758675512994
+-1.718362569809,52.757721059941
+-1.7184913158417,52.757019815799
+-1.7186951637268,52.756032860473
+-1.7190384864807,52.755091336195
+-1.7191135883331,52.754435503812
+-1.7191135883331,52.753617322838
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Fullbrook Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7198914289474,52.757160714814
+-1.7196875810623,52.757563280974
+-1.7196714878082,52.757696386708
+-1.7198699712753,52.757754823243
+-1.720524430275,52.757871696079
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Green Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7310333251953,52.756349727436
+-1.7331790924072,52.755219904079
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>The Green</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7271494865417,52.761504986194
+-1.7272567749023,52.761180365736
+-1.7292737960815,52.760128578831
+-1.7315483093262,52.759401402663
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

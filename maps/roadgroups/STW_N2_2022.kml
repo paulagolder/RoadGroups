@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>STW_N2_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Chadswell Heights</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8140208721161,52.694861019846
+-1.8142515420914,52.694997568261
+-1.8143802881241,52.695078846877
+-1.8144822120667,52.695127613974
+-1.8147879838943,52.695150371934
+-1.8148255348206,52.695247905913
+-1.8148308992386,52.695475484351
+-1.8148845434189,52.695563264288
+-1.8150025606155,52.695686806123
+-1.8155819177628,52.69627199954
+-1.8162310123444,52.697026237261
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Chadswell Heights</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8160218000412,52.697061998209
+-1.8166065216064,52.696990476284
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Chadswell Heights</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.815619468689,52.696298007954
+-1.8160754442215,52.696122450858
+-1.8162792921066,52.69610294447
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Netherstowe Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8173789978027,52.694386348223
+-1.8169552087784,52.694591172912
+-1.8164241313934,52.69463668938
+-1.8159627914429,52.694558661121
+-1.8154907226563,52.694509893389
+-1.8151205778122,52.694506642205
+-1.8147021532059,52.694578168199
+-1.814541220665,52.694597675268
+-1.8141174316406,52.694760233837
+-1.8138974905014,52.694857768688
+-1.813833117485,52.69491303834
+-1.8131464719772,52.694438367283
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Spring Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8148577213287,52.695150371934
+-1.8155282735825,52.695101604862
+-1.8158823251724,52.695111358281
+-1.8159520626068,52.695140618524
+-1.8160915374756,52.695520999896
+-1.8160110712051,52.695569766499
+-1.815270781517,52.695612030844
+-1.8150240182877,52.69569005722
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>CTC_07_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Balmoral Way</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.941157579422,52.690676579199
+-1.9408249855042,52.690179101541
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Earl Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9379711151123,52.691401650865
+-1.9374024868011,52.690403454912
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Kingsdown Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9433677196503,52.690296155617
+-1.9425147771835,52.690598543863
+-1.9420480728149,52.690722099748
+-1.9415867328644,52.690793631943
+-1.9414258003235,52.690803386324
+-1.9412434101105,52.690800134863
+-1.9408893585205,52.690754614396
+-1.9405943155289,52.69074160854
+-1.9403207302094,52.690770871712
+-1.9399666786194,52.690891175655
+-1.9396340847015,52.690995222042
+-1.9390439987183,52.691151291158
+-1.938813328743,52.691138285419
+-1.9386523962021,52.691196811211
+-1.9385880231857,52.691252085498
+-1.9383895397186,52.691336622507
+-1.9381803274155,52.691375639534
+-1.9361954927444,52.691834086978
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Leander Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9424021244049,52.69061805271
+-1.9419246912003,52.689870207332
+-1.9409161806107,52.690127077406
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Sandringham Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9396716356277,52.690959456125
+-1.9392853975296,52.690357934031
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

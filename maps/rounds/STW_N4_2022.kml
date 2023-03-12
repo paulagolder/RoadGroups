@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>STW_N4_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Brownsfield Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8167781829834,52.688448615556
+-1.815447807312,52.69111487514
+-1.8146967887878,52.691830185377
+-1.8141603469849,52.69215532252
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Brownsfield Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8146538734436,52.692025267954
+-1.8143749237061,52.692285376699
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Brownsfield Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8170571327209,52.688448615556
+-1.8159413337708,52.690906782689
+-1.8157696723938,52.691283949527
+-1.8149757385254,52.691830185377
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Charnwood Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.816354393959,52.689792170554
+-1.8174004554749,52.689987262236
+-1.8176364898682,52.689749900575
+-1.8177437782288,52.689489776724
+-1.8178725242615,52.688797189415
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Charnwood Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8173789978027,52.690013274395
+-1.8170464038849,52.690296155617
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Clayton Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8166762590408,52.688910995595
+-1.8164777755737,52.688829705497
+-1.8164777755737,52.688663873226
+-1.8162310123444,52.688420001096
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Fecknam Way</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8199861049652,52.692981810178
+-1.8194979429245,52.692975307582
+-1.8192619085312,52.692851758073
+-1.8192672729492,52.692598155355
+-1.8192565441132,52.692292529609
+-1.8191707134247,52.692152721373
+-1.8190097808838,52.692029169537
+-1.8185216188431,52.691840589744
+-1.8180012702942,52.691739796762
+-1.8178457021713,52.69175605371
+-1.8171590566635,52.691863349417
+-1.8157964944839,52.69222099987
+-1.8155175447464,52.692224251224
+-1.8149435520172,52.691973896234
+-1.8148308992386,52.691915371483
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Fecknam Way</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8189936876297,52.692061683212
+-1.8186503648758,52.692409578019
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Godfrey Rise</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8164134025574,52.689225099135
+-1.8159198760986,52.688698340397
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Hayworth Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8194657564163,52.692985061475
+-1.8194228410721,52.69305333867
+-1.8193531036377,52.693111861895
+-1.8192887306213,52.693137872192
+-1.8192404508591,52.693173636325
+-1.8191224336624,52.693183390174
+-1.8189829587936,52.693232159388
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Johnson Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8182802200317,52.691707282847
+-1.8182909488678,52.691456924892
+-1.8182373046875,52.691362633862
+-1.8181300163269,52.691271594053
+-1.8180656433105,52.69123907979
+-1.8179476261139,52.691154542592
+-1.8178296089172,52.691089513866
+-1.8177062273026,52.691089513866
+-1.8175399303436,52.691105771057
+-1.8172985315323,52.691164296892
+-1.8170946836472,52.691258588351
+-1.8169927597046,52.69136588528
+-1.8168157339096,52.691388645201
+-1.816697716713,52.691333371087
+-1.8166655302048,52.691245582644
+-1.8167567253113,52.691190308349
+-1.816890835762,52.691167548325
+-1.8170893192291,52.691187056918
+-1.8171858787537,52.691170799758
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Stowe Hill Gardens</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8177330493927,52.691039441701
+-1.8178403377533,52.690714296249
+-1.8185484409332,52.690415160294
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

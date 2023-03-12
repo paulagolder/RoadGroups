@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>AwH_HK_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Armitage Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9131848216057,52.746930390122
+-1.9128093123436,52.746880057272
+-1.9126135110855,52.746742047548
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Bardy Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9022655487061,52.735340610231
+-1.9028985500336,52.73487937157
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Batesway</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9145607948303,52.740745184113
+-1.9122433662415,52.738289823758
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Brereton Cross</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9057095050812,52.734162817867
+-1.9048243761063,52.734308987979
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Brereton Hill</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9132840633392,52.740485364164
+-1.9116318225861,52.739134275464
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Lower Croft</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.913426220417,52.747748696682
+-1.9129541516304,52.747646409203
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Middle Bannisters Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9131445884705,52.748118877935
+-1.912522315979,52.747987366534
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Middle Bannisters Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9126081466675,52.748446842908
+-1.9128200411797,52.748063675667
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Nooks Croft</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9136461615562,52.747484047631
+-1.9127583503723,52.747311943704
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Nooks Croft</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9128066301346,52.747315190955
+-1.9129166007042,52.74705053927
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Oak Tree Way</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9127127528191,52.747609066095
+-1.9124230742455,52.748105889172
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Oak Tree Way</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.912530362606,52.748105889172
+-1.9119215011597,52.747990613734
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Trent Leasow</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9127798080444,52.748176677892
+-1.9125866889954,52.748481912294
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Water Field Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.912884414196,52.747639914752
+-1.9122111797333,52.747490542106
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

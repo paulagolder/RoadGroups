@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>LEO_N3_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Beacon Mews</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8343198299408,52.686342155308
+-1.8345773220062,52.686228342432
+-1.8345826864243,52.686176313591
+-1.8345773220062,52.686134040111
+-1.8342447280884,52.685903161153
+-1.8344271183014,52.685763332459
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Erasmus Way</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8375545740128,52.687025026333
+-1.8378657102585,52.686673836854
+-1.8378603458405,52.686625060314
+-1.8375009298325,52.68646897502
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Greenhough Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8370932340622,52.687756662011
+-1.8374633789063,52.687382716418
+-1.837592124939,52.687307926915
+-1.8377530574799,52.687268906254
+-1.8379354476929,52.687220130379
+-1.8380749225616,52.687151844062
+-1.8386167287827,52.686556773067
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Jordan Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8353283405304,52.685873894719
+-1.8355000019073,52.68571780674
+-1.8354892730713,52.68564626623
+-1.835253238678,52.685594236695
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Lillington Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8355858325958,52.686686843922
+-1.8352854251862,52.686507996396
+-1.83489382267,52.686290126602
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Parkside Court</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8377906084061,52.687281913145
+-1.8378710746765,52.687372961273
+-1.8380212783813,52.687454254084
+-1.8388152122498,52.68767211807
+-1.839040517807,52.687633097734
+-1.8392443656921,52.687623342645
+-1.839759349823,52.687746906949
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Seckham Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.836328804493,52.686437107528
+-1.8366050720215,52.686225740982
+-1.8366613984108,52.686131438655
+-1.8366050720215,52.686019251138
+-1.836165189743,52.685833897218
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Shaw Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8337699770927,52.685859911851
+-1.8343976140022,52.685508713001
+-1.834711432457,52.685359127449
+-1.835078895092,52.68522092295
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Shaw Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8350654840469,52.685080441704
+-1.8356448411942,52.684566640667
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Swinfen Broun Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8375009298325,52.687025026333
+-1.8371254205704,52.686878697727
+-1.8368518352509,52.686738872156
+-1.8363046646118,52.686459219671
+-1.8356931209564,52.68611452926
+-1.8353015184402,52.685864139237
+-1.8352156877518,52.68571780674
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

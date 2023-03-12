@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>CTC_17_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Eights Croft</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9491183757782,52.687093312849
+-1.948909163475,52.687034781556
+-1.9487589597702,52.686888452983
+-1.9486516714096,52.686751879205
+-1.9484370946884,52.686755130966
+-1.9482278823853,52.686803907361
+-1.9480776786804,52.686982753675
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Eights Croft</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.948903799057,52.68698600542
+-1.9493865966797,52.686586039043
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Eights Croft</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9488769769669,52.687077054164
+-1.9485980272293,52.687359954409
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Gullick Way</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9480991363525,52.686000715791
+-1.9480884075165,52.685860887409
+-1.9480830430984,52.685750325115
+-1.948190331459,52.685610495931
+-1.9482278823853,52.685233280086
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Gullick Way</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9482278823853,52.685343843688
+-1.9486463069916,52.68533083622
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Park Croft</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9492095708847,52.68531457688
+-1.9502234458923,52.68523653196
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Park Croft</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9498640298843,52.68528205818
+-1.9499284029007,52.685467414443
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Two Oaks Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9502288103104,52.686062500283
+-1.949976682663,52.685971449423
+-1.9493436813354,52.685815361793
+-1.9492739439011,52.685773087963
+-1.9492256641388,52.685704799384
+-1.9492256641388,52.685633258852
+-1.949257850647,52.684992640689
+-1.9492363929749,52.684927602786
+-1.9492042064667,52.684891831899
+-1.9491183757782,52.684862564787
+-1.9489628076553,52.684849557176
+-1.9488608837128,52.684856060982
+-1.9487589597702,52.684846305272
+-1.9485712051392,52.684400792207
+-1.9483834505081,52.684221935318
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Two Oaks Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9487106800079,52.684865816689
+-1.9485282897949,52.684891831899
+-1.9482815265656,52.684911343296
+-1.9481366872787,52.684911343296
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Wembley Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9492524862289,52.685782843466
+-1.9490218162537,52.68593567939
+-1.948716044426,52.686026730325
+-1.9485658407211,52.686039737585
+-1.9483458995819,52.686049493028
+-1.948184967041,52.686023478509
+-1.9478684663773,52.686125260214
+-1.9476364552975,52.686402475997
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

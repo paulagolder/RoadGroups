@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>NWD_04_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Church Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7218387126923,52.763931122905
+-1.7221766710281,52.763918138857
+-1.7224395275116,52.763875940672
+-1.7232978343964,52.763807774288
+-1.7236465215683,52.763664949137
+-1.7237430810928,52.763564322045
+-1.7242151498795,52.762983277191
+-1.7242151498795,52.762898878969
+-1.7240059375763,52.762833957149
+-1.7234855890274,52.762733328137
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Church Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7233461141586,52.763204010227
+-1.7234963178635,52.76211981074
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Collinson Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7265486717224,52.763730519013
+-1.7257332801819,52.763600677756
+-1.7256903648376,52.763198167398
+-1.7254328727722,52.763016387307
+-1.7252612113953,52.762834606457
+-1.725389957428,52.762484026961
+-1.7255830764771,52.762276274817
+-1.7254757881165,52.761990614001
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Collinson Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7256474494934,52.76230224389
+-1.7259907722473,52.762354181987
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Main Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7211198806763,52.763621452264
+-1.7218923568726,52.764023958709
+-1.7222785949707,52.76432259012
+-1.7229866981506,52.764582267942
+-1.7236089706421,52.764802992874
+-1.7242097854614,52.764984765507
+-1.7249822616577,52.765101618942
+-1.7258191108704,52.765244439381
+-1.7268061637878,52.765556045985
+-1.7280721664429,52.765763782483
+-1.7294239997864,52.765997484858
+-1.7317843437195,52.766309086074
+-1.7333078384399,52.766529802252
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Short Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7197895050049,52.76149719545
+-1.7215919494629,52.761237499231
+-1.7226433753967,52.76110765054
+-1.7238235473633,52.76102974114
+-1.7247033119202,52.76104272605
+-1.7270636558533,52.761458241116
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>St James Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7224127054214,52.763828548846
+-1.7222893238068,52.763289706311
+-1.7223000526428,52.763120910892
+-1.7224609851837,52.762410015314
+-1.722509264946,52.762101632345
+-1.7225575447083,52.762013986261
+-1.7230939865112,52.761806231874
+-1.7233246564865,52.761656907797
+-1.7234265804291,52.761426428325
+-1.7233246564865,52.761092068612
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>St James Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7225629091263,52.76200100164
+-1.7222356796265,52.761890632213
+-1.7218226194382,52.761806231874
+-1.7216241359711,52.761754293123
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>St Lukes Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7233675718307,52.761655609295
+-1.7238771915436,52.761785456351
+-1.7245638370514,52.762064626212
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>St Lukes Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7238986492157,52.76176922549
+-1.724129319191,52.761551731371
+-1.7242527008057,52.761554977559
+-1.7244082689285,52.761584193248
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Wales Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7258191108704,52.765132779924
+-1.7264199256897,52.76431479988
+-1.726655960083,52.763951248262
+-1.7266774177551,52.763509788645
+-1.7268061637878,52.76287355956
+-1.727020740509,52.761665997163
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

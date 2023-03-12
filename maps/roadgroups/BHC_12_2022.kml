@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>BHC_12_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Birch Terrace</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9242918491364,52.688828404874
+-1.9244313240051,52.689407187097
+-1.9245171546936,52.689966452518
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Mountbatten Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9311475753784,52.68829318705
+-1.9312387704849,52.688839460317
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Mountbatten Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9312387704849,52.688615098909
+-1.9316947460175,52.688579331042
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Spinney Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.925488114357,52.688670376464
+-1.9254559278488,52.688823202282
+-1.9256007671356,52.689093084867
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Spinney Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9255417585373,52.689099588042
+-1.9252198934555,52.689141858651
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Spinney Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9255739450455,52.689008543514
+-1.9264161586761,52.688910995595
+-1.9264751672745,52.688787434586
+-1.9264483451843,52.688706144257
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Spinney Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9252467155457,52.68862680477
+-1.9246780872345,52.688691837163
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Spinney Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9335508346558,52.688191085237
+-1.9320273399353,52.68821059516
+-1.9296991825104,52.688321151224
+-1.9276607036591,52.688444713554
+-1.9255363941193,52.68861379828
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

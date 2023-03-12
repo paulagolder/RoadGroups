@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>STW_S1_.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+HTTP/1.0 200 OK
+Cache-Control: no-cache, private
+Date:          Wed, 23 Feb 2022 16:07:32 GMT
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="Cache-Control" content="max-age=2000" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="shortcut" type="image/x-icon" href="/favicon.ico" />
+
+           <title>Road Groups</title>
+   
+        <link href="/css/main.css" rel="stylesheet" />
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"/>
+   
+<link href="/css/roadgroup.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"/>
+
+        <script src="/js/maps.js"></script>
+     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+     <script src="/js/L.KML.js"></script>
+   
+<script src="/js/maps.js"></script>
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+<script src='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js'></script>
+
+<script src="/js/L.KML.js"></script>
+
+
+</head>
+<body  >
+  <div id="page" >
+
+            
+    <div class='topheader  row'  >
+     <div class="header">Deliveries Manager:</div>
+          <div class="header"></div>
+           <div class="button right"> <a class="button" href = "/delivery/showcurrent" >Deliveries</a></div>
+     <div class="button"> <a class="button" href = "/" >Manage Roadgroups</a> </div>
+    </div>
+         
+
+    <div class="roadgroup">
+
+
+    <div class="heading row">
+    <div class="label"> Road Group </div>
+  </div>
+  <H1> No streets found </H1>
+
+  </div>
+
+
+            
+    <div class="filler" ></div>
+    <div class='footer' id='footer' >
+        <div class="footerbody">
+                <div class="texts" >
+                    <div class="headertext1"> Developed by Paul Golder 2020</div>
+                </div>
+          </div>
+     </div>
+     
+  </div>
+</body>
+</html>
+</Document>
+</kml>

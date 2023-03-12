@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>HwW_LA_1_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Barracks Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.90514087677,52.643756098311
+-1.9061279296875,52.648703361394
+-1.908745765686,52.653780233681
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Broad Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8695855140686,52.672798942714
+-1.8714308738708,52.671953206371
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Coppice Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.889111995697,52.663078493399
+-1.8880605697632,52.662831224856
+-1.8873524665833,52.66285725319
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Coppice Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8817090988159,52.66214146837
+-1.8794131278992,52.662076396442
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Coppy Nook Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9128441810608,52.670678065246
+-1.9110417366028,52.67071710073
+-1.9098830223083,52.670508911076
+-1.9059562683105,52.669298789072
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Field Fare</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.903520822525,52.670581126915
+-1.9031453132629,52.67028835902
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Hanney Hay Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9186002016068,52.66516785667
+-1.9181656837463,52.664910839786
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Hospital Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9173073768616,52.669432814927
+-1.91774725914,52.668902564363
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Lichfield Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8880605697632,52.674863771703
+-1.8903350830078,52.67509796165
+-1.8946802616119,52.67509796165
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Lions Den</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8910646438599,52.661230452555
+-1.8927383422852,52.660098163577
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Middleton Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9019705057144,52.665629832586
+-1.9018149375916,52.66549319233
+-1.9015789031982,52.665470418913
+-1.9014877080917,52.665483432296
+-1.9013911485672,52.665470418913
+-1.9012516736984,52.665291484506
+-1.9010424613953,52.665135322971
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Norton Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9050335884094,52.67454240905
+-1.9080376625061,52.674008967782
+-1.9100761413574,52.67393090266
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Ogley Hay Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9027805328369,52.670968228121
+-1.9023567438126,52.670584379881
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Redwing Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.902791261673,52.671000757478
+-1.9023084640503,52.670603897669
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Station Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8911075592041,52.661321554991
+-1.8914723396301,52.661581846619
+-1.8920731544495,52.661725006354
+-1.8922877311707,52.661985295579
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Stockhay Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8976736068726,52.675091456391
+-1.8980813026428,52.67461006451
+-1.8994760513306,52.673380539551
+-1.9001734256744,52.67285358969
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Summerhill Cottages</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8900346755981,52.651329089058
+-1.8903994560242,52.651133824693
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Walsall Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8818807601929,52.655940979961
+-1.8887042999268,52.651723520555
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Watling Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8826103210449,52.656297622915
+-1.8906354904175,52.656297622915
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

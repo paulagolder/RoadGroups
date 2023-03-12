@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>LEO_W4_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Friary Gardens</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8365058302879,52.679528143531
+-1.8374633789063,52.679137865837
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Friary Gardens</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8368089199066,52.679415939051
+-1.8371602892876,52.679609450945
+-1.8378013372421,52.679744420918
+-1.8380185961723,52.679733037924
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Friary Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8333649635315,52.677485326423
+-1.8356931209564,52.679078998679
+-1.8364870548248,52.679456267681
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Lanthorn Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8358325958252,52.679171364819
+-1.8361705541611,52.678950206081
+-1.836159825325,52.678820112182
+-1.8359291553497,52.678683513172
+-1.8358647823334,52.678514389996
+-1.8356716632843,52.678338761389
+-1.8356341123581,52.678224927656
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Mary Slater Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8335258960724,52.677580948378
+-1.8343466520309,52.67719390576
+-1.8337190151215,52.676715789555
+-1.8341535329819,52.676520638581
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Mary Slater Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8337029218674,52.676738557112
+-1.8333005905151,52.676897929679
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Mary Slater Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8340194225311,52.676914192153
+-1.8344539403915,52.676683264454
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Mary Slater Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.834352016449,52.677219925539
+-1.8345987796783,52.677411820933
+-1.8349689245224,52.677252450241
+-1.835070848465,52.677333761891
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Mary Slater Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8349581956863,52.677249197772
+-1.8347865343094,52.677148371108
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Mary Slater Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8336868286133,52.677470365123
+-1.833268404007,52.677132108722
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Mary Slater Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8337136507034,52.677525656785
+-1.8341320753098,52.677841143168
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>HFD_03_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Blythe Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8985211849213,52.67626238747
+-1.8982315063477,52.677205614682
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Canterbury Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8982207775116,52.678265907854
+-1.8981027603149,52.678591146
+-1.8981993198395,52.678786287725
+-1.8982100486755,52.679267633587
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Canterbury Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8980705738068,52.678896867649
+-1.8976414203644,52.678922886414
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Derwent Grove</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8997201323509,52.677713322661
+-1.8992668390274,52.677674293427
+-1.8988779187202,52.677695434267
+-1.8985319137573,52.677693808049
+-1.8982100486755,52.677705191574
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Dove Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8997657299042,52.677355228162
+-1.8985319137573,52.677283673953
+-1.8983173370361,52.677296683818
+-1.8982100486755,52.677355228162
+-1.8981027603149,52.677420277341
+-1.8980062007904,52.677836589793
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Farewell Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8978130817413,52.675449244217
+-1.8974697589874,52.676281902722
+-1.896675825119,52.678135811917
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Lichfield Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8978667259216,52.675384192103
+-1.8994438648224,52.675546822206
+-1.9013214111328,52.676184326375
+-1.9018685817719,52.676366468714
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Severn Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8974804878235,52.676112770248
+-1.8980920314789,52.676158305978
+-1.8983924388886,52.676158305978
+-1.8986392021179,52.676119275355
+-1.8988430500031,52.676119275355
+-1.899186372757,52.676294912885
+-1.8994224071503,52.676509580019
+-1.8996906280518,52.676776286201
+-1.8998408317566,52.67705600069
+-1.8998730182648,52.677225129513
+-1.8996155261993,52.67812930711
+-1.8994867801666,52.678285422211
+-1.8991649150848,52.678337460454
+-1.8986070156097,52.678265907854
+-1.8976414203644,52.678187850338
+-1.8973088264465,52.678187850338
+-1.8970727920532,52.67822037432
+-1.8967187404633,52.67820736473
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Tame Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8999481201172,52.677231634454
+-1.9002592563629,52.677303188749
+-1.9011497497559,52.677329208463
+-1.9014930725098,52.677199109737
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Tame Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9013750553131,52.677303188749
+-1.9014608860016,52.677556880301
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Trent Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.89936876297,52.676451034542
+-1.8998301029205,52.676379478852
+-1.9005167484283,52.676548610294
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

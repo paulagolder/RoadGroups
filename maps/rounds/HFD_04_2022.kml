@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>HFD_04_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Anker Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9016218185425,52.676744086365
+-1.9013777375221,52.676688793713
+-1.9007340073586,52.676631874733
+-1.9005838036537,52.67664000602
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Hamps Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9022279977798,52.679070542592
+-1.9023513793945,52.67900549587
+-1.902437210083,52.678979477155
+-1.9036012887955,52.679002243532
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Leam Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.902249455452,52.679620183522
+-1.9023030996323,52.679268934495
+-1.9021689891815,52.679093308922
+-1.901890039444,52.678969720132
+-1.901713013649,52.67890467326
+-1.9011980295181,52.67881685983
+-1.9008922576904,52.67879734571
+-1.9005435705185,52.678807102771
+-1.9001412391663,52.678846130993
+-1.8998354673386,52.67886889744
+-1.8994009494781,52.678826616886
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Leam Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8991380929947,52.679077047259
+-1.8993473052979,52.67883312159
+-1.8994277715683,52.678394051953
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Manifold Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.90260887146,52.677345795993
+-1.9025203585625,52.677378320601
+-1.9024640321732,52.677444995973
+-1.9024184346199,52.677610870848
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Manifold Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.902252137661,52.67760111352
+-1.9028449058533,52.677645021479
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Mease Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9019919633865,52.676374274777
+-1.9016593694687,52.67674180962
+-1.9016861915588,52.676865404713
+-1.9017452001572,52.676959727048
+-1.9018417596817,52.677002009408
+-1.9019597768784,52.677041039243
+-1.9021958112717,52.677089826487
+-1.9023996591568,52.677115846329
+-1.9025713205338,52.677252450241
+-1.9026464223862,52.677333761891
+-1.9029146432877,52.677450850401
+-1.9032579660416,52.677532161682
+-1.9036012887955,52.677584200822
+-1.904234290123,52.677759832463
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Penk Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9028234481812,52.678961914533
+-1.9028770923615,52.67822037432
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Stour Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9012248516083,52.678792792434
+-1.9011926651001,52.678109792683
+-1.9014179706573,52.677908143096
+-1.9014501571655,52.677712997448
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Stour Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9011873006821,52.678082472441
+-1.9007045030594,52.678071089015
+-1.9003048539162,52.678136137128
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Stour Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9007018208504,52.678056453176
+-1.9006133079529,52.677645021479
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Tean Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9019436836243,52.678532603312
+-1.9020295143127,52.678246393488
+-1.9026517868042,52.678168335938
+-1.9029414653778,52.678226879113
+-1.9033813476563,52.678265907854
+-1.9039928913116,52.678304936559
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

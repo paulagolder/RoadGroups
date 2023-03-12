@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>STJ_XW_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Knowle Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8284833431244,52.662098520869
+-1.8275392055511,52.662606079085
+-1.8266272544861,52.663133152532
+-1.8262088298798,52.663425968368
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

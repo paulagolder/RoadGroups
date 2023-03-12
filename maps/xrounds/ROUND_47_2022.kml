@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>ROUND_47_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Drake Croft</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8224067986012,52.686556122697
+-1.8223263323307,52.686517101364
+-1.8222458660603,52.686514662529
+-1.8217255175114,52.686273217244
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Mallard Croft</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8222391605377,52.685873894719
+-1.8228667974472,52.686124284687
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Smithfield Rise</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8212842941284,52.686597745448
+-1.8224215507507,52.685667728416
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Stowe Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.823727786541,52.685599764826
+-1.8236097693443,52.685689190541
+-1.8234381079674,52.685816012149
+-1.823373734951,52.68586804142
+-1.823368370533,52.685989984782
+-1.8231403827667,52.686160704916
+-1.8230894207954,52.686246877683
+-1.8229043483734,52.686415970919
+-1.8226709961891,52.686583437614
+-1.8224591016769,52.686801305945
+-1.8224376440048,52.686853334042
+-1.8222042918205,52.687032180154
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Tanyard</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8238243460655,52.686788298911
+-1.8241944909096,52.686498891402
+-1.8241783976555,52.68644523699
+-1.824277639389,52.686339553864
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

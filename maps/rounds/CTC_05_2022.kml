@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>CTC_05_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Angel Croft</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9412755966187,52.688028502208
+-1.9405138492584,52.688178078617
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Angel Croft</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9407498836517,52.688600791786
+-1.9403421878815,52.687911442052
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Ashley Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9416403770447,52.68821059516
+-1.9426274299622,52.688002488867
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Biddulph Park</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9440114498138,52.688249614979
+-1.9444191455841,52.688171575305
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Ironstone Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9410395622253,52.687405478415
+-1.9415652751923,52.68829318705
+-1.9419139623642,52.688774428143
+-1.9427990913391,52.689584071799
+-1.9435179233551,52.690263640628
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

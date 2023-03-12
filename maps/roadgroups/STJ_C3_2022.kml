@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>STJ_C3_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Burns Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8281024694443,52.675912412449
+-1.8287837505341,52.675587154359
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Dovehouse Fields</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.828241944313,52.67510576794
+-1.8290197849274,52.67483905156
+-1.8298298120499,52.674767493229
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Dovehouse Fields</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8290197849274,52.674832546262
+-1.8292450904846,52.675219609802
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Masefield Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.827507019043,52.675437534824
+-1.8280273675919,52.675915665018
+-1.8281829357147,52.676009989404
+-1.8287569284439,52.676270193552
+-1.828960776329,52.676299466422
+-1.8291968107224,52.6762149003
+-1.8292397260666,52.676133586568
+-1.8295186758041,52.675661963934
+-1.829491853714,52.675544870629
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Stevenson Walk</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.827684044838,52.675326946142
+-1.8272656202316,52.674926872987
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

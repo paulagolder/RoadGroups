@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>LEO_C6_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Burwaye Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8361061811447,52.674191769671
+-1.8358379602432,52.673999860132
+-1.8356770277023,52.673977091147
+-1.8354517221451,52.674012870975
+-1.8351942300797,52.674074672425
+-1.8350976705551,52.674162495389
+-1.8348240852356,52.674263328944
+-1.8345022201538,52.674419457861
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Chesterfield Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8316698074341,52.675655458759
+-1.8336707353592,52.674917115059
+-1.8337565660477,52.674539806853
+-1.8337619304657,52.674373920318
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Sainte Foy Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8342661857605,52.674747977301
+-1.8347436189651,52.67473171402
+-1.835263967514,52.674598354892
+-1.8355965614319,52.674504027458
+-1.8359130620956,52.67436741495
+-1.8359667062759,52.674211285848
+-1.8359291553497,52.674087683246
+-1.8360847234726,52.674061661601
+-1.8362724781036,52.674061661601
+-1.8365621566772,52.673938058575
+-1.836701631546,52.673817707925
+-1.8364334106445,52.673609533045
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

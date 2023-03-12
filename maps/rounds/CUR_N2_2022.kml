@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>CUR_N2_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Barratt Court</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8207719922066,52.701239482928
+-1.8212252855301,52.701068009074
+-1.8214318156242,52.701103766711
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Cain Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8213540315628,52.701764465041
+-1.8212360143662,52.701842480419
+-1.8210563063622,52.701896115911
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Kilby Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8227568268776,52.70117170106
+-1.8221426010132,52.701028670561
+-1.8220004439354,52.700950653728
+-1.8216651678085,52.700869386044
+-1.8216034770012,52.700836878929
+-1.8215900659561,52.700801121074
+-1.821568608284,52.700742608157
+-1.8215927481651,52.700711726308
+-1.8216598033905,52.70063045818
+-1.8217322230339,52.700552440635
+-1.8217858672142,52.700515057178
+-1.8218153715134,52.700485800538
+-1.8219897150993,52.700519933283
+-1.822282075882,52.700584947962
+-1.8226012587547,52.700671092263
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Lincoln Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8195462226868,52.697671839749
+-1.8201148509979,52.697450774692
+-1.8202865123749,52.697405261159
+-1.8205869197845,52.697333739797
+-1.8207585811615,52.697327237849
+-1.8209195137024,52.697379253404
+-1.8211126327515,52.69746377855
+-1.821209192276,52.697580813097
+-1.8212950229645,52.697704349222
+-1.8214344978333,52.697860394355
+-1.8214559555054,52.698022940775
+-1.8214344978333,52.698172482946
+-1.8214023113251,52.698367537183
+-1.8212735652924,52.698627608143
+-1.8212628364563,52.69892018612
+-1.8210911750793,52.699043718455
+-1.8209195137024,52.699128240378
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Lincoln Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.821037530899,52.69910223365
+-1.8211019039154,52.699219263804
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Lincoln Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8214881420136,52.698042446304
+-1.8218100070953,52.698042446304
+-1.8220138549805,52.697990431539
+-1.8220996856689,52.697964424133
+-1.8221747875214,52.697912409275
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Lincoln Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.821386218071,52.698518398846
+-1.8219709396362,52.698550907689
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Salisbury Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8212682008743,52.698673475966
+-1.8211314082146,52.698671850529
+-1.8210482597351,52.698668599655
+-1.8209409713745,52.698678352276
+-1.8208014965057,52.698710860999
+-1.820667386055,52.698738493395
+-1.820482313633,52.698767751207
+-1.8203723430634,52.698810012456
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Thomas Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.821576654911,52.701786076737
+-1.82193338871,52.70114244486
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Vallentin Way</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8223115801811,52.701959985741
+-1.8212279677391,52.701725939817
+-1.8207424879074,52.701246466816
+-1.8203616142273,52.700867760689
+-1.8203428387642,52.700807622504
+-1.8203669786453,52.700775115343
+-1.8204072117805,52.700747484236
+-1.8205279111862,52.700688971247
+-1.8205896019936,52.700651587908
+-1.8206405639648,52.70059307479
+-1.8206083774567,52.700550815268
+-1.8205788731575,52.700518307915
+-1.8203830718994,52.700427287198
+-1.8202167749405,52.700412658851
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Wassall Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8203991651535,52.700732195694
+-1.8205708265305,52.700637924695
+-1.8205976486206,52.700605417407
+-1.8205922842026,52.700559907164
+-1.8204420804977,52.700462385053
+-1.8203508853912,52.700423376147
+-1.820125579834,52.700400620936
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Watchman Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8226924538612,52.701100185869
+-1.8227782845497,52.700906769198
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Watery Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8223679065704,52.701840677331
+-1.8226897716522,52.701216550371
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Winchester Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8213245272636,52.69779085478
+-1.8202677369118,52.698031423649
+-1.8199163675308,52.698050268832
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Winchester Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8204528093338,52.698436161526
+-1.8202677369118,52.698044427334
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

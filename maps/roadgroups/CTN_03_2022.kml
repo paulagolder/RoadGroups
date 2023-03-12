@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>CTN_03_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Bank Crescent</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9266092777252,52.673673286727
+-1.9271242618561,52.673894472182
+-1.9275104999542,52.673822912304
+-1.9278752803802,52.673731835927
+-1.928186416626,52.673699308604
+-1.9287872314453,52.673731835927
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Birch Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9317483901978,52.674486463036
+-1.9314694404602,52.67461006451
+-1.9311690330505,52.674662107131
+-1.929806470871,52.674727160321
+-1.929087638855,52.674779202802
+-1.9287657737732,52.674779202802
+-1.9281756877899,52.674675117777
+-1.9273281097412,52.674545011146
+-1.9269418716431,52.674479957686
+-1.9266951084137,52.674532000462
+-1.9264912605286,52.674681623098
+-1.9261264801025,52.674876782288
+-1.9259011745453,52.674993877384
+-1.9255900382996,52.675052424814
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Birch Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9300532341003,52.674616569841
+-1.9299459457397,52.674479957686
+-1.9296562671661,52.674349850474
+-1.9291949272156,52.674427914848
+-1.9290232658386,52.674486463036
+-1.928905248642,52.674694633738
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Laburnum Grove</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9295275211334,52.675631389621
+-1.9291734695435,52.675553327398
+-1.9288730621338,52.675475265035
+-1.9284009933472,52.675169519439
+-1.9282293319702,52.675039414281
+-1.9281435012817,52.67495484572
+-1.9281649589539,52.674785708108
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Laburnum Grove</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9282105565071,52.675109671085
+-1.9276097416878,52.675404032978
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Laburnum Grove</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9276848435402,52.675503237368
+-1.9275185465813,52.675345486019
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Oakdene Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9260996580124,52.674933378271
+-1.9261854887009,52.675109020569
+-1.9261050224304,52.675297672621
+-1.9260084629059,52.675395250949
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Oakdene Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9245225191116,52.674939883554
+-1.9253540039063,52.675086252163
+-1.9256865978241,52.675187083586
+-1.9258582592011,52.675317188304
+-1.9259548187256,52.675418019194
+-1.9260942935944,52.675798572393
+-1.9261050224304,52.676338496884
+-1.9261211156845,52.676621466693
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Pine Grove</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9282883405685,52.673736389731
+-1.9282615184784,52.673915289559
+-1.9281542301178,52.674058408894
+-1.9280201196671,52.674162495389
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Pine Grove</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9282186031342,52.674100694062
+-1.9283258914948,52.67420152776
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

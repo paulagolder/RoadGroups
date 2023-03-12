@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>HFD_02_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Church Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9053876399994,52.679857600247
+-1.903692483902,52.679730761335
+-1.902072429657,52.679662463307
+-1.9006562232971,52.679623435815
+-1.898832321167,52.679665715597
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Laurel Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9057631492615,52.681812173823
+-1.9059187173843,52.681808921693
+-1.9061976671219,52.681867459989
+-1.9064390659332,52.681909737599
+-1.9072061777115,52.681958519406
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Rugeley Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9068789482117,52.678148821528
+-1.9061064720154,52.678857839473
+-1.9055914878845,52.679748974145
+-1.9053339958191,52.680510001771
+-1.9054305553436,52.681004337398
+-1.9057309627533,52.682064538364
+-1.9062352180481,52.68283853386
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Rugeley Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9062995910645,52.683020648454
+-1.9063103199005,52.683820642853
+-1.9062352180481,52.684685660959
+-1.9064712524414,52.685440098852
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Scholars Gate</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9039821624756,52.679703442157
+-1.9039714336395,52.67962538721
+-1.9039928913116,52.679430249233
+-1.9040787220001,52.679254624309
+-1.9042611122131,52.679137540634
+-1.9047975540161,52.678825315966
+-1.9048619270325,52.678656193338
+-1.9048833847046,52.678409012936
+-1.9049263000488,52.678246393488
+-1.9049477577209,52.678181345539
+-1.904604434967,52.678077268619
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Scholars Gate</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.904776096344,52.67849357481
+-1.9044005870819,52.678409012936
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Scholars Gate</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9042932987213,52.679170063908
+-1.9046473503113,52.679332679918
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

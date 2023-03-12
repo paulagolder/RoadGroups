@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>STJ_E6_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Balmoral Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8103677034378,52.675876634178
+-1.8107056617737,52.675993726594
+-1.8109256029129,52.676143344224
+-1.8110972642899,52.676270193552
+-1.8112528324127,52.676331991809
+-1.8114942312241,52.676432820357
+-1.8117249011993,52.676484860807
+-1.8119019269943,52.676523891104
+-1.8120628595352,52.676527143627
+-1.8124437332153,52.676419810235
+-1.8127280473709,52.676338496884
+-1.8130445480347,52.676436072887
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Balmoral Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8127334117889,52.676335244347
+-1.812738776207,52.676250678295
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Balmoral Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.812030673027,52.676556416325
+-1.8118965625763,52.676777587182
+-1.8119287490845,52.676907687164
+-1.8119126558304,52.67702152433
+-1.812025308609,52.677232935423
+-1.8120414018631,52.677271965051
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Balmoral Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8112260103226,52.676377527312
+-1.8106359243393,52.676810112214
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Balmoral Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8107378482819,52.676806859712
+-1.8111777305603,52.676975989499
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Balmoral Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8124437332153,52.67717764339
+-1.8121111392975,52.677262207647
+-1.8115532398224,52.677489879835
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Balmoral Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8122667074203,52.676449083005
+-1.8120521306992,52.67619213247
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Grosvenor Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8110221624374,52.67532369353
+-1.8119019269943,52.675622932867
+-1.812744140625,52.675749783707
+-1.8131732940674,52.675870129034
+-1.8135273456573,52.675957948389
+-1.8138599395752,52.67592867529
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Grosvenor Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8134415149689,52.67590915988
+-1.8135327100754,52.675782309504
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Grosvenor Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.811842918396,52.675645700994
+-1.8117946386337,52.675915665018
+-1.8119019269943,52.676049020125
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Grosvenor Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8117678165436,52.675912412449
+-1.8115478754044,52.676009989404
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Grosvenor Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8133234977722,52.675961200954
+-1.8132215738297,52.67612382891
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Hunter Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8118000030518,52.67398034386
+-1.811660528183,52.674198275064
+-1.8112421035767,52.674487764086
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Quarry Hills Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8124383687973,52.673755906111
+-1.8117195367813,52.673645313173
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Quarry Hills Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8139189481735,52.672832121208
+-1.8134897947311,52.67322245524
+-1.813285946846,52.673414368194
+-1.8126529455185,52.673612785785
+-1.8124812841415,52.673772169755
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Quarry Hills Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8114674091339,52.675089504793
+-1.8104267120361,52.675847361025
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Quarry Hills Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8125295639038,52.673709717389
+-1.8123579025269,52.673943913523
+-1.8121004104614,52.674347248366
+-1.8118000030518,52.674698536969
+-1.81147813797,52.674971759485
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Wentworth Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8122291564941,52.674038892649
+-1.8113869428635,52.673837224269
+-1.8112367391586,52.673746147922
+-1.8111026287079,52.673645313173
+-1.810764670372,52.673531467209
+-1.8105983734131,52.673547730936
+-1.8102604150772,52.673580258373
+-1.8099385499954,52.673707115144
+-1.8097239732742,52.67375915884
+-1.8095898628235,52.673889267811
+-1.8094074726105,52.67405190348
+-1.8093377351761,52.674165748088
+-1.8093752861023,52.674204780456
+-1.8097454309464,52.6743348881
+-1.8098902702332,52.674435721257
+-1.810051202774,52.674526796167
+-1.8099921941757,52.67473171402
+-1.8098044395447,52.675082999532
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Wentworth Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8093484640121,52.674214538543
+-1.8091982603073,52.674852062153
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Wentworth Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8096220493317,52.673817707925
+-1.8092143535614,52.673684346007
+-1.808962225914,52.673681093272
+-1.8085759878159,52.673736389731
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Wentworth Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8102711439133,52.673645313173
+-1.8103086948395,52.673788433393
+-1.810222864151,52.673944564006
+-1.8101155757904,52.674064914307
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

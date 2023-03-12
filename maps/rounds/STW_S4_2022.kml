@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>STW_S4_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Aiden Court Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8206325173378,52.683230729673
+-1.8203750252724,52.683074632247
+-1.8205466866493,52.682999835366
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Church Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8202704191208,52.68389023515
+-1.8199968338013,52.68391625094
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Deans Croft</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8193960189819,52.683601458824
+-1.8201819062233,52.683394956571
+-1.8199217319489,52.683040485861
+-1.8200370669365,52.682993331283
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Rotten Row</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8211877346039,52.683007640294
+-1.8200290203094,52.68244178158
+-1.8195569515228,52.682357227349
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Southern Cross</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8195140361786,52.682378040694
+-1.8192082643509,52.682647963113
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Sturgeons Hill</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8189239501953,52.682114620821
+-1.8178510665894,52.681952015168
+-1.8172824382782,52.681867459989
+-1.8171966075897,52.681886972737
+-1.8167728185654,52.681769896118
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

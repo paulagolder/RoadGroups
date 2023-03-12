@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>CaR_HRS_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Church Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8799066543579,52.756902940678
+-1.880110502243,52.756617244617
+-1.8801641464233,52.755838064016
+-1.8802285194397,52.755325095846
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Hawkhurst Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8851101398468,52.758285942846
+-1.8846273422241,52.758221014149
+-1.8841338157654,52.758253478509
+-1.8834793567657,52.758214521274
+-1.8827497959137,52.758208028398
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Holly Hurst</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8822482228279,52.757641845861
+-1.8821328878403,52.757339922135
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Mavesyn Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8801426887512,52.75662373773
+-1.8808937072754,52.756610751502
+-1.8813979625702,52.756688668808
+-1.8816983699799,52.756799051418
+-1.8822240829468,52.756792558331
+-1.8821918964386,52.756682175704
+-1.8822777271271,52.756526340931
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Sandford Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8772995471954,52.755961435207
+-1.8771493434906,52.756065326464
+-1.8771922588348,52.7562406424
+-1.8774604797363,52.756396478195
+-1.8778252601624,52.756552313432
+-1.8781363964081,52.75672113431
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Sandford Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8778467178345,52.756571792798
+-1.8780612945557,52.756351026146
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>The Leasow</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8829107284546,52.757273044153
+-1.8826103210449,52.757331481256
+-1.8822348117828,52.757344467268
+-1.8819558620453,52.75736394628
+-1.881730556488,52.75736394628
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>The Maltings</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8805932998657,52.757760017618
+-1.8812477588654,52.757662623361
+-1.8814730644226,52.75774703173
+-1.8821918964386,52.757623665597
+-1.8826103210449,52.757688595184
+-1.8830823898315,52.757617172633
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>The Pinfold</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8813014030457,52.757643144483
+-1.8811190128326,52.757396411279
+-1.8810760974884,52.757292523196
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Townfield Croft</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8831145763397,52.75763015856
+-1.883157491684,52.757558735913
+-1.8831145763397,52.757324988248
+-1.8829643726349,52.757136690607
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Wade Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.883887052536,52.759123514357
+-1.8842947483063,52.758805368936
+-1.8841660022736,52.758720962618
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Wade Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8855500221252,52.760107802656
+-1.8855500221252,52.759588392099
+-1.8851637840271,52.758354767198
+-1.8850994110107,52.758056094863
+-1.8848204612732,52.756926315767
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

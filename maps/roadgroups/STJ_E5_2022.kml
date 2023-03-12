@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>STJ_E5_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Borrowcop Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8228480219841,52.674363186451
+-1.8225717544556,52.674089960129
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Borrowcop Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8227434158325,52.674425312744
+-1.8220567703247,52.67404800029
+-1.8211555480957,52.67393090266
+-1.8202757835388,52.673774771997
+-1.8189668655396,52.673631651733
+-1.8175721168518,52.673527563973
+-1.8168640136719,52.673514552986
+-1.8163704872131,52.673332398756
+-1.8158984184265,52.67326734349
+-1.8149757385254,52.67326734349
+-1.8143749237061,52.673345409797
+-1.8137097358704,52.673306376661
+-1.8135863542557,52.673261488451
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Hillside</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8145948648453,52.673401357173
+-1.8146216869354,52.673866498769
+-1.8146860599518,52.673947816722
+-1.8148845434189,52.673993354709
+-1.8152815103531,52.674009618264
+-1.8153887987137,52.674061661601
+-1.8154317140579,52.675138294217
+-1.8153512477875,52.675307430464
+-1.8150722980499,52.675385493126
+-1.8142837285995,52.675492829059
+-1.8141603469849,52.675437534824
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Hillside</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.815077662468,52.675313935691
+-1.8149971961975,52.675203346697
+-1.8147772550583,52.675161062596
+-1.8144822120667,52.675174073093
+-1.8142569065094,52.675200094075
+-1.8141067028046,52.675278156929
+-1.8141013383865,52.67540500877
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Minors Hill</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8122881650925,52.674403194458
+-1.8128031492233,52.674526796167
+-1.8132430315018,52.674637386874
+-1.8136078119278,52.674695934782
+-1.814187169075,52.674699187441
+-1.814900636673,52.674669913499
+-1.8153297901154,52.674676418821
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Over Borrowcop</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8168532848358,52.674545011146
+-1.816166639328,52.674545011146
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Seward Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8134737014771,52.674753181569
+-1.8131303787231,52.675169519439
+-1.812926530838,52.675215056153
+-1.8128621578217,52.675156508941
+-1.8130445480347,52.674668612455
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

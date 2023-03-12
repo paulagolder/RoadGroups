@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>NWD_BG_4_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Arden Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7220801115036,52.760351923419
+-1.7221122980118,52.760043525876
+-1.72214448452,52.759783820988
+-1.7221283912659,52.759533853571
+-1.7221015691757,52.759209218421
+-1.7222195863724,52.758952754941
+-1.7222410440445,52.758783942712
+-1.722155213356,52.758644347491
+-1.7220050096512,52.758569680095
+-1.7218762636185,52.758527476728
+-1.7215704917908,52.758452809133
+-1.7213451862335,52.758452809133
+-1.7211896181107,52.758491766155
+-1.7209696769714,52.758579419328
+-1.7209053039551,52.758615129829
+-1.7206960916519,52.758605390605
+-1.7185986042023,52.758472287648
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Ashtree Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7281365394592,52.759571511112
+-1.7270851135254,52.760331147252
+-1.7267525196075,52.76036361004
+-1.726108789444,52.760253236463
+-1.7257440090179,52.760188310699
+-1.7249500751495,52.760240251318
+-1.7241561412811,52.760305177004
+-1.7234373092651,52.76029868444
+-1.7219567298889,52.76041555045
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Ashtree Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7260551452637,52.7608310715
+-1.72647356987,52.760402565353
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Aspen Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7221927642822,52.759172859193
+-1.7207765579224,52.759120917301
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Beech Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.720894575119,52.758644347491
+-1.7208784818649,52.758709275556
+-1.7203366756439,52.759991585023
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Cedar Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7220801115036,52.759811739308
+-1.7204976081848,52.759714349639
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Holly Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7250037193298,52.760175325534
+-1.7249929904938,52.759707857036
+-1.7252397537231,52.759422179372
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Linden Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7231261730194,52.760272714173
+-1.7231047153473,52.759493598964
+-1.7232120037079,52.759117021617
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Oak Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7273855209351,52.759980547603
+-1.7270958423615,52.7598377099
+-1.7253684997559,52.759363745074
+-1.724134683609,52.759000152123
+-1.7239201068878,52.758987166604
+-1.7233836650848,52.7590845579
+-1.7232120037079,52.759104036133
+-1.7222893238068,52.758980673843
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Willow Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7240595817566,52.760227266169
+-1.7240917682648,52.759590989127
+-1.7245960235596,52.759175456246
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>CTC_09_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Holly Grove Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.939172744751,52.68772414513
+-1.9395482540131,52.688400491267
+-1.9401007890701,52.6893304501
+-1.9401383399963,52.689437751768
+-1.9401276111603,52.689535298509
+-1.9400095939636,52.689587323349
+-1.9386470317841,52.689918980247
+-1.9384431838989,52.690010022876
+-1.9383627176285,52.690123825895
+-1.9383144378662,52.690270143627
+-1.9387489557266,52.691079759549
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Mowbray Croft</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9394704699516,52.689770060098
+-1.9399505853653,52.690306560399
+-1.9404280185699,52.690168371558
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>St Johns Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9395080208778,52.688406019042
+-1.9389420747757,52.688519826243
+-1.9388025999069,52.68850681972
+-1.9386711716652,52.688453167776
+-1.9384351372719,52.688087357304
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Windsor Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9400927424431,52.689563587014
+-1.9402107596397,52.68957334167
+-1.9404038786888,52.689683894284
+-1.940610408783,52.689948894264
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

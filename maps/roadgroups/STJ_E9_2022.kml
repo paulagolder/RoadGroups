@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>STJ_E9_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Manor Rise</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8180441856384,52.678595699297
+-1.8183553218842,52.678498128117
+-1.8186342716217,52.678446090066
+-1.8188327550888,52.6783615281
+-1.8190634250641,52.678198908475
+-1.8192619085312,52.678046045475
+-1.819406747818,52.677987502057
+-1.8195784091949,52.677967987567
+-1.8197339773178,52.677987502057
+-1.820313334465,52.678094831597
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Manor Rise</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.820120215416,52.678078569563
+-1.8198627233505,52.678446090066
+-1.819948554039,52.678494875741
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Manor Rise</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8198788166046,52.678465604343
+-1.8196696043015,52.678420071017
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Manor Rise</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.819760799408,52.677971239983
+-1.8199217319489,52.677678521606
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Manor Rise</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8197500705719,52.67763298746
+-1.8202811479568,52.677746822736
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Manor Rise</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.819235086441,52.678039540655
+-1.8190097808838,52.677785851905
+-1.8185538053513,52.677704541097
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Manor Rise</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.818864941597,52.677763084894
+-1.8190258741379,52.677512646989
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Manor Rise</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8186503648758,52.678407061487
+-1.8183124065399,52.678234684844
+-1.8182855844498,52.678169636878
+-1.8181943893433,52.678137112859
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Manor Rise</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8186664581299,52.678478613855
+-1.8188488483429,52.678709532064
+-1.8188354372978,52.678728070505
+-1.8190124630928,52.678812631762
+-1.8196937441826,52.679007772497
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>BHC_20_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Rugeley Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9337224960327,52.688318549948
+-1.9336152076721,52.692415430491
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Rugeley Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9338512420654,52.681877216662
+-1.933765411377,52.688172876245
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

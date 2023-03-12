@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>BGT_AJ_1_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Birchwood Rise</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8743652105331,52.816158611095
+-1.8743222951889,52.816074315966
+-1.8743062019348,52.815892756671
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Marcia Rice Court</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.879018843174,52.817540379476
+-1.8782919645309,52.817404214669
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

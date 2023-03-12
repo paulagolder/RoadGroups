@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>STW_C2_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Lunns Croft</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8211287260056,52.686641319167
+-1.820302605629,52.687249395911
+-1.8204045295715,52.687542050149
+-1.8205332756042,52.687564812063
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Lunns Croft</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8207210302353,52.686911215237
+-1.820495724678,52.686797403845
+-1.8203294277191,52.68676813801
+-1.8200880289078,52.686709606282
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Partridge Croft</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8219655752182,52.687064047212
+-1.8218904733658,52.68698600542
+-1.8211877346039,52.686641319167
+-1.8202382326126,52.686234846033
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>St Michael Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8187093734741,52.684312339497
+-1.8190097808838,52.684585501885
+-1.8196320533752,52.685287911608
+-1.8193960189819,52.685769185821
+-1.8197178840637,52.686003317305
+-1.8186235427856,52.687447100382
+-1.8194603919983,52.687785276905
+-1.8202972412109,52.68801939758
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>St Michael Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8184089660645,52.68749912771
+-1.8181300163269,52.687369059274
+-1.8176794052124,52.68734304554
+-1.8174004554749,52.687330038667
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>St Michael Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8181300163269,52.687356052409
+-1.8185377120972,52.686666683025
+-1.8194174766541,52.685795200493
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>YXL_05_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Chapel Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7983675003052,52.825629748658
+-1.7983996868134,52.825895543521
+-1.7984855175018,52.826090026538
+-1.7986786365509,52.826427128371
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Duffield Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7870807647705,52.824946453951
+-1.7902565002441,52.824311122819
+-1.7930030822754,52.824038835205
+-1.7947840690613,52.82407773354
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Duffield Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.797080039978,52.824985351473
+-1.7982387542725,52.825529913133
+-1.7992687225342,52.82571143217
+-1.8000197410583,52.825944812674
+-1.801221370697,52.826152260959
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Elton Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7998051643372,52.827269871511
+-1.7995154857636,52.827315249524
+-1.7993760108948,52.827444900728
+-1.7992901802063,52.827600481663
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Elton Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7989683151245,52.827697719464
+-1.7944729328156,52.829305352901
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Hollybush Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7996978759766,52.826147074843
+-1.8005132675171,52.828377081615
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Squirrels Corner</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8004167079926,52.824541917592
+-1.800497174263,52.824613230354
+-1.8005561828613,52.824736406668
+-1.8007868528366,52.824846616757
+-1.8011462688446,52.824755855527
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Squirrels Corner</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8007868528366,52.82487578997
+-1.8007922172546,52.824979516788
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Yoxall Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7995154857636,52.825694576823
+-1.799601316452,52.825363952168
+-1.799783706665,52.824942564157
+-1.8002235889435,52.824624899724
+-1.8010711669922,52.824203504546
+-1.802122592926,52.823704308046
+-1.8034315109253,52.823068958753
+-1.8042254447937,52.822725347611
+-1.8049550056458,52.822440083467
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

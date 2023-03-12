@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>STW_W1_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Beacon Court</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8324744701385,52.686274030193
+-1.832562983036,52.686376461688
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Beacon Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8321247670948,52.684286242564
+-1.8327901282016,52.684754520177
+-1.8328949739983,52.684874230966
+-1.8336676514127,52.685934337993
+-1.8345985085929,52.686596434537
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Cathedral Rise</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8316429853439,52.686517751735
+-1.8323403596878,52.687083557639
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Cathedral Rise</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8321526050568,52.686943732724
+-1.8318790197372,52.687044536777
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Gaia Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.833627820015,52.685932427567
+-1.832908987999,52.686176313591
+-1.8322277069092,52.686309637374
+-1.8316966295242,52.686488485713
+-1.8309831619263,52.686829921416
+-1.8307042121887,52.686959991458
+-1.8301624059677,52.687054291996
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Gaia Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8309563398361,52.686855935455
+-1.8311601877213,52.687005515881
+-1.8310582637787,52.687138837133
+-1.8312621116638,52.687317682075
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>The Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8319809436798,52.685327584353
+-1.8302643299103,52.685925923921
+-1.8299531936646,52.6859844567
+-1.8298083543777,52.685990960337
+-1.8295830488205,52.685955190321
+-1.8293792009354,52.685864139237
+-1.8292987346649,52.685724310417
+-1.8293523788452,52.685597488543
+-1.8294703960419,52.685506436713
+-1.8306559324265,52.685109708669
+-1.83129966259,52.685025159604
+-1.8317341804504,52.685002396366
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>The Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8294489383698,52.68548042187
+-1.8291592597961,52.68523653196
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>The Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8326461315155,52.684705172448
+-1.8317878246307,52.684984836166
+-1.832013130188,52.685271001837
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Vicars Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8319782614708,52.685341242185
+-1.8322464823723,52.685311975375
+-1.8326193094254,52.685194907937
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Vicars Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8322250247002,52.685318479112
+-1.8324127793312,52.685498957437
+-1.8326541781425,52.685433920289
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

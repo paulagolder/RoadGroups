@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>BHC_18_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Croft Gardens</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9200298190117,52.686731393091
+-1.9207969307899,52.686643595396
+-1.9208988547325,52.686900484452
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Heath View</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9231599569321,52.692022666799
+-1.9236427545547,52.691902365973
+-1.9239163398743,52.691778813428
+-1.9242113828659,52.691759305099
+-1.9243454933167,52.691808075904
+-1.9244581460953,52.692146218654
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Heath View</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9243294000626,52.691743048152
+-1.9242006540298,52.691469930536
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Morlings Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9191098213196,52.685031663384
+-1.9197750091553,52.684927602786
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Ogley Hay Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9236159324646,52.693211351217
+-1.9225215911865,52.6910212336
+-1.9221085309982,52.690374191494
+-1.9218993186951,52.690026280468
+-1.9215559959412,52.689450758012
+-1.9212234020233,52.688910995595
+-1.9209444522858,52.688397239627
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Ogley Hay Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9208854436874,52.68842650437
+-1.9201719760895,52.688556569657
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Ogley Hay Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9211912155151,52.688943511593
+-1.9205850362778,52.68904431103
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Ogley Hay Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9219315052032,52.690042538055
+-1.9211965799332,52.690156340989
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Ogley Hay Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.921518445015,52.689486525166
+-1.9209229946136,52.689619838843
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Ogley Hay Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9215667247772,52.688964972157
+-1.9208693504333,52.687930952099
+-1.9206976890564,52.687768368102
+-1.9197964668274,52.686285574107
+-1.9197964668274,52.686155502056
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Ogley Hay Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9196462631226,52.686088514779
+-1.9190454483032,52.68508369359
+-1.9188469648361,52.684725984673
+-1.918460726738,52.684290226217
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Rake Hill</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9207513332367,52.688132555416
+-1.9206011295319,52.688152065365
+-1.919184923172,52.687709837714
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

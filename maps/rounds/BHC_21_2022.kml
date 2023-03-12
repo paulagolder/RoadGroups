@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>BHC_21_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Coney Lodge View</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9334489107132,52.69187635494
+-1.9331055879593,52.691882857699
+-1.9323116540909,52.692175480884
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Joseph Dewsbury Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9338646531105,52.684001452536
+-1.9345191121101,52.684040476116
+-1.9350743293762,52.684046980043
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Melford Grange</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.935031414032,52.6895287954
+-1.935208439827,52.689762906726
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Melford Rise</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9338190555573,52.688979279161
+-1.9341033697128,52.688985782353
+-1.9345378875732,52.689112594387
+-1.9349938631058,52.689141858651
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Melford Rise</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9350153207779,52.68883620871
+-1.935028731823,52.689415641132
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Park Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9338458776474,52.687263053142
+-1.9354632496834,52.687285815202
+-1.9354605674744,52.68763699976
+-1.935216486454,52.68763699976
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Spencer Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9338190555573,52.68655352129
+-1.9358038902283,52.68657628372
+-1.936286687851,52.686693347455
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Victory Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9337868690491,52.682631702773
+-1.9312065839767,52.682511376073
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/xsl' href='./stylesheets/recipe.xsl' ?>
+<kml>
+  <Document>
+    <name>BLY_E5_2021_new</name>
+    <author>org.lerot.KMLU.Author@72027b60</author>
+    <Placemark>
+      <name>BLY_E5_2021_new</name>
+        <LineString>
+          <coordinates>
+          </coordinates>
+        </LineString>
+    </Placemark>
+    <Placemark>
+      <name>BLY_E5_2021_new</name>
+        <LineString>
+          <coordinates>
+          </coordinates>
+        </LineString>
+    </Placemark>
+  </Document>
+</kml>

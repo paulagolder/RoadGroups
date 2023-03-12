@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>BHC_06_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Blenheim Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9216847419739,52.686420198252
+-1.9239753484726,52.68609176659
+-1.9244474172592,52.686026730325
+-1.9247263669968,52.686026730325
+-1.9250267744064,52.686026730325
+-1.9252038002014,52.686055996656
+-1.9253486394882,52.68609176659
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Brackenhill Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9217330217361,52.687161599257
+-1.9217705726624,52.686859187209
+-1.9217759370804,52.686742123919
+-1.9216686487198,52.686472226803
+-1.9214218854904,52.685877146546
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Ryecroft Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9227039813995,52.686296630193
+-1.9226771593094,52.686820166147
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Thornfield Crescent</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9240021705627,52.686130788303
+-1.924050450325,52.686212083426
+-1.9240075349808,52.686325896344
+-1.9235193729401,52.687203871742
+-1.9234496355057,52.687265654531
+-1.9233638048172,52.687278661423
+-1.9219046831131,52.687470512628
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

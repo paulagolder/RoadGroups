@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>AaF_AB_1_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Denyer Court</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7721354961395,52.713241146274
+-1.7726182937622,52.712831670958
+-1.7728006839752,52.712877168405
+-1.7730474472046,52.712799172752
+-1.7731547355652,52.712636681361
+-1.7729938030243,52.712552185599
+-1.7728435993195,52.712493688436
+-1.7726826667786,52.712448190589
+-1.772575378418,52.712584683988
+-1.7724466323853,52.71267567935
+-1.7726075649261,52.712825171318
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Williams Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7739379405975,52.713411434857
+-1.7736804485321,52.713375687305
+-1.7733961343765,52.713362688187
+-1.7734980583191,52.713271694258
+-1.7737340927124,52.713141702602
+-1.7738091945648,52.713008460752
+-1.7739593982697,52.712800472661
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

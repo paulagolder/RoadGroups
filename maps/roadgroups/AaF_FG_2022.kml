@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>AaF_FG_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Allen Way</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7798388004303,52.716432322199
+-1.7791628837585,52.716594799453
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Barley Green Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7327928543091,52.72393683998
+-1.7348527908325,52.723183067308
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Bridgwood Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.778701543808,52.713988591305
+-1.7790555953979,52.713910597639
+-1.7799139022827,52.713592122057
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Bryant Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7782402038574,52.713020160073
+-1.7784225940704,52.712968163157
+-1.7786049842834,52.712825171318
+-1.7788410186768,52.712734176268
+-1.7788624763489,52.712662680024
+-1.7791521549225,52.712539186236
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Bryant Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7790126800537,52.712220700642
+-1.7793238162994,52.71265618036
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Dale Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.781222820282,52.715405451957
+-1.7820489406586,52.715242970273
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Gemson Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7723071575165,52.714404555167
+-1.772403717041,52.713962593432
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Lakin Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7802572250366,52.714987547823
+-1.7799192667007,52.714415604133
+-1.7797315120697,52.714210872467
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Love Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7804664373398,52.713798156506
+-1.7799407243729,52.713538175943
+-1.7795383930206,52.713076706628
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Muir Row</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7795276641846,52.713150152091
+-1.7790985107422,52.71327364415
+-1.7788732051849,52.713332140266
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Roddige Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.751144528389,52.720147700701
+-1.7505651712418,52.720059970206
+-1.7502969503403,52.720017729534
+-1.7499214410782,52.719952743805
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Wishart Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7799246311188,52.714430552777
+-1.7806327342987,52.714287565732
+-1.7809545993805,52.714216072034
+-1.781051158905,52.714060085376
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

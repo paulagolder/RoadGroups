@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>HwW_05_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Foxcroft Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9187128543854,52.669620190295
+-1.9206762313843,52.670153685149
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Larkspur Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9192171096802,52.669034639665
+-1.9210624694824,52.669470550325
+-1.9216203689575,52.669873926465
+-1.921888589859,52.670225251036
+-1.9219207763672,52.671084032541
+-1.9220173358917,52.671311736927
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Overhill Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9171571731567,52.66995850486
+-1.921534538269,52.671110055959
+-1.9217598438263,52.671142585211
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Redfern Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9193994998932,52.670622114284
+-1.9185197353363,52.671897257042
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Wheatcroft Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9207727909088,52.670979938712
+-1.920622587204,52.671207643641
+-1.9204831123352,52.671331254391
+-1.9202148914337,52.671402818349
+-1.9198715686798,52.671513416964
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

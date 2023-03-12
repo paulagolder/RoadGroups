@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>LEO_W3_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Beacon Park Village</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8340194225311,52.682075595519
+-1.8342232704163,52.682495115683
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Lower Sandford Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8325924873352,52.682257713295
+-1.8329519033432,52.682140637669
+-1.8340086936951,52.682020309616
+-1.8346899747849,52.681952015168
+-1.8349421024323,52.681899981231
+-1.835081577301,52.681818678081
+-1.8351137638092,52.681698349141
+-1.8352800607681,52.681512976882
+-1.8354195356369,52.68140565574
+-1.8355965614319,52.681295082168
+-1.8358755111694,52.681096699468
+-1.8360257148743,52.680947098803
+-1.8360632658005,52.680849532876
+-1.8360632658005,52.680725949055
+-1.8359559774399,52.680576347121
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Queen Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8319112062454,52.681831686595
+-1.8333220481873,52.681356873316
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Queen Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8346095085144,52.680885307074
+-1.8349367380142,52.680774732184
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Sandford Gate</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.83245703578,52.68212941789
+-1.8331222236156,52.682014781007
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Townfields</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8360954523087,52.680817010852
+-1.8363690376282,52.680904820261
+-1.8367713689804,52.680940594414
+-1.8370342254639,52.680891811471
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Walsall Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8345504999161,52.680927565289
+-1.8349099159241,52.680807233894
+-1.8353927135468,52.680670641097
+-1.8362081050873,52.680455994412
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

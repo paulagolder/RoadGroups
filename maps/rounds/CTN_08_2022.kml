@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>CTN_08_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Bird Grove</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9404226541519,52.673999860132
+-1.9401061534882,52.674081177836
+-1.9396770000458,52.674247065483
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Bird Grove</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9397360086441,52.674390183731
+-1.9396394491196,52.674237307404
+-1.9392478466034,52.673876256932
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Glover Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.942053437233,52.675115525826
+-1.9417691230774,52.675206599318
+-1.9414794445038,52.675313935691
+-1.9413024187088,52.675424524405
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Glover Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9414258003235,52.675509092057
+-1.9411361217499,52.675320440917
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Gough Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.941704750061,52.674624376217
+-1.9414848089218,52.67465365019
+-1.940792798996,52.67436741495
+-1.9405031204224,52.673973838434
+-1.9402188062668,52.673567247401
+-1.9399935007095,52.673375335119
+-1.9396823644638,52.67324197185
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>James Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9398325681686,52.673372082361
+-1.9395107030869,52.673609533045
+-1.9393980503082,52.673739642461
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Pooler Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9398808479309,52.673307027154
+-1.9401866197586,52.673108608174
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Ruston Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9422626495361,52.676910289219
+-1.9421339035034,52.676598048631
+-1.9422197341919,52.676272795645
+-1.9427132606506,52.675986571015
+-1.9427561759949,52.675817437397
+-1.9420480728149,52.675036812214
+-1.9410181045532,52.673111210456
+-1.9406962394714,52.672942065706
+-1.9404602050781,52.672863998677
+-1.9402027130127,52.672863998677
+-1.9397306442261,52.672551729168
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Smith Way</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9415652751923,52.674221043933
+-1.9409000873566,52.674386931049
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Vayro Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9412648677826,52.674630881546
+-1.9408893585205,52.674939883554
+-1.9407606124878,52.674975662592
+-1.9402027130127,52.674708945417
+-1.9398754835129,52.674507280131
+-1.9398325681686,52.6744292159
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Wright Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9421821832657,52.67626694101
+-1.9419944286346,52.676110818696
+-1.9416135549545,52.675661963934
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

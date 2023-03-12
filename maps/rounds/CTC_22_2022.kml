@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>CTC_22_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Chapel Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9407445192337,52.684647938702
+-1.9426488876343,52.684872320493
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Griffin Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9407016038895,52.683792675797
+-1.9410395622253,52.683786171832
+-1.9413560628891,52.683675604286
+-1.9415974617004,52.683698368216
+-1.9416028261185,52.683779667867
+-1.9414794445038,52.684192667758
+-1.9415438175201,52.684322745655
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Ironstone Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9404923915863,52.682688939161
+-1.9405353069305,52.683833650771
+-1.940792798996,52.685791298253
+-1.9408679008484,52.686662780863
+-1.9410502910614,52.687267605585
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Lorne Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9406533241272,52.684644686784
+-1.9390279054642,52.684696717451
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

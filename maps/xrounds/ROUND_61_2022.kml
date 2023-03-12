@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>ROUND_61_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Castle Dyke</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8266326189041,52.682417065725
+-1.8261176347733,52.682124377141
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Frog Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8260961771011,52.682098360283
+-1.8261390924454,52.682036570183
+-1.8269973993301,52.681493463967
+-1.8272924423218,52.68132435167
+-1.8280112743378,52.681028403575
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>St John Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8290680646896,52.682017057502
+-1.8271207809448,52.679938907047
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Wade Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8284887075424,52.681558506983
+-1.8275499343872,52.68204632652
+-1.8268418312073,52.682433326144
+-1.8267291784287,52.682400805299
+-1.8266594409943,52.682423569893
+-1.826423406601,52.682582921719
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

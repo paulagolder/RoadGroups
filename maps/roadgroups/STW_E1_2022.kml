@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>STW_E1_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Aspen Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8068915605545,52.685994212155
+-1.8068808317184,52.685802354465
+-1.8070095777512,52.685630007007
+-1.8069934844971,52.685457658869
+-1.8069988489151,52.685138975615
+-1.8069934844971,52.685034915274
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Church Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8202704191208,52.68389023515
+-1.8199968338013,52.68391625094
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Church Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8221533298492,52.683788123042
+-1.8213486671448,52.683918202144
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Church Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8224859237671,52.68377901753
+-1.8217134475708,52.683857065054
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Mulberry Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8070524930954,52.685438147717
+-1.8076103925705,52.685431643997
+-1.8076050281525,52.685080441704
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Paradise</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8166387081146,52.684660946374
+-1.8166226148605,52.685142227497
+-1.8167889118195,52.685164990662
+-1.8183070421219,52.685233280086
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Paradise Cottage</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8182480335236,52.685037191586
+-1.8182694911957,52.684968901856
+-1.8182238936424,52.684926627207
+-1.8180549144745,52.684933131002
+-1.8180415034294,52.684973779697
+-1.8180656433105,52.685030687807
+-1.8182024359703,52.685033939697
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Trent Valley Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8095576763153,52.686160054565
+-1.8090963363647,52.686186069003
+-1.8085652589798,52.686303133784
+-1.807878613472,52.686472226803
+-1.8074280023575,52.686605549683
+-1.8065750598907,52.686810410876
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Trent Valley Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8185591697693,52.6843513628
+-1.8166708946228,52.684702570956
+-1.8166494369507,52.684969877434
+-1.818151473999,52.685028411494
+-1.8184572458267,52.68496662554
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Trent Valley Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8166333436966,52.684999144474
+-1.8166226148605,52.685151983141
+-1.8182802200317,52.685239783835
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Trent Valley Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8185591697693,52.6843513628
+-1.8166708946228,52.684702570956
+-1.8166494369507,52.684969877434
+-1.818151473999,52.685028411494
+-1.8184572458267,52.68496662554
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Trent Valley Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8166333436966,52.684999144474
+-1.8166226148605,52.685151983141
+-1.8182802200317,52.685239783835
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Trent Valley Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8137526512146,52.685391971346
+-1.8062210083008,52.687147942043
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Witley Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8065053224564,52.686133064558
+-1.8067708611488,52.68602575477
+-1.8076345324516,52.686015999321
+-1.8078356981277,52.685976977506
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

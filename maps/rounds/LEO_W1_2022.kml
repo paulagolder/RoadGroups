@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>LEO_W1_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Birmingham Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8280499459185,52.679298185008
+-1.8285382568345,52.678995718507
+-1.8291124246149,52.678306217148
+-1.8295685392067,52.677714278054
+-1.8299763593124,52.677255682362
+-1.8307115087134,52.676384012031
+-1.8309851774685,52.676120556008
+-1.8311837214673,52.67582782523
+-1.8312642122776,52.675769278839
+-1.831602273681,52.675704227202
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Friary Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8301141262054,52.677257654211
+-1.8304145336151,52.677472316614
+-1.830747127533,52.677712997448
+-1.8312084674835,52.678057754169
+-1.8319272994995,52.678441536753
+-1.8324530124664,52.678656193338
+-1.83274269104,52.678766773592
+-1.8331611156464,52.678935895791
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>St Johns Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8299585580826,52.67825745161
+-1.829486489296,52.678127355648
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>The Friary</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8317770957947,52.676298815973
+-1.8330430984497,52.677404665586
+-1.8334293365479,52.678445439649
+-1.833279132843,52.679043873507
+-1.8328714370728,52.67978539974
+-1.832013130188,52.680461868832
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Upper St John Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8271127343178,52.679760031861
+-1.8268552422524,52.679483586989
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

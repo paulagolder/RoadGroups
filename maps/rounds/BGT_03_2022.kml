@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>BGT_03_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Blythe Bridge Bank</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9325852394104,52.854589227919
+-1.9312119483948,52.85490019479
+-1.9302034378052,52.855211159434
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Blythe Bridge Bank</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9267916679382,52.857141681743
+-1.9249248504639,52.857970873016
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Blythe Bridge Bank</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9230151176453,52.858683446609
+-1.9216203689575,52.859046206853
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Callow Hill Hall</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9262337684631,52.834319749882
+-1.9269418716431,52.835006786069
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Church Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9102343916893,52.862794767654
+-1.9098883867264,52.863071670271
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Church Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9588816165924,52.882375683861
+-1.9576370716095,52.883107279408
+-1.9574868679047,52.883320928877
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Gratwich</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9618320465088,52.883080087701
+-1.9567680358887,52.881655730115
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Hollyhurst Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9335293769836,52.851579212557
+-1.9316947460175,52.851164557843
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Leese Hill</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9273817539215,52.871160657007
+-1.9280254840851,52.870053242432
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Loxley</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9033813476563,52.874792260452
+-1.9032096862793,52.873523047063
+-1.903510093689,52.872642346558
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Mill Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9557809829712,52.881388981505
+-1.957905292511,52.881893989473
+-1.9593000411987,52.882463734991
+-1.9608235359192,52.882826296423
+-1.9619393348694,52.883188854824
+-1.9625616073608,52.883667945203
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Mill Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9327569007874,52.854663082713
+-1.9323599338531,52.855356275465
+-1.9325745105743,52.855712585189
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Newton Hurst</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9256973266602,52.831960410807
+-1.9235301017761,52.833373436963
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Potts Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9136917591095,52.863162027614
+-1.9147861003876,52.8636219078
+-1.9171035289764,52.862883506259
+-1.9184339046478,52.862579073895
+-1.9193780422211,52.862430095577
+-1.9196248054504,52.862637369619
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>School View</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9114172458649,52.863387434256
+-1.9113582372665,52.863675668093
+-1.9114118814468,52.863787398672
+-1.9115808606148,52.863835977095
+-1.9120207428932,52.86394446871
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Stonier Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9109773635864,52.863207368131
+-1.9103443622589,52.863744973502
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Stowe-By-Chartley</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9962286949158,52.845751654774
+-1.9970870018005,52.844429751632
+-1.9972586631775,52.843561420805
+-1.9973230361938,52.842330175686
+-1.9970011711121,52.84153956831
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>The Blythe</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9314050674438,52.854850958478
+-1.9317591190338,52.855440494391
+-1.9319629669189,52.85547936461
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>The Meadows</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9100439548492,52.864017012235
+-1.9102478027344,52.864943226564
+-1.910355091095,52.86524764234
+-1.9106125831604,52.865454902924
+-1.9108057022095,52.865856467486
+-1.9110095500946,52.865947142841
+-1.9117820262909,52.866011910835
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>The Meadows</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9108271598816,52.865947142841
+-1.9104838371277,52.866238598054
+-1.9104194641113,52.86632927261
+-1.9104409217834,52.866510621154
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>The Meadows</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9102692604065,52.866258028332
+-1.9097006320953,52.866147923309
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Uttoxeter Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9123077392578,52.863580454051
+-1.9119215011597,52.864033852712
+-1.9118571281433,52.866197146805
+-1.9114065170288,52.866831865324
+-1.9112348556519,52.867220463915
+-1.9110202789307,52.867894026562
+-1.9109559059143,52.868321474356
+-1.9112348556519,52.868995019909
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Whitehall Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.910183429718,52.863667247836
+-1.9096899032593,52.863472933062
+-1.9095504283905,52.863375775349
+-1.9094109535217,52.863084300904
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Woodcock Heath</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9221460819244,52.865344795862
+-1.9217491149902,52.864606423641
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

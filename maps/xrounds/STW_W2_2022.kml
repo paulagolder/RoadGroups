@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>STW_W2_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Backcester Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8238216638565,52.68341544425
+-1.8241113424301,52.683392680173
+-1.8246853351593,52.683516256448
+-1.8247711658478,52.683600808434
+-1.8244814872742,52.683792675797
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Backcester Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8247175216675,52.683532516458
+-1.824985742569,52.683483736409
+-1.8254685401917,52.683197559027
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Bird Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8292987346649,52.682121125034
+-1.8293631076813,52.682251209101
+-1.830216050148,52.682839834661
+-1.8309777975082,52.683337395936
+-1.8314981460571,52.683656092337
+-1.8324100971222,52.68438453252
+-1.8324100971222,52.68438453252
+-1.8325763940811,52.684530869484
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Bird Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8309938907623,52.683353656013
+-1.8302321434021,52.68378291985
+-1.8299853801727,52.68378291985
+-1.8298351764679,52.683639832373
+-1.8300497531891,52.683548776462
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Bore Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8266326189041,52.68351950845
+-1.82732462883,52.68308698999
+-1.8281239271164,52.682615442428
+-1.8291163444519,52.682163402399
+-1.8291485309601,52.682124377141
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Conduit Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8274319171906,52.683968282475
+-1.8266272544861,52.683613816418
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Cross Keys</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8244600296021,52.684878824296
+-1.82481944561,52.685025159604
+-1.8252164125443,52.6851747463
+-1.8256026506424,52.685038167163
+-1.8257743120193,52.684924350889
+-1.8260478973389,52.684820290036
+-1.8261551856995,52.684830045751
+-1.8264824151993,52.685041419052
+-1.82661652565,52.685103204901
+-1.8267667293549,52.685184501937
+-1.8273729085922,52.685285310051
+-1.8279308080673,52.685444651435
+-1.8281185626984,52.685516192275
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Dam Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8275016546249,52.684004054119
+-1.8281507492065,52.684433311563
+-1.8286442756653,52.684878824296
+-1.8290948867798,52.685194257571
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>George Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8233120441437,52.683893487124
+-1.8232530355453,52.684238195066
+-1.823365688324,52.684628427188
+-1.8234568834305,52.684895083799
+-1.8237036466599,52.685269050694
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Greenhill</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8232101202011,52.68386747132
+-1.8225824832916,52.683795927779
+-1.8223035335541,52.683812187685
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Greenhill</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8222860991955,52.683814789254
+-1.8219079077244,52.683842431079
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Greenhill Mews</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8226093053818,52.683812187685
+-1.8225288391113,52.684062589473
+-1.8224108219147,52.684293478162
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Lombard Court</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8243366479874,52.684927602786
+-1.8244600296021,52.684807282412
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Lombard Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8252271413803,52.684007306085
+-1.8244010210037,52.684869068591
+-1.8241220712662,52.685132471851
+-1.8237948417664,52.685256043203
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Market Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8274962902069,52.683981290349
+-1.8280380964279,52.683548776462
+-1.8297386169434,52.682527636457
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Minster Pool Walk</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8312674760818,52.683737392067
+-1.8307846784592,52.683795927779
+-1.8302965164185,52.683958526567
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Tamworth Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8264019489288,52.683630076392
+-1.8261820077896,52.683763407949
+-1.8256348371506,52.68389023515
+-1.8252700567245,52.683994298219
+-1.8251520395279,52.683945518686
+-1.8247175216675,52.683968282475
+-1.8243581056595,52.683961778536
+-1.8239289522171,52.683955274597
+-1.8234568834305,52.683877227248
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>The Old Stoneyard</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8273085355759,52.685233280086
+-1.8275874853134,52.684716228935
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

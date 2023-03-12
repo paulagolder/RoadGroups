@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>WaS_W1_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Chapel Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7630052566528,52.672925151155
+-1.7644858360291,52.673361023003
+-1.7649793624878,52.673517155144
+-1.7650973796844,52.674414904128
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Chapel Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7644992470741,52.673361348249
+-1.7647755146027,52.673019807247
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Church Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7706763744354,52.673009723645
+-1.7692923545837,52.672879612054
+-1.7676293849945,52.672664927084
+-1.7672324180603,52.672625893339
+-1.766449213028,52.672645410216
+-1.765923500061,52.672495780606
+-1.7653334140778,52.672242059662
+-1.7648506164551,52.672020865841
+-1.76393866539,52.671812682399
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Langton Crescent</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7614603042603,52.673712319536
+-1.7616963386536,52.673959526514
+-1.7619001865387,52.674304312858
+-1.7621254920959,52.674349850474
+-1.7626190185547,52.674271785961
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Main Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7636489868164,52.671849114613
+-1.7631125450134,52.672460650141
+-1.7628121376038,52.672850987492
+-1.7624688148499,52.673202288127
+-1.7617607116699,52.673527563973
+-1.7613315582275,52.673670684578
+-1.7608380317688,52.674074021944
+-1.7606234550476,52.674724558235
+-1.7607522010803,52.675010791134
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>The Green</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7621576786041,52.673316785441
+-1.7616105079651,52.673141135937
+-1.7615032196045,52.67315739981
+-1.7613530158997,52.67334606029
+-1.7612564563751,52.673372082361
+-1.7610150575638,52.673300521628
+-1.7605376243591,52.673102102619
+-1.7601299285889,52.672903682708
+-1.7598885297775,52.67276055959
+-1.7589068412781,52.672012408389
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>The Green</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.761417388916,52.673616038525
+-1.7612242698669,52.673378587876
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

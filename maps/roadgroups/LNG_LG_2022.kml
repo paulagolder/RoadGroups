@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>LNG_LG_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Church Hill</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8749928474426,52.71977273285
+-1.875786781311,52.720461579494
+-1.8763768672943,52.721293379808
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Hay Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.877755522728,52.718474292312
+-1.8776589632034,52.718090861543
+-1.8774390220642,52.717661934995
+-1.8780720233917,52.716917802416
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Hill Top</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8692421913147,52.721173809529
+-1.8690061569214,52.722343505089
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Lysways Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8748641014099,52.719783130655
+-1.8732118606567,52.719822122256
+-1.8724393844604,52.719861113822
+-1.8713235855103,52.720432986115
+-1.8703579902649,52.720523965107
+-1.8692636489868,52.72109582871
+-1.8686199188232,52.721225796665
+-1.8671822547913,52.720822894744
+-1.8638777732849,52.719692150118
+-1.8634271621704,52.719380215408
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Smithy Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8774926662445,52.71914886235
+-1.878844499588,52.719454300064
+-1.8796062469482,52.719551779735
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Stoneywell Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8978881835938,52.712472889546
+-1.8944120407104,52.711848914638
+-1.8915796279907,52.710626937926
+-1.8893909454346,52.709144920246
+-1.8880176544189,52.708702905228
+-1.8850135803223,52.708988915457
+-1.8840265274048,52.709092918712
+-1.8835973739624,52.709872935221
+-1.8826103210449,52.710314938387
+-1.8828678131104,52.711068933453
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

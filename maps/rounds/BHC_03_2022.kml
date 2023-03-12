@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>BHC_03_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Carlton Crescent</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9237822294235,52.684602411821
+-1.9241899251938,52.684706473194
+-1.9244581460953,52.684748748055
+-1.925128698349,52.684820290036
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Clive Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9221568107605,52.68229348634
+-1.9216579198837,52.682169906605
+-1.9214648008347,52.682117872928
+-1.9214272499084,52.68202356173
+-1.9214272499084,52.68199104058
+-1.9216793775558,52.681535741938
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Cumberland Crescent</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9243615865707,52.68414063649
+-1.9244688749313,52.684202423613
+-1.9246083498001,52.684241447014
+-1.9248068332672,52.684273966489
+-1.9249731302261,52.684283722326
+-1.9251608848572,52.684260958702
+-1.9252574443817,52.684205675565
+-1.9252949953079,52.684082101241
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Dursley Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.923326253891,52.682039822296
+-1.9230473041534,52.682748777082
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Dursley Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9233638048172,52.682794305896
+-1.9227629899979,52.682722760596
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Fieldhouse Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9249194860458,52.682862599026
+-1.9261318445206,52.68301869721
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Galway Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9218510389328,52.683028453328
+-1.9231063127518,52.683327639888
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Lambert Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9245493412018,52.68353902046
+-1.9238787889481,52.683425200279
+-1.9237875938416,52.683389428161
+-1.9237017631531,52.68328536365
+-1.9240075349808,52.682696744095
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Lambert Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9242113828659,52.682703248222
+-1.9236212968826,52.682628450705
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Lulworth Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9251447916031,52.682335763537
+-1.925300359726,52.68230324262
+-1.9254773855209,52.682296738433
+-1.9263571500778,52.682433326144
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Rochester Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9216310977936,52.68333414392
+-1.9218510389328,52.68293089205
+-1.922248005867,52.68230324262
+-1.9222909212112,52.682143889774
+-1.9224464893341,52.682052830744
+-1.9225430488586,52.681971527878
+-1.9227683544159,52.681948763049
+-1.9229078292847,52.681965023643
+-1.9248872995377,52.682244704907
+-1.9250589609146,52.68231625099
+-1.9250696897507,52.682397553214
+-1.9250535964966,52.682485359446
+-1.9244474172592,52.683968282475
+-1.9243669509888,52.684082101241
+-1.9237339496613,52.6845991599
+-1.9235837459564,52.684774763335
+-1.923503279686,52.685116212437
+-1.9235247373581,52.685200761326
+-1.9236052036285,52.685496681149
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Stamford Crescent</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9247049093246,52.683428452288
+-1.9259709119797,52.683597556438
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

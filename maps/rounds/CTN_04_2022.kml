@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>CTN_04_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Belvedere Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9299352169037,52.670626668411
+-1.9310992956162,52.670346912756
+-1.9312870502472,52.670359924686
+-1.9314426183701,52.670402213434
+-1.9316464662552,52.670620162486
+-1.9316250085831,52.670688474652
+-1.9315874576569,52.670747027852
+-1.9308096170425,52.67102027508
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Belvedere Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9310188293457,52.670987745738
+-1.9310885667801,52.67108858662
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Cottage Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9309383630753,52.673040299792
+-1.9306647777557,52.672741042765
+-1.9310510158539,52.672500334538
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Cottage Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9306299090385,52.672743319718
+-1.9302812218666,52.672553030226
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Cottage Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9340389966965,52.672754053983
+-1.9316840171814,52.672698756281
+-1.9315284490585,52.672685745046
+-1.9313567876816,52.672643458509
+-1.9305896759033,52.672175051044
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Edwards Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9317376613617,52.671735914485
+-1.9323974847794,52.672158786806
+-1.9325691461563,52.672262877826
+-1.933051943779,52.672331187423
+-1.9336527585983,52.67231817608
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Edwards Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9316813349724,52.671796743284
+-1.9322526454926,52.672169195909
+-1.9325664639473,52.672322079473
+-1.9329285621643,52.672370871988
+-1.9333121180534,52.672375751236
+-1.9334998726845,52.672367619155
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>King Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9330666959286,52.670816315689
+-1.9321735203266,52.670051052921
+-1.9321279227734,52.669955902416
+-1.9322043657303,52.669791624988
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Lawnswood Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9297850131989,52.670420430133
+-1.9298923015594,52.670810785711
+-1.9301283359528,52.671051503246
+-1.930718421936,52.671422335772
+-1.9309329986572,52.671923279977
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Queen Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9338941574097,52.670283804857
+-1.9329392910004,52.670862832858
+-1.9316840171814,52.671643532622
+-1.9310295581818,52.671910268511
+-1.9294738769531,52.672489274959
+-1.9289910793304,52.672671432704
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Queen Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9316625595093,52.671754130628
+-1.9304609298706,52.672235553977
+-1.9291520118713,52.672736488858
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Queens Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9304555654526,52.67130978516
+-1.9297474622726,52.671557005733
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Queens Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.92999958992,52.671817236403
+-1.929640173912,52.671439901425
+-1.9293129444122,52.670997504543
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

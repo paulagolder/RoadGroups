@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>HwW_LB_0_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Anglesey Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9356966018677,52.667021586907
+-1.9342803955078,52.666696262624
+-1.9340014457703,52.667086651473
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Davy Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9315606355667,52.668886298907
+-1.9311475753784,52.669732094614
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Highfields Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9234228134155,52.667133497979
+-1.9338083267212,52.669007313897
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>King Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9324457645416,52.669047651987
+-1.9321131706238,52.669951998836
+-1.9324457645416,52.670251274966
+-1.9330251216888,52.670791268015
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Ogley Hay Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9231224060059,52.657091598782
+-1.923143863678,52.656492864219
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Paviors Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.935031414032,52.668231771975
+-1.9358468055725,52.667086651473
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Pool Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9342964887619,52.669253896745
+-1.93503677845,52.668209650554
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

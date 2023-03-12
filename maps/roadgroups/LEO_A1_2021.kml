@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>LEO_A1_2021.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Burt Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8497210741043,52.676109842919
+-1.8495574593544,52.67629686438
+-1.8492543697357,52.6763277635
+-1.8491470813751,52.676293611839
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Creswell Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8438202142715,52.673053310921
+-1.8433481454849,52.673550983681
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Fenn Place</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8504305183887,52.675758077772
+-1.8501260876656,52.676006899456
+-1.8498887121677,52.676060566692
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Larkin Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8488949537277,52.675089504793
+-1.8485140800476,52.674930125629
+-1.8482887744904,52.674907357129
+-1.8481868505478,52.674858567448
+-1.8480688333511,52.674777251191
+-1.8478113412857,52.674682924143
+-1.8472427129745,52.67446174268
+-1.8469262123108,52.674380425684
+-1.846067905426,52.674064914307
+-1.8458586931229,52.674042145357
+-1.8457674980164,52.674058408894
+-1.8456763029099,52.674165748088
+-1.8455529212952,52.67424381279
+-1.845531463623,52.67432513004
+-1.8455690145493,52.674406447139
+-1.8454670906067,52.674484511411
+-1.8453651666641,52.674598354892
+-1.8453276157379,52.674725208706
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Lees Croft</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8489325046539,52.675747181632
+-1.8488198518753,52.67591956809
+-1.8489056825638,52.676139115896
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Marshall Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8488252162933,52.675052424814
+-1.8488144874573,52.675241077111
+-1.8485891819,52.675377686886
+-1.848224401474,52.675481770238
+-1.8478918075562,52.675429728593
+-1.8473339080811,52.675208550911
+-1.8471300601959,52.675156508941
+-1.8469262123108,52.674844255817
+-1.8470764160156,52.674681623098
+-1.8471837043762,52.674564527166
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Martin Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8500053882599,52.676179122277
+-1.8497425317764,52.676354759566
+-1.8493402004242,52.676536901195
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Neale Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8434178829193,52.673603027564
+-1.8431335687637,52.673918542276
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Powell Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8490290641785,52.675190336209
+-1.8499839305878,52.675528607645
+-1.850391626358,52.675691237211
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Statham Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8468403816223,52.674787009149
+-1.8463736772537,52.674712198076
+-1.845880150795,52.674552817535
+-1.8455851078033,52.674419457861
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Taylor Way</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8486267328262,52.675473313455
+-1.8487983942032,52.675700994966
+-1.8490290641785,52.675779056925
+-1.8495118618011,52.675922170155
+-1.8497049808502,52.676088050811
+-1.850021481514,52.676162859529
+-1.8504774570465,52.676543406239
+-1.8508744239807,52.676527143627
+-1.8511158227921,52.676397042512
+-1.8511801958084,52.676302718962
+-1.8511265516281,52.676149849326
+-1.8508315086365,52.675925422723
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Taylor Way</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8496996164322,52.676104313587
+-1.8495333194733,52.676299466422
+-1.8492597341537,52.676309224041
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Taylor Way</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8489056825638,52.675779056925
+-1.8488252162933,52.675905907311
+-1.8488520383835,52.676052272684
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Wakelin Way</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8446516990662,52.673966031942
+-1.843364238739,52.673588715522
+-1.84246301651,52.673302473306
+-1.8422055244446,52.673178868133
+-1.8421626091003,52.672996712503
+-1.8417549133301,52.672964184632
+-1.8415403366089,52.673016229214
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Wright Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8505150079727,52.67660520411
+-1.8504345417023,52.676673506918
+-1.8497747182846,52.676884919695
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>LNG_West_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Borough Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8840050697327,52.725748440243
+-1.8855500221252,52.724929720571
+-1.888747215271,52.723760094374
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Bradley Lakes</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8895304203033,52.73085794326
+-1.891998052597,52.731390690135
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Brereton Cross</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9010746479034,52.73414527744
+-1.9014286994934,52.734483092204
+-1.9022870063782,52.734632509437
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Church Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8828463554382,52.726400805827
+-1.8828356266022,52.726108412083
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Giddywell Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8887042999268,52.72389005439
+-1.8892192840576,52.725202628836
+-1.8892192840576,52.72565747215
+-1.8897771835327,52.726619125251
+-1.8896055221558,52.727086948821
+-1.8896484375,52.728386432404
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>High Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.885153055191,52.728967289001
+-1.8859791755676,52.728902316607
+-1.8865585327148,52.729019266846
+-1.8874168395996,52.729123222351
+-1.8881034851074,52.729097233498
+-1.8885433673859,52.728993277931
+-1.8890154361725,52.728739885199
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Hood Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8837583065033,52.73232622987
+-1.8853139877319,52.731150305156
+-1.8857109546661,52.730104290221
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Horsey Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9023084640503,52.718660157678
+-1.9036817550659,52.720869683624
+-1.9064712524414,52.720817696064
+-1.9097328186035,52.720661733013
+-1.9099044799805,52.722455274435
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Stafford Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.880287528038,52.724514506803
+-1.8793058395386,52.724222100411
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

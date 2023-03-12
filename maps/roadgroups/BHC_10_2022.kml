@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>BHC_10_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Alden Hurst</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9318288564682,52.685760080623
+-1.9315659999847,52.685649518074
+-1.930890083313,52.6855487108
+-1.9295275211334,52.685542207097
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Beechen Grove</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9311529397964,52.686321669003
+-1.9305762648582,52.686196474764
+-1.9302302598953,52.686149323594
+-1.9294738769531,52.686139568174
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Californian Grove</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9317618012428,52.685877796902
+-1.9319871068001,52.685996488418
+-1.9320863485336,52.686113553707
+-1.9321024417877,52.686194848863
+-1.9321399927139,52.686277769765
+-1.9321319460869,52.686604574141
+-1.9322097301483,52.686658228357
+-1.9322848320007,52.686698875447
+-1.9323787093163,52.686702127212
+-1.9328320026398,52.686705378978
+-1.9331780076027,52.68671350839
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Californian Grove</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9327193498611,52.686667983662
+-1.9327998161316,52.686337927968
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Coppice Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.931075155735,52.68678992479
+-1.9303697347641,52.68679155067
+-1.929991543293,52.686832197635
+-1.9295489788055,52.686833823513
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Lebanon Grove</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9310992956162,52.686579535494
+-1.9311100244522,52.686972998441
+-1.9310349225998,52.687242892461
+-1.9309222698212,52.687538798446
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Lebanon Grove</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9320166110992,52.685023858868
+-1.9321346282959,52.685524647114
+-1.9319415092468,52.685719757863
+-1.9315230846405,52.686005918719
+-1.9312977790833,52.686168509279
+-1.9310832023621,52.686409142196
+-1.9311046600342,52.686519702822
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

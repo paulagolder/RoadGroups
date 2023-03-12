@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>AwH_Aho_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Greenfield Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8806147575378,52.740537328278
+-1.8794775009155,52.740128109206
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Hood Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8793487548828,52.741803934387
+-1.8793272972107,52.741622065004
+-1.8804967403412,52.740745184113
+-1.8808507919312,52.740387931284
+-1.8819451332092,52.739991701995
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Millmoor Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8770635128021,52.741303791757
+-1.8774497509003,52.741277810165
+-1.8776321411133,52.741277810165
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Millmoor Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8775033950806,52.741654541735
+-1.8776214122772,52.741362250283
+-1.8780827522278,52.740914066249
+-1.8783187866211,52.740667238291
+-1.8785977363586,52.740212551552
+-1.8780720233917,52.739959224025
+-1.8778896331787,52.740024179941
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Running Hills</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8834364414215,52.738874445913
+-1.8843591213226,52.739433077534
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Westfields Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8821489810944,52.739894268012
+-1.8829536437988,52.739368120736
+-1.8832218647003,52.739062822492
+-1.883339881897,52.738867950154
+-1.8836832046509,52.738627606404
+-1.8843805789948,52.738198881829
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

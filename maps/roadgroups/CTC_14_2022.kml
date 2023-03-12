@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>CTC_14_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Cross Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9338780641556,52.685779591632
+-1.9380784034729,52.685753576952
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>New Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9378638267517,52.682387146597
+-1.9373917579651,52.683375769767
+-1.9373917579651,52.685717156432
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

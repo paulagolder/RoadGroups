@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>CaR_TA_0_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Blithbury Farm</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8789517879486,52.778607438311
+-1.8793299794197,52.778209934096
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Blithbury Farm</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8791824579239,52.778476018952
+-1.8787372112274,52.778355956474
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Blithbury Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8944978713989,52.779913498176
+-1.8893051147461,52.780121166172
+-1.8796491622925,52.778381916106
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Pipewood</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8759262561798,52.778065209241
+-1.8764305114746,52.777513562889
+-1.8759047985077,52.775923484285
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

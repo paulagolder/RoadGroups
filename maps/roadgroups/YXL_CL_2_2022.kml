@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>YXL_CL_2_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Bond End</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7906856536865,52.766392179473
+-1.7915439605713,52.764249880171
+-1.7917799949646,52.763678582556
+-1.7930459976196,52.763250104427
+-1.7939686775208,52.762821622082
+-1.7941832542419,52.76244507351
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Gisborne Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7902135848999,52.77081666759
+-1.7906373739243,52.770858859048
+-1.7913025617599,52.770686847462
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Gisborne Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7910665273666,52.770755003077
+-1.7912381887436,52.770982187692
+-1.7913776636124,52.771066570246
+-1.7918336391449,52.771073061205
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Hadley End</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8043756484985,52.777758884249
+-1.805362701416,52.78110757562
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Longcroft Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7893445491791,52.772079148147
+-1.7898434400558,52.771757851941
+-1.7899936437607,52.771504707806
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Morrey</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8068432807922,52.776323280983
+-1.8063926696777,52.776894412696
+-1.8087530136108,52.775193975764
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Newchurch</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7813301086426,52.809241976462
+-1.7828106880188,52.806479165265
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Sudbury Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7930674552917,52.772234278253
+-1.7928528785706,52.773052109527
+-1.79274559021,52.773701171031
+-1.7927026748657,52.774622821739
+-1.7916083335876,52.776167516488
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

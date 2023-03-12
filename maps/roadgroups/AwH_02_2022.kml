@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>AwH_02_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Bagnall Way</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9105991721153,52.750231123944
+-1.9104972481728,52.750300935092
+-1.9102156162262,52.750328534818
+-1.9100922346115,52.750333405356
+-1.910001039505,52.7503139232
+-1.9088959693909,52.749729454495
+-1.9088879227638,52.749758678116
+-1.9087913632393,52.749830113553
+-1.9086706638336,52.749885313583
+-1.9082736968994,52.750192159533
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Bagnall Way</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9090408086777,52.749776536986
+-1.9092178344727,52.749662889506
+-1.9098374247551,52.74963366582
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Booth Hurst Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9048297405243,52.747435014347
+-1.9043040275574,52.747863648069
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Booth Hurst Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9037353992462,52.747435014347
+-1.9041538238525,52.747792209408
+-1.9045829772949,52.748175379037
+-1.905505657196,52.748694925694
+-1.9065570831299,52.74927291407
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Brindley Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9061976671219,52.748306565133
+-1.9055753946304,52.748718954557
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Holly Bank</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9077801704407,52.749170305437
+-1.9072008132935,52.749595675009
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Holly Bank</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9067877531052,52.749417085237
+-1.9076246023178,52.749835958275
+-1.9078928232193,52.749611910407
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Langley Way</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9086143374443,52.750373993151
+-1.9091668725014,52.750638624649
+-1.9092231988907,52.750649989156
+-1.9097730517387,52.750924359922
+-1.9099098443985,52.750911371996
+-1.9100278615952,52.750932477374
+-1.9101619720459,52.751003910887
+-1.9102156162262,52.751083461705
+-1.9103872776031,52.751135413182
+-1.9107788801193,52.751320489815
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Langley Way</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9093948602676,52.750716552637
+-1.9099742174149,52.750320417253
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Priest Moor Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9070787727833,52.74877025941
+-1.9069218635559,52.748901768448
+-1.9064658880234,52.749202938884
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Priory Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9033545255661,52.746929740676
+-1.9038373231888,52.747040148015
+-1.9044381380081,52.747176533166
+-1.9048082828522,52.74728693988
+-1.9049263000488,52.747381110091
+-1.9054466485977,52.74764738338
+-1.905489563942,52.747936385475
+-1.9055700302124,52.747978599103
+-1.9070506095886,52.748650764449
+-1.9071632623672,52.748813121674
+-1.9077533483505,52.749095621802
+-1.9083541631699,52.749378120098
+-1.9086223840714,52.749413838143
+-1.9089013338089,52.749397602672
+-1.9096630811691,52.74930668392
+-1.9098776578903,52.749316425224
+-1.9099473953247,52.74935214332
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>St Chads Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9054788351059,52.746789133268
+-1.9057121872902,52.746360488975
+-1.905854344368,52.746349123349
+-1.9059938192368,52.746358865315
+-1.9061547517776,52.746423811693
+-1.906575858593,52.74666735975
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>St Johns Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9043979048729,52.747172311717
+-1.9046500325203,52.74668197259
+-1.9047358632088,52.746652746905
+-1.9048270583153,52.746644628655
+-1.9055995345116,52.746841089865
+-1.9062083959579,52.747013195652
+-1.9063881039619,52.747123602779
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>The Cloisters</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9047278165817,52.746605011587
+-1.904604434967,52.746393936381
+-1.9043737649918,52.746228322811
+-1.9042825698853,52.746221828148
+-1.9041752815247,52.746218580817
+-1.9040679931641,52.746218580817
+-1.9039607048035,52.746267290766
+-1.9037944078445,52.746527076245
+-1.9037246704102,52.746640731905
+-1.903520822525,52.746845311346
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Upper Bannisters Way</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9105052947998,52.750310676174
+-1.910542845726,52.750469780198
+-1.9105991721153,52.750500626829
+-1.9106233119965,52.750612648622
+-1.9105911254883,52.75065973016
+-1.910719871521,52.751143530595
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

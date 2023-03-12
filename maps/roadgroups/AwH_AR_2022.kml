@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>AwH_AR_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Dawes Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8862017989159,52.741585041471
+-1.8858209252357,52.741450262663
+-1.8853783607483,52.741244034042
+-1.8850108981133,52.741065410039
+-1.8849492073059,52.741052419173
+-1.8848526477814,52.741052419173
+-1.884793639183,52.74105566689
+-1.8847024440765,52.741080024757
+-1.884431540966,52.741260272552
+-1.8844047188759,52.741318731136
+-1.8844127655029,52.741399923484
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Dawes Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8846246600151,52.7414112904
+-1.8839594721794,52.74141453809
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Pike Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8825137615204,52.741725990458
+-1.8805074691772,52.740816634327
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Rectory Gardens</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8832004070282,52.741037479703
+-1.8824601173401,52.740712706704
+-1.882438659668,52.740569805818
+-1.8825781345367,52.740420408935
+-1.8830931186676,52.740180073746
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Rectory Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8826961517334,52.741674027762
+-1.8830394744873,52.741238837748
+-1.8835973739624,52.740849111659
+-1.8843162059784,52.740608778833
+-1.884970664978,52.740446391039
+-1.8857538700104,52.740206055992
+-1.8862473964691,52.739913754826
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Upper Lodge Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.885678768158,52.742083232319
+-1.8868803977966,52.741043975139
+-1.8870306015015,52.740914066249
+-1.8870627880096,52.740777661498
+-1.8869876861572,52.740641256319
+-1.8863439559937,52.740433399989
+-1.8860328197479,52.740108622488
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Upper Lodge Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8864271044731,52.740498679945
+-1.8861588835716,52.740656195925
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Upper Lodge Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8867248296738,52.741131988162
+-1.8864592909813,52.741036180587
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Upper Lodge Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.886955499649,52.741062162323
+-1.8872344493866,52.741190446918
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Upper Lodge Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8866389989853,52.741286254154
+-1.8870037794113,52.741424281158
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

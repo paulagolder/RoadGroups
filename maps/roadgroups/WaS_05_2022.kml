@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>WaS_05_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Babbington Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7631903290749,52.671586932329
+-1.7630481719971,52.671691024712
+-1.7628201842308,52.671772346713
+-1.7625814676285,52.671754455886
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Beechwood</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7624151706696,52.671342314263
+-1.7627155780792,52.67111135711
+-1.7629784345627,52.670350165739
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Cloister Walk</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7595291137695,52.671272701974
+-1.7595291137695,52.671383300918
+-1.7598938941956,52.671552451702
+-1.7598617076874,52.672118451488
+-1.7602479457855,52.672313622128
+-1.7605698108673,52.672287599427
+-1.7608594894409,52.672352656152
+-1.7612457275391,52.672476263662
+-1.7615032196045,52.67243722975
+-1.761782169342,52.672333139145
+-1.7621469497681,52.672365667485
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Common Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7638313770294,52.671643532622
+-1.7644107341766,52.670270792903
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Falcon Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7571821808815,52.67123073933
+-1.7572948336601,52.671464948752
+-1.7573592066765,52.671591811665
+-1.7574691772461,52.671684518945
+-1.7577052116394,52.671808128346
+-1.7580243945122,52.671891076563
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Fisherwick Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7636275291443,52.67166695344
+-1.7631340026855,52.671588884133
+-1.7623615264893,52.67131564046
+-1.7609453201294,52.671198535506
+-1.7557740211487,52.67117251214
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Fisherwick Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7624258995056,52.671389806729
+-1.7618787288666,52.671656544167
+-1.7612135410309,52.671981831522
+-1.7610847949982,52.671988337244
+-1.7609453201294,52.671897257042
+-1.7610955238342,52.671532934337
+-1.7609560489655,52.671246678652
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Kestrel Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7574369907379,52.672085922964
+-1.757265329361,52.672001348686
+-1.7567610740662,52.672007854405
+-1.7567074298859,52.672203025539
+-1.7567074298859,52.672346150484
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Merlin Way</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7571687698364,52.671480887989
+-1.7567503452301,52.671383300918
+-1.7564284801483,52.67139631254
+-1.7560958862305,52.671506911171
+-1.7560315132141,52.671689073011
+-1.7560529708862,52.671936291438
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Osprey Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.757447719574,52.672115523892
+-1.7575657367706,52.672352981405
+-1.7575657367706,52.672592064036
+-1.757461130619,52.672748198925
+-1.7569273710251,52.672793738163
+-1.7567798495293,52.672795364563
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Osprey Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7569300532341,52.672790485362
+-1.756905913353,52.672675010765
+-1.7568120360374,52.672481468152
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Peregrine Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.75745844841,52.672840578502
+-1.7573940753937,52.673341506446
+-1.757265329361,52.673380539551
+-1.7567718029022,52.673341506446
+-1.7562353610992,52.673380539551
+-1.7560958862305,52.673387045065
+-1.7559242248535,52.673302473306
+-1.7559027671814,52.672892623231
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Sandy Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.765011548996,52.669392477094
+-1.7662131786346,52.66945103203
+-1.7692923545837,52.668286424664
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Vicarage Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.760880947113,52.67118162028
+-1.7608058452606,52.670953915216
+-1.7566645145416,52.669665732793
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

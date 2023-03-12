@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>CaR_EA_1_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Bellamour Way</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9239807128906,52.782228940178
+-1.9256544113159,52.781748729692
+-1.9285726547241,52.781800644595
+-1.9304609298706,52.782177025786
+-1.9319200515747,52.781774687151
+-1.9345593452454,52.78219000439
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Colton Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9281005859375,52.769103011026
+-1.9313621520996,52.771387871852
+-1.9356536865234,52.774243779259
+-1.9372844696045,52.778657085828
+-1.9361686706543,52.780214616605
+-1.9351387023926,52.781824006518
+-1.9375419616699,52.783381423961
+-1.9371128082275,52.784990696763
+-1.9368553161621,52.788053341868
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Martlin Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9255471229553,52.781712389184
+-1.9253540039063,52.781589090939
+-1.9247853755951,52.781381429948
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>School Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9304502010345,52.782225046561
+-1.9306540489197,52.783250343197
+-1.9309329986572,52.783503419029
+-1.9312012195587,52.783639690021
+-1.9312977790833,52.783788938714
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>School Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9312119483948,52.783646179105
+-1.9314050674438,52.78352288634
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

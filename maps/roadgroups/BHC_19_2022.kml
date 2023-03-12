@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>BHC_19_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Bridge Cross Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9322794675827,52.681568263427
+-1.9284331798553,52.681034907951
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Bridge Cross Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9239270687103,52.680433249138
+-1.9217222929001,52.680085258907
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Cannock Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9159770011902,52.679345689173
+-1.9198071956635,52.679853047081
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>STJ_C6_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Birmingham Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8309831619263,52.675384151406
+-1.8308973312378,52.674974320859
+-1.8310153484344,52.674492927688
+-1.8312513828278,52.674044056303
+-1.8316268920898,52.673185332977
+-1.8320024013519,52.672385143778
+-1.8320560455322,52.672033836573
+-1.8322598934174,52.671305190403
+-1.8317127227783,52.670088584447
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Cairns Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8309938907623,52.674972409953
+-1.8314284086227,52.674939883554
+-1.8322223424912,52.674556070205
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Foxglove Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8319380283356,52.670434743213
+-1.8315356969833,52.670444502141
+-1.8312674760818,52.670421731304
+-1.8313103914261,52.670167998316
+-1.8314123153687,52.670171251312
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Wyrley Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8317395448685,52.673134630387
+-1.8321365118027,52.673186674766
+-1.8322867155075,52.672773570802
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Wyrley Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8321204185486,52.673212696932
+-1.8321579694748,52.673316785441
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

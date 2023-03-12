@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>CTC_16_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Bleak House Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9441294670105,52.687145340598
+-1.9442582130432,52.687395723275
+-1.9445425271988,52.687503029697
+-1.9451057910919,52.687337192388
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Fair Lady Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.947825551033,52.688198889187
+-1.9475680589676,52.688065571172
+-1.9473159313202,52.68760383246
+-1.9464254379272,52.687216878652
+-1.9460016489029,52.687038033297
+-1.9458729028702,52.686885201231
+-1.9455242156982,52.686787648569
+-1.945298910141,52.686751879205
+-1.9451755285263,52.68676813801
+-1.9448912143707,52.686898208236
+-1.9441294670105,52.687112823262
+-1.9437700510025,52.687187613099
+-1.9435769319534,52.687262402808
+-1.9433623552322,52.687304675195
+-1.9432711601257,52.687398974989
+-1.9431960582733,52.687421736978
+-1.9428956508636,52.687473764336
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Fair Lady Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9432711601257,52.687428240401
+-1.9435983896255,52.68795501446
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>The Grove</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9473373889923,52.687590825665
+-1.9476592540741,52.687506281403
+-1.9477397203445,52.687398974989
+-1.9478845596313,52.687314430356
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>The Grove</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9476860761642,52.687529043336
+-1.9480991363525,52.687782675498
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>The Valley</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9464629888535,52.687213626925
+-1.9466024637222,52.68701852285
+-1.9469726085663,52.686930725732
+-1.947095990181,52.686917718737
+-1.9472622871399,52.687086809376
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

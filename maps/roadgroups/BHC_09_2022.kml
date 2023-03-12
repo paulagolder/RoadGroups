@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>BHC_09_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Aspen Grove</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9285941123962,52.684880775457
+-1.9285619258881,52.685414083969
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Columbian Crescent</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9324028491974,52.684939309636
+-1.9322204589844,52.684555584143
+-1.9320380687714,52.684392987578
+-1.9316303730011,52.684392987578
+-1.9312226772308,52.684379979827
+-1.9308042526245,52.684386483703
+-1.9306540489197,52.684497049449
+-1.9306111335754,52.684971828591
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Corsican Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9273978471756,52.684689238036
+-1.9273763895035,52.684560787193
+-1.9275078177452,52.684243723369
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Linden Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9261479377747,52.68512141547
+-1.9264483451843,52.685244986853
+-1.9267702102661,52.685290513064
+-1.92746758461,52.685244986853
+-1.9276607036591,52.685238483105
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Lombardy Grove</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9285941123962,52.6847767145
+-1.9286262989044,52.684314941012
+-1.9291412830353,52.684327948782
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Oaken Gardens</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9264939427376,52.684759154159
+-1.9261720776558,52.684383556929
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Oregon Gardens</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9296965003014,52.684938008847
+-1.9297152757645,52.684630703522
+-1.9297769665718,52.684401442584
+-1.9294121861458,52.684349411566
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Redwood Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9336366653442,52.684858662564
+-1.9330143928528,52.684832647335
+-1.9324564933777,52.684962723325
+-1.9320702552795,52.684988738477
+-1.9314694404602,52.685027761176
+-1.9307398796082,52.685040768734
+-1.9299674034119,52.684949715744
+-1.9292163848877,52.684871670172
+-1.9286799430847,52.684819639714
+-1.9282722473145,52.684793624462
+-1.9277358055115,52.684728586263
+-1.9273924827576,52.684715578612
+-1.9267702102661,52.684715578612
+-1.926383972168,52.684819639714
+-1.9260406494141,52.685053776288
+-1.9256329536438,52.685430993685
+-1.9253969192505,52.686003317305
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

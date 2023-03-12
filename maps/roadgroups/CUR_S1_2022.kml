@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>CUR_S1_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Dimbles Hill</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8264931440353,52.691102519619
+-1.8287247419357,52.691869852179
+-1.8291753530502,52.692022666799
+-1.8293792009354,52.69192837699
+-1.8299478292465,52.691990153095
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Leyfields</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8287998437881,52.692084422429
+-1.8284618854523,52.692669664135
+-1.8283492326736,52.692783460222
+-1.828231215477,52.692819224646
+-1.8279898166656,52.692767203657
+-1.8277269601822,52.692689172057
+-1.8274748325348,52.69260138634
+-1.8272817134857,52.69253635977
+-1.8271046876907,52.692494092447
+-1.8269276618958,52.692435568394
+-1.8266379833221,52.692354284857
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Miller Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8268740177155,52.692851737733
+-1.8266594409943,52.692894004709
+-1.8265038728714,52.692913512531
+-1.8263375759125,52.692916763833
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Paget Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8279790878296,52.692994795026
+-1.8278449773788,52.693202877526
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Paget Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8270939588547,52.692959030747
+-1.8272227048874,52.692994795026
+-1.8273997306824,52.692998046323
+-1.8276035785675,52.692972035943
+-1.8277323246002,52.692949276847
+-1.8279308080673,52.692978538539
+-1.8281078338623,52.693030559277
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>St Chads Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8243634700775,52.68975831391
+-1.8237733840942,52.689608742914
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

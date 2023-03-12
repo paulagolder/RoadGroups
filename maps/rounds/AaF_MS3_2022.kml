@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>AaF_MS3_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Anson Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7490684986115,52.730429142266
+-1.7492508888245,52.73002632537
+-1.7494869232178,52.729552036188
+-1.7494118213654,52.729240171998
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>YXL_CL_6_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Wood Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7905783653259,52.787588767811
+-1.7905354499817,52.78547346676
+-1.7910075187683,52.784045904868
+-1.7917585372925,52.781411281316
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Wood Lane Hall Farm</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7966723442078,52.784175685157
+-1.7967367172241,52.783643583511
+-1.7953634262085,52.783384019372
+-1.7953205108643,52.784019948763
+-1.7965006828308,52.784253553145
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

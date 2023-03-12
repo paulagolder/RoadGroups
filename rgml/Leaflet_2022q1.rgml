@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/xsl' href='./Stylesheets/rgml.xsl' ?>
+<delivery Name='Leaflet 2022 q 1' DeliveryId='20' KML='' >
+  <rggroup RggroupId='RG_STW' Name='Stowe' Households='3080' KML='RG_STW.kml' Bounds='{"dist":-1,"maxlat":null,"midlat":null,"minlat":null,"maxlong":null,"midlong":null,"minlong":null}' >
+    <rgsubgroup RgsubgroupId='RG_STW' Name='South' Households='637' Bounds='{"dist":-1,"maxlat":null,"midlat":null,"minlat":null,"maxlong":null,"midlong":null,"minlong":null}' >
+<round RoundId='22' Name='Lower Trent Valley Road..etc' Households='637'   >
+  <street Name='Aspen Close' Households='16' Qualifier=''  />
+  <street Name='Mulberry Drive' Households='37' Qualifier=''  />
+  <street Name='Witley Drive' Households='16' Qualifier=''  />
+  <street Name='Birmingham Road' Households='11' Qualifier=''  />
+  <street Name='Levetts Fields' Households='12' Qualifier=''  />
+  <street Name='Maxwell Close' Households='43' Qualifier=''  />
+  <street Name='Rotten Row' Households='19' Qualifier=''  />
+  <street Name='Station Road' Households='11' Qualifier=''  />
+  <street Name='Blackthorne Road' Households='17' Qualifier=''  />
+  <street Name='Bluebird Close' Households='9' Qualifier=''  />
+  <street Name='Copperfields' Households='27' Qualifier=''  />
+  <street Name='Hawkesmoor Drive' Households='19' Qualifier=''  />
+  <street Name='Henderson Close' Households='19' Qualifier=''  />
+  <street Name='Maryvale Court' Households='28' Qualifier=''  />
+  <street Name='Roman Way' Households='2' Qualifier=''  />
+  <street Name='Ash Grove' Households='25' Qualifier=''  />
+  <street Name='Beechfield Rise' Households='15' Qualifier=''  />
+  <street Name='Birch Grove' Households='1' Qualifier=''  />
+  <street Name='Burton Old Road West' Households='53' Qualifier=''  />
+  <street Name='Hawthorn Close' Households='6' Qualifier=''  />
+  <street Name='Hawthorn House' Households='20' Qualifier=''  />
+  <street Name='Laurel Close' Households='12' Qualifier=''  />
+  <street Name='Lime Grove' Households='40' Qualifier=''  />
+  <street Name='Rowan Close' Households='15' Qualifier=''  />
+  <street Name='Trent Valley Road' Households='102' Qualifier=''  />
+  <street Name='Wissage Court' Households='17' Qualifier=''  />
+  <street Name='Wissage Road' Households='2' Qualifier=''  />
+  <street Name='Aiden Court Road' Households='9' Qualifier=''  />
+  <street Name='Church Street' Households='3' Qualifier=''  />
+  <street Name='Deans Croft' Households='14' Qualifier=''  />
+  <street Name='Rotten Row' Households='12' Qualifier=''  />
+  <street Name='Southern Cross' Households='6' Qualifier=''  />
+  <street Name='Sturgeons Hill' Households='16' Qualifier=''  />
+  </round> 
+    </rgsubgroup>
+    <rgsubgroup RgsubgroupId='RG_STW' Name='Central' Households='389' Bounds='{"dist":-1,"maxlat":null,"midlat":null,"minlat":null,"maxlong":null,"midlong":null,"minlong":null}' >
+<round RoundId='47' Name='Stowe St..etc' Households='140'   >
+  <street Name='Drake Croft' Households='9' Qualifier=''  />
+  <street Name='Mallard Croft' Households='8' Qualifier=''  />
+  <street Name='Smithfield Rise' Households='26' Qualifier=''  />
+  <street Name='Stowe Street' Households='99' Qualifier=''  />
+  <street Name='Tanyard' Households='13' Qualifier=''  />
+  </round> 
+<round RoundId='48' Name='St Michael Road..etc' Households='149'   >
+  <street Name='Church Street' Households='5' Qualifier=''  />
+  <street Name='Lunns Croft' Households='25' Qualifier=''  />
+  <street Name='Partridge Croft' Households='39' Qualifier=''  />
+  <street Name='St Michael Road' Households='66' Qualifier=''  />
+  <street Name='Trent Valley Road' Households='9' Qualifier=''  />
+  </round> 
+<round RoundId='49' Name='Wissage Rd..etc' Households='100'   >
+  <street Name='The Woodlands' Households='17' Qualifier=''  />
+  <street Name='Wissage Croft' Households='6' Qualifier=''  />
+  <street Name='Wissage Road' Households='38' Qualifier=''  />
+  <street Name='Wissage Road' Households='29' Qualifier=''  />
+  <street Name='Wissage Road' Households='18' Qualifier=''  />
+  </round> 
+    </rgsubgroup>
+    <rgsubgroup RgsubgroupId='RG_STW' Name='East' Households='687' Bounds='{"dist":-1,"maxlat":null,"midlat":null,"minlat":null,"maxlong":null,"midlong":null,"minlong":null}' >
+<round RoundId='50' Name='Rocklands Cres..etc' Households='140'   >
+  <street Name='Covey Close' Households='20' Qualifier=''  />
+  <street Name='Mallicot Close' Households='27' Qualifier=''  />
+  <street Name='Rocklands Crescent' Households='58' Qualifier=''  />
+  <street Name='Wissage Lane' Households='39' Qualifier=''  />
+  </round> 
+<round RoundId='51' Name='Valley Lane..etc' Households='145'   >
+  <street Name='Pennys Croft' Households='12' Qualifier=''  />
+  <street Name='Trent Valley Road' Households='70' Qualifier=''  />
+  <street Name='Valley Lane' Households='83' Qualifier=''  />
+  </round> 
+<round RoundId='52' Name='Hobs Road..etc' Households='154'   >
+  <street Name='Darnford View' Households='30' Qualifier=''  />
+  <street Name='Heather Close' Households='18' Qualifier=''  />
+  <street Name='Hobs Road' Households='118' Qualifier=''  />
+  <street Name='Manley Road' Households='25' Qualifier=''  />
+  </round> 
+<round RoundId='53' Name='Scotch Orchard..etc' Households='138'   >
+  <street Name='Benson Close' Households='32' Qualifier=''  />
+  <street Name='Braeburn Close' Households='15' Qualifier=''  />
+  <street Name='Scotch Orchard' Households='92' Qualifier=''  />
+  </round> 
+<round RoundId='54' Name='Eastern Ave..etc' Households='110'   >
+  <street Name='Eastern Avenue' Households='56' Qualifier=''  />
+  <street Name='Furnivall Crescent' Households='40' Qualifier=''  />
+  </round> 
+    </rgsubgroup>
+    <rgsubgroup RgsubgroupId='RG_STW' Name='North' Households='646' Bounds='{"dist":-1,"maxlat":null,"midlat":null,"minlat":null,"maxlong":null,"midlong":null,"minlong":null}' >
+<round RoundId='55' Name='Gilbert Road..etc' Households='205'   >
+  <street Name='Auchinleck Drive' Households='8' Qualifier=''  />
+  <street Name='Gilbert Road' Households='60' Qualifier=''  />
+  <street Name='Gilbert Walk' Households='6' Qualifier=''  />
+  <street Name='Stowecroft' Households='21' Qualifier=''  />
+  <street Name='Sullivan Walk' Households='11' Qualifier=''  />
+  <street Name='Sullivan Way' Households='10' Qualifier=''  />
+  <street Name='Verdi Court' Households='17' Qualifier=''  />
+  <street Name='Walkers Croft' Households='9' Qualifier=''  />
+  </round> 
+<round RoundId='56' Name='Chadswell Heights..etc' Households='141'   >
+  <street Name='Chadswell Heights' Households='50' Qualifier=''  />
+  <street Name='Netherstowe' Households='25' Qualifier=''  />
+  <street Name='Netherstowe Lane' Households='38' Qualifier=''  />
+  <street Name='Spring Road' Households='44' Qualifier=''  />
+  </round> 
+<round RoundId='57' Name='York Close..etc' Households='132'   >
+  <street Name='Autumn Drive' Households='15' Qualifier=''  />
+  <street Name='Bower Close' Households='15' Qualifier=''  />
+  <street Name='Canterbury Close' Households='11' Qualifier=''  />
+  <street Name='Chester Close' Households='12' Qualifier=''  />
+  <street Name='Summer Grove' Households='14' Qualifier=''  />
+  <street Name='The Mill Pond' Households='22' Qualifier=''  />
+  <street Name='Winter Close' Households='13' Qualifier=''  />
+  <street Name='York Close' Households='24' Qualifier=''  />
+  </round> 
+<round RoundId='58' Name='Fecknam Way..etc' Households='168'   >
+  <street Name='Brownsfield Road' Households='39' Qualifier='EVENS to Fecknam Way'  />
+  <street Name='Brownsfield Road' Households='10' Qualifier=''  />
+  <street Name='Charnwood Close' Households='21' Qualifier=''  />
+  <street Name='Clayton Drive' Households='2' Qualifier=''  />
+  <street Name='Fecknam Way' Households='63' Qualifier=''  />
+  <street Name='Godfrey Rise' Households='3' Qualifier=''  />
+  <street Name='Hayworth Road' Households='8' Qualifier=''  />
+  <street Name='Johnson Close' Households='19' Qualifier=''  />
+  <street Name='Stowe Hill Gardens' Households='3' Qualifier=''  />
+  </round> 
+    </rgsubgroup>
+    <rgsubgroup RgsubgroupId='RG_STW' Name='West' Households='721' Bounds='{"dist":-1,"maxlat":null,"midlat":null,"minlat":null,"maxlong":null,"midlong":null,"minlong":null}' >
+<round RoundId='59' Name='Close..etc' Households='160'   >
+  <street Name='Beacon Court' Households='1' Qualifier=''  />
+  <street Name='Beacon Street' Households='16' Qualifier='EVENS to No 38'  />
+  <street Name='Cathedral Rise' Households='11' Qualifier=''  />
+  <street Name='Gaia Lane' Households='18' Qualifier='UPPER half to Bishops Walk'  />
+  <street Name='The Close' Households='44' Qualifier=''  />
+  <street Name='Vicars Close' Households='11' Qualifier=''  />
+  </round> 
+<round RoundId='60' Name='Bird St..etc' Households='337'   >
+  <street Name='Backcester Lane' Households='2' Qualifier=''  />
+  <street Name='Bird Street' Households='36' Qualifier=''  />
+  <street Name='Bore Street' Households='1' Qualifier=''  />
+  <street Name='Conduit Street' Households='1' Qualifier=''  />
+  <street Name='Cross Keys' Households='24' Qualifier=''  />
+  <street Name='Dam Street' Households='14' Qualifier=''  />
+  <street Name='George Lane' Households='32' Qualifier=''  />
+  <street Name='Greenhill' Households='6' Qualifier=''  />
+  <street Name='Greenhill Mews' Households='15' Qualifier=''  />
+  <street Name='Lombard Court' Households='9' Qualifier=''  />
+  <street Name='Lombard Street' Households='20' Qualifier=''  />
+  <street Name='Market Street' Households='8' Qualifier=''  />
+  <street Name='Minster Pool Walk' Households='2' Qualifier=''  />
+  <street Name='Tamworth Street' Households='25' Qualifier=''  />
+  <street Name='The Old Stoneyard' Households='9' Qualifier=''  />
+  </round> 
+<round RoundId='61' Name='Wade Street..etc' Households='224'   >
+  <street Name='Castle Dyke' Households='39' Qualifier=''  />
+  <street Name='Frog Lane' Households='28' Qualifier=''  />
+  <street Name='St John Street' Households='5' Qualifier=''  />
+  <street Name='Wade Street' Households='50' Qualifier=''  />
+  </round> 
+    </rgsubgroup>
+  </rggroup>
+  <rggroup RggroupId='RG_CUR' Name='Curborough' Households='2236' KML='RG_CUR.kml' Bounds='{"dist":-1,"maxlat":null,"midlat":null,"minlat":null,"maxlong":null,"midlong":null,"minlong":null}' >
+    <rgsubgroup RgsubgroupId='RG_CUR' Name='Central' Households='540' Bounds='{"dist":-1,"maxlat":null,"midlat":null,"minlat":null,"maxlong":null,"midlong":null,"minlong":null}' >
+<round RoundId='30' Name='Curborough...etc' Households='210'   >
+  <street Name='Curborough Road' Households='54' Qualifier='EVENS Gaia Lane to Ponesfield + ODDS from Dimbles Hill to The Garth'  />
+  <street Name='Curborough Road' Households='30' Qualifier='ODDS 123- 183'  />
+  <street Name='Curborough Road' Households='50' Qualifier=''  />
+  <street Name='Curborough Road' Households='42' Qualifier='Odds 33 to 117'  />
+  <street Name='Curborough Road' Households='23' Qualifier='ODDS Gaia Lane to Dimble Hill'  />
+  <street Name='Miller Close' Households='5' Qualifier=''  />
+  <street Name='The Garth' Households='31' Qualifier=''  />
+  </round> 
+<round RoundId='36' Name='Fallowfield..etc' Households='125'   >
+  <street Name='Barn Close' Households='12' Qualifier=''  />
+  <street Name='Fallow Field' Households='46' Qualifier=''  />
+  <street Name='Ploughmans Walk' Households='29' Qualifier=''  />
+  <street Name='Shepherd Close' Households='33' Qualifier=''  />
+  </round> 
+<round RoundId='62' Name='Meadowbrook' Households='205'   >
+  <street Name='Harwood Road' Households='15' Qualifier=''  />
+  <street Name='Jackson Road' Households='18' Qualifier=''  />
+  <street Name='Meadowbrook Road' Households='74' Qualifier=''  />
+  <street Name='Simpson Road' Households='53' Qualifier=''  />
+  </round> 
+    </rgsubgroup>
+    <rgsubgroup RgsubgroupId='RG_CUR' Name='East' Households='726' Bounds='{"dist":-1,"maxlat":null,"midlat":null,"minlat":null,"maxlong":null,"midlong":null,"minlong":null}' >
+<round RoundId='37' Name='Giles..etc' Households='136'   >
+  <street Name='Dimbles Lane' Households='15' Qualifier=''  />
+  <street Name='Francis Road' Households='45' Qualifier=''  />
+  <street Name='Giles Road' Households='80' Qualifier=''  />
+  </round> 
+<round RoundId='38' Name='St Margarets etc' Households='182'   >
+  <street Name='Field Road' Households='40' Qualifier=''  />
+  <street Name='St. Annes Road' Households='13' Qualifier=''  />
+  <street Name='St. Catherines Road' Households='5' Qualifier=''  />
+  <street Name='St. Helens Road' Households='10' Qualifier=''  />
+  <street Name='St. Margarets Road' Households='25' Qualifier=''  />
+  <street Name='St. Marys Road' Households='19' Qualifier=''  />
+  </round> 
+<round RoundId='39' Name='David Garrick Gardens..etc' Households='226'   >
+  <street Name='Bloomfield Crescent' Households='50' Qualifier=''  />
+  <street Name='David Garrick Gardens' Households='69' Qualifier=''  />
+  <street Name='Hawkins Close' Households='5' Qualifier=''  />
+  <street Name='Hewitt Close' Households='17' Qualifier=''  />
+  </round> 
+<round RoundId='40' Name='Dimbles Lane..etc' Households='182'   >
+  <street Name='Anglesey Road' Households='2' Qualifier=''  />
+  <street Name='Dimbles Lane' Households='36' Qualifier=''  />
+  <street Name='Dimbles Lane' Households='7' Qualifier=''  />
+  <street Name='Reynolds Close' Households='34' Qualifier=''  />
+  <street Name='Weston Road' Households='53' Qualifier=''  />
+  <street Name='Willow Tree Close' Households='18' Qualifier=''  />
+  </round> 
+    </rgsubgroup>
+    <rgsubgroup RgsubgroupId='RG_CUR' Name='North' Households='466' Bounds='{"dist":-1,"maxlat":null,"midlat":null,"minlat":null,"maxlong":null,"midlong":null,"minlong":null}' >
+<round RoundId='41' Name='Norwich..etc' Households='151'   >
+  <street Name='Gloucester Close' Households='16' Qualifier=''  />
+  <street Name='Norwich Close' Households='55' Qualifier=''  />
+  <street Name='Southwark Close' Households='35' Qualifier=''  />
+  <street Name='Truro Close' Households='22' Qualifier=''  />
+  <street Name='Worcester Close' Households='22' Qualifier=''  />
+  </round> 
+<round RoundId='42' Name='Lincoln..etc' Households='195'   >
+  <street Name='Lincoln Close' Households='62' Qualifier=''  />
+  <street Name='Salisbury Close' Households='10' Qualifier=''  />
+  <street Name='Winchester Close' Households='27' Qualifier=''  />
+  </round> 
+<round RoundId='43' Name='Saxon Gate..etc' Households='120'   >
+  <street Name='Barratt Court' Households='5' Qualifier=''  />
+  <street Name='Cain Close' Households='4' Qualifier=''  />
+  <street Name='Kilby Avenue' Households='20' Qualifier=''  />
+  <street Name='Thomas Lane' Households='14' Qualifier=''  />
+  <street Name='Vallentin Way' Households='29' Qualifier=''  />
+  <street Name='Wassall Lane' Households='9' Qualifier=''  />
+  <street Name='Watchman Close' Households='2' Qualifier=''  />
+  <street Name='Watery Lane' Households='6' Qualifier=''  />
+  </round> 
+    </rgsubgroup>
+    <rgsubgroup RgsubgroupId='RG_CUR' Name='South' Households='504' Bounds='{"dist":-1,"maxlat":null,"midlat":null,"minlat":null,"maxlong":null,"midlong":null,"minlong":null}' >
+<round RoundId='44' Name='Leyfields..etc' Households='114'   >
+  <street Name='Dimbles Hill' Households='30' Qualifier='EVENS'  />
+  <street Name='Dimbles Hill' Households='20' Qualifier='ODDS'  />
+  <street Name='Leyfields' Households='33' Qualifier=''  />
+  <street Name='Paget Close' Households='10' Qualifier=''  />
+  </round> 
+<round RoundId='45' Name='Ponesfield..etc' Households='195'   >
+  <street Name='Handel Walk' Households='24' Qualifier=''  />
+  <street Name='Pones Green' Households='32' Qualifier=''  />
+  <street Name='Ponesfield Road' Households='30' Qualifier='EVENS'  />
+  <street Name='Ponesfield Road' Households='36' Qualifier='ODDS + 82 -84'  />
+  <street Name='Stychbrook Gardens' Households='40' Qualifier=''  />
+  </round> 
+<round RoundId='46' Name='Purcell Ave..etc' Households='195'   >
+  <street Name='Elgar Close' Households='7' Qualifier=''  />
+  <street Name='Oakley Close' Households='24' Qualifier='+ Pearce Ct'  />
+  <street Name='Purcell Avenue' Households='75' Qualifier=''  />
+  <street Name='Samuel Close' Households='20' Qualifier=''  />
+  </round> 
+    </rgsubgroup>
+  </rggroup>
+  <rggroup RggroupId='RG_CHD' Name='Chadsmead' Households='116' KML='RG_CHD.kml' Bounds='{"dist":-1,"maxlat":null,"midlat":null,"minlat":null,"maxlong":null,"midlong":null,"minlong":null}' >
+    <rgsubgroup RgsubgroupId='RG_CHD' Name='South' Households='116' Bounds='{"dist":-1,"maxlat":null,"midlat":null,"minlat":null,"maxlong":null,"midlong":null,"minlong":null}' >
+<round RoundId='35' Name='Gaia Lane..etc' Households='116'   >
+  <street Name='Gaia Lane' Households='47' Qualifier='Below footpath'  />
+  <street Name='Gaia Stowe' Households='4' Qualifier=''  />
+  <street Name='St Chads Close' Households='4' Qualifier=''  />
+  <street Name='St Chads Road' Households='14' Qualifier=''  />
+  <street Name='St Chads Road' Households='18' Qualifier=''  />
+  <street Name='The Parchments' Households='17' Qualifier=''  />
+  </round> 
+    </rgsubgroup>
+  </rggroup>
+</delivery>

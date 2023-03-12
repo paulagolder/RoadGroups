@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>STJ_E8_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Cricket Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8148469924927,52.672343548256
+-1.8193316459656,52.66876528378
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Cromwells Meadow</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.818328499794,52.671719650083
+-1.8182373046875,52.67138460206
+-1.8184572458267,52.670971481058
+-1.8186128139496,52.670786063275
+-1.8191224336624,52.670353418721
+-1.8195623159409,52.670063902305
+-1.819948554039,52.669904504807
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>London Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8198251724243,52.669585708067
+-1.8200612068176,52.669884986706
+-1.8207263946533,52.670460767018
+-1.8212628364563,52.670776304422
+-1.8220728635788,52.671413878203
+-1.822298169136,52.671784707654
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>London Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8222123384476,52.671007263346
+-1.8211662769318,52.670343659772
+-1.8207800388336,52.670089926331
+-1.8204528093338,52.669699564312
+-1.8197929859161,52.668600025882
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Longbridge Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8160486221313,52.671648086644
+-1.8163865804672,52.671804224906
+-1.8167674541473,52.671872535221
+-1.8175184726715,52.67182374215
+-1.8181085586548,52.671784707654
+-1.8184250593185,52.671735914485
+-1.818864941597,52.671605799101
+-1.8191438913345,52.67153748837
+-1.819583773613,52.671355325897
+-1.8198841810226,52.671277256033
+-1.8201953172684,52.671160150976
+-1.8207371234894,52.670951963433
+-1.8209463357925,52.670860881071
+-1.8210697174072,52.670766545568
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Marsh Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8226146697998,52.671833500768
+-1.8228667974472,52.671817236403
+-1.8234461545944,52.67158628176
+-1.8239289522171,52.671241473966
+-1.8242937326431,52.670974733994
+-1.8246638774872,52.670763292616
+-1.8252593278885,52.670607150633
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

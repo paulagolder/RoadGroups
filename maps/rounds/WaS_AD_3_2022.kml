@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>WaS_AD_3_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Austin Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.79348051548,52.693648321134
+-1.7929923534393,52.693879159141
+-1.7924827337265,52.694018961848
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Austin Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7926919460297,52.694425362523
+-1.7924344539642,52.694038469167
+-1.7923593521118,52.693953937389
+-1.7922627925873,52.693866154215
+-1.7921125888824,52.693736104745
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Chaffinch Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8017899990082,52.693120315263
+-1.80211186409,52.692359507369
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Chaffinch Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8019080162048,52.692717153757
+-1.8017470836639,52.692691143209
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Chaffinch Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8020260334015,52.692457047583
+-1.8018114566803,52.692418031523
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Eider Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7952024936676,52.694349284625
+-1.7950201034546,52.694693910034
+-1.7948055267334,52.694752431059
+-1.7945265769958,52.694700412374
+-1.7939257621765,52.694492337012
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Eider Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7939901351929,52.694368791796
+-1.7937219142914,52.694752431059
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Eider Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7950308322906,52.694719919388
+-1.7952024936676,52.694836961291
+-1.79563164711,52.694823956651
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Eider Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7945051193237,52.694739426394
+-1.7943978309631,52.69498001208
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Falcon Grove</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.793110370636,52.693251667059
+-1.7927777767181,52.693407728108
+-1.7924720048904,52.693489009684
+-1.7921233177185,52.693583296122
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Falcon Grove</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7923432588577,52.693502014722
+-1.7921876907349,52.693319943837
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Falcon Grove</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7924290895462,52.693534527301
+-1.7925095558167,52.693622311141
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Falcon Grove</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7927348613739,52.693397974309
+-1.7927938699722,52.69350851724
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Falcon Grove</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7927348613739,52.693388220508
+-1.7926222085953,52.693329697653
+-1.7923378944397,52.693258169614
+-1.7921930551529,52.693254918336
+-1.7919194698334,52.693319943837
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Faraday Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7962753772736,52.694409106569
+-1.7962163686752,52.694815503613
+-1.7959266901016,52.694984563668
+-1.7957228422165,52.695062591166
+-1.7955082654953,52.695173129882
+-1.7953795194626,52.69530967732
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Faraday Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7955833673477,52.695368197521
+-1.7947787046432,52.695186134418
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Fleming Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7962056398392,52.694812252451
+-1.7965060472488,52.694919540648
+-1.7965972423553,52.694961805622
+-1.7968761920929,52.69511460942
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Fleming Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7971873283386,52.694948801019
+-1.796897649765,52.695117860559
+-1.7966562509537,52.695264161555
+-1.7965650558472,52.695329184063
+-1.7962217330933,52.695407210944
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Harrier Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7957067489624,52.694327826706
+-1.7957711219788,52.694064478912
+-1.7959266901016,52.693827139415
+-1.7960339784622,52.693723099777
+-1.7963236570358,52.693391471775
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Healey Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.793464422226,52.693640518157
+-1.7930352687836,52.693894114821
+-1.7924666404724,52.69401766138
+-1.7921769618988,52.693744557992
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Healey Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7923593521118,52.694043671137
+-1.7927885055542,52.694433815637
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Healey Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7929816246033,52.693952636919
+-1.7936360836029,52.694238743823
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Healey Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7937541007996,52.694232241414
+-1.7931962013245,52.694583370104
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Thompson Way</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7923700809479,52.692951247988
+-1.7927670478821,52.692996766165
+-1.793292760849,52.693334899708
+-1.7935502529144,52.69361450816
+-1.7940759658813,52.693848597579
+-1.794548034668,52.694050173574
+-1.795095205307,52.694232241414
+-1.795814037323,52.694336279839
+-1.7965114116669,52.694342782232
+-1.7968225479126,52.694407806112
+-1.7975413799286,52.694609379525
+-1.7981207370758,52.694739426394
+-1.7987430095673,52.694654895973
+-1.7992579936981,52.694563863029
+-1.7994403839111,52.694446820394
+-1.7996227741241,52.694303767858
+-1.7999982833862,52.693991651607
+-1.8001914024353,52.693887612361
+-1.8006956577301,52.693751060474
+-1.8011140823364,52.693549483098
+-1.8014144897461,52.693328397164
+-1.8015110492706,52.693068294633
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Triumph Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8006527423859,52.692955799788
+-1.8005293607712,52.693167133757
+-1.8005079030991,52.693209400429
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Triumph Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8002772331238,52.693111861895
+-1.8007063865662,52.693274425997
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Wallis Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8010818958282,52.692944745387
+-1.8011355400085,52.692743164289
+-1.80140376091,52.692183934433
+-1.8018972873688,52.692170929003
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Wallis Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.80140376091,52.692157923568
+-1.8009424209595,52.692047377218
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Woodlark Way</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8005883693695,52.692313988527
+-1.8001914024353,52.692769174805
+-1.8006420135498,52.692905729763
+-1.8025088310242,52.693217853778
+-1.8029808998108,52.692541582259
+-1.8027877807617,52.691943333338
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

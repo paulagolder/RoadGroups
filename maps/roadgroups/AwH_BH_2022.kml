@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>AwH_BH_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Bromley Hayes</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8280649185181,52.733791868464
+-1.8287301063538,52.733038266142
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Pool Farm</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8262946605682,52.734671487762
+-1.8256831169128,52.734509077846
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Riley Hill</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8279576301575,52.733669084087
+-1.8281346559525,52.733107130283
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Rugeley Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8414008617401,52.748629982701
+-1.8406713008881,52.748396187123
+-1.8398344516754,52.748084457735
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Shaw Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8445014953613,52.728334453804
+-1.8457889556885,52.727619741774
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Tuppenhurst Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8565821647644,52.739105694329
+-1.8562602996826,52.73885885613
+-1.8559384346008,52.738105341401
+-1.8558311462402,52.737637636052
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Tuppenhurst Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8547582626343,52.735454944733
+-1.854522228241,52.735078159575
+-1.8541359901428,52.734740349423
+-1.8536424636841,52.73454545776
+-1.8534064292908,52.734441515183
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Wood End Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8397378921509,52.721805449107
+-1.8389654159546,52.721155614096
+-1.8384504318237,52.72042778739
+-1.8370771408081,52.719933898064
+-1.8361759185791,52.719907903734
+-1.8343305587769,52.719517986926
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Wood End Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8239665031433,52.718044069781
+-1.8205225467682,52.716659790185
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Woodend Farm</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.814546585083,52.71652070994
+-1.8128514289856,52.716455719
+-1.8109631538391,52.71641672439
+-1.810405254364,52.716390727964
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

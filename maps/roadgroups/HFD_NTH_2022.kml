@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>HFD_NTH_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Meg Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9119215011597,52.687629195758
+-1.9127154350281,52.688227503792
+-1.9137024879456,52.688227503792
+-1.9146466255188,52.688877829313
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Meg Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9162344932556,52.689710231847
+-1.9171786308289,52.690048390844
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Meg Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9182300567627,52.690321517352
+-1.9192814826965,52.690438571047
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Meg Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9207191467285,52.690698689246
+-1.9224143028259,52.691036840587
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Padbury Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9099903106689,52.69257149453
+-1.9086813926697,52.692298382096
+-1.9077157974243,52.692220349658
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Padbury Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9031882286072,52.691947235028
+-1.9020295143127,52.691791168758
+-1.9012141227722,52.69177816321
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Padbury Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8956780433655,52.691075857881
+-1.8948411941528,52.690854759421
+-1.8942618370056,52.690750712699
+-1.8936824798584,52.690997823258
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>WaS_Fish_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Burton Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7521476745605,52.690204463343
+-1.7529630661011,52.688981880498
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Fisherwick Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7303681373596,52.67398294609
+-1.7340159416199,52.672746897873
+-1.7403298616409,52.671430142719
+-1.7404854297638,52.67122520938
+-1.7415583133698,52.670971481058
+-1.7442512512207,52.670216793236
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Fisherwick Wood Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7501091957092,52.683401785864
+-1.7510962486267,52.682699345805
+-1.7513108253479,52.682244054547
+-1.7518258094788,52.681606638813
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

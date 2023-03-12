@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>SAS_00_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Chase Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9134020805359,52.674724558235
+-1.9099473953247,52.675375084839
+-1.908917427063,52.675843457996
+-1.9077587127686,52.676949319136
+-1.9073081016541,52.677729910145
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>New Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9138526916504,52.675096660717
+-1.9154405593872,52.679051679192
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>St Benedicts Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9142711162567,52.676457539599
+-1.9128656387329,52.676724246098
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>St Giles Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.913423538208,52.676600650606
+-1.912887096405,52.675559832589
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>St Lukes Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9102424383163,52.675463555649
+-1.9104194641113,52.675795319816
+-1.9110256433487,52.676208395207
+-1.9111114740372,52.676283203719
+-1.911433339119,52.67697273701
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>St Peters Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9109451770782,52.67609325492
+-1.9112884998322,52.675904606303
+-1.9126081466675,52.675611874078
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>St Stephens Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9112884998322,52.67647054971
+-1.9130909442902,52.676125780461
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

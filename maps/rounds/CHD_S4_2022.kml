@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>CHD_S4_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Beacon Gardens</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8390190601349,52.688472027265
+-1.8380320072174,52.68941499083
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Beacon Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8344543204701,52.686488465369
+-1.8349855361925,52.686872173879
+-1.8356347998532,52.687216858309
+-1.8366543047749,52.68768835619
+-1.8380977091115,52.68814684235
+-1.8394498945866,52.688589065575
+-1.8401045240627,52.68875489813
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Forge Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8380856513977,52.688185882569
+-1.8378871679306,52.688312696927
+-1.8378496170044,52.688465523997
+-1.8369215726852,52.689236154477
+-1.8368035554886,52.6892329029
+-1.8364387750626,52.689060568982
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Hill Crest Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.836154460907,52.688249614979
+-1.8365085124969,52.688418700461
+-1.8364548683167,52.688542262514
+-1.835789680481,52.689108042187
+-1.8356609344482,52.689225099135
+-1.8353283405304,52.689465715209
+-1.8353819847107,52.689589274299
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Nether Beacon</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8365406990051,52.687768368102
+-1.8361437320709,52.68822360177
+-1.8355965614319,52.688496739693
+-1.834169626236,52.689738845362
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Smithy Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8373829126358,52.688842711923
+-1.8366479873657,52.688478530531
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>CTC_11_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>High Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9338297843933,52.688288634764
+-1.9359111785889,52.688262621578
+-1.939172744751,52.687742354606
+-1.9408249855042,52.687488722209
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>High Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9340121746063,52.68814556205
+-1.9358682632446,52.68814556205
+-1.9401597976685,52.687436694869
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Lodge Rise</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9345754384995,52.688254167269
+-1.9345217943192,52.688540311517
+-1.935031414032,52.688559821284
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Lodge Rise</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9344627857208,52.688533808259
+-1.9342213869095,52.68853055663
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

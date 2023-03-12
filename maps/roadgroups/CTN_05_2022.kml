@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>CTN_05_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Church Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9344466924667,52.669344982457
+-1.9362491369247,52.66975486581
+-1.9376492500305,52.670122456341
+-1.9389635324478,52.670460767018
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Church Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9344520568848,52.669432814927
+-1.9362223148346,52.669845950478
+-1.9377779960632,52.670242817171
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>High Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.934135556221,52.672275889186
+-1.9341731071472,52.670535585371
+-1.9341892004013,52.670190769285
+-1.9342267513275,52.669400284403
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Ivy Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9342803955078,52.671780153647
+-1.9351494312286,52.67185171687
+-1.9351387023926,52.671624015298
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Pool Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9397306442261,52.666462027641
+-1.9396233558655,52.666774340673
+-1.9408893585205,52.667138703055
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>St Annes Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9376653432846,52.670125709341
+-1.9381642341614,52.66939703135
+-1.9385397434235,52.669478357621
+-1.9374293088913,52.669198594613
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Willett Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9362598657608,52.669849203498
+-1.9361847639084,52.670005348189
+-1.9361364841461,52.670112697341
+-1.9361311197281,52.670259082122
+-1.9359004497528,52.670603897669
+-1.9356590509415,52.670877145793
+-1.9356751441956,52.671173162665
+-1.9357180595398,52.671287014774
+-1.9359648227692,52.671462671732
+-1.9359809160233,52.671804224906
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Willett Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9356375932693,52.6712935206
+-1.9354337453842,52.671339061354
+-1.9352835416794,52.671345567172
+-1.935031414032,52.671322796804
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Willett Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9356161355972,52.671124368813
+-1.9354122877121,52.671082080764
+-1.9350796937943,52.67108858662
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Willett Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9357985258102,52.670555103182
+-1.9354283809662,52.670451008093
+-1.935042142868,52.67028835902
+-1.934671998024,52.670223299221
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

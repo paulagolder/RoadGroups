@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>HwW_LC_4_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Firs Walk</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9169372320175,52.670274371161
+-1.917572915554,52.670446779214
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Hanney Hay Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9217866659164,52.666656572807
+-1.9197374582291,52.665664317886
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Henley Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.91810131073,52.673735739145
+-1.9178116321564,52.673221804646
+-1.9173073768616,52.673143738118
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Henley Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9179403781891,52.673416970358
+-1.9183588027954,52.673299871036
+-1.918466091156,52.673429981374
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Highfields Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9338941574097,52.66920510065
+-1.9235944747925,52.667227190445
+-1.9222211837769,52.66670667288
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Hospital Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9193887710571,52.666082043618
+-1.9196033477783,52.667331293214
+-1.9188737869263,52.667929879324
+-1.9181442260742,52.668866780252
+-1.917200088501,52.669673539955
+-1.9137239456177,52.673967332908
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Lawnswood Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9305896759033,52.669944191525
+-1.9308471679688,52.669840094981
+-1.930890083313,52.669657925432
+-1.9298601150513,52.669410694114
+-1.9290661811829,52.669124424525
+-1.928551197052,52.669085387618
+-1.928014755249,52.669020326028
+-1.9271993637085,52.669046350675
+-1.9262981414795,52.668929239639
+-1.9257616996765,52.668851165441
+-1.9253325462341,52.668812128289
+-1.9251179695129,52.668838153061
+-1.9247531890869,52.669085387618
+-1.9246459007263,52.669371657462
+-1.9246888160706,52.669657925432
+-1.9246029853821,52.670178407844
+-1.924409866333,52.670412622906
+-1.9240880012512,52.670633824868
+-1.9237017631531,52.670737919522
+-1.9230151176453,52.670855025711
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Lawnswood Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9252038002014,52.668786103502
+-1.9251179695129,52.66844777986
+-1.925311088562,52.668356692277
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Ogley Hay Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9196462631226,52.665238780011
+-1.9202041625977,52.66408707418
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Pine Tree Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9163632392883,52.670817291608
+-1.9167387485504,52.670901868178
+-1.917200088501,52.670986444584
+-1.9173502922058,52.670706691231
+-1.9176077842712,52.670706691231
+-1.918112039566,52.670862832858
+-1.9179511070251,52.671168608594
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Triangle View</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9207459688187,52.667193682403
+-1.9208773970604,52.667310798091
+-1.9209766387939,52.667401887853
+-1.9212931394577,52.667401887853
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Wharf Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9217598438263,52.666471136763
+-1.9229829311371,52.66620436767
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>AwH_01_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Bannisters Court</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9099259376526,52.748586470811
+-1.9100949168205,52.748995610462
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Canon Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9066911935806,52.747251220091
+-1.9068413972855,52.747319412389
+-1.9068896770477,52.74741358253
+-1.9070774316788,52.747540224813
+-1.9072115421295,52.747543472046
+-1.9072866439819,52.747592180515
+-1.9073349237442,52.747673361175
+-1.9075173139572,52.74778376663
+-1.9076138734818,52.747780519415
+-1.9079625606537,52.747972104702
+-1.908016204834,52.748030554283
+-1.9082468748093,52.748160441959
+-1.90838098526,52.748170183519
+-1.9086652994156,52.748293576426
+-1.9087028503418,52.748352025576
+-1.9087672233582,52.748426710486
+-1.9090300798416,52.749342402024
+-1.9089818000793,52.74912419641
+-1.9094739854336,52.749075489654
+-1.9094471633434,52.748967522818
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Crabtree Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9086465239525,52.748359169345
+-1.9083675742149,52.748534516295
+-1.9080671668053,52.748761816846
+-1.9079706072807,52.748899820174
+-1.9077399373055,52.74906542359
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Horseley Croft</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9094860553741,52.747199263983
+-1.9095289707184,52.747127824233
+-1.9096952676773,52.746994686204
+-1.90982401371,52.746952471622
+-1.9106715917587,52.747140813287
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Horseley Croft</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9098508358002,52.746913504279
+-1.9098401069641,52.746822580344
+-1.9097435474396,52.74673165622
+-1.9095289707184,52.746540065478
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Ingathorpe Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9071310758591,52.748741684569
+-1.907833814621,52.748241621561
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Ingathorpe Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9075763225555,52.748394238802
+-1.9070452451706,52.748134464455
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Ingathorpe Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9077694416046,52.748225385652
+-1.9072812795639,52.747959115895
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Lower Fufin Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9080778956413,52.748060428473
+-1.9084963202477,52.747776298025
+-1.9088181853294,52.747935411304
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Middle Croft</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9084265828133,52.746806993355
+-1.90892547369,52.7464692741
+-1.9090569019318,52.746449790217
+-1.9094350934029,52.746485510663
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Middle Croft</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.908917427063,52.74644167193
+-1.9088128209114,52.74635074701
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Oaken Hurst Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9062754511833,52.748245518168
+-1.9072034955025,52.747615560551
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Salts Croft</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9088074564934,52.74843223066
+-1.9088745117188,52.748414371239
+-1.9092473387718,52.748139984666
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>St Thomas Way</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.908928155899,52.74865595991
+-1.9099152088165,52.748584522548
+-1.9102585315704,52.748324749335
+-1.910355091095,52.748071468962
+-1.9104838371277,52.747863648069
+-1.9106769561768,52.747623353926
+-1.9108593463898,52.7473440915
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>St Thomas Way</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9104838371277,52.74768829842
+-1.9102370738983,52.747642837284
+-1.910001039505,52.747493464648
+-1.909453868866,52.747253168464
+-1.9093036651611,52.747253168464
+-1.9091963768005,52.747207706874
+-1.9085311889648,52.746824528736
+-1.9081449508667,52.746636185704
+-1.9076299667358,52.746402379428
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>St Thomas Way</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9085955619812,52.746272486511
+-1.9078767299652,52.746220529236
+-1.9076836109161,52.746291970473
+-1.9054734706879,52.747681803975
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>St Thomas Way</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.907656788826,52.74628904785
+-1.9073724746704,52.746151036253
+-1.9067206978798,52.746064981742
+-1.9065436720848,52.746042250334
+-1.9064417481422,52.74612668122
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>St Thomas Way</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9084560871124,52.746831023309
+-1.9080376625061,52.746947925454
+-1.9080054759979,52.747064827285
+-1.9082415103912,52.747220695905
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

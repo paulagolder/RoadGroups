@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>CTC_08_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Baron Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9367158412933,52.690959456125
+-1.9364959001541,52.690650567436
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Duke Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9339638948441,52.692481107449
+-1.934671998024,52.692247010697
+-1.9354927539825,52.691954387992
+-1.935932636261,52.691850343891
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Knight Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9351440668106,52.692035672274
+-1.9350045919418,52.691938131118
+-1.9349670410156,52.691795070362
+-1.9349938631058,52.691131782549
+-1.9350850582123,52.69103098793
+-1.9351923465729,52.690985467704
+-1.9356161355972,52.690855409653
+-1.9358253479004,52.690855409653
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Lance Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9351065158844,52.691001724933
+-1.9350206851959,52.690887924202
+-1.935026049614,52.690572532053
+-1.9346612691879,52.690517256906
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Viscount Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9359701871872,52.691824332827
+-1.9358789920807,52.690884672748
+-1.9359058141708,52.690829397996
+-1.9368767738342,52.690481490597
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

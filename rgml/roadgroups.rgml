@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/xsl' href='./Stylesheets/rgml.xsl' ?>
+<delivery Name='Lichfield City Labour Party' DeliveryId='1' KML='SCC_LCN.kml' >
+  <rggroup RggroupId='RG_CHD' Name='Chadsmead' Households='837' KML='RG_CHD.kml' >
+  <rgsubgroup RgsubgroupId='RG_CHD_C' Name='Central' Households='0' >
+      <roadgroup RoadgroupId='CHD_C2' Name='Swallow Croft..etc' KML='CHD_C2.kml' Households='189' >
+          <street Name='Bell Close' Households='17' Qualifier=''  />
+          <street Name='Giffords Croft' Households='25' Qualifier=''  />
+          <street Name='Martin Croft' Households='12' Qualifier=''  />
+          <street Name='Swallow Croft' Households='57' Qualifier=''  />
+          <street Name='Thistley Nook' Households='8' Qualifier=''  />
+          <street Name='Tuke Place' Households='9' Qualifier=''  />
+          <street Name='Wheel Lane' Households='39' Qualifier=''  />
+        </roadgroup>
+  </rgsubgroup>
+  <rgsubgroup RgsubgroupId='RG_CHD_N' Name='North' Households='0' >
+      <roadgroup RoadgroupId='CHD_N2' Name='Grange Lane..etc' KML='CHD_N2.kml' Households='178' >
+          <street Name='Grange Lane' Households='65' Qualifier=''  />
+          <street Name='Heenan Grove' Households='16' Qualifier=''  />
+          <street Name='Newton Road' Households='9' Qualifier=''  />
+          <street Name='Small Ridge' Households='10' Qualifier=''  />
+          <street Name='Wolsey Road' Households='63' Qualifier=''  />
+        </roadgroup>
+  </rgsubgroup>
+  <rgsubgroup RgsubgroupId='RG_CHD_S' Name='South' Households='0' >
+      <roadgroup RoadgroupId='CHD_S1' Name='Charters..etc' KML='CHD_S1_2021.kml' Households='97' >
+          <street Name='Beecroft Avenue' Households='16' Qualifier=''  />
+          <street Name='Bulldog Lane' Households='12' Qualifier=''  />
+          <street Name='Gaiafields Road' Households='16' Qualifier=''  />
+          <street Name='Gaialands Crescent' Households='15' Qualifier=''  />
+          <street Name='The Charters' Households='24' Qualifier=''  />
+          <street Name='Vale Close' Households='10' Qualifier=''  />
+        </roadgroup>
+      <roadgroup RoadgroupId='CHD_S2' Name='Gaia Lane..etc' KML='CHD_S2_2021.kml' Households='116' >
+          <street Name='Curborough Road' Households='23' Qualifier='ODDS Gaia Lane to Dimble Hill'  />
+          <street Name='Gaia Lane' Households='47' Qualifier='Below footpath'  />
+          <street Name='Gaia Stowe' Households='4' Qualifier=''  />
+          <street Name='St Chads Road' Households='14' Qualifier=''  />
+          <street Name='St Chads Road' Households='18' Qualifier=''  />
+          <street Name='The Parchments' Households='17' Qualifier=''  />
+        </roadgroup>
+      <roadgroup RoadgroupId='CHD_S3' Name='Anson Ave..etc' KML='CHD_S3.kml' Households='121' >
+          <street Name='Anson Avenue' Households='30' Qualifier=''  />
+          <street Name='Brook Close' Households='11' Qualifier=''  />
+          <street Name='Darwin Close' Households='12' Qualifier=''  />
+          <street Name='Little Barrow Walk' Households='18' Qualifier=''  />
+          <street Name='Lomax Close' Households='16' Qualifier=''  />
+          <street Name='Prince Ruperts Way' Households='23' Qualifier=''  />
+          <street Name='The Windings' Households='3' Qualifier=''  />
+        </roadgroup>
+      <roadgroup RoadgroupId='CHD_S4' Name='Beacon St..etc' KML='CHD_S4_2021.kml' Households='136' >
+          <street Name='Beacon Gardens' Households='20' Qualifier=''  />
+          <street Name='Beacon Street' Households='30' Qualifier='keep'  />
+          <street Name='Forge Lane' Households='13' Qualifier=''  />
+          <street Name='Hillcrest Drive' Households='5' Qualifier=''  />
+          <street Name='Nether Beacon' Households='23' Qualifier=''  />
+          <street Name='Smithy Lane' Households='13' Qualifier=''  />
+        </roadgroup>
+  </rgsubgroup>
+  </rggroup>
+  <rggroup RggroupId='RG_CUR' Name='Curborough' Households='807' KML='RG_CUR.kml' >
+  <rgsubgroup RgsubgroupId='RG_CUR_C' Name='Central' Households='0' >
+      <roadgroup RoadgroupId='CUR_C2' Name='Meadowbrook..etc' KML='CUR_C2_2021.kml' Households='205' >
+          <street Name='Harwood Road' Households='15' Qualifier=''  />
+          <street Name='Jackson Road' Households='18' Qualifier=''  />
+          <street Name='Meadowbrook Road' Households='74' Qualifier=''  />
+          <street Name='Simpson Road' Households='53' Qualifier=''  />
+        </roadgroup>
+  </rgsubgroup>
+  <rgsubgroup RgsubgroupId='RG_CUR_E' Name='East' Households='0' >
+      <roadgroup RoadgroupId='CUR_E1' Name='Giles..etc' KML='CUR_E1_2021.kml' Households='136' >
+          <street Name='Dimbles Lane' Households='15' Qualifier=''  />
+          <street Name='Francis Road' Households='45' Qualifier=''  />
+          <street Name='Giles Road' Households='80' Qualifier=''  />
+        </roadgroup>
+  </rgsubgroup>
+  <rgsubgroup RgsubgroupId='RG_CUR_N' Name='North' Households='0' >
+      <roadgroup RoadgroupId='CUR_N1' Name='Norwich..etc' KML='CUR_N1.kml' Households='151' >
+          <street Name='Gloucester Close' Households='16' Qualifier=''  />
+          <street Name='Norwich Close' Households='55' Qualifier=''  />
+          <street Name='Southwark Close' Households='35' Qualifier=''  />
+          <street Name='Truro Close' Households='22' Qualifier=''  />
+          <street Name='Worcester Close' Households='22' Qualifier=''  />
+        </roadgroup>
+      <roadgroup RoadgroupId='CUR_N2' Name='Lincoln..etc' KML='CUR_N2.kml' Households='195' >
+          <street Name='Lincoln Close' Households='62' Qualifier=''  />
+          <street Name='Salisbury Close' Households='10' Qualifier=''  />
+          <street Name='Winchester Close' Households='27' Qualifier=''  />
+        </roadgroup>
+      <roadgroup RoadgroupId='CUR_N3' Name='Saxon Gate..etc' KML='CUR_N3.kml' Households='120' >
+          <street Name='Barratt Court' Households='5' Qualifier=''  />
+          <street Name='Cain Close' Households='4' Qualifier=''  />
+          <street Name='Kilby Avenue' Households='20' Qualifier=''  />
+          <street Name='Thomas Lane' Households='14' Qualifier=''  />
+          <street Name='Vallentin Way' Households='29' Qualifier=''  />
+          <street Name='Wassall Lane' Households='9' Qualifier=''  />
+          <street Name='Watchman Close' Households='2' Qualifier=''  />
+          <street Name='Watery Lane' Households='6' Qualifier=''  />
+        </roadgroup>
+  </rgsubgroup>
+  </rggroup>
+  <rggroup RggroupId='RG_STW' Name='Stowe' Households='693' KML='RG_STW.kml' >
+  <rgsubgroup RgsubgroupId='RG_STW_E' Name='East' Households='0' >
+      <roadgroup RoadgroupId='STW_E2' Name='Rocklands Cres..etc' KML='STW_E2.kml' Households='140' >
+          <street Name='Covey Close' Households='20' Qualifier=''  />
+          <street Name='Mallicot Close' Households='27' Qualifier=''  />
+          <street Name='Rocklands Crescent' Households='58' Qualifier=''  />
+          <street Name='Wissage Lane' Households='39' Qualifier=''  />
+        </roadgroup>
+  </rgsubgroup>
+  <rgsubgroup RgsubgroupId='RG_STW_N' Name='North' Households='0' >
+      <roadgroup RoadgroupId='STW_N2' Name='Chadswell Heights..etc' KML='STW_N2_2021.kml' Households='141' >
+          <street Name='Chadswell Heights' Households='50' Qualifier=''  />
+          <street Name='Netherstowe' Households='25' Qualifier=''  />
+          <street Name='Netherstowe Lane' Households='38' Qualifier=''  />
+          <street Name='Spring Road' Households='44' Qualifier=''  />
+        </roadgroup>
+      <roadgroup RoadgroupId='STW_N4' Name='Fecknam Way..etc' KML='STW_N4_2021.kml' Households='168' >
+          <street Name='Brownsfield Road' Households='39' Qualifier='EVENS to Fecknam Way'  />
+          <street Name='Brownsfield Road' Households='10' Qualifier=''  />
+          <street Name='Charnwood Close' Households='21' Qualifier=''  />
+          <street Name='Clayton Drive' Households='2' Qualifier=''  />
+          <street Name='Fecknam Way' Households='63' Qualifier=''  />
+          <street Name='Godfrey Rise' Households='3' Qualifier=''  />
+          <street Name='Hayworth Road' Households='8' Qualifier=''  />
+          <street Name='Johnson Close' Households='19' Qualifier=''  />
+          <street Name='Stowe Hill Gardens' Households='3' Qualifier=''  />
+        </roadgroup>
+  </rgsubgroup>
+  <rgsubgroup RgsubgroupId='RG_STW_W' Name='West' Households='0' >
+      <roadgroup RoadgroupId='STW_W1' Name='Close..etc' KML='STW_W1.kml' Households='160' >
+          <street Name='Beacon Court' Households='1' Qualifier=''  />
+          <street Name='Beacon Street' Households='16' Qualifier='EVENS to No 38'  />
+          <street Name='Cathedral Rise' Households='11' Qualifier=''  />
+          <street Name='Gaia Lane' Households='18' Qualifier='UPPER half to Bishops Walk'  />
+          <street Name='The Close' Households='44' Qualifier=''  />
+          <street Name='Vicars Close' Households='11' Qualifier=''  />
+        </roadgroup>
+      <roadgroup RoadgroupId='STW_W3' Name='Wade Street..etc' KML='STW_W3.kml' Households='224' >
+          <street Name='Castle Dyke' Households='39' Qualifier=''  />
+          <street Name='Frog Lane' Households='28' Qualifier=''  />
+          <street Name='St John Street' Households='5' Qualifier=''  />
+          <street Name='Wade Street' Households='50' Qualifier=''  />
+        </roadgroup>
+  </rgsubgroup>
+  </rggroup>
+</delivery>

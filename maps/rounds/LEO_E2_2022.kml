@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>LEO_E2_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Beacon Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8322559836383,52.684215411073
+-1.8326530539763,52.684579628019
+-1.8328998814836,52.684830025407
+-1.8333506099754,52.685408860627
+-1.8336886563441,52.685873874375
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Bird Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8292611837387,52.682124377141
+-1.829314827919,52.682225192319
+-1.8302965164185,52.682934144097
+-1.8315464258194,52.683665848313
+-1.8316161632538,52.683740644053
+-1.832737326622,52.684647938702
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Sandford Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8302804231644,52.682589425862
+-1.830940246582,52.682254461198
+-1.8310582637787,52.682169906605
+-1.8317019939423,52.68193575457
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Sandford Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8309992551804,52.682228444418
+-1.8314605951309,52.682599182076
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Sandford Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8302804231644,52.682589425862
+-1.830940246582,52.682254461198
+-1.8310582637787,52.682169906605
+-1.8317019939423,52.68193575457
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Sandford Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8309992551804,52.682228444418
+-1.8314605951309,52.682599182076
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Swan Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8310475349426,52.681307440464
+-1.8319058418274,52.681866809624
+-1.8326139450073,52.682309096446
+-1.8328285217285,52.682556254778
+-1.8328070640564,52.682816419933
+-1.8327641487122,52.683076583538
+-1.8318629264832,52.683479834063
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Upper St John Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8271127343178,52.679760031861
+-1.8268552422524,52.679483586989
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

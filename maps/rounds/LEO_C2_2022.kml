@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>LEO_C2_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Christchurch Gardens</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8397164344788,52.680553581564
+-1.839228272438,52.681018647011
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Christchurch Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8384289741516,52.679905083457
+-1.8396842479706,52.680464470576
+-1.8411862850189,52.681036859283
+-1.8415725231171,52.681114911707
+-1.8428814411163,52.68013274187
+-1.8444693088531,52.679124531317
+-1.8458962440491,52.678330955677
+-1.8461215496063,52.678239888697
+-1.8464112281799,52.678226879113
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Leomansley Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8455797433853,52.680264132737
+-1.8451505899429,52.680082006649
+-1.8450486660004,52.680085258907
+-1.8443673849106,52.680517807094
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Leomansley Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8444800376892,52.679170063908
+-1.8459069728851,52.679996146964
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Leomansley View</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8474197387695,52.679196082511
+-1.8456172943115,52.68021079591
+-1.8456387519836,52.680308363263
+-1.8455958366394,52.680470975035
+-1.8449628353119,52.680906771599
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Leomansley View</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8464648723602,52.679691733904
+-1.846416592598,52.679633192691
+-1.8463736772537,52.679597417467
+-1.846427321434,52.67953237153
+-1.8470013141632,52.679051028586
+-1.8468993902206,52.678950206081
+-1.8470388650894,52.678849383343
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Saxon Walk</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8469423055649,52.678511137621
+-1.8464434146881,52.678907925606
+-1.8463146686554,52.678956710766
+-1.8461269140244,52.67890467326
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>The Dell</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8424469232559,52.680429996906
+-1.8409931659698,52.679903132074
+-1.8408107757568,52.679844591144
+-1.8405264616013,52.679974681992
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Wilmott Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8386971950531,52.680068021926
+-1.8383297324181,52.680394872772
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

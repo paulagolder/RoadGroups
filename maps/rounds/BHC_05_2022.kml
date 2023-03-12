@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>BHC_05_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Dunston Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9225215911865,52.685635209979
+-1.9223606586456,52.685466113719
+-1.9225215911865,52.685147430527
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Dunston Drive</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9221997261047,52.685225475605
+-1.9224786758423,52.685147430527
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Marton Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9215559959412,52.685771787249
+-1.9213306903839,52.685329535493
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Slade Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9251394271851,52.685427091413
+-1.9200968742371,52.6861294876
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Slade Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9198232889175,52.686059248469
+-1.9238895177841,52.685454407011
+-1.9252145290375,52.685239783835
+-1.9254988431931,52.68533083622
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

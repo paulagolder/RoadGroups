@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>CTC_21_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>School Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9444406032562,52.684919798252
+-1.9438827037811,52.684867767851
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>School Walk</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9445693492889,52.684620622599
+-1.9445049762726,52.684887279258
+-1.9443440437317,52.685153934289
+-1.9443655014038,52.685453106288
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>School Walk</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9446015357971,52.685459610004
+-1.9440865516663,52.685505135991
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Thorpe Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9431209564209,52.683911698198
+-1.9435715675354,52.683944217918
+-1.9439685344696,52.684139335728
+-1.9445478916168,52.684471034005
+-1.944751739502,52.68462712644
+-1.9455993175507,52.684809233575
+-1.9459319114685,52.684835248818
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Thorpe Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9444540143013,52.68438193096
+-1.945113837719,52.684144538828
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Thorpe Street</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.9433087110519,52.683067477778
+-1.9427239894867,52.684745496144
+-1.9426649808884,52.684878824296
+-1.9427883625031,52.68676488625
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

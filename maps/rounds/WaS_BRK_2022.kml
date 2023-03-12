@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>WaS_BRK_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Chester Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7732512950897,52.661943649348
+-1.772752404213,52.661660584472
+-1.772403717041,52.661514170886
+-1.7719691991806,52.661436083439
+-1.7717814445496,52.661410054259
+-1.7716097831726,52.661367756809
+-1.7705851793289,52.660873198968
+-1.7695552110672,52.660433948825
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Chester Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7703652381897,52.660762573422
+-1.7705476284027,52.660551082628
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Common Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7672967910767,52.65808079444
+-1.7677903175354,52.657547152194
+-1.7682409286499,52.657208741541
+-1.7691421508789,52.656896360151
+-1.7702579498291,52.656701120649
+-1.7707085609436,52.656649056635
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Derby Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7705851793289,52.660941526371
+-1.7700326442719,52.661175790943
+-1.7705798149109,52.661546707281
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Heath Avenue</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7753005027771,52.662570940669
+-1.7746353149414,52.662609983396
+-1.774570941925,52.662154482745
+-1.7744421958923,52.661725006354
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Nottingham Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7723822593689,52.661514170886
+-1.7726933956146,52.661227849566
+-1.7727416753769,52.661084688203
+-1.7726612091064,52.660954541103
+-1.7706710100174,52.660076038038
+-1.7701882123947,52.659916604107
+-1.7697858810425,52.660202934016
+-1.7695927619934,52.660323322168
+-1.7695766687393,52.660411172772
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Stafford Crescent</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7716312408447,52.661377517763
+-1.7712289094925,52.661696374385
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Stafford Crescent</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7712879180908,52.661741925141
+-1.7723608016968,52.662200683682
+-1.772403717041,52.66231781275
+-1.7727899551392,52.662545562818
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Whittington Barracks</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7746299505234,52.661618287264
+-1.7747318744659,52.661556468194
+-1.7746567726135,52.661533692725
+-1.7745012044907,52.661566229106
+-1.7746245861053,52.661631301794
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Worcester Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.7732405662537,52.661989199846
+-1.7732834815979,52.662187669321
+-1.773117184639,52.662350348547
+-1.7730152606964,52.662467477214
+-1.7728275060654,52.662581352007
+-1.7727255821228,52.662731015568
+-1.7728167772293,52.663384974249
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>

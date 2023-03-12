@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+ <name>LNG_FA_0_2022.kml</name>
+<Style id="blueLine">
+  <LineStyle>
+    <color>7fff0000</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Curborough Cottages</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8173146247864,52.708203682762
+-1.8170571327209,52.708515697398
+-1.8177330493927,52.708639202575
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Fox Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8332147598267,52.707150616895
+-1.8329787254333,52.706903597764
+-1.83274269104,52.706617573867
+-1.8326354026794,52.706292544434
+-1.8326568603516,52.70591550726
+-1.8328821659088,52.705388949893
+-1.8330752849579,52.705219930131
+-1.8326783180237,52.704855885345
+-1.8324422836304,52.70483638286
+-1.8291914463043,52.70525893475
+-1.8286550045013,52.705538466828
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Grange Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.848224401474,52.698627648818
+-1.8484282493591,52.698848707916
+-1.8492650985718,52.700604137472
+-1.849672794342,52.700916206447
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Lichfield Road</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.83669090271,52.725730246719
+-1.8407249450684,52.720843689852
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Park Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8339550495148,52.707553645105
+-1.8337190151215,52.707878665144
+-1.8335473537445,52.708184181774
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Park Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.836701631546,52.712415692098
+-1.8371951580048,52.713234646696
+-1.8379890918732,52.714021088625
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Tewnals Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8495655059814,52.700953914749
+-1.8487071990967,52.70199412765
+-1.8479347229004,52.70303431576
+-1.8475484848022,52.703970463863
+-1.8476343154907,52.705166623882
+-1.8481492996216,52.706830791978
+-1.848406791687,52.708364890722
+-1.8487071990967,52.708780908203
+-1.8487071990967,52.709482928709
+-1.8452739715576,52.714344760725
+-1.8418836593628,52.71931002987
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Watery Lane</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8183553218842,52.705297939333
+-1.8174004554749,52.705681482548
+-1.8170893192291,52.706032519146
+-1.8170034885406,52.706546067599
+-1.8172287940979,52.707651151371
+-1.8172287940979,52.708008672482
+-1.8170893192291,52.708346689747
+-1.8161773681641,52.709848234793
+-1.8161451816559,52.710686737463
+-1.8166172504425,52.711752717593
+-1.8169713020325,52.712292197611
+    </coordinates>
+  </LineString>
+</Placemark>
+</Document>
+</kml>
