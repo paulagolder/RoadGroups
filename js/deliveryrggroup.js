@@ -118,8 +118,9 @@ class Rgsubgroup {
   constructor(swdxml) {
     this.RgsubgroupId = swdxml.getAttribute("RgsubgroupId");
     this.Name = swdxml.getAttribute("Name");
+    if(this.Name=='') this.Name= this.RgsubgroupId;
     this.Households = swdxml.getAttribute("Households");
-    this.Roadgroups = new RoadGroups(swdxml);
+    this.Rounds = new Rounds(swdxml);
     var bnds = swdxml.getAttribute('Bounds');
     this.Bounds = JSON.parse(bnds,true);
   }
@@ -128,10 +129,11 @@ class Rgsubgroup {
 
 
 
-class RoadGroup {
+class Round {
   constructor(rgxml) {
-    this.RoadgroupId = rgxml.getAttribute("RoadgroupId");
+    this.RoundId = rgxml.getAttribute("RoundId");
     this.Name = rgxml.getAttribute("Name");
+     this.Label = rgxml.getAttribute("Label");
     this.Households = rgxml.getAttribute("Households");
     this.KML = rgxml.getAttribute("KML");
 
@@ -141,15 +143,15 @@ class RoadGroup {
   }
 }
 
-class RoadGroups {
+class Rounds {
 
   constructor(swdxml) {
-    var rgsxml = swdxml.getElementsByTagName("roadgroup");
+    var rgsxml = swdxml.getElementsByTagName("round");
     if (rgsxml !== undefined) {
       for (var r = 0; r < rgsxml.length; r++) {
         var rgxml = rgsxml[r];
-        var aroadgroup = new RoadGroup(rgxml);
-        this[aroadgroup.RoadgroupId] = aroadgroup;
+        var around = new Round(rgxml);
+        this[around.Label] = around;
       }
     }
   }

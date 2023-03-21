@@ -6,12 +6,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"></meta>
 <meta name="apple-mobile-web-app-capable" content="yes" ></meta>
 <title>Lichfield - Road Groups</title>
-<base href="RoadGroups"/>
+<base href="rounds"/>
   <script src="https://unpkg.com/pdf-lib"></script>
   <script src="https://unpkg.com/downloadjs@1.4.7"></script>
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script  src="js/deliveryrggroup.js"></script>
 <script  src="js/myjs.js"></script>
+<script src="http://cdn.jsdelivr.net/g/filesaver.js"></script>
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
 integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -34,26 +35,28 @@ const queryString = window.location.search;
 console.log(queryString);
 const urlParams = new URLSearchParams(queryString);
 var dvyname = urlParams.get('dvyname');
-if(dvyname === undefined  || dvyname === null) dvyname = "roadgroups";
+if(dvyname === undefined  || dvyname === null) dvyname = "rounds";
 window.start = true;
 window.deliveryname = dvyname;
-window.Delivery = new Delivery("rgml/"+dvyname+".rgml");
+window.Delivery = new Delivery("rgml//"+dvyname+".rgml");
 console.log("Delivery:"+window.Delivery.name);
-window.imagepath = 'images/'+dvyname+'/';
+window.pngpath =   dvyname+"/pngs/";
+console.log(pngpath);
+window.pdfpath = dvyname+'//pdfs//';
 window.Rggroups = window.Delivery.rggroups;
 window.Rggroup = window.Rggroups[Object.keys(window.Rggroups)[0]];
 window.Rgsubgroups = window.Rggroup.Rgsubgroups;
 window.Rgsubgroup = window.Rgsubgroups[Object.keys(window.Rgsubgroups)[0]];
-window.Roadgroups = window.Rgsubgroup.Roadgroups;
-window.Roadgroup = window.Roadgroups[Object.keys(window.Roadgroups)[0]];
+window.Rounds = window.Rgsubgroup.Rounds;
+window.Round = window.Rounds[Object.keys(window.Rounds)[0]];
 
 var mymaprggroups = null;
 window.mymaprggroup = null;
 window.mymaprgsubgroup = null;
-window.mymaproadgroup = null;
+window.mymapround = null;
 window.rggroupid = window.Rggroup.RggroupId;
 window.rgsubgroupid = window.Rgsubgroup.RgsubgroupId;
-window.roadgroupid = window.Roadgroup.RoadgroupId;
+window.roundid = window.Round.RoundId;
 window.colors= [];
 window.colors[0]="#FF000088";
 window.colors[1]="#00FF0088";
@@ -67,6 +70,18 @@ window.colors[8]="#0000FF88";
 window.colors[9]="#FFFF0088";
 window.colors[10]="#FF00FF88";
 window.colors[11]="#00FFFF88";
+window.colors[12]="#FF000088";
+window.colors[13]="#00FF0088";
+window.colors[14]="#0000FF88";
+window.colors[15]="#FFFF0088";
+window.colors[16]="#FF00FF88";
+window.colors[17]="#00FFFF88";
+window.colors[18]="#FF000088";
+window.colors[19]="#00FF0088";
+window.colors[20]="#0000FF88";
+window.colors[21]="#FFFF0088";
+window.colors[22]="#FF00FF88";
+window.colors[23]="#00FFFF88";
 
  function switcher(targetpage, targetobject)
   {
@@ -141,22 +156,22 @@ window.colors[11]="#00FFFF88";
 
 </div>
 
-<!--  display one road group -->
-<div data-role="page" class="bstyle page"  id="roadgroup">
+<!--  display one round -->
+<div data-role="page" class="bstyle page"  id="round">
 <div class="page-header"  data-role="header" data-position="fixed">
 
-<h1 id="roadgrouppageheader" ></h1>
+<h1 id="roundpageheader" ></h1>
 </div><!-- /header -->
 
-<div id="roadgrouppage"  >
-<div id="roadgrouppanel" class="bstyle" ></div>
+<div id="roundpage"  >
+<div id="roundpanel" class="bstyle" ></div>
 <div class="map-content" data-role="content">
-<div id='roadgroupmapdiv'  class="mapdiv" ></div>
+<div id='roundmapdiv'  class="mapdiv" ></div>
 </div>
 </div>
 <div class="page-footer bstyle" data-role="footer"  data-theme="d" data-position="fixed" data-mini="true" >
 <div > Paul Golder 2020</div>
-<button class="button  desktop" type="xxbutton" onclick="savePNG('roadgroup')">Save Image</button>
+<button class="button  desktop" type="xxbutton" onclick="savePNG()">Save Image</button>
 </div>
 <!-- /footer -->
 </div>
@@ -179,8 +194,8 @@ $("#xrggroups").on("pageinit", function(e) {
   if(window.Rggroups[rgparam])
   {
     window.start = false;
-    window.roadgroupid=rgparam;
-    changeMypage("roadgroup", rgparam);
+    window.roundid=rgparam;
+    changeMypage("round", rgparam);
   }
   // window.history.pushState({}, document.title, window.location.pathname);
 
@@ -225,7 +240,7 @@ $(document).on("pageshow","#rggroups", function() {
     if(thisrggroup.KML )
     {
       var style = { fillColor:  window.colors[c], weight: 2, opacity: 1,  color: 'black',  fillOpacity: 0.7 };
-      var alayer = addMyKML2(mymaprggroups ,"maps/roadgroups/"+thisrggroup.KML,style,true,"freddy");
+      var alayer = addMyKML2(mymaprggroups ,"maps/rounds/"+thisrggroup.KML,style,true,"freddy");
       afg.addLayer(alayer);
       c++;
     }
@@ -273,12 +288,12 @@ $(document).on("pageshow","#rggroup",function()
   for (var argsubgroupId in rgsubgroups)
   {
     var argsubgroup = rgsubgroups[argsubgroupId];
-    for (var groupId in argsubgroup.Roadgroups)
+    for (var groupId in argsubgroup.Rounds)
     {
-      var aroadgroup = argsubgroup.Roadgroups[groupId];
-      if(aroadgroup.KML !== undefined )
+      var around = argsubgroup.Rounds[groupId];
+      if(around.KML !== undefined )
       {
-        var targetkml = "maps/roadgroups/"+aroadgroup.KML;
+        var targetkml = "maps/rounds/"+around.KML;
         var style = { fillColor: window.colors[c], weight: 6, opacity: 1,  color: window.colors[c],  fillOpacity: 1 };
         var alayer = addMyKML(mymaprggroup ,targetkml,style);
         afg.addLayer(alayer);
@@ -317,8 +332,8 @@ $(document).on("pageshow","#rgsubgroup",function() {
   var thisrggroup = window.Rggroups[wdid];
   var rgsubgroupId =  window.rgsubgroupid;
   var argsubgroup = thisrggroup.Rgsubgroups[rgsubgroupId];
-  var grouplist = argsubgroup.Roadgroups;
-  var roadgroupId = window.roadgroupid;
+  var grouplist = argsubgroup.Rounds;
+  var roundId = window.roundid;
   var kml = thisrggroup.KML;
   if( kml)
   {
@@ -331,10 +346,10 @@ $(document).on("pageshow","#rgsubgroup",function() {
   var afg = new  L.featureGroup();
   for(var index in grouplist)
   {
-    var aroadgroup = grouplist[index];
-    if(aroadgroup.KML !== undefined )
+    var around = grouplist[index];
+    if(around.KML !== undefined )
     {
-      var targetkml = "maps/roadgroups/"+aroadgroup.KML;
+      var targetkml = "maps/rounds/"+around.KML;
       var style = { fillColor: window.colors[c], weight: 6, opacity: 1,  color: window.colors[c],  fillOpacity: 1 };
       var alayer = addMyKML(mymaprgsubgroup ,targetkml,style);
       afg.addLayer(alayer);
@@ -347,42 +362,42 @@ $(document).on("pageshow","#rgsubgroup",function() {
 });
 
 
-$(document).on("pageshow","#roadgroup",function() {
-  document.getElementById("roadgrouppageheader").innerHTML = makePageheader() ;
+$(document).on("pageshow","#round",function() {
+  document.getElementById("roundpageheader").innerHTML = makePageheader() ;
 
-  document.getElementById("roadgrouppanel").innerHTML = showroadgroup() ;
+  document.getElementById("roundpanel").innerHTML = showround() ;
   color="#4444FFDD";
-  if( mymaproadgroup == null)
+  if( mymapround == null)
   {
-    mymaproadgroup = L.map('roadgroupmapdiv').setView([52.6854, -1.8304], 14);
+    mymapround = L.map('roundmapdiv').setView([52.6854, -1.8304], 14);
   }  else
   {
-    mymaproadgroup.eachLayer((layer) => {
+    mymapround.eachLayer((layer) => {
       layer.remove();
     });
   }
-  mymappera( mymaproadgroup);
+  mymappera( mymapround);
   var wdid = window.rggroupid;
 
   var arggroup = window.Rggroups[wdid];
   var rgsubgroupid = window.rgsubgroupid;
   var argsubgroup = arggroup.Rgsubgroups[rgsubgroupid];
-  var grouplist = argsubgroup.Roadgroups;
-  var aroadgroup = grouplist[window.roadgroupid];
-  var roadgroupid = window.roadgroupid;
+  var grouplist = argsubgroup.Rounds;
+  var around = grouplist[window.roundid];
+  var roundid = window.roundid;
 
-  if(aroadgroup.KML !== undefined )
+  if(around.KML !== undefined )
   {
     var style = { fillColor: '#0000aa', weight: 10, opacity: 0.3,  color: '#0000aa',  fillOpacity: 0.1 };
-    var targetkml = "maps/roadgroups/"+aroadgroup.KML;
-    alayer =  addMyKML(mymaproadgroup,targetkml,style);
-   // alayer = addMyKML2(mymaproadgroup,targetkml,style, label='')
+    var targetkml = "maps/rounds/"+around.KML;
+    alayer =  addMyKML(mymapround,targetkml,style);
+   // alayer = addMyKML2(mymapround,targetkml,style, label='')
   }
   if (is_browser_gps_capable()) {
     $('geo_location').innerHTML = 'Locating device...';
     watchLocation(function(coords) {
       var marker = new L.Marker([coords.latitude,  coords.longitude]);
-      marker.addTo(mymaproadgroup);
+      marker.addTo(mymapround);
       $('geo_location').innerHTML = coords.latitude + ',' + coords.longitude;
     }, function() {
       $('geo_location').innerHTML = 'Not supported';
@@ -392,7 +407,7 @@ $(document).on("pageshow","#roadgroup",function() {
     $('geo_location').innerHTML = 'Not supported';
   }
 
-  setBounds(mymaproadgroup, aroadgroup.Bounds);
+  setBounds(mymapround, around.Bounds);
 });
 
 
@@ -415,10 +430,10 @@ function changeMypage(targetpage, selector )
       //  document.getElementById("rgsubgroup").innerHTML = showrgsubgroup() ;
       $.mobile.changePage("#rgsubgroup", "slideup");
       break;
-    case "roadgroup":
-      window.roadgroupid = selector;
-      //   document.getElementById("roadgrouppanel").innerHTML = showroadgroup() ;
-      $.mobile.changePage("#roadgroup", "slideup");
+    case "round":
+      window.roundid = selector;
+      //   document.getElementById("roundpanel").innerHTML = showround() ;
+      $.mobile.changePage("#round", "slideup");
       break;
   }
 }
@@ -430,16 +445,44 @@ $(window).bind('orientationchange', function() {
 
 
 
+function xsavePNG(elid){
+  const node = document.getElementById(elid);
+  domtoimage.toPng(node)
+  .then(function (dataUrl) {
+    const link = document.createElement('a');
+    var rgid = window.roundid;
+    //link.download ==  rgid+'.png';
+    link.download == 'filnema.png';
+    link.href = dataUrl;
+      document.body.appendChild(link);
+  link.click()
+  document.body.removeChild(link)
+  URL.revokeObjectURL(url)
+
+  });
+}
+
+
 function savePNG(){
-  const node = document.getElementById("roadgroup");
+  const node = document.getElementById("round");
   domtoimage.toPng(node)
   .then(function (dataUrl) {
     var link = document.createElement('a');
-    var rgid = window.roadgroupid;
+    var rgid = window.roundid;
     link.download = rgid+'.png';
     link.href = dataUrl;
     link.click();
   });
+}
+
+
+function xxsavePNG(elid)
+{
+var canvas = document.getElementById("roundpage");
+var anchor = document.createElement('a');
+anchor.href = canvas.toDataURL('image/png'); // 'image/jpg'
+anchor.download = 'image.png';               // 'image.jpg'
+anchor.click();
 }
 
 function saveSgPNG(mode)
@@ -454,6 +497,7 @@ function saveSgPNG(mode)
       .then(function (dataUrl) {
         var link = document.createElement('a');
         var rggid = window.rggroupid;
+         link.path = window.pngpath;
         link.download = rggid+'.png';
         link.href = dataUrl;
         link.click();
@@ -465,19 +509,19 @@ function saveSgPNG(mode)
       .then(function (dataUrl) {
         var link = document.createElement('a');
         var rgsgid = window.rgsubgroupid;
-        link.path = window.imagepath;
-        link.download = rgsgid+'.png';
+        link.path = window.pngpath;
+        link.download =  rgsgid+'.png';
         link.href = dataUrl;
         link.click();
       });
       break;
-    case "roadgroup":
-      var node = document.getElementById("roadgroup");
+    case "round":
+      var node = document.getElementById("round");
       domtoimage.toPng(node)
       .then(function (dataUrl) {
         var link = document.createElement('a');
         var rdgid = window.rgsubgroupid;
-        link.download = rdgid+'.png';
+        link.download =  rdgid+'.png';
         link.href = dataUrl;
         link.click();
       });

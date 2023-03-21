@@ -12,7 +12,7 @@ function showrggroups()
 {
   var allgroups = window.Rggroups;
   var outstring = "";
-  outstring += "<div class='list'> ";
+  outstring += "<div class='rggroupslist'> ";
   var c = 0;
   for (var rggroupid in allgroups) {
     var rggroup = allgroups[rggroupid];
@@ -22,12 +22,9 @@ function showrggroups()
       var style =" style =\"background-color: "+ window.colors[c] + ";\"";
       c++;
     }
-
-    outstring += "<div class='row' ><div class='pbutton' "+style+ " ><a class=\"button\" href=\"./#rggroup\" data-role=\"button\"  data-mini=\"true\"  ";
+    outstring += "<div class='row' ><div class='pbutton' "+style+ " ><a class=\"rggroupbutton\" href=\"./#rggroup\" data-role=\"button\"  data-mini=\"true\"  ";
     outstring += " onclick=\"changeMypage( 'rggroup',\'" + rggroupid + "\'); \" >" + rggroupid + "</a></div>";
-
-
-    outstring += "<div>" + rggroup.Name + "</div>";
+    outstring += "<div class='rggroupname' >" + rggroup.Name + "</div>";
     outstring += "</div>";
   }
   outstring += "</div>";
@@ -39,13 +36,13 @@ function showrggroup() {
   var wdid = window.rggroupid;
   var arggroup = window.Rggroups[wdid];
   var rgsubgroups = arggroup.Rgsubgroups;
-  var roadgroupcount = 0;
+  var roundcount = 0;
   var households = 0;
   for (var argsubgroupid in rgsubgroups) {
     var argsubgroup = rgsubgroups[argsubgroupid];
-    for (var groupid in argsubgroup.Roadgroups) {
-      roadgroupcount++;
-      var hh = parseInt(argsubgroup.Roadgroups[groupid].Households);
+    for (var groupid in argsubgroup.Rounds) {
+      roundcount++;
+      var hh = parseInt(argsubgroup.Rounds[groupid].Households);
       if(!isNaN(hh))
       {
         households = households + hh;
@@ -55,19 +52,19 @@ function showrggroup() {
   var c = 0;
   var outstring = "<div class='heading' ><div>" + arggroup.RggroupId + "</div><div >" + arggroup.Name + "</div>";
   outstring += "<div class=\"hh\">" + households + " HH</div>";
-  outstring += "<div class=\"rg\">" + roadgroupcount + " RoadGroups </div>";
+  outstring += "<div class=\"rg\">" + roundcount + " Rounds </div>";
   outstring +="</div>";
   outstring += "<div class='list'> ";
 
   for (var argsubgroupid in rgsubgroups)
   {
-    var roadgroupcount = 0;
+    var roundcount = 0;
     var households = 0;
     var argsubgroup = rgsubgroups[argsubgroupid];
-    for (var groupid in argsubgroup.Roadgroups)
+    for (var groupid in argsubgroup.Rounds)
     {
-      roadgroupcount++;
-      var hh = parseInt(argsubgroup.Roadgroups[groupid].Households);
+      roundcount++;
+      var hh = parseInt(argsubgroup.Rounds[groupid].Households);
       if(!isNaN(hh))
       {
         households = households + hh;
@@ -78,7 +75,7 @@ function showrggroup() {
     outstring += "<a class=\"button\" href=\"#\" data-role=\"button\"  data-mini=\"true\" data-iconpos=\"right\" ";
     outstring += " onclick=\"changeMypage('rgsubgroup',\'" + argsubgroup.RgsubgroupId + "\'); \" >" + argsubgroup.Name + "</a></div>";
     outstring += "<div class=\"hh\">" + households + " HH</div>";
-    outstring += "<div class=\"rg\">" + roadgroupcount + " RoadGroups </div>";
+    outstring += "<div class=\"rg\">" + roundcount + " Rounds </div>";
     outstring += "</div>";
     c++;
   }
@@ -91,13 +88,13 @@ function showrgsubgroup() {
   var arggroup = window.Rggroups[wdid];
   var rgsubgroupid = window.rgsubgroupid;
   var argsubgroup = arggroup.Rgsubgroups[rgsubgroupid];
-  var grouplist = argsubgroup.Roadgroups;
-  var roadgroupcount = 0;
+  var grouplist = argsubgroup.Rounds;
+  var roundcount = 0;
   var households = 0;
 
-  for (var groupid in argsubgroup.Roadgroups) {
-    roadgroupcount++;
-    var hh = parseInt(argsubgroup.Roadgroups[groupid].Households);
+  for (var groupid in argsubgroup.Rounds) {
+    roundcount++;
+    var hh = parseInt(argsubgroup.Rounds[groupid].Households);
     if(!isNaN(hh))
     {
       households = households + hh;
@@ -108,7 +105,7 @@ function showrgsubgroup() {
   outstring += '<div class="routebutton" ><a href="#rggroup"  class="routebutton" data-role="button" data-inline="true" data-mini="true">'+arggroup.Name +'</a></div>';
   outstring += "<div>" + argsubgroup.Name + "</div>";
   outstring += "<div class=\"hh\">" + households + " HH</div>";
-  outstring += "<div class=\"rg\">" + roadgroupcount + " RoadGroups </div>";
+  outstring += "<div class=\"rg\">" + roundcount + " Rounds </div>";
   outstring += "</div>";
   outstring += "<div class='list'   >";
   window.sliplist =[];
@@ -119,10 +116,10 @@ function showrgsubgroup() {
     outstring += "<div class='row' >";
     outstring += "<div style='background-color:" + window.colors[c] + ";' >";
     outstring += " <a class=\"button\" href=\"#\" data-role=\"button\"  data-mini=\"true\" data-iconpos=\"right\" ";
-    outstring += " onclick=\"changeMypage( 'roadgroup',\'" + agroup.RoadgroupId + "\'); \" >" + agroup.RoadgroupId + "</a></div>";
+    outstring += " onclick=\"changeMypage( 'round',\'" + agroup.Label + "\'); \" >" + agroup.Label + "</a></div>";
     outstring += "<div class=\"name\">" + agroup.Name + "</div>";
     outstring += "<div class=\"hh\">" + agroup.Households + " HH</div>";
-    outstring += "<div>" + "<input class=\"printcheckbox\" type=\"checkbox\" id=\"printlist\" name=\"printlist\" value='" + agroup.RoadgroupId + "'></div>";
+    outstring += "<div>" + "<input class=\"printcheckbox\" type=\"checkbox\" id=\"printlist\" name=\"printlist\" value='" + agroup.RoundId + "'></div>";
     outstring += "</div>";
     c++;
   }
@@ -131,27 +128,27 @@ function showrgsubgroup() {
 }
 
 
-function showroadgroup() {
+function showround() {
   var wdid = window.rggroupid;
   var arggroup = window.Rggroups[wdid];
   var rgsubgroupid = window.rgsubgroupid;
   var argsubgroup = arggroup.Rgsubgroups[rgsubgroupid];
-  var grouplist = argsubgroup.Roadgroups;
-  var aroadgroup = grouplist[window.roadgroupid];
+  var grouplist = argsubgroup.Rounds;
+  var around = grouplist[window.roundid];
   var outstring = "";
-  if(!aroadgroup)
+  if(!around)
   {
-    outstring += "<div class='upperheading' ><div> RoadGroup:" + window.roadgroupid+" not found </div></div>";
+    outstring += "<div class='upperheading' ><div> Round:" + window.roundid+" not found </div></div>";
     return outstring;
   }
-  outstring += "<div class='upperheading' ><div> RoadGroup:" + aroadgroup.RoadgroupId +":"+aroadgroup.Name+" (HH:" + aroadgroup.Households + ")</div></div>";
+  outstring += "<div class='upperheading' ><div> Round:" + around.Label +":"+around.Name+" (HH:" + around.Households + ")</div></div>";
   outstring += "<div class='lowerheading' >";
   outstring += '<div class="routebutton" ><a href="#rggroup"  class="routebutton" data-role="button" data-inline="true" data-mini="true">'+arggroup.Name +'</a></div>';
   outstring += '<div class="routebutton" ><a href="#rgsubgroup"  class="routebutton" data-role="button" data-inline="true" data-mini="true">'+argsubgroup.Name +'</a></div>';
   outstring += "</div>";
 
   outstring += "<div  class='streetlist' >";
-  var streets = aroadgroup.Streets;
+  var streets = around.Streets;
   var streetcount = Object.keys(streets).length
   var lc=Math.ceil(streetcount/7);
 
@@ -174,7 +171,7 @@ function showroadgroup() {
   }
   outstring += "</div>";
   outstring += "<div  class='partlist' >";
-  var streets = aroadgroup.Streets;
+  var streets = around.Streets;
   for (var streetid in streets)
   {
     var street = streets[streetid];
@@ -364,15 +361,15 @@ function doSearch() {
     var rgsubgroups = arggroup.Rgsubgroups;
     for (var argsubgroupid in rgsubgroups) {
       var argsubgroup = rgsubgroups[argsubgroupid];
-      var rgrouplist = argsubgroup.Roadgroups;
+      var rgrouplist = argsubgroup.Rounds;
       for (var index in rgrouplist) {
-        var aroadgroup = rgrouplist[index];
-        var streets = aroadgroup.Streets;
+        var around = rgrouplist[index];
+        var streets = around.Streets;
         for (var streetid in streets) {
           var astreet = streets[streetid];
           if (astreet.Name.toLowerCase().includes(searchfield))
           {
-            astreet.roadgroupid = aroadgroup.RoadgroupId;
+            astreet.roundid = around.RoundId;
             astreet.rgsubgroupid = argsubgroupid;
             astreet.rggroupid = rggroupid;
             foundlist.push(astreet);
@@ -383,11 +380,11 @@ function doSearch() {
   }
   if (foundlist.length == 1) {
     var fstreet = foundlist[0];
-    var roadgroupid = fstreet.roadgroupid;
+    var roundid = fstreet.roundid;
     window.rggroupid = fstreet.rggroupid;
     window.rgsubgroupid = fstreet.rgsubgroupid;
-    window.roadgroupid = roadgroup;
-    changeMypage("roadgroup", roadgroupid);
+    window.roundid = round;
+    changeMypage("round", roundid);
     clearSearch();
   } else if (foundlist.length < 1) {
     alert(" No Match found: try another street name ");
@@ -488,7 +485,7 @@ function pdfout(mode)
   switch(mode) {
     case "rggroups":
       var grouplist = window.Rggroups;
-      var outfile = window.deliveryname+".pdf";
+      var outfile =   window.deliveryname+".pdf";
       var shape ="a5l";
       break;
     case "rggroup":
@@ -497,8 +494,8 @@ function pdfout(mode)
       var shape ="a5l";
       break;
     case "rgsubgroup":
-      var grouplist = argsubgroup.Roadgroups;
-      var outfile = rgsubgroupid+".pdf";
+      var grouplist = argsubgroup.Rounds;
+      var outfile =  rgsubgroupid+".pdf";
       var inputElements = document.getElementsByClassName('printcheckbox');
       for(var i=0; inputElements[i]; ++i)
       {
@@ -541,8 +538,8 @@ function pdfout(mode)
     var iheight = ( pheight - 3 * margin)/2;
     for( rg of mylist)
     {
-      //var rgpngpath = 'images/'+rg+'.png';
-      var rgpngpath = window.imagepath+rg+'.png';
+      var rgpngpath =  window.deliveryname+'/'+window.rggroupid+'/pngs/'+rg+'.png';
+      //var rgpngpath = window.pngpath+rg+'.png';
       if(CheckUrl(rgpngpath))
       {
         var rgpngbytes =  await fetch(rgpngpath).then((res) => res.arrayBuffer());
@@ -600,7 +597,7 @@ function pdfout(mode)
     for( rg of mylist)
     {
       //var rgpngpath = 'images/'+rg+'.png';
-      var rgpngpath = window.imagepath+rg+'.png';
+      var rgpngpath = window.pngpath+rg+'.png';
       if(CheckUrl(rgpngpath))
       {
         var rgpngbytes =  await fetch(rgpngpath).then((res) => res.arrayBuffer());
