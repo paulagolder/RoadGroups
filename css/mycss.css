@@ -387,68 +387,70 @@ div#rgsubgroup div.list div.row div.hh
 div#rgsubgroup div.list div.row div.name
 {
   width:9em;
-  text-align: lefrt;
+  text-align: left;
 }
-html.ui-mobile body.bstyle.ui-mobile-viewport.ui-overlay-a div#rgsubgroup.bstyle.page.ui-page.ui-page-theme-a.ui-page-header-fixed.ui-page-footer-fixed.ui-page-active div.page-content.ui-content div#rgsubgroup div.list div.row;
-html.ui-mobile body.bstyle.ui-mobile-viewport.ui-overlay-a div#rgsubgroup.bstyle.page.ui-page.ui-page-theme-a.ui-page-header-fixed.ui-page-footer-fixed.ui-page-active div.page-content.ui-content div#rgsubgroup div.list div.row;
+
 
 /* roadgrouppage styles=========================================*/
 
 
 
-#roadgroup div div.streetlist
+
+div#roundpanel.bstyle div.streetlist
 {
-  display: flex;
-  flex-wrap: wrap;
-  padding : 0.5em;
+
+  padding: 0.5em;
+  padding-top: 1em;
+  column-count:3;
+  column-fill: balance;
 }
 
-#roadgroup div div.streetlist div
+div#roundpanel.bstyle div.streetlist1
 {
-  flex: 1 1 10em;
+
+  padding: 0.5em;
+  padding-top: 1em;
+  column-count:1;
+  column-fill: balance;
+  font-size: 1.5em;
+  padding-left: 5em;
+}
+
+div#roundpanel.bstyle div.streetlist2
+{
+
+  padding: 0.5em;
+  padding-top: 1em;
+  column-count:2;
+  column-fill: balance;
+  font-size: 1.5em;
+  padding-left: 2em;
+}
+
+div#roundpanel.bstyle div.streetlist4
+{
+
+  padding: 0.5em;
+  padding-top: 1em;
+  column-count:4;
+  column-fill: balance;
   font-size: 1.3em;
+  padding-left: 1em;
 }
 
- div#roadgrouppanel.bstyle div.streetlist div.streetrow
- {
-   display: flex;
-   font-size: 1em;
+
+
+ div#roundpanel.bstyle div.streetlist div.street
+{
+  display: block;
+  padding: 10px 5px;
+
 }
 
-div#roadgrouppanel.bstyle div.streetlist div.streetrow0
-{
-  display: flex;
-  font-size: 1.1em;
-}
 
-div#roadgrouppanel.bstyle div.streetlist div.streetrow1
-{
-  display: flex;
-  font-size: 1.1em
-}
-div#roadgrouppanel.bstyle div.streetlist div.streetrow2
-{
-  display: flex;
-  font-size:1.1em
-}
 
-div#roadgrouppanel.bstyle div.streetlist div.streetrow3
-{
-  display: flex;
-  font-size:0.8em
-}
 
-div#roadgrouppanel.bstyle div.streetlist div.streetrow4
-{
-  display: flex;
-  font-size:0.5em
-}
 
-div#roadgrouppanel.bstyle div.streetlist div.streetrow5
-{
-  display: flex;
-  font-size:0.5em
-}
 
 @media only screen and (min-width: 1768px)
 {

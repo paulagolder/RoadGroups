@@ -139,6 +139,7 @@ function showround() {
   if(!around)
   {
     outstring += "<div class='upperheading' ><div> Round:" + window.roundid+" not found </div></div>";
+        $.mobile.changePage("#rggroups", "slideup");
     return outstring;
   }
   outstring += "<div class='upperheading' ><div> Round:" + around.Label +":"+around.Name+" (HH:" + around.Households + ")</div></div>";
@@ -147,26 +148,26 @@ function showround() {
   outstring += '<div class="routebutton" ><a href="#rgsubgroup"  class="routebutton" data-role="button" data-inline="true" data-mini="true">'+argsubgroup.Name +'</a></div>';
   outstring += "</div>";
 
-  outstring += "<div  class='streetlist' >";
+
   var streets = around.Streets;
   var streetcount = Object.keys(streets).length
   var lc=Math.ceil(streetcount/7);
+  outstring += "<div  class='streetlist"+lc+"' >";
 
-  var nl=0;
   for (var streetid in streets)
   {
     var street = streets[streetid];
     var streetname = street.makeId();
     var note = street.Qualifier;
     var households = street.Households;
-    if(nl ==0) outstring += " <div  class='streetrow"+lc+"' >" ;
-    outstring += " <div>" + streetname +  "</div>";
-    nl++;
-    if(nl ==lc)
+    var note2 = street.Note;
+    var households = street.Households;
+    if(note && note.length >2)
     {
-      outstring += " </div>" ;
-      nl=0;
-    }
+         outstring += " <div class='street' >" + streetname +  "*</div>";
+    }else
+    outstring += " <div class='street' >" + streetname +  "</div>";
+
 
   }
   outstring += "</div>";
@@ -176,10 +177,13 @@ function showround() {
   {
     var street = streets[streetid];
     var streetname = street.makeId();
-    var note = street.Qualifier;
+    var note1 = street.Qualifier;
+     var note2 = street.Note;
     var households = street.Households;
     if(note && note.length >2)
       outstring += " <div>" + streetname +":"+note+"</div>";
+  //  if(note2 && note2.length >2)
+    //  outstring += " <div>" + streetname +":"+note2+"</div>"
   }
   outstring += "</div>";
   return outstring;
@@ -490,7 +494,7 @@ function pdfout(mode)
       break;
     case "rggroup":
       var grouplist = arggroup.Rgsubgroups;
-      var outfile = rggroupid+".pdf";
+      var outfile = rggid+".pdf";
       var shape ="a5l";
       break;
     case "rgsubgroup":
@@ -538,8 +542,9 @@ function pdfout(mode)
     var iheight = ( pheight - 3 * margin)/2;
     for( rg of mylist)
     {
-      var rgpngpath =  window.deliveryname+'/'+window.rggroupid+'/pngs/'+rg+'.png';
-      //var rgpngpath = window.pngpath+rg+'.png';
+      var rgpngpath =  window.pngpath+'/pngs/'+rg+'.png';
+      //alert(rgpngpath);
+      //window.pngpath+'/'+rg+'/'+rg+'.png';
       if(CheckUrl(rgpngpath))
       {
         var rgpngbytes =  await fetch(rgpngpath).then((res) => res.arrayBuffer());
@@ -597,7 +602,9 @@ function pdfout(mode)
     for( rg of mylist)
     {
       //var rgpngpath = 'images/'+rg+'.png';
-      var rgpngpath = window.pngpath+rg+'.png';
+      //window.rggroupid
+      //var rgpngpath = window.pngpath+'/'+rg+'/'+rg+'.png';
+      var rgpngpath = window.pngpath+'/pngs/'+rg+'.png';
       if(CheckUrl(rgpngpath))
       {
         var rgpngbytes =  await fetch(rgpngpath).then((res) => res.arrayBuffer());

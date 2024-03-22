@@ -40,9 +40,9 @@ window.start = true;
 window.deliveryname = dvyname;
 window.Delivery = new Delivery("rgml//"+dvyname+".rgml");
 console.log("Delivery:"+window.Delivery.name);
-window.pngpath =   dvyname+"/pngs/";
+window.pngpath =   "/~paul/RoadGroups/images/"+dvyname;
 console.log(pngpath);
-window.pdfpath = dvyname+'//pdfs//';
+window.pdfpath =  "/images/"+dvyname;
 window.Rggroups = window.Delivery.rggroups;
 window.Rggroup = window.Rggroups[Object.keys(window.Rggroups)[0]];
 window.Rgsubgroups = window.Rggroup.Rgsubgroups;
@@ -262,7 +262,6 @@ $(document).on("pageshow","#rggroup",function()
   document.getElementById("rggrouppanel").innerHTML = showrggroup() ;
   if( mymaprggroup == null)
   {
-    //mymaprggroup = L.map('rggroupmapdiv').setView([52.6854, -1.8304],20);
     mymaprggroup = L.map('rggroupmapdiv');
   }
   else
@@ -301,12 +300,8 @@ $(document).on("pageshow","#rggroup",function()
     }
     c++;
   }
-
-
-
   //drawBox(mymaprggroup,thisrggroup.Bounds );
   setBounds(mymaprggroup,thisrggroup.Bounds);
-
 
 });
 
@@ -445,22 +440,7 @@ $(window).bind('orientationchange', function() {
 
 
 
-function xsavePNG(elid){
-  const node = document.getElementById(elid);
-  domtoimage.toPng(node)
-  .then(function (dataUrl) {
-    const link = document.createElement('a');
-    var rgid = window.roundid;
-    //link.download ==  rgid+'.png';
-    link.download == 'filnema.png';
-    link.href = dataUrl;
-      document.body.appendChild(link);
-  link.click()
-  document.body.removeChild(link)
-  URL.revokeObjectURL(url)
 
-  });
-}
 
 
 function savePNG(){
@@ -476,14 +456,7 @@ function savePNG(){
 }
 
 
-function xxsavePNG(elid)
-{
-var canvas = document.getElementById("roundpage");
-var anchor = document.createElement('a');
-anchor.href = canvas.toDataURL('image/png'); // 'image/jpg'
-anchor.download = 'image.png';               // 'image.jpg'
-anchor.click();
-}
+
 
 function saveSgPNG(mode)
 {

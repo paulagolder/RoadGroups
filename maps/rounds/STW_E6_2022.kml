@@ -21,6 +21,39 @@
   </LineString>
 </Placemark>
 <Placemark>
+  <name>Enots Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8130660057068,52.692216447993
+-1.8122720718384,52.692860211491
+-1.8124651908875,52.692970755784
+-1.8124222755432,52.693074797215
+-1.8120038509369,52.693406427622
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Enots Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8134093284607,52.692749666919
+-1.8128299713135,52.692463550256
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Enots Close</name>
+  <styleUrl>#blueLine</styleUrl>
+  <LineString>
+	   <coordinates>
+-1.8121540546417,52.693549483098
+-1.8117249011993,52.693334899708
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
   <name>Furnivall Crescent</name>
   <styleUrl>#blueLine</styleUrl>
   <LineString>

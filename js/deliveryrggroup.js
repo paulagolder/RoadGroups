@@ -179,6 +179,7 @@ class Street {
     this.Part = stxml.getAttribute("Part");
     this.Households = stxml.getAttribute("Households");
     this.Qualifier = stxml.getAttribute("Qualifier");
+    this.Note = stxml.getAttribute("Note");
   }
 
   makeId() {
