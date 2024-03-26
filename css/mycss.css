@@ -427,6 +427,17 @@ div#roundpanel.bstyle div.streetlist2
   padding-left: 2em;
 }
 
+div#roundpanel.bstyle div.streetlist3
+{
+
+  padding: 0.5em;
+  padding-top: 1em;
+  column-count:3;
+  column-fill: balance;
+  font-size: 1.3em;
+  padding-left: 2em;
+}
+
 div#roundpanel.bstyle div.streetlist4
 {
 
@@ -434,17 +445,34 @@ div#roundpanel.bstyle div.streetlist4
   padding-top: 1em;
   column-count:4;
   column-fill: balance;
-  font-size: 1.3em;
+  font-size: 1em;
   padding-left: 1em;
+}
+
+div#roundpanel.bstyle div.streetlist5
+{
+
+  padding: 0.5em;
+  padding-top: 0.5em;
+  column-count:4;
+  column-fill: balance;
+  font-size: 1em;
+  padding-left: 0.5em;
+  line-height:1.1em;
+
 }
 
 
 
- div#roundpanel.bstyle div.streetlist div.street
+ div#roundpanel.bstyle div  div.street
 {
   display: block;
-  padding: 10px 5px;
-
+  //padding: 10px 5px;
+  //overflow: hidden;
+ // text-overflow: ellipsis;
+ // white-space: nowrap;
+  text-indent: -20px;
+  padding-left: 25px;
 }
 
 

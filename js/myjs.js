@@ -151,7 +151,13 @@ function showround() {
 
   var streets = around.Streets;
   var streetcount = Object.keys(streets).length
-  var lc=Math.ceil(streetcount/7);
+    if(streetcount <64 )lc=5;
+   if(streetcount <32 )lc=4;
+    if(streetcount <32 )lc=4;
+    if(streetcount <24 )lc=3;
+    if(streetcount <16 )lc=2;
+    if(streetcount <8 )lc=1;
+
   outstring += "<div  class='streetlist"+lc+"' >";
 
   for (var streetid in streets)
